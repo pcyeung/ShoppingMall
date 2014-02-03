@@ -41,7 +41,7 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
 
- //   NSArray *nib=[[NSBundle mainBundle]loadNibNamed:@"TimelineCell" owner:self options:Nil];
+    NSArray *nib=[[NSBundle mainBundle]loadNibNamed:@"TimelineCell" owner:self options:Nil];
     //TimelineCell *cell=[nib objectAtIndex:0];
     //return cell;
     return NULL;
