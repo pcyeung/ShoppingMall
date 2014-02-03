@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SonicContent.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SonicContent</TokenIdentifier>
+			<Abstract type="html">SonicContent is an object that contains all the pieces that make up Sonic Content. Sonic Content can be created in the Sonic Notify CMS as well as through Sonic Notify CMS REST API calls. The content from the CMS is then delivered to the device in response to Sonic Notify triggers.</Abstract>
+			<DeclaredIn>SonicContent.h</DeclaredIn>
+            
+			
+			<NodeRef refid="6"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicContent/setAlias:</TokenIdentifier>
+			<Abstract type="html">Alias represents the types of different content such as URL_CONTENT</Abstract>
+			<DeclaredIn>SonicContent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *alias</Declaration>
+			
+			
+			<Anchor>//api/name/alias</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicContent/alias</TokenIdentifier>
+			<Abstract type="html">Alias represents the types of different content such as URL_CONTENT</Abstract>
+			<DeclaredIn>SonicContent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *alias</Declaration>
+			
+			
+			<Anchor>//api/name/alias</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SonicContent/alias</TokenIdentifier>
+			<Abstract type="html">Alias represents the types of different content such as URL_CONTENT</Abstract>
+			<DeclaredIn>SonicContent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *alias</Declaration>
+			
+			
+			<Anchor>//api/name/alias</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicContent/setDeployDate:</TokenIdentifier>
+			<Abstract type="html">The minimum date that the content is to be deployed at</Abstract>
+			<DeclaredIn>SonicContent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSDate *deployDate</Declaration>
+			
+			
+			<Anchor>//api/name/deployDate</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicContent/deployDate</TokenIdentifier>
+			<Abstract type="html">The minimum date that the content is to be deployed at</Abstract>
+			<DeclaredIn>SonicContent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSDate *deployDate</Declaration>
+			
+			
+			<Anchor>//api/name/deployDate</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SonicContent/deployDate</TokenIdentifier>
+			<Abstract type="html">The minimum date that the content is to be deployed at</Abstract>
+			<DeclaredIn>SonicContent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSDate *deployDate</Declaration>
+			
+			
+			<Anchor>//api/name/deployDate</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicContent/setFields:</TokenIdentifier>
+			<Abstract type="html">Array containing values in the fields property</Abstract>
+			<DeclaredIn>SonicContent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *fields</Declaration>
+			
+			
+			<Anchor>//api/name/fields</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicContent/fields</TokenIdentifier>
+			<Abstract type="html">Array containing values in the fields property</Abstract>
+			<DeclaredIn>SonicContent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *fields</Declaration>
+			
+			
+			<Anchor>//api/name/fields</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SonicContent/fields</TokenIdentifier>
+			<Abstract type="html">Array containing values in the fields property</Abstract>
+			<DeclaredIn>SonicContent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *fields</Declaration>
+			
+			
+			<Anchor>//api/name/fields</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicContent/setIdentifier:</TokenIdentifier>
+			<Abstract type="html">Unique identifier which represents that specific piece of content on the device</Abstract>
+			<DeclaredIn>SonicContent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) SonicId identifier</Declaration>
+			
+			
+			<Anchor>//api/name/identifier</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicContent/identifier</TokenIdentifier>
+			<Abstract type="html">Unique identifier which represents that specific piece of content on the device</Abstract>
+			<DeclaredIn>SonicContent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) SonicId identifier</Declaration>
+			
+			
+			<Anchor>//api/name/identifier</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SonicContent/identifier</TokenIdentifier>
+			<Abstract type="html">Unique identifier which represents that specific piece of content on the device</Abstract>
+			<DeclaredIn>SonicContent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) SonicId identifier</Declaration>
+			
+			
+			<Anchor>//api/name/identifier</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicContent/setIsActivated:</TokenIdentifier>
+			<Abstract type="html">Boolean specifying if the content has been activated, which means that it is available for delivery.</Abstract>
+			<DeclaredIn>SonicContent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL isActivated</Declaration>
+			
+			
+			<Anchor>//api/name/isActivated</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicContent/isActivated</TokenIdentifier>
+			<Abstract type="html">Boolean specifying if the content has been activated, which means that it is available for delivery.</Abstract>
+			<DeclaredIn>SonicContent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL isActivated</Declaration>
+			
+			
+			<Anchor>//api/name/isActivated</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SonicContent/isActivated</TokenIdentifier>
+			<Abstract type="html">Boolean specifying if the content has been activated, which means that it is available for delivery.</Abstract>
+			<DeclaredIn>SonicContent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL isActivated</Declaration>
+			
+			
+			<Anchor>//api/name/isActivated</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicContent/setIsDeployed:</TokenIdentifier>
+			<Abstract type="html">Boolean specifying if the content has been deployed, which means that it has been delivered in connection with a Sonic trigger</Abstract>
+			<DeclaredIn>SonicContent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL isDeployed</Declaration>
+			
+			
+			<Anchor>//api/name/isDeployed</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicContent/isDeployed</TokenIdentifier>
+			<Abstract type="html">Boolean specifying if the content has been deployed, which means that it has been delivered in connection with a Sonic trigger</Abstract>
+			<DeclaredIn>SonicContent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL isDeployed</Declaration>
+			
+			
+			<Anchor>//api/name/isDeployed</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SonicContent/isDeployed</TokenIdentifier>
+			<Abstract type="html">Boolean specifying if the content has been deployed, which means that it has been delivered in connection with a Sonic trigger</Abstract>
+			<DeclaredIn>SonicContent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL isDeployed</Declaration>
+			
+			
+			<Anchor>//api/name/isDeployed</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicContent/setPendingDisplay:</TokenIdentifier>
+			<Abstract type="html">Boolean specifying if the content is pendingdisplay, this value is there to prevent engaging/delivering a piece of content while it is in the process of being delivered</Abstract>
+			<DeclaredIn>SonicContent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL pendingDisplay</Declaration>
+			
+			
+			<Anchor>//api/name/pendingDisplay</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicContent/pendingDisplay</TokenIdentifier>
+			<Abstract type="html">Boolean specifying if the content is pendingdisplay, this value is there to prevent engaging/delivering a piece of content while it is in the process of being delivered</Abstract>
+			<DeclaredIn>SonicContent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL pendingDisplay</Declaration>
+			
+			
+			<Anchor>//api/name/pendingDisplay</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SonicContent/pendingDisplay</TokenIdentifier>
+			<Abstract type="html">Boolean specifying if the content is pendingdisplay, this value is there to prevent engaging/delivering a piece of content while it is in the process of being delivered</Abstract>
+			<DeclaredIn>SonicContent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL pendingDisplay</Declaration>
+			
+			
+			<Anchor>//api/name/pendingDisplay</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicContent/setLastUpdated:</TokenIdentifier>
+			<Abstract type="html">The date when the content was last updated in the CMS</Abstract>
+			<DeclaredIn>SonicContent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSDate *lastUpdated</Declaration>
+			
+			
+			<Anchor>//api/name/lastUpdated</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicContent/lastUpdated</TokenIdentifier>
+			<Abstract type="html">The date when the content was last updated in the CMS</Abstract>
+			<DeclaredIn>SonicContent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSDate *lastUpdated</Declaration>
+			
+			
+			<Anchor>//api/name/lastUpdated</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SonicContent/lastUpdated</TokenIdentifier>
+			<Abstract type="html">The date when the content was last updated in the CMS</Abstract>
+			<DeclaredIn>SonicContent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSDate *lastUpdated</Declaration>
+			
+			
+			<Anchor>//api/name/lastUpdated</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicContent/setState:</TokenIdentifier>
+			<Abstract type="html">State sent from the CMS, ACTIVE or DELETED</Abstract>
+			<DeclaredIn>SonicContent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *state</Declaration>
+			
+			
+			<Anchor>//api/name/state</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicContent/state</TokenIdentifier>
+			<Abstract type="html">State sent from the CMS, ACTIVE or DELETED</Abstract>
+			<DeclaredIn>SonicContent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *state</Declaration>
+			
+			
+			<Anchor>//api/name/state</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SonicContent/state</TokenIdentifier>
+			<Abstract type="html">State sent from the CMS, ACTIVE or DELETED</Abstract>
+			<DeclaredIn>SonicContent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *state</Declaration>
+			
+			
+			<Anchor>//api/name/state</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicContent/setProgramId:</TokenIdentifier>
+			<Abstract type="html">Identifier of the program to which the content belongs</Abstract>
+			<DeclaredIn>SonicContent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) SonicId programId</Declaration>
+			
+			
+			<Anchor>//api/name/programId</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicContent/programId</TokenIdentifier>
+			<Abstract type="html">Identifier of the program to which the content belongs</Abstract>
+			<DeclaredIn>SonicContent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) SonicId programId</Declaration>
+			
+			
+			<Anchor>//api/name/programId</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SonicContent/programId</TokenIdentifier>
+			<Abstract type="html">Identifier of the program to which the content belongs</Abstract>
+			<DeclaredIn>SonicContent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) SonicId programId</Declaration>
+			
+			
+			<Anchor>//api/name/programId</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicContent/setActivationId:</TokenIdentifier>
+			<Abstract type="html">Unique identifier for the activation to which the content is attached.</Abstract>
+			<DeclaredIn>SonicContent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) SonicId activationId</Declaration>
+			
+			
+			<Anchor>//api/name/activationId</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicContent/activationId</TokenIdentifier>
+			<Abstract type="html">Unique identifier for the activation to which the content is attached.</Abstract>
+			<DeclaredIn>SonicContent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) SonicId activationId</Declaration>
+			
+			
+			<Anchor>//api/name/activationId</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SonicContent/activationId</TokenIdentifier>
+			<Abstract type="html">Unique identifier for the activation to which the content is attached.</Abstract>
+			<DeclaredIn>SonicContent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) SonicId activationId</Declaration>
+			
+			
+			<Anchor>//api/name/activationId</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicContent/fieldsDictionary</TokenIdentifier>
+			<Abstract type="html">Dictionary of fields which are attached to the content. Fields are set in the CMS.</Abstract>
+			<DeclaredIn>SonicContent.h</DeclaredIn>
+			
+			<Declaration>- (NSDictionary *)fieldsDictionary</Declaration>
+			
+			
+			<Anchor>//api/name/fieldsDictionary</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

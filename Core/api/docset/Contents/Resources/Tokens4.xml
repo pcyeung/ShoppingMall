@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SonicBluetoothCodeHeard.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SonicBluetoothCodeHeard</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SonicBluetoothCodeHeard.h</DeclaredIn>
+            
+			
+			<NodeRef refid="4"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicBluetoothCodeHeard/setRssiValue:</TokenIdentifier>
+			<Abstract type="html">RSSI Value that was decoded, returns nil if none</Abstract>
+			<DeclaredIn>SonicBluetoothCodeHeard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) int rssiValue</Declaration>
+			
+			
+			<Anchor>//api/name/rssiValue</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicBluetoothCodeHeard/rssiValue</TokenIdentifier>
+			<Abstract type="html">RSSI Value that was decoded, returns nil if none</Abstract>
+			<DeclaredIn>SonicBluetoothCodeHeard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) int rssiValue</Declaration>
+			
+			
+			<Anchor>//api/name/rssiValue</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SonicBluetoothCodeHeard/rssiValue</TokenIdentifier>
+			<Abstract type="html">RSSI Value that was decoded, returns nil if none</Abstract>
+			<DeclaredIn>SonicBluetoothCodeHeard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) int rssiValue</Declaration>
+			
+			
+			<Anchor>//api/name/rssiValue</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicBluetoothCodeHeard/setProximity:</TokenIdentifier>
+			<Abstract type="html">Proximity for beacon decoded</Abstract>
+			<DeclaredIn>SonicBluetoothCodeHeard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CLProximity proximity</Declaration>
+			
+			
+			<Anchor>//api/name/proximity</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicBluetoothCodeHeard/proximity</TokenIdentifier>
+			<Abstract type="html">Proximity for beacon decoded</Abstract>
+			<DeclaredIn>SonicBluetoothCodeHeard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CLProximity proximity</Declaration>
+			
+			
+			<Anchor>//api/name/proximity</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SonicBluetoothCodeHeard/proximity</TokenIdentifier>
+			<Abstract type="html">Proximity for beacon decoded</Abstract>
+			<DeclaredIn>SonicBluetoothCodeHeard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CLProximity proximity</Declaration>
+			
+			
+			<Anchor>//api/name/proximity</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicBluetoothCodeHeard/setAccuracy:</TokenIdentifier>
+			<Abstract type="html">Accuracy of beacons</Abstract>
+			<DeclaredIn>SonicBluetoothCodeHeard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CLLocationAccuracy accuracy</Declaration>
+			
+			
+			<Anchor>//api/name/accuracy</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicBluetoothCodeHeard/accuracy</TokenIdentifier>
+			<Abstract type="html">Accuracy of beacons</Abstract>
+			<DeclaredIn>SonicBluetoothCodeHeard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CLLocationAccuracy accuracy</Declaration>
+			
+			
+			<Anchor>//api/name/accuracy</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SonicBluetoothCodeHeard/accuracy</TokenIdentifier>
+			<Abstract type="html">Accuracy of beacons</Abstract>
+			<DeclaredIn>SonicBluetoothCodeHeard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CLLocationAccuracy accuracy</Declaration>
+			
+			
+			<Anchor>//api/name/accuracy</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicBluetoothCodeHeard/setFromiBeacon:</TokenIdentifier>
+			<Abstract type="html">Boolean true if code heard using iBeacon, false if just regular BLE</Abstract>
+			<DeclaredIn>SonicBluetoothCodeHeard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL fromiBeacon</Declaration>
+			
+			
+			<Anchor>//api/name/fromiBeacon</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicBluetoothCodeHeard/fromiBeacon</TokenIdentifier>
+			<Abstract type="html">Boolean true if code heard using iBeacon, false if just regular BLE</Abstract>
+			<DeclaredIn>SonicBluetoothCodeHeard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL fromiBeacon</Declaration>
+			
+			
+			<Anchor>//api/name/fromiBeacon</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SonicBluetoothCodeHeard/fromiBeacon</TokenIdentifier>
+			<Abstract type="html">Boolean true if code heard using iBeacon, false if just regular BLE</Abstract>
+			<DeclaredIn>SonicBluetoothCodeHeard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL fromiBeacon</Declaration>
+			
+			
+			<Anchor>//api/name/fromiBeacon</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

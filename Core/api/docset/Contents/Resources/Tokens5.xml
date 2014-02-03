@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SonicCodeHeard.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SonicCodeHeard</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SonicCodeHeard.h</DeclaredIn>
+            
+			
+			<NodeRef refid="5"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicCodeHeard/setBeaconCode:</TokenIdentifier>
+			<Abstract type="html">Code that was heard by the beacon</Abstract>
+			<DeclaredIn>SonicCodeHeard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) long beaconCode</Declaration>
+			
+			
+			<Anchor>//api/name/beaconCode</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicCodeHeard/beaconCode</TokenIdentifier>
+			<Abstract type="html">Code that was heard by the beacon</Abstract>
+			<DeclaredIn>SonicCodeHeard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) long beaconCode</Declaration>
+			
+			
+			<Anchor>//api/name/beaconCode</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SonicCodeHeard/beaconCode</TokenIdentifier>
+			<Abstract type="html">Code that was heard by the beacon</Abstract>
+			<DeclaredIn>SonicCodeHeard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) long beaconCode</Declaration>
+			
+			
+			<Anchor>//api/name/beaconCode</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicCodeHeard/setTimeCodeHeard:</TokenIdentifier>
+			<Abstract type="html">The time that the code was heard</Abstract>
+			<DeclaredIn>SonicCodeHeard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) long timeCodeHeard</Declaration>
+			
+			
+			<Anchor>//api/name/timeCodeHeard</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicCodeHeard/timeCodeHeard</TokenIdentifier>
+			<Abstract type="html">The time that the code was heard</Abstract>
+			<DeclaredIn>SonicCodeHeard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) long timeCodeHeard</Declaration>
+			
+			
+			<Anchor>//api/name/timeCodeHeard</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SonicCodeHeard/timeCodeHeard</TokenIdentifier>
+			<Abstract type="html">The time that the code was heard</Abstract>
+			<DeclaredIn>SonicCodeHeard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) long timeCodeHeard</Declaration>
+			
+			
+			<Anchor>//api/name/timeCodeHeard</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicCodeHeard/setCodesHeard:</TokenIdentifier>
+			<Abstract type="html">Array of codes heard</Abstract>
+			<DeclaredIn>SonicCodeHeard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSArray *codesHeard</Declaration>
+			
+			
+			<Anchor>//api/name/codesHeard</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicCodeHeard/codesHeard</TokenIdentifier>
+			<Abstract type="html">Array of codes heard</Abstract>
+			<DeclaredIn>SonicCodeHeard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSArray *codesHeard</Declaration>
+			
+			
+			<Anchor>//api/name/codesHeard</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SonicCodeHeard/codesHeard</TokenIdentifier>
+			<Abstract type="html">Array of codes heard</Abstract>
+			<DeclaredIn>SonicCodeHeard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSArray *codesHeard</Declaration>
+			
+			
+			<Anchor>//api/name/codesHeard</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

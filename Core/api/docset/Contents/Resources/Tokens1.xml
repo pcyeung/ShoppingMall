@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/Sonic.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/Sonic</TokenIdentifier>
+			<Abstract type="html">The Sonic class manages the interaction with the Core Sonic Notify system.</Abstract>
+			<DeclaredIn>Sonic.h</DeclaredIn>
+            
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Sonic/setDelegate:</TokenIdentifier>
+			<Abstract type="html">The delegate that was initialized with the Sonic system</Abstract>
+			<DeclaredIn>Sonic.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) id&lt;SonicDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Sonic/delegate</TokenIdentifier>
+			<Abstract type="html">The delegate that was initialized with the Sonic system</Abstract>
+			<DeclaredIn>Sonic.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) id&lt;SonicDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/Sonic/delegate</TokenIdentifier>
+			<Abstract type="html">The delegate that was initialized with the Sonic system</Abstract>
+			<DeclaredIn>Sonic.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) id&lt;SonicDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/Sonic/sharedInstance</TokenIdentifier>
+			<Abstract type="html">Get the Sonic singleton to execute operations on</Abstract>
+			<DeclaredIn>Sonic.h</DeclaredIn>
+			
+			<Declaration>+ (Sonic *)sharedInstance</Declaration>
+			
+			<ReturnValue><Abstract type="html">Sonic singleton reference</Abstract></ReturnValue>
+			<Anchor>//api/name/sharedInstance</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Sonic/initializeWithApplicationGUID:andDelegate:</TokenIdentifier>
+			<Abstract type="html">Initialize the sonic system with the application guid and a delegate that will receive all callbacks.</Abstract>
+			<DeclaredIn>Sonic.h</DeclaredIn>
+			
+			<Declaration>- (void)initializeWithApplicationGUID:(NSString *)applicationGuid andDelegate:(id&lt;SonicDelegate&gt;)delegate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>applicationGuid</Name>
+					<Abstract type="html">unique identifier provided by Sonic</Abstract>
+				</Parameter><Parameter>
+					<Name>delegate</Name>
+					<Abstract type="html">for Sonic callbacks</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initializeWithApplicationGUID:andDelegate:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Sonic/startListening</TokenIdentifier>
+			<Abstract type="html">Start audio sampling</Abstract>
+			<DeclaredIn>Sonic.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)startListening</Declaration>
+			
+			<ReturnValue><Abstract type="html">whether or not listening began</Abstract></ReturnValue>
+			<Anchor>//api/name/startListening</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Sonic/stopListening</TokenIdentifier>
+			<Abstract type="html">Stop audio sampling</Abstract>
+			<DeclaredIn>Sonic.h</DeclaredIn>
+			
+			<Declaration>- (void)stopListening</Declaration>
+			
+			
+			<Anchor>//api/name/stopListening</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Sonic/forceLocationOff:</TokenIdentifier>
+			<Abstract type="html">Force location service off, this is a good opt-out opportunity
+for users</Abstract>
+			<DeclaredIn>Sonic.h</DeclaredIn>
+			
+			<Declaration>- (void)forceLocationOff:(BOOL)forceLocationOff</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>forceLocationOff</Name>
+					<Abstract type="html">whether or not to fully disable location services</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/forceLocationOff:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Sonic/forceBackgroundOff:</TokenIdentifier>
+			<Abstract type="html">Force background service off, this is a good opt-out opportunity
+for users. This will shut off all decoding by Sonic Notify, both audio and bluetooth.</Abstract>
+			<DeclaredIn>Sonic.h</DeclaredIn>
+			
+			<Declaration>- (void)forceBackgroundOff:(BOOL)forceBackgroundOff</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>forceBackgroundOff</Name>
+					<Abstract type="html">whether or not to fully disable background</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/forceBackgroundOff:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Sonic/reset</TokenIdentifier>
+			<Abstract type="html">Reset all content, activations, cached content, etc</Abstract>
+			<DeclaredIn>Sonic.h</DeclaredIn>
+			
+			<Declaration>- (void)reset</Declaration>
+			
+			
+			<Anchor>//api/name/reset</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Sonic/status</TokenIdentifier>
+			<Abstract type="html">Retrieve the current status of the SDK.</Abstract>
+			<DeclaredIn>Sonic.h</DeclaredIn>
+			
+			<Declaration>- (SonicSdkStatus)status</Declaration>
+			
+			
+			<Anchor>//api/name/status</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Sonic/setRemoteNotificationToken:</TokenIdentifier>
+			<Abstract type="html">Used to provide sonic with the remote notification token information for push notifications where
+required</Abstract>
+			<DeclaredIn>Sonic.h</DeclaredIn>
+			
+			<Declaration>- (void)setRemoteNotificationToken:(NSData *)tokenData</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tokenData</Name>
+					<Abstract type="html">token data from apple for remote notifications</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setRemoteNotificationToken:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Sonic/didReceiveRemoteNotification:</TokenIdentifier>
+			<Abstract type="html">Delegate method providing sonic with the more notification information that was sent.</Abstract>
+			<DeclaredIn>Sonic.h</DeclaredIn>
+			
+			<Declaration>- (void)didReceiveRemoteNotification:(NSDictionary *)userInfo</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>userInfo</Name>
+					<Abstract type="html">notification information</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didReceiveRemoteNotification:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Sonic/engagedContent:</TokenIdentifier>
+			<Abstract type="html">Mark an activation as engaged</Abstract>
+			<DeclaredIn>Sonic.h</DeclaredIn>
+			
+			<Declaration>- (void)engagedContent:(SonicContent *)content</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>content</Name>
+					<Abstract type="html">that was engaged</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/engagedContent:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Sonic/getActivationWithCodeHeard:</TokenIdentifier>
+			<Abstract type="html">Make a call to retrieve an activation for a SonicCodeHeard object</Abstract>
+			<DeclaredIn>Sonic.h</DeclaredIn>
+			
+			<Declaration>- (void)getActivationWithCodeHeard:(SonicCodeHeard *)code</Declaration>
+			
+			
+			<Anchor>//api/name/getActivationWithCodeHeard:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Sonic/activationForGUID:</TokenIdentifier>
+			<Abstract type="html">Retrieve an activation by GUID</Abstract>
+			<DeclaredIn>Sonic.h</DeclaredIn>
+			
+			<Declaration>- (SonicActivation *)activationForGUID:(NSString *)guid</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>guid</Name>
+					<Abstract type="html">of activation to retrieve</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/activationForGUID:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Sonic/contentForId:</TokenIdentifier>
+			<Abstract type="html">Retrieve content identified by its id</Abstract>
+			<DeclaredIn>Sonic.h</DeclaredIn>
+			
+			<Declaration>- (SonicContent *)contentForId:(SonicId)contentId</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>contentId</Name>
+					<Abstract type="html">of content to retrieve</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/contentForId:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Sonic/setAllContent:</TokenIdentifier>
+			<Abstract type="html">All of the current content in the system including non active content. This means any content that the SDK is aware of, which includes non activated cached content for future display</Abstract>
+			<DeclaredIn>Sonic.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *allContent</Declaration>
+			
+			
+			<Anchor>//api/name/allContent</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Sonic/allContent</TokenIdentifier>
+			<Abstract type="html">All of the current content in the system including non active content. This means any content that the SDK is aware of, which includes non activated cached content for future display</Abstract>
+			<DeclaredIn>Sonic.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *allContent</Declaration>
+			
+			
+			<Anchor>//api/name/allContent</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/Sonic/allContent</TokenIdentifier>
+			<Abstract type="html">All of the current content in the system including non active content. This means any content that the SDK is aware of, which includes non activated cached content for future display</Abstract>
+			<DeclaredIn>Sonic.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *allContent</Declaration>
+			
+			
+			<Anchor>//api/name/allContent</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Sonic/setAllActiveContent:</TokenIdentifier>
+			<Abstract type="html">All of the active, triggered content in the system. For content to appear in the array it must have been delivered by the CMS to the device because a connected beacon was &quot;heard&quot;</Abstract>
+			<DeclaredIn>Sonic.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *allActiveContent</Declaration>
+			
+			
+			<Anchor>//api/name/allActiveContent</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Sonic/allActiveContent</TokenIdentifier>
+			<Abstract type="html">All of the active, triggered content in the system. For content to appear in the array it must have been delivered by the CMS to the device because a connected beacon was &quot;heard&quot;</Abstract>
+			<DeclaredIn>Sonic.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *allActiveContent</Declaration>
+			
+			
+			<Anchor>//api/name/allActiveContent</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/Sonic/allActiveContent</TokenIdentifier>
+			<Abstract type="html">All of the active, triggered content in the system. For content to appear in the array it must have been delivered by the CMS to the device because a connected beacon was &quot;heard&quot;</Abstract>
+			<DeclaredIn>Sonic.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *allActiveContent</Declaration>
+			
+			
+			<Anchor>//api/name/allActiveContent</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Sonic/setAllScheduledContentInTheFuture:</TokenIdentifier>
+			<Abstract type="html">All of the future content in the system. Future content is content which has a SNSchedule in the future, which pertains to cached content in timeline programs which have delivery dates in the future.</Abstract>
+			<DeclaredIn>Sonic.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *allScheduledContentInTheFuture</Declaration>
+			
+			
+			<Anchor>//api/name/allScheduledContentInTheFuture</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Sonic/allScheduledContentInTheFuture</TokenIdentifier>
+			<Abstract type="html">All of the future content in the system. Future content is content which has a SNSchedule in the future, which pertains to cached content in timeline programs which have delivery dates in the future.</Abstract>
+			<DeclaredIn>Sonic.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *allScheduledContentInTheFuture</Declaration>
+			
+			
+			<Anchor>//api/name/allScheduledContentInTheFuture</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/Sonic/allScheduledContentInTheFuture</TokenIdentifier>
+			<Abstract type="html">All of the future content in the system. Future content is content which has a SNSchedule in the future, which pertains to cached content in timeline programs which have delivery dates in the future.</Abstract>
+			<DeclaredIn>Sonic.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *allScheduledContentInTheFuture</Declaration>
+			
+			
+			<Anchor>//api/name/allScheduledContentInTheFuture</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Sonic/setUuid:</TokenIdentifier>
+			<Abstract type="html">Access the unique identifier for this device (NOT UDID).</Abstract>
+			<DeclaredIn>Sonic.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain, readonly) NSString *uuid</Declaration>
+			
+			
+			<Anchor>//api/name/uuid</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Sonic/uuid</TokenIdentifier>
+			<Abstract type="html">Access the unique identifier for this device (NOT UDID).</Abstract>
+			<DeclaredIn>Sonic.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain, readonly) NSString *uuid</Declaration>
+			
+			
+			<Anchor>//api/name/uuid</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/Sonic/uuid</TokenIdentifier>
+			<Abstract type="html">Access the unique identifier for this device (NOT UDID).</Abstract>
+			<DeclaredIn>Sonic.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain, readonly) NSString *uuid</Declaration>
+			
+			
+			<Anchor>//api/name/uuid</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

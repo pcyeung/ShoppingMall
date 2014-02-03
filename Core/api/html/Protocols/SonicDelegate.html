@@ -1,0 +1,1066 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>SonicDelegate Protocol Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 961)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Core </a></h1>
+				<a id="developerHome" href="../index.html">Sonic Notify</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">SonicDelegate Protocol Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/sonic:cacheOfflineContent:">&nbsp;&nbsp;&nbsp;&nbsp;- sonic:cacheOfflineContent:</option>
+	
+	<option value="//api/name/sonic:deletedContentWithIdentifier:">&nbsp;&nbsp;&nbsp;&nbsp;- sonic:deletedContentWithIdentifier:</option>
+	
+	<option value="//api/name/sonic:didGeoFenceEntered:">&nbsp;&nbsp;&nbsp;&nbsp;- sonic:didGeoFenceEntered:</option>
+	
+	<option value="//api/name/sonic:didGeoFenceExited:">&nbsp;&nbsp;&nbsp;&nbsp;- sonic:didGeoFenceExited:</option>
+	
+	<option value="//api/name/sonic:didGeoFencesUpdated:">&nbsp;&nbsp;&nbsp;&nbsp;- sonic:didGeoFencesUpdated:</option>
+	
+	<option value="//api/name/sonic:didHearCode:">&nbsp;&nbsp;&nbsp;&nbsp;- sonic:didHearCode:</option>
+	
+	<option value="//api/name/sonic:didHearCode:withTimeInterval:">&nbsp;&nbsp;&nbsp;&nbsp;- sonic:didHearCode:withTimeInterval:</option>
+	
+	<option value="//api/name/sonic:didReceiveActivations:">&nbsp;&nbsp;&nbsp;&nbsp;- sonic:didReceiveActivations:</option>
+	
+	<option value="//api/name/sonic:didStatusChange:">&nbsp;&nbsp;&nbsp;&nbsp;- sonic:didStatusChange:</option>
+	
+	<option value="//api/name/sonic:withBluetoothState:">&nbsp;&nbsp;&nbsp;&nbsp;- sonic:withBluetoothState:</option>
+	
+	<option value="//api/name/sonicDidHearCode:">&nbsp;&nbsp;&nbsp;&nbsp;- sonicDidHearCode:</option>
+	
+	<option value="//api/name/sonicDidHearCode:withValue:">&nbsp;&nbsp;&nbsp;&nbsp;- sonicDidHearCode:withValue:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sonic:cacheOfflineContent:">sonic:cacheOfflineContent:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sonic:deletedContentWithIdentifier:">sonic:deletedContentWithIdentifier:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sonic:didGeoFenceEntered:">sonic:didGeoFenceEntered:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sonic:didGeoFenceExited:">sonic:didGeoFenceExited:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sonic:didGeoFencesUpdated:">sonic:didGeoFencesUpdated:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sonic:didHearCode:">sonic:didHearCode:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sonic:didHearCode:withTimeInterval:">sonic:didHearCode:withTimeInterval:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sonic:didReceiveActivations:">sonic:didReceiveActivations:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sonic:didStatusChange:">sonic:didStatusChange:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sonic:withBluetoothState:">sonic:withBluetoothState:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sonicDidHearCode:">sonicDidHearCode:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sonicDidHearCode:withValue:">sonicDidHearCode:withValue:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="SonicDelegate Protocol Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">SonicDelegate Protocol Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">Sonic.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p><a href="../Classes/Sonic.html">Sonic</a> delegate used for responding to sonic events, it includes several core functions</p>
+
+<ul>
+<li>Responding to the fact that a signal is in range</li>
+<li>Responding to a specific signal with the appropriate time index relative to the program</li>
+<li>Respond to receiving activations (content)</li>
+<li>Respond to content being deleted</li>
+<li>Respond to offline content caching</li>
+</ul>
+
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sonic:withBluetoothState:">&ndash;&nbsp;sonic:withBluetoothState:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sonicDidHearCode:">&ndash;&nbsp;sonicDidHearCode:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sonicDidHearCode:withValue:">&ndash;&nbsp;sonicDidHearCode:withValue:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sonic:didHearCode:withTimeInterval:">&ndash;&nbsp;sonic:didHearCode:withTimeInterval:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sonic:didHearCode:">&ndash;&nbsp;sonic:didHearCode:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sonic:didReceiveActivations:">&ndash;&nbsp;sonic:didReceiveActivations:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sonic:cacheOfflineContent:">&ndash;&nbsp;sonic:cacheOfflineContent:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sonic:deletedContentWithIdentifier:">&ndash;&nbsp;sonic:deletedContentWithIdentifier:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sonic:didStatusChange:">&ndash;&nbsp;sonic:didStatusChange:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sonic:didGeoFenceEntered:">&ndash;&nbsp;sonic:didGeoFenceEntered:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sonic:didGeoFenceExited:">&ndash;&nbsp;sonic:didGeoFenceExited:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sonic:didGeoFencesUpdated:">&ndash;&nbsp;sonic:didGeoFencesUpdated:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/sonic:cacheOfflineContent:" title="sonic:cacheOfflineContent:"></a>
+	<h3 class="subsubtitle method-title">sonic:cacheOfflineContent:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>When offline content is receive by <a href="../Classes/Sonic.html">Sonic</a> and cached internally (sonic only caches the raw data)
+it is then passed to the delegate to have the implementing system cache whatever data is required.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)sonic:(Sonic *)<em>sonic</em> cacheOfflineContent:(NSArray *)<em>contents</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sonic</em></dt>
+			<dd><p>instance that received content</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>contents</em></dt>
+			<dd><p>is an array of <a href="../Classes/SonicContent.html">SonicContent</a> that needs to have application level caching completed</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Sonic.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sonic:deletedContentWithIdentifier:" title="sonic:deletedContentWithIdentifier:"></a>
+	<h3 class="subsubtitle method-title">sonic:deletedContentWithIdentifier:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>When content is no longer required to be cached this method is executed for individual pieces of content</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)sonic:(Sonic *)<em>sonic</em> deletedContentWithIdentifier:(NSInteger)<em>identifier</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sonic</em></dt>
+			<dd><p>instance that received content</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>identifier</em></dt>
+			<dd><p>for content, this will match the <a href="../Classes/SonicContent.html">SonicContent</a>.identifier value provided in cacheOfflineContent</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Sonic.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sonic:didGeoFenceEntered:" title="sonic:didGeoFenceEntered:"></a>
+	<h3 class="subsubtitle method-title">sonic:didGeoFenceEntered:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>When the application has location enabled, and the user has broken a geo-fence this will be called with that location.
+It is not guaranteed that this is called when a user has entered a geo fence.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)sonic:(Sonic *)<em>sonic</em> didGeoFenceEntered:(SonicLocation *)<em>location</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sonic</em></dt>
+			<dd><p>instance that changed status</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>location</em></dt>
+			<dd><p>of the geo fence entered</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Sonic.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sonic:didGeoFenceExited:" title="sonic:didGeoFenceExited:"></a>
+	<h3 class="subsubtitle method-title">sonic:didGeoFenceExited:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>When the application has location enabled and the user has exited a geo-fence this will be called with that location.
+It is not guaranteed that this is called for each geo fence enter event.  For example the user turned off device while inside
+a geo fence.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)sonic:(Sonic *)<em>sonic</em> didGeoFenceExited:(SonicLocation *)<em>location</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sonic</em></dt>
+			<dd><p>instance that changed status</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>location</em></dt>
+			<dd><p>of the geo fence exited</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Sonic.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sonic:didGeoFencesUpdated:" title="sonic:didGeoFencesUpdated:"></a>
+	<h3 class="subsubtitle method-title">sonic:didGeoFencesUpdated:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>When the application has location enabled and <a href="../Classes/Sonic.html">Sonic</a> has determined that an updated set of locations should be monitored.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)sonic:(Sonic *)<em>sonic</em> didGeoFencesUpdated:(NSArray *)<em>locations</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sonic</em></dt>
+			<dd><p>instance that changed status</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>locations</em></dt>
+			<dd><p>of the geo fences to monitor</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Sonic.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sonic:didHearCode:" title="sonic:didHearCode:"></a>
+	<h3 class="subsubtitle method-title">sonic:didHearCode:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This is called when a sonic signal is heard and provides a code heard object</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)sonic:(Sonic *)<em>sonic</em> didHearCode:(SonicCodeHeard *)<em>code</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sonic</em></dt>
+			<dd><p>instance that heard the signal</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>codeHeard</em></dt>
+			<dd><p>instance of the <a href="../Classes/SonicCodeHeard.html">SonicCodeHeard</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>whether or not you are interested in receiving content for this signal, it is the implementers responsibility for throttling</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>NOTE: this does not mean content is available</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Sonic.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sonic:didHearCode:withTimeInterval:" title="sonic:didHearCode:withTimeInterval:"></a>
+	<h3 class="subsubtitle method-title">sonic:didHearCode:withTimeInterval:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This is called when a sonic signal is heard and provides a GUID which is specific to this particular signal
+only during the currently running process and provides the time interval as well if the signal has relative time.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)sonic:(Sonic *)<em>sonic</em> didHearCode:(NSString *)<em>codeGuid</em> withTimeInterval:(NSNumber *)<em>timeInterval</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sonic</em></dt>
+			<dd><p>instance that heard the signal</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>codeGuid</em></dt>
+			<dd><p>unique identifier for this signal that is only good for the current process</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>timeInterval</em></dt>
+			<dd><p>the relative time interval for the current signal (if applicable, i.e. movies, tv, etc)</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>whether or not you are interested in receiving content for this signal, it is the implementers responsibility for throttling
+@deprecated</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>NOTE: this does not mean content is available</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Sonic.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sonic:didReceiveActivations:" title="sonic:didReceiveActivations:"></a>
+	<h3 class="subsubtitle method-title">sonic:didReceiveActivations:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Did receive activations is called after URL#sonic:didHearCode:withTimeInterval returns YES.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)sonic:(Sonic *)<em>sonic</em> didReceiveActivations:(NSArray *)<em>activations</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sonic</em></dt>
+			<dd><p>instance that received content</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>activations</em></dt>
+			<dd><p>instances of <a href="../Classes/SonicActivation.html">SonicActivation</a> that contain, delivery time, content, etc</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The server is then queried (or offline content prepared) and activations delivered</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Sonic.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sonic:didStatusChange:" title="sonic:didStatusChange:"></a>
+	<h3 class="subsubtitle method-title">sonic:didStatusChange:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>When the SDK status changes, this method is executed with the new status</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)sonic:(Sonic *)<em>sonic</em> didStatusChange:(SonicSdkStatus)<em>status</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sonic</em></dt>
+			<dd><p>instance that changed status</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>status</em></dt>
+			<dd><p>new status of the SDK</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Sonic.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sonic:withBluetoothState:" title="sonic:withBluetoothState:"></a>
+	<h3 class="subsubtitle method-title">sonic:withBluetoothState:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Callback used to provide the state of the bluetooth radio on the device.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)sonic:(Sonic *)<em>sonic</em> withBluetoothState:(NSNumber *)<em>state</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sonic</em></dt>
+			<dd><ul>
+<li>the configured running instance of sonic notify</li>
+</ul>
+</dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>state</em></dt>
+			<dd><ul>
+<li>integer wich corresponds to CBCentralManager state</li>
+</ul>
+</dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>BOOL - boolean is whether or not sonic notify should continue to try to use bluetooth. If the state is that bluetooth is not turned on,
+continuing to pass back true will continue to ask the user to enable the radio</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Sonic.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sonicDidHearCode:" title="sonicDidHearCode:"></a>
+	<h3 class="subsubtitle method-title">sonicDidHearCode:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This is called when a sonic signal is heard</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)sonicDidHearCode:(Sonic *)<em>sonic</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sonic</em></dt>
+			<dd><p>instance that heard the signal</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>whether or not you are interested in receiving content for this signal, it is the implementers responsibility for throttling
+@deprecated</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>NOTE: this does not mean content is available</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Sonic.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sonicDidHearCode:withValue:" title="sonicDidHearCode:withValue:"></a>
+	<h3 class="subsubtitle method-title">sonicDidHearCode:withValue:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This is called when a sonic signal is heard with the code that was heard</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)sonicDidHearCode:(Sonic *)<em>sonic</em> withValue:(NSNumber *)<em>code</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sonic</em></dt>
+			<dd><p>instance that heard the signal</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>code</em></dt>
+			<dd><p>that was heard</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>whether or not you are interested in receiving content for this signal, it is the implementers responsibility for throttling</p>
+
+<p>@deprecated</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>NOTE: this does not mean content is available</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Sonic.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2014 Sonic Notify. All rights reserved. (Last updated: 2014-01-13)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

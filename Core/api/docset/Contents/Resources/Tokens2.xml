@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SonicActivation.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SonicActivation</TokenIdentifier>
+			<Abstract type="html">The Sonic Activation is the object which contains a piece of content that was delivered and other information about the delivery. An activation is used by the CMS to count and sort analytics. It is also useful on the device to view information on pieces of content which may have been delivered multiple times. Each activation has one and only one piece of content tied to it.</Abstract>
+			<DeclaredIn>SonicActivation.h</DeclaredIn>
+            
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicActivation/setIdentifier:</TokenIdentifier>
+			<Abstract type="html">Unique identifier which represents that specific piece of content on the device</Abstract>
+			<DeclaredIn>SonicActivation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) SonicId identifier</Declaration>
+			
+			
+			<Anchor>//api/name/identifier</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicActivation/identifier</TokenIdentifier>
+			<Abstract type="html">Unique identifier which represents that specific piece of content on the device</Abstract>
+			<DeclaredIn>SonicActivation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) SonicId identifier</Declaration>
+			
+			
+			<Anchor>//api/name/identifier</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SonicActivation/identifier</TokenIdentifier>
+			<Abstract type="html">Unique identifier which represents that specific piece of content on the device</Abstract>
+			<DeclaredIn>SonicActivation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) SonicId identifier</Declaration>
+			
+			
+			<Anchor>//api/name/identifier</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicActivation/setContentId:</TokenIdentifier>
+			<Abstract type="html">The unique indentifier of the content which is associated with this activation</Abstract>
+			<DeclaredIn>SonicActivation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) SonicId contentId</Declaration>
+			
+			
+			<Anchor>//api/name/contentId</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicActivation/contentId</TokenIdentifier>
+			<Abstract type="html">The unique indentifier of the content which is associated with this activation</Abstract>
+			<DeclaredIn>SonicActivation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) SonicId contentId</Declaration>
+			
+			
+			<Anchor>//api/name/contentId</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SonicActivation/contentId</TokenIdentifier>
+			<Abstract type="html">The unique indentifier of the content which is associated with this activation</Abstract>
+			<DeclaredIn>SonicActivation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) SonicId contentId</Declaration>
+			
+			
+			<Anchor>//api/name/contentId</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicActivation/setEngaged:</TokenIdentifier>
+			<Abstract type="html">A boolean to specify whether the activation has been engaged or not, engagement means that the content has been shown to the user.</Abstract>
+			<DeclaredIn>SonicActivation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL engaged</Declaration>
+			
+			
+			<Anchor>//api/name/engaged</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicActivation/engaged</TokenIdentifier>
+			<Abstract type="html">A boolean to specify whether the activation has been engaged or not, engagement means that the content has been shown to the user.</Abstract>
+			<DeclaredIn>SonicActivation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL engaged</Declaration>
+			
+			
+			<Anchor>//api/name/engaged</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SonicActivation/engaged</TokenIdentifier>
+			<Abstract type="html">A boolean to specify whether the activation has been engaged or not, engagement means that the content has been shown to the user.</Abstract>
+			<DeclaredIn>SonicActivation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL engaged</Declaration>
+			
+			
+			<Anchor>//api/name/engaged</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicActivation/setGuid:</TokenIdentifier>
+			<Abstract type="html">The activation GUID is a unique across the device and CMS identifier of the activation</Abstract>
+			<DeclaredIn>SonicActivation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *guid</Declaration>
+			
+			
+			<Anchor>//api/name/guid</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicActivation/guid</TokenIdentifier>
+			<Abstract type="html">The activation GUID is a unique across the device and CMS identifier of the activation</Abstract>
+			<DeclaredIn>SonicActivation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *guid</Declaration>
+			
+			
+			<Anchor>//api/name/guid</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SonicActivation/guid</TokenIdentifier>
+			<Abstract type="html">The activation GUID is a unique across the device and CMS identifier of the activation</Abstract>
+			<DeclaredIn>SonicActivation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *guid</Declaration>
+			
+			
+			<Anchor>//api/name/guid</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicActivation/setCode:</TokenIdentifier>
+			<Abstract type="html">The Sonic Notify code (i.e. beacon code or trigger code) which was used to trigger the activation</Abstract>
+			<DeclaredIn>SonicActivation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) long long int code</Declaration>
+			
+			
+			<Anchor>//api/name/code</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicActivation/code</TokenIdentifier>
+			<Abstract type="html">The Sonic Notify code (i.e. beacon code or trigger code) which was used to trigger the activation</Abstract>
+			<DeclaredIn>SonicActivation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) long long int code</Declaration>
+			
+			
+			<Anchor>//api/name/code</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SonicActivation/code</TokenIdentifier>
+			<Abstract type="html">The Sonic Notify code (i.e. beacon code or trigger code) which was used to trigger the activation</Abstract>
+			<DeclaredIn>SonicActivation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) long long int code</Declaration>
+			
+			
+			<Anchor>//api/name/code</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicActivation/setTimeIndex:</TokenIdentifier>
+			<Abstract type="html">Some sources of Sonic Notify triggers have timeIndexs which represent the millisecond point in certain Sonic Notify transmissions.</Abstract>
+			<DeclaredIn>SonicActivation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) long long int timeIndex</Declaration>
+			
+			
+			<Anchor>//api/name/timeIndex</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicActivation/timeIndex</TokenIdentifier>
+			<Abstract type="html">Some sources of Sonic Notify triggers have timeIndexs which represent the millisecond point in certain Sonic Notify transmissions.</Abstract>
+			<DeclaredIn>SonicActivation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) long long int timeIndex</Declaration>
+			
+			
+			<Anchor>//api/name/timeIndex</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SonicActivation/timeIndex</TokenIdentifier>
+			<Abstract type="html">Some sources of Sonic Notify triggers have timeIndexs which represent the millisecond point in certain Sonic Notify transmissions.</Abstract>
+			<DeclaredIn>SonicActivation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) long long int timeIndex</Declaration>
+			
+			
+			<Anchor>//api/name/timeIndex</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicActivation/setContent:</TokenIdentifier>
+			<Abstract type="html">The single SonicContent attached to the activation</Abstract>
+			<DeclaredIn>SonicActivation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) SonicContent *content</Declaration>
+			
+			
+			<Anchor>//api/name/content</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicActivation/content</TokenIdentifier>
+			<Abstract type="html">The single SonicContent attached to the activation</Abstract>
+			<DeclaredIn>SonicActivation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) SonicContent *content</Declaration>
+			
+			
+			<Anchor>//api/name/content</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SonicActivation/content</TokenIdentifier>
+			<Abstract type="html">The single SonicContent attached to the activation</Abstract>
+			<DeclaredIn>SonicActivation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) SonicContent *content</Declaration>
+			
+			
+			<Anchor>//api/name/content</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

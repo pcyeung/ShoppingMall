@@ -1,0 +1,230 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Core Reference</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 961)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="index.html">Core </a></h1>
+				<a id="developerHome" href="index.html">Sonic Notify</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">Core Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar"></ul>
+		</header>
+		<article>
+			<div id="overview_contents" role="main">
+				<div class="main-navigation navigation-top">
+					<a href="hierarchy.html">Next</a>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">Core Reference</h1>
+					</div>		
+				</div>
+				<div id="container">
+					
+					<div class="section section-overview index-overview">
+						
+						
+						<h1>iOS SDK Setup Overview</h1>
+
+<h2>Core SDK Description</h2>
+
+<p>The SonicCore SDK is really a &ldquo;no guts, no glory&rdquo; tool. In order to properly use the SDK you&rsquo;ll be creating a completely integrated application and execution platform specific to you own needs.</p>
+
+<p>A few examples of the differences between CORE and UI:
+    * Core does not know how to handle content
+    * Core will provide time interval information for synchronized content (second screen applications, etc) Core does not provide any visual components
+    * Core is a power user tool and is far more complicated to integrate.</p>
+
+<h2>Setup</h2>
+
+<p>There are a few really easy steps that you have to undertake in order to integrate <a href="Classes/Sonic.html">Sonic</a> Core</p>
+
+<ol>
+<li>Create a folder under your project root called &ldquo;SonicNotify&rdquo;, we&rsquo;ll refer to this as &lt;sonic-root> (for example/Users/myname/Development/MyApp/SonicNotify)</li>
+<li>Copy &lt;sdk-root>/SonicCore/headers and &lt;sdk-root>/SonicCore/lib/libsonicnotify.a to &lt;sonic-root>/</li>
+<li>Add the following libraries and frameworks:
+
+<pre><code> * CoreLocation.framework
+ * AVFoundation.framework
+</code></pre>
+
+<ul>
+<li>CoreBluetooth.framework</li>
+<li>MobileCoreServices.framework</li>
+<li>SystemConfiguration.framework</li>
+<li>CoreAudio.framework</li>
+<li>AudioToolbox.framework</li>
+<li>Security.framework</li>
+<li>UIKit.framework</li>
+<li>Foundation.framework</li>
+<li>libsqlite3.dylib</li>
+<li>libstdc++.dylib</li>
+<li>libsonicnotify.a
+
+<ul>
+<li><a href="Classes/Sonic.html">Sonic</a>.Framework</li>
+</ul>
+</li>
+</ul>
+
+
+<p> CoreLocation.framework is only required if you check &ldquo;Use Location&rdquo; when configuring your application and is only used for Geo-Fencing capabilities.</p></li>
+<li>Now go into your project configuration and make sure you specify <strong>-all_load</strong> in your &ldquo;Other Linker Flags&rdquo;</li>
+<li>Login to studio.sonicnotify.com and get a valid APP_GUID. <em>*WITHOUT A VALID APP_GUID, NOTHING IN THE SDK WILL WORK</em></li>
+</ol>
+
+
+<h2>Initializing</h2>
+
+<p>Initializing SonicCore is a very quick process, simply call initialize.</p>
+
+<p> That said SonicCore is extremely powerful and can be somewhat complex, so we suggest you run SonicCoreSample (see Samples), which will show you a realtime log as callbacks occur while the SDK is running. You should pass a delegate that implements SonicDelegate described below and you MUST pass a valid application GUID, below is an example of how to initialize the system. One more note, unlike in the SonicUI library, the actual listening process is managed by the application at the end of the chain (YOUR APP), so don&rsquo;t forget to call [[Sonic sharedInstance] startListening].</p>
+
+<h4>Setup Calls</h4>
+
+<pre><code>             /**
+             * The goal of this sample is to illustrate the power of the SonicCore SDK and illustrate the lifecycle of callbacks.
+             *
+             * @param launchOptions includes a disctionary of all the parameters used for launch
+             */
+             - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+                 /** This is the call that starts everything, simply pass your application GUID and off you go **/
+                 [[Sonic sharedInstance] initializeWithApplicationGUID:@"You app GUID here" andDelegate:self];
+                 [[Sonic sharedInstance] startListening];
+
+             }
+             [self.window addSubview:self.viewController.view];
+             [self.window makeKeyAndVisible];
+             return YES;
+
+             /**
+             * When your application terminates it is important that you call stopListening, in the
+             * SonicUI library this is done for you, but not in the core library.
+             *
+             * @param application that is terminating
+             */
+             - (void) applicationWillTerminate:(UIApplication *)application {
+                 [[Sonic sharedInstance] stopListening];
+             }
+</code></pre>
+
+<h4>A few important callbacks</h4>
+
+<pre><code>             /**
+              * This is called when a sonic signal is heard and provides a GUID which is specific to this particular signal
+              * only during the currently running process and provides the time interval as well if the signal has relative time.
+              *
+              * NOTE: this does not mean content is available
+              *
+              * @param sonic instance that heard the signal
+              * @param codeGuid unique identifier for this signal that is only good for the current process
+              * @param timeInterval the relative time interval for the current signal(if applicable, i.e. movies, tv, etc)
+              *
+              * @return whether or not you are interested in receiving content for this signal, it is the implementers responsibility for throttling
+              *
+              */
+             - (BOOL) sonic: (Sonic *)sonic didHearCode: (NSString *) codeGuid withTimeInterval: (NSTimeInterval) timeInterval {
+                 LOG_OUTPUT(@"Did hear code %@ with time interval %f", codeGuid,timeInterval);
+                 return YES;
+             }
+
+
+             /**
+              * Did receive activations is called after
+             URL#sonic:didHearCode:withTimeInterval returns YES.
+              *
+              * The server is then queried (or offline content prepared) and activations delivered
+              *
+              * @param sonic instance that received content
+              * @param activations instances of SonicActivation that contain, delivery
+             time, content, etc
+              */
+             - (void) sonic: (Sonic *)sonic didReceiveActivations: (NSArray *) activations {
+                 LOG_OUTPUT(@"Did receive activations: %@", activations);
+             }
+</code></pre>
+
+<h2>Samples</h2>
+
+<p>We currently provide 3 sample applications</p>
+
+<ul>
+<li>SonicCoreSample</li>
+<li>SonicUISample</li>
+<li>SonicAdSample</li>
+</ul>
+
+
+<p>you can find them in the Samples folder of the SDK</p>
+						
+						
+					</div>
+					
+                        
+                    
+					
+					
+					<div class="index-column">
+						<h2 class="index-title">Class References</h2>
+						<ul>
+							
+							<li><a href="Classes/Sonic.html">Sonic</a></li>
+							
+							<li><a href="Classes/SonicActivation.html">SonicActivation</a></li>
+							
+							<li><a href="Classes/SonicAudioHeardCode.html">SonicAudioHeardCode</a></li>
+							
+							<li><a href="Classes/SonicBluetoothCodeHeard.html">SonicBluetoothCodeHeard</a></li>
+							
+							<li><a href="Classes/SonicCodeHeard.html">SonicCodeHeard</a></li>
+							
+							<li><a href="Classes/SonicContent.html">SonicContent</a></li>
+							
+							<li><a href="Classes/SonicLocation.html">SonicLocation</a></li>
+							
+						</ul>
+					</div>
+					
+					
+						
+					<div class="index-column">
+						
+						<h2 class="index-title">Protocol References</h2>
+						<ul>
+							
+							<li><a href="Protocols/SonicDelegate.html">SonicDelegate</a></li>
+							
+						</ul>
+						
+                        
+						
+					</div>
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<a href="hierarchy.html">Next</a>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2014 Sonic Notify. All rights reserved. (Last updated: 2014-01-13)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
+						
+	
+					</div>
+				</div>
+			</div>
+		</article>		
+	</body>
+</html>

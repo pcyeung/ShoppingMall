@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SonicAudioHeardCode.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SonicAudioHeardCode</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SonicAudioHeardCode.h</DeclaredIn>
+            
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicAudioHeardCode/setTimeInterval:</TokenIdentifier>
+			<Abstract type="html">Time Interval that was decoded, returns nil if none</Abstract>
+			<DeclaredIn>SonicAudioHeardCode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) long timeInterval</Declaration>
+			
+			
+			<Anchor>//api/name/timeInterval</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicAudioHeardCode/timeInterval</TokenIdentifier>
+			<Abstract type="html">Time Interval that was decoded, returns nil if none</Abstract>
+			<DeclaredIn>SonicAudioHeardCode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) long timeInterval</Declaration>
+			
+			
+			<Anchor>//api/name/timeInterval</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SonicAudioHeardCode/timeInterval</TokenIdentifier>
+			<Abstract type="html">Time Interval that was decoded, returns nil if none</Abstract>
+			<DeclaredIn>SonicAudioHeardCode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) long timeInterval</Declaration>
+			
+			
+			<Anchor>//api/name/timeInterval</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicAudioHeardCode/setCustomPayload:</TokenIdentifier>
+			<Abstract type="html">Custom Payload that was decoded, returns nil if none</Abstract>
+			<DeclaredIn>SonicAudioHeardCode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) int customPayload</Declaration>
+			
+			
+			<Anchor>//api/name/customPayload</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicAudioHeardCode/customPayload</TokenIdentifier>
+			<Abstract type="html">Custom Payload that was decoded, returns nil if none</Abstract>
+			<DeclaredIn>SonicAudioHeardCode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) int customPayload</Declaration>
+			
+			
+			<Anchor>//api/name/customPayload</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SonicAudioHeardCode/customPayload</TokenIdentifier>
+			<Abstract type="html">Custom Payload that was decoded, returns nil if none</Abstract>
+			<DeclaredIn>SonicAudioHeardCode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) int customPayload</Declaration>
+			
+			
+			<Anchor>//api/name/customPayload</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

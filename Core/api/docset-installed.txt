@@ -1,0 +1,4 @@
+Documentation set was installed to Xcode!
+
+Path: /Users/localadmin/Library/Developer/Shared/Documentation/DocSets/com.sonicnotify.Core.docset
+Time: 2014-01-13 16:07:16 +0000

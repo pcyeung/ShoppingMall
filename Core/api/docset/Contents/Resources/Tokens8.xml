@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/SonicDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/SonicDelegate</TokenIdentifier>
+			<Abstract type="html">Sonic delegate used for responding to sonic events, it includes several core functions</Abstract>
+			<DeclaredIn>Sonic.h</DeclaredIn>
+            
+			
+			<NodeRef refid="8"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SonicDelegate/sonic:withBluetoothState:</TokenIdentifier>
+			<Abstract type="html">Callback used to provide the state of the bluetooth radio on the device.</Abstract>
+			<DeclaredIn>Sonic.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)sonic:(Sonic *)sonic withBluetoothState:(NSNumber *)state</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sonic</Name>
+					<Abstract type="html">- the configured running instance of sonic notify</Abstract>
+				</Parameter><Parameter>
+					<Name>state</Name>
+					<Abstract type="html">- integer wich corresponds to CBCentralManager state</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">BOOL - boolean is whether or not sonic notify should continue to try to use bluetooth. If the state is that bluetooth is not turned on,
+continuing to pass back true will continue to ask the user to enable the radio</Abstract></ReturnValue>
+			<Anchor>//api/name/sonic:withBluetoothState:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SonicDelegate/sonicDidHearCode:</TokenIdentifier>
+			<Abstract type="html">This is called when a sonic signal is heard</Abstract>
+			<DeclaredIn>Sonic.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)sonicDidHearCode:(Sonic *)sonic</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sonic</Name>
+					<Abstract type="html">instance that heard the signal</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">whether or not you are interested in receiving content for this signal, it is the implementers responsibility for throttling
+@deprecated</Abstract></ReturnValue>
+			<Anchor>//api/name/sonicDidHearCode:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SonicDelegate/sonicDidHearCode:withValue:</TokenIdentifier>
+			<Abstract type="html">This is called when a sonic signal is heard with the code that was heard</Abstract>
+			<DeclaredIn>Sonic.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)sonicDidHearCode:(Sonic *)sonic withValue:(NSNumber *)code</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sonic</Name>
+					<Abstract type="html">instance that heard the signal</Abstract>
+				</Parameter><Parameter>
+					<Name>code</Name>
+					<Abstract type="html">that was heard</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">whether or not you are interested in receiving content for this signal, it is the implementers responsibility for throttling
+
+@deprecated</Abstract></ReturnValue>
+			<Anchor>//api/name/sonicDidHearCode:withValue:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SonicDelegate/sonic:didHearCode:withTimeInterval:</TokenIdentifier>
+			<Abstract type="html">This is called when a sonic signal is heard and provides a GUID which is specific to this particular signal
+only during the currently running process and provides the time interval as well if the signal has relative time.</Abstract>
+			<DeclaredIn>Sonic.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)sonic:(Sonic *)sonic didHearCode:(NSString *)codeGuid withTimeInterval:(NSNumber *)timeInterval</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sonic</Name>
+					<Abstract type="html">instance that heard the signal</Abstract>
+				</Parameter><Parameter>
+					<Name>codeGuid</Name>
+					<Abstract type="html">unique identifier for this signal that is only good for the current process</Abstract>
+				</Parameter><Parameter>
+					<Name>timeInterval</Name>
+					<Abstract type="html">the relative time interval for the current signal (if applicable, i.e. movies, tv, etc)</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">whether or not you are interested in receiving content for this signal, it is the implementers responsibility for throttling
+@deprecated</Abstract></ReturnValue>
+			<Anchor>//api/name/sonic:didHearCode:withTimeInterval:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SonicDelegate/sonic:didHearCode:</TokenIdentifier>
+			<Abstract type="html">This is called when a sonic signal is heard and provides a code heard object</Abstract>
+			<DeclaredIn>Sonic.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)sonic:(Sonic *)sonic didHearCode:(SonicCodeHeard *)code</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sonic</Name>
+					<Abstract type="html">instance that heard the signal</Abstract>
+				</Parameter><Parameter>
+					<Name>codeHeard</Name>
+					<Abstract type="html">instance of the SonicCodeHeard</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">whether or not you are interested in receiving content for this signal, it is the implementers responsibility for throttling</Abstract></ReturnValue>
+			<Anchor>//api/name/sonic:didHearCode:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SonicDelegate/sonic:didReceiveActivations:</TokenIdentifier>
+			<Abstract type="html">Did receive activations is called after URL#sonic:didHearCode:withTimeInterval returns YES.</Abstract>
+			<DeclaredIn>Sonic.h</DeclaredIn>
+			
+			<Declaration>- (void)sonic:(Sonic *)sonic didReceiveActivations:(NSArray *)activations</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sonic</Name>
+					<Abstract type="html">instance that received content</Abstract>
+				</Parameter><Parameter>
+					<Name>activations</Name>
+					<Abstract type="html">instances of SonicActivation that contain, delivery time, content, etc</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sonic:didReceiveActivations:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SonicDelegate/sonic:cacheOfflineContent:</TokenIdentifier>
+			<Abstract type="html">When offline content is receive by Sonic and cached internally (sonic only caches the raw data)
+it is then passed to the delegate to have the implementing system cache whatever data is required.</Abstract>
+			<DeclaredIn>Sonic.h</DeclaredIn>
+			
+			<Declaration>- (void)sonic:(Sonic *)sonic cacheOfflineContent:(NSArray *)contents</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sonic</Name>
+					<Abstract type="html">instance that received content</Abstract>
+				</Parameter><Parameter>
+					<Name>contents</Name>
+					<Abstract type="html">is an array of SonicContent that needs to have application level caching completed</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sonic:cacheOfflineContent:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SonicDelegate/sonic:deletedContentWithIdentifier:</TokenIdentifier>
+			<Abstract type="html">When content is no longer required to be cached this method is executed for individual pieces of content</Abstract>
+			<DeclaredIn>Sonic.h</DeclaredIn>
+			
+			<Declaration>- (void)sonic:(Sonic *)sonic deletedContentWithIdentifier:(NSInteger)identifier</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sonic</Name>
+					<Abstract type="html">instance that received content</Abstract>
+				</Parameter><Parameter>
+					<Name>identifier</Name>
+					<Abstract type="html">for content, this will match the SonicContent.identifier value provided in cacheOfflineContent</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sonic:deletedContentWithIdentifier:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SonicDelegate/sonic:didStatusChange:</TokenIdentifier>
+			<Abstract type="html">When the SDK status changes, this method is executed with the new status</Abstract>
+			<DeclaredIn>Sonic.h</DeclaredIn>
+			
+			<Declaration>- (void)sonic:(Sonic *)sonic didStatusChange:(SonicSdkStatus)status</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sonic</Name>
+					<Abstract type="html">instance that changed status</Abstract>
+				</Parameter><Parameter>
+					<Name>status</Name>
+					<Abstract type="html">new status of the SDK</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sonic:didStatusChange:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SonicDelegate/sonic:didGeoFenceEntered:</TokenIdentifier>
+			<Abstract type="html">When the application has location enabled, and the user has broken a geo-fence this will be called with that location.
+It is not guaranteed that this is called when a user has entered a geo fence.</Abstract>
+			<DeclaredIn>Sonic.h</DeclaredIn>
+			
+			<Declaration>- (void)sonic:(Sonic *)sonic didGeoFenceEntered:(SonicLocation *)location</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sonic</Name>
+					<Abstract type="html">instance that changed status</Abstract>
+				</Parameter><Parameter>
+					<Name>location</Name>
+					<Abstract type="html">of the geo fence entered</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sonic:didGeoFenceEntered:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SonicDelegate/sonic:didGeoFenceExited:</TokenIdentifier>
+			<Abstract type="html">When the application has location enabled and the user has exited a geo-fence this will be called with that location.
+It is not guaranteed that this is called for each geo fence enter event.  For example the user turned off device while inside
+a geo fence.</Abstract>
+			<DeclaredIn>Sonic.h</DeclaredIn>
+			
+			<Declaration>- (void)sonic:(Sonic *)sonic didGeoFenceExited:(SonicLocation *)location</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sonic</Name>
+					<Abstract type="html">instance that changed status</Abstract>
+				</Parameter><Parameter>
+					<Name>location</Name>
+					<Abstract type="html">of the geo fence exited</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sonic:didGeoFenceExited:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SonicDelegate/sonic:didGeoFencesUpdated:</TokenIdentifier>
+			<Abstract type="html">When the application has location enabled and Sonic has determined that an updated set of locations should be monitored.</Abstract>
+			<DeclaredIn>Sonic.h</DeclaredIn>
+			
+			<Declaration>- (void)sonic:(Sonic *)sonic didGeoFencesUpdated:(NSArray *)locations</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sonic</Name>
+					<Abstract type="html">instance that changed status</Abstract>
+				</Parameter><Parameter>
+					<Name>locations</Name>
+					<Abstract type="html">of the geo fences to monitor</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sonic:didGeoFencesUpdated:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

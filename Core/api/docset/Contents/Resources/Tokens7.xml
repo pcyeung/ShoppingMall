@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SonicLocation.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SonicLocation</TokenIdentifier>
+			<Abstract type="html">Sonic Locatios are the objects which govern the geo-fence operation of the sdk. The geographic locations where the sdk starts and stops listening for Sonic triggers. The behaviour and actual geographic points are added in the CMS</Abstract>
+			<DeclaredIn>SonicLocation.h</DeclaredIn>
+            
+			
+			<NodeRef refid="7"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicLocation/setIdentifier:</TokenIdentifier>
+			<Abstract type="html">the identifier unique on the device for the Sonic Location</Abstract>
+			<DeclaredIn>SonicLocation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) SonicId identifier</Declaration>
+			
+			
+			<Anchor>//api/name/identifier</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicLocation/identifier</TokenIdentifier>
+			<Abstract type="html">the identifier unique on the device for the Sonic Location</Abstract>
+			<DeclaredIn>SonicLocation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) SonicId identifier</Declaration>
+			
+			
+			<Anchor>//api/name/identifier</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SonicLocation/identifier</TokenIdentifier>
+			<Abstract type="html">the identifier unique on the device for the Sonic Location</Abstract>
+			<DeclaredIn>SonicLocation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) SonicId identifier</Declaration>
+			
+			
+			<Anchor>//api/name/identifier</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicLocation/setName:</TokenIdentifier>
+			<Abstract type="html">The name of the location entered in the CMS</Abstract>
+			<DeclaredIn>SonicLocation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicLocation/name</TokenIdentifier>
+			<Abstract type="html">The name of the location entered in the CMS</Abstract>
+			<DeclaredIn>SonicLocation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SonicLocation/name</TokenIdentifier>
+			<Abstract type="html">The name of the location entered in the CMS</Abstract>
+			<DeclaredIn>SonicLocation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicLocation/setEndTime:</TokenIdentifier>
+			<Abstract type="html">The date at which the location is no longer valid and has expired</Abstract>
+			<DeclaredIn>SonicLocation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSDate *endTime</Declaration>
+			
+			
+			<Anchor>//api/name/endTime</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicLocation/endTime</TokenIdentifier>
+			<Abstract type="html">The date at which the location is no longer valid and has expired</Abstract>
+			<DeclaredIn>SonicLocation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSDate *endTime</Declaration>
+			
+			
+			<Anchor>//api/name/endTime</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SonicLocation/endTime</TokenIdentifier>
+			<Abstract type="html">The date at which the location is no longer valid and has expired</Abstract>
+			<DeclaredIn>SonicLocation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSDate *endTime</Declaration>
+			
+			
+			<Anchor>//api/name/endTime</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicLocation/setStartTime:</TokenIdentifier>
+			<Abstract type="html">The date at which the location starts being valid</Abstract>
+			<DeclaredIn>SonicLocation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSDate *startTime</Declaration>
+			
+			
+			<Anchor>//api/name/startTime</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicLocation/startTime</TokenIdentifier>
+			<Abstract type="html">The date at which the location starts being valid</Abstract>
+			<DeclaredIn>SonicLocation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSDate *startTime</Declaration>
+			
+			
+			<Anchor>//api/name/startTime</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SonicLocation/startTime</TokenIdentifier>
+			<Abstract type="html">The date at which the location starts being valid</Abstract>
+			<DeclaredIn>SonicLocation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSDate *startTime</Declaration>
+			
+			
+			<Anchor>//api/name/startTime</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicLocation/setLatitude:</TokenIdentifier>
+			<Abstract type="html">the latitude of the location</Abstract>
+			<DeclaredIn>SonicLocation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) double latitude</Declaration>
+			
+			
+			<Anchor>//api/name/latitude</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicLocation/latitude</TokenIdentifier>
+			<Abstract type="html">the latitude of the location</Abstract>
+			<DeclaredIn>SonicLocation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) double latitude</Declaration>
+			
+			
+			<Anchor>//api/name/latitude</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SonicLocation/latitude</TokenIdentifier>
+			<Abstract type="html">the latitude of the location</Abstract>
+			<DeclaredIn>SonicLocation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) double latitude</Declaration>
+			
+			
+			<Anchor>//api/name/latitude</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicLocation/setLongitude:</TokenIdentifier>
+			<Abstract type="html">the longitude of the location</Abstract>
+			<DeclaredIn>SonicLocation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) double longitude</Declaration>
+			
+			
+			<Anchor>//api/name/longitude</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicLocation/longitude</TokenIdentifier>
+			<Abstract type="html">the longitude of the location</Abstract>
+			<DeclaredIn>SonicLocation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) double longitude</Declaration>
+			
+			
+			<Anchor>//api/name/longitude</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SonicLocation/longitude</TokenIdentifier>
+			<Abstract type="html">the longitude of the location</Abstract>
+			<DeclaredIn>SonicLocation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) double longitude</Declaration>
+			
+			
+			<Anchor>//api/name/longitude</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicLocation/setRadius:</TokenIdentifier>
+			<Abstract type="html">the range of the location which represents the radius from the center point</Abstract>
+			<DeclaredIn>SonicLocation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) double radius</Declaration>
+			
+			
+			<Anchor>//api/name/radius</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicLocation/radius</TokenIdentifier>
+			<Abstract type="html">the range of the location which represents the radius from the center point</Abstract>
+			<DeclaredIn>SonicLocation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) double radius</Declaration>
+			
+			
+			<Anchor>//api/name/radius</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SonicLocation/radius</TokenIdentifier>
+			<Abstract type="html">the range of the location which represents the radius from the center point</Abstract>
+			<DeclaredIn>SonicLocation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) double radius</Declaration>
+			
+			
+			<Anchor>//api/name/radius</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicLocation/setState:</TokenIdentifier>
+			<Abstract type="html">the state of the location</Abstract>
+			<DeclaredIn>SonicLocation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *state</Declaration>
+			
+			
+			<Anchor>//api/name/state</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicLocation/state</TokenIdentifier>
+			<Abstract type="html">the state of the location</Abstract>
+			<DeclaredIn>SonicLocation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *state</Declaration>
+			
+			
+			<Anchor>//api/name/state</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SonicLocation/state</TokenIdentifier>
+			<Abstract type="html">the state of the location</Abstract>
+			<DeclaredIn>SonicLocation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *state</Declaration>
+			
+			
+			<Anchor>//api/name/state</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicLocation/setProgramId:</TokenIdentifier>
+			<Abstract type="html">the program id to which the location belongs</Abstract>
+			<DeclaredIn>SonicLocation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) SonicId programId</Declaration>
+			
+			
+			<Anchor>//api/name/programId</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicLocation/programId</TokenIdentifier>
+			<Abstract type="html">the program id to which the location belongs</Abstract>
+			<DeclaredIn>SonicLocation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) SonicId programId</Declaration>
+			
+			
+			<Anchor>//api/name/programId</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SonicLocation/programId</TokenIdentifier>
+			<Abstract type="html">the program id to which the location belongs</Abstract>
+			<DeclaredIn>SonicLocation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) SonicId programId</Declaration>
+			
+			
+			<Anchor>//api/name/programId</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>
