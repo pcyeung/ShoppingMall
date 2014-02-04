@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0959580418A09FDD009C54A2 /* GiftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0959580218A09FDD009C54A2 /* GiftViewController.m */; };
+		0959580518A09FDD009C54A2 /* GiftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0959580318A09FDD009C54A2 /* GiftViewController.xib */; };
+		0959580718A0B8E8009C54A2 /* Sonic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0959580618A0B8E8009C54A2 /* Sonic.framework */; };
+		0959580918A0BB80009C54A2 /* GiftViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0959580818A0BB80009C54A2 /* GiftViewController5.xib */; };
+		0959580B18A0BEFB009C54A2 /* mapView.png in Resources */ = {isa = PBXBuildFile; fileRef = 0959580A18A0BEFB009C54A2 /* mapView.png */; };
 		2348433D1896166E00F752C3 /* line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2348433B1896166E00F752C3 /* line@2x.png */; };
 		2348433E1896166E00F752C3 /* pick_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2348433C1896166E00F752C3 /* pick_bg@2x.png */; };
 		2348437C189648AE00F752C3 /* MallGiftListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 23484376189648AE00F752C3 /* MallGiftListCell.m */; };
@@ -189,6 +194,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0959580118A09FDD009C54A2 /* GiftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GiftViewController.h; path = Gift/GiftViewController.h; sourceTree = "<group>"; };
+		0959580218A09FDD009C54A2 /* GiftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GiftViewController.m; path = Gift/GiftViewController.m; sourceTree = "<group>"; };
+		0959580318A09FDD009C54A2 /* GiftViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GiftViewController.xib; path = Gift/GiftViewController.xib; sourceTree = "<group>"; };
+		0959580618A0B8E8009C54A2 /* Sonic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sonic.framework; path = Core/Sonic.framework; sourceTree = "<group>"; };
+		0959580818A0BB80009C54A2 /* GiftViewController5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GiftViewController5.xib; sourceTree = "<group>"; };
+		0959580A18A0BEFB009C54A2 /* mapView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapView.png; sourceTree = "<group>"; };
 		2348433B1896166E00F752C3 /* line@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "line@2x.png"; sourceTree = "<group>"; };
 		2348433C1896166E00F752C3 /* pick_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pick_bg@2x.png"; sourceTree = "<group>"; };
 		23484375189648AE00F752C3 /* MallGiftListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MallGiftListCell.h; sourceTree = "<group>"; };
@@ -415,6 +426,7 @@
 				702E1405189A2DA400B59475 /* AudioToolbox.framework in Frameworks */,
 				702E1403189A2D9A00B59475 /* SystemConfiguration.framework in Frameworks */,
 				702E1401189A2D8D00B59475 /* MobileCoreServices.framework in Frameworks */,
+				0959580718A0B8E8009C54A2 /* Sonic.framework in Frameworks */,
 				702E13FD189A2D6B00B59475 /* CoreAudio.framework in Frameworks */,
 				702E1407189A2DB400B59475 /* Security.framework in Frameworks */,
 				702E1409189A2DCE00B59475 /* libsqlite3.dylib in Frameworks */,
@@ -444,6 +456,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0959580018A09FAA009C54A2 /* Gift */ = {
+			isa = PBXGroup;
+			children = (
+				0959580118A09FDD009C54A2 /* GiftViewController.h */,
+				0959580218A09FDD009C54A2 /* GiftViewController.m */,
+				0959580318A09FDD009C54A2 /* GiftViewController.xib */,
+				0959580818A0BB80009C54A2 /* GiftViewController5.xib */,
+			);
+			name = Gift;
+			sourceTree = "<group>";
+		};
 		23484373189648AE00F752C3 /* MallGift */ = {
 			isa = PBXGroup;
 			children = (
@@ -591,6 +614,7 @@
 			children = (
 				702E140E189AD5C600B59475 /* Accelerate.framework */,
 				702E140C189A8AD900B59475 /* Sonic.framework */,
+				0959580618A0B8E8009C54A2 /* Sonic.framework */,
 				702E140A189A2DDB00B59475 /* libstdc++.dylib */,
 				702E1408189A2DCE00B59475 /* libsqlite3.dylib */,
 				702E1406189A2DB400B59475 /* Security.framework */,
@@ -616,17 +640,18 @@
 		23D612F4189365F100C60E3E /* ShoppingMall */ = {
 			isa = PBXGroup;
 			children = (
-				706C70AC189D497800B2C38C /* CheckIn */,
-				236AB6131894B9CB00770E81 /* MallPage */,
-				23D6159F1893B7F400C60E3E /* MyAccount */,
-				23D615971893A63A00C60E3E /* HomePage */,
-				23D6138818936AD800C60E3E /* LoginPage */,
-				23D613211893680700C60E3E /* configfile */,
-				23D613271893680700C60E3E /* others */,
-				23D615181893A36F00C60E3E /* images */,
 				23D612FD189365F100C60E3E /* AppDelegate.h */,
 				23D612FE189365F100C60E3E /* AppDelegate.m */,
+				706C70AC189D497800B2C38C /* CheckIn */,
+				23D613211893680700C60E3E /* configfile */,
+				0959580018A09FAA009C54A2 /* Gift */,
+				23D615971893A63A00C60E3E /* HomePage */,
+				23D615181893A36F00C60E3E /* images */,
 				23D61303189365F100C60E3E /* Images.xcassets */,
+				23D6138818936AD800C60E3E /* LoginPage */,
+				236AB6131894B9CB00770E81 /* MallPage */,
+				23D6159F1893B7F400C60E3E /* MyAccount */,
+				23D613271893680700C60E3E /* others */,
 				23D61300189365F100C60E3E /* ShoppingMall.xcdatamodeld */,
 				23D612F5189365F100C60E3E /* Supporting Files */,
 			);
@@ -776,6 +801,7 @@
 		23D615181893A36F00C60E3E /* images */ = {
 			isa = PBXGroup;
 			children = (
+				0959580A18A0BEFB009C54A2 /* mapView.png */,
 				236AB6321894D63900770E81 /* bg.png */,
 				2348433B1896166E00F752C3 /* line@2x.png */,
 				2348433C1896166E00F752C3 /* pick_bg@2x.png */,
@@ -1002,6 +1028,7 @@
 				236AB60A1894AE0B00770E81 /* GiftListViewController5.xib in Resources */,
 				23D612F9189365F100C60E3E /* InfoPlist.strings in Resources */,
 				236AB6091894AE0B00770E81 /* GiftListViewController.xib in Resources */,
+				0959580B18A0BEFB009C54A2 /* mapView.png in Resources */,
 				23D6156F1893A36F00C60E3E /* h13_bg.png in Resources */,
 				23D615681893A36F00C60E3E /* h08_map.png in Resources */,
 				23D6136D1893680700C60E3E /* whiteArrow@2x.png in Resources */,
@@ -1031,6 +1058,7 @@
 				236AB6311894D42500770E81 /* ShoppingMallIndexDetailViewController5.xib in Resources */,
 				23D613671893680700C60E3E /* blueArrow.png in Resources */,
 				23D615801893A36F00C60E3E /* pic2.png in Resources */,
+				0959580518A09FDD009C54A2 /* GiftViewController.xib in Resources */,
 				23D6158E1893A36F00C60E3E /* side_bar.png in Resources */,
 				236AB6121894B29E00770E81 /* GiftDetailPageViewController5.xib in Resources */,
 				23D615941893A36F00C60E3E /* top_right_btn.png in Resources */,
@@ -1065,6 +1093,7 @@
 				23D615791893A36F00C60E3E /* logo5.png in Resources */,
 				23D6157D1893A36F00C60E3E /* num_gift.png in Resources */,
 				23D6159C1893A6AC00C60E3E /* HomePageViewController.xib in Resources */,
+				0959580918A0BB80009C54A2 /* GiftViewController5.xib in Resources */,
 				23D6156C1893A36F00C60E3E /* h12_bg1.png in Resources */,
 				23D615701893A36F00C60E3E /* h_03.png in Resources */,
 				236AB6101894B28F00770E81 /* GiftDetailPageViewController.xib in Resources */,
@@ -1128,6 +1157,7 @@
 				706C70B6189E41F400B2C38C /* MockUser.m in Sources */,
 				23D613731893680700C60E3E /* NSData+GIF.m in Sources */,
 				23D612FF189365F100C60E3E /* AppDelegate.m in Sources */,
+				0959580418A09FDD009C54A2 /* GiftViewController.m in Sources */,
 				23D613821893680700C60E3E /* TPKeyboardAvoidingTableView.m in Sources */,
 				23D612FB189365F100C60E3E /* main.m in Sources */,
 				23D613741893680700C60E3E /* SDImageCache.m in Sources */,
@@ -1277,6 +1307,7 @@
 					"$(inherited)",
 					/Users/kienmanng/Downloads/ShoppingMall/Core,
 					"/Users/kienmanng/Downloads/sonic-ios-sdk-v4.70.111-prod/Core",
+					/Users/bear/Desktop/ShoppingMall/Core,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ShoppingMall/ShoppingMall-Prefix.pch";
@@ -1307,6 +1338,7 @@
 					"$(inherited)",
 					/Users/kienmanng/Downloads/ShoppingMall/Core,
 					"/Users/kienmanng/Downloads/sonic-ios-sdk-v4.70.111-prod/Core",
+					/Users/bear/Desktop/ShoppingMall/Core,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ShoppingMall/ShoppingMall-Prefix.pch";
