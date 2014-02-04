@@ -19,7 +19,10 @@
 @end
 
 @implementation GiftViewController
+<<<<<<< HEAD
 
+=======
+>>>>>>> 83182fe1aa8abeb157da6b4b570a333101caba48
 //@implementation GiftListViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -27,7 +30,10 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+<<<<<<< HEAD
         
+=======
+>>>>>>> 83182fe1aa8abeb157da6b4b570a333101caba48
     }
     return self;
 }
