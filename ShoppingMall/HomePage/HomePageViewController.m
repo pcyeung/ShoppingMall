@@ -9,6 +9,7 @@
 #import "HomePageViewController.h"
 #import "MyAccountHomePageViewController.h"
 #import "HomePageListViewController.h"
+#import "GiftViewController.h"
 
 @interface HomePageViewController ()
 
@@ -61,4 +62,15 @@
 - (IBAction)shoppingMallListBtnClick {
    
 }
+
+- (IBAction)giftBtnClick{
+    GiftViewController *gift;
+    if (iPhone5) {
+        gift=[[GiftViewController alloc]initWithNibName:@"GiftViewController5" bundle:nil];
+    }else{
+        gift=[[GiftViewController alloc]initWithNibName:@"GiftViewController" bundle:nil];
+    }
+    [self.navigationController pushViewController:gift animated:YES];
+}
+
 @end
