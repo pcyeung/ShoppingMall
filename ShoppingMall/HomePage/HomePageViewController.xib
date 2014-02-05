@@ -92,11 +92,7 @@
                         <action selector="giftBtnClick" destination="-1" eventType="touchUpInside" id="9ri-Qx-Ofy"/>
                     </connections>
                 </button>
-<<<<<<< HEAD
                 <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vNw-IT-Yun">
-=======
-                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="vNw-IT-Yun">
->>>>>>> 83182fe1aa8abeb157da6b4b570a333101caba48
                     <rect key="frame" x="0.0" y="98" width="320" height="334"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                 </mapView>
