@@ -21,7 +21,7 @@
     
     IBOutlet UILabel *userNameLabel;
     IBOutlet UILabel *pointBalanceLabel;
-
+    IBOutlet UITableView *timelineList;
 }
 
 @property (strong, nonatomic) MockUser *user;

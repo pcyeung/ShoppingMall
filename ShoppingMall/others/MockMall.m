@@ -34,16 +34,19 @@
                 _mallName = @"APM";
                 _adsText = @"Free APM Burgers";
                 bonusPoints = 20;
+                mallId = 0;
                 break;
             case 1:
                 _mallName = @"World Trade";
                 _adsText = @"World Trade Beer";
                 bonusPoints = 10;
+                mallId = 1;
                 break;
             default:
-                _mallName = @"Unrecognized";
+                _mallName = [NSString stringWithFormat:@"%d",beaconCode];
                 _adsText = @"Wings?";
-                bonusPoints = 0;
+                bonusPoints = 5;
+                mallId = 2;
                 break;
         }
     }
@@ -52,6 +55,10 @@
 
 - (int) getBonusPoints {
     return bonusPoints;
+}
+
+- (int) getMallId {
+    return mallId;
 }
 
 @end

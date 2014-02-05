@@ -29,6 +29,7 @@
         NSString* path = [[NSBundle mainBundle] pathForResource:@"check_in2" ofType:@"png"];
         UIImage* newCheckInTextImage = [[UIImage alloc]initWithContentsOfFile:path];
         [checkInTextImage setImage:newCheckInTextImage];
+
         [centerTextLabel setText:[_mall adsText]];
     } else {
         __block UIWindow *animationWindow = _window;
@@ -71,9 +72,13 @@
 }
 
 - (void) showAnimated:(BOOL)animated {
+    if ([_user hasVisited:_mall]) {
+        return;
+    }
+
+    [_user addVisit:_mall];
     [mallNameLabel setText:[_mall mallName]];
     [centerTextLabel setText:[self pointBalanceText]];
-    [_user addVisit:[_mall mallName]];
     
 	_window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     _window.windowLevel = UIWindowLevelAlert;

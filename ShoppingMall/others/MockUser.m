@@ -12,6 +12,8 @@
 
 @synthesize userName = _userName;
 @synthesize visitHistory = _visitHistory;
+@synthesize visitedMalls = _visitedMalls;
+
 
 - (id)init {
     self = [super init];
@@ -30,8 +32,18 @@
     accountPoints = points;
 }
 
--(void)addVisit:(NSString*)visit {
-    [_visitHistory addObject:visit];
+-(void)addVisit:(MockMall*)mall {
+    [_visitHistory addObject:[mall mallName]];
+    NSInteger mallId = [mall getMallId];
+    [_visitedMalls setObject:NULL forKey:[NSNumber numberWithInteger:mallId]];
+}
+
+-(BOOL)hasVisited:(MockMall*)mall {
+    NSInteger mallId = [mall getMallId];
+    if ([_visitedMalls objectForKey:[NSNumber numberWithInteger:mallId]] != nil) {
+        return YES;
+    }
+    return NO;
 }
 
 @end

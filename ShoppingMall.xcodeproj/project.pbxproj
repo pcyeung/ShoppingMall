@@ -181,6 +181,8 @@
 		706C70B3189E3E8D00B2C38C /* CheckInPageView5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 706C70B2189E3E8D00B2C38C /* CheckInPageView5.xib */; };
 		706C70B6189E41F400B2C38C /* MockUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 706C70B5189E41F400B2C38C /* MockUser.m */; };
 		706C70B9189E4A9E00B2C38C /* MockMall.m in Sources */ = {isa = PBXBuildFile; fileRef = 706C70B8189E4A9E00B2C38C /* MockMall.m */; };
+		706C70CB18A0D31600B2C38C /* TimelineListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 706C70CA18A0D31600B2C38C /* TimelineListCell.m */; };
+		706C70CD18A0DAF700B2C38C /* TimelineListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 706C70CC18A0DAF700B2C38C /* TimelineListCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -412,6 +414,9 @@
 		706C70B5189E41F400B2C38C /* MockUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockUser.m; sourceTree = "<group>"; };
 		706C70B7189E4A9E00B2C38C /* MockMall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockMall.h; sourceTree = "<group>"; };
 		706C70B8189E4A9E00B2C38C /* MockMall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockMall.m; sourceTree = "<group>"; };
+		706C70C918A0D31600B2C38C /* TimelineListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TimelineListCell.h; path = MyAccount/TimelineListCell.h; sourceTree = "<group>"; };
+		706C70CA18A0D31600B2C38C /* TimelineListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TimelineListCell.m; path = MyAccount/TimelineListCell.m; sourceTree = "<group>"; };
+		706C70CC18A0DAF700B2C38C /* TimelineListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimelineListCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -888,6 +893,7 @@
 		23D6159F1893B7F400C60E3E /* MyAccount */ = {
 			isa = PBXGroup;
 			children = (
+				706C70C618A0CF2F00B2C38C /* TimelineCell */,
 				236AB5FD1894AE0B00770E81 /* GiftPage */,
 				236AB5AA18949EEF00770E81 /* FriendsPage */,
 				23D615A01893B84000C60E3E /* MyAccountHomePageViewController.h */,
@@ -921,6 +927,16 @@
 				706C70B8189E4A9E00B2C38C /* MockMall.m */,
 			);
 			name = DataStore;
+			sourceTree = "<group>";
+		};
+		706C70C618A0CF2F00B2C38C /* TimelineCell */ = {
+			isa = PBXGroup;
+			children = (
+				706C70C918A0D31600B2C38C /* TimelineListCell.h */,
+				706C70CA18A0D31600B2C38C /* TimelineListCell.m */,
+				706C70CC18A0DAF700B2C38C /* TimelineListCell.xib */,
+			);
+			name = TimelineCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -971,7 +987,7 @@
 				ORGANIZATIONNAME = Macie;
 				TargetAttributes = {
 					23D612E8189365F100C60E3E = {
-						DevelopmentTeam = 3BUE7X9682;
+						DevelopmentTeam = 9592SFHVC8;
 					};
 					23D61308189365F100C60E3E = {
 						TestTargetID = 23D612E8189365F100C60E3E;
@@ -1075,6 +1091,7 @@
 				23D613691893680700C60E3E /* grayArrow.png in Resources */,
 				23D61304189365F100C60E3E /* Images.xcassets in Resources */,
 				236AB62F1894D41300770E81 /* ShoppingMallIndexDetailViewController.xib in Resources */,
+				706C70CD18A0DAF700B2C38C /* TimelineListCell.xib in Resources */,
 				236AB6431894D63900770E81 /* renren.png in Resources */,
 				23D6157B1893A36F00C60E3E /* map_line.png in Resources */,
 				23D615911893A36F00C60E3E /* top_confir.png in Resources */,
@@ -1164,6 +1181,7 @@
 				706C70B1189D49EF00B2C38C /* CheckInPageView.m in Sources */,
 				236AB60F1894B28F00770E81 /* GiftDetailPageViewController.m in Sources */,
 				23D6137B1893680700C60E3E /* UIButton+WebCache.m in Sources */,
+				706C70CB18A0D31600B2C38C /* TimelineListCell.m in Sources */,
 				23D613631893680700C60E3E /* Reachability.m in Sources */,
 				236AB5C218949F7000770E81 /* FriendsListPageViewController.m in Sources */,
 				23D613711893680700C60E3E /* OpenUDID.m in Sources */,
@@ -1302,7 +1320,8 @@
 				);
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Choi Fung (5S8B4VYNCF)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/kienmanng/Downloads/ShoppingMall/Core,
@@ -1319,6 +1338,7 @@
 				);
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1333,7 +1353,8 @@
 				);
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Choi Fung (5S8B4VYNCF)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/kienmanng/Downloads/ShoppingMall/Core,
@@ -1350,6 +1371,7 @@
 				);
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

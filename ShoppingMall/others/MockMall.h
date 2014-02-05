@@ -11,6 +11,7 @@
 
 @interface MockMall : NSObject {
     int bonusPoints;
+    int mallId;
 }
 
 @property(strong, nonatomic) NSString *mallName;
@@ -18,5 +19,6 @@
 
 - (id)initWithSonicCode:(SonicCodeHeard *)code;
 - (int) getBonusPoints;
+- (int) getMallId;
 
 @end

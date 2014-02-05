@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MockMall.h"
 
 @interface MockUser : NSObject {
     int accountPoints;
@@ -14,9 +15,12 @@
 
 @property(strong, nonatomic) NSString *userName;
 @property(strong, nonatomic) NSMutableArray *visitHistory;
+@property(strong, nonatomic) NSMutableDictionary *visitedMalls;
+
 
 -(int)getAccountPoints;
 -(void)setAccountPoints:(int)points;
--(void)addVisit:(NSString*)visit;
+-(void)addVisit:(MockMall*)mall;
+-(BOOL)hasVisited:(MockMall*)mall;
 
 @end

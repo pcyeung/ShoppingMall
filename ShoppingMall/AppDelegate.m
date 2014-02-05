@@ -49,7 +49,7 @@ static NSString * const kSonicNotifyGUID = @"M2I0MWEwMmEtYzE3OS00YTYwLTk0YTEtZWU
     [self.window makeKeyAndVisible];
  
     // fake checkin
-    [NSTimer scheduledTimerWithTimeInterval:5.0 target:self selector:@selector(fakeHearCode) userInfo:nil repeats:NO];
+ //   [NSTimer scheduledTimerWithTimeInterval:5.0 target:self selector:@selector(fakeHearCode) userInfo:nil repeats:NO];
     
    // [ZBarReaderView class];
     return YES;
@@ -68,7 +68,7 @@ static NSString * const kSonicNotifyGUID = @"M2I0MWEwMmEtYzE3OS00YTYwLTk0YTEtZWU
  * @return whether or not you are interested in receiving content for this signal, it is the implementers responsibility for throttling
  *
  */
-- (BOOL)sonic:(Sonic *)sonic didHearCode:(SonicCodeHeard *) code {
+- (BOOL)sonic:(Sonic *)sonic didHearCode:(SonicCodeHeard *)code {
     CheckInPageView *checkInPageView;
     if (iPhone5) {
         checkInPageView=[[CheckInPageView alloc]initWithFrame:[[UIScreen mainScreen] bounds] sonicCode:code nibName:@"CheckInPageView5" user:_user];
