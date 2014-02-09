@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MockUser.h"
 
-@interface TimelineListCell : UIView
+@interface TimelineListCell : UITableViewCell {
+    IBOutlet UILabel *mallNameLabel;
+    IBOutlet UILabel *checkInLabel;
+}
+
+-(id) initWithVisitData:(VisitData*)visitData;
 
 @end

@@ -10,6 +10,7 @@
 #import "FriendsListPageViewController.h"
 #import "GiftListViewController.h"
 #import "HomePageViewController.h"
+#import "TimelineListCell.h"
 
 @interface MyAccountHomePageViewController ()
 
@@ -35,17 +36,20 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-   // int userHistory = [[_user visitHistory] count];
-   // return MAX(userHistory, 0);
-    return 0;
+    int userHistoryCount = [[_user visitHistory] count];
+    return MIN(userHistoryCount, 10);
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+ //   [[_user visitHistory] objectAtIndex:<#(NSUInteger)#>
+    
+ //   TimelineListCell *cell = [[TimelineListCell alloc] initWithVisitData:[[_user visitHistory] ]
+  //  -(id) initWithVisitData:(VisitData*)visitData
 
-   // NSArray *nib=[[NSBundle mainBundle]loadNibNamed:@"TimelineCell" owner:self options:Nil];
-   // TimelineCell *cell=[nib objectAtIndex:0];
-    //return cell;
-    return NULL;
+    
+    NSArray *nib=[[NSBundle mainBundle]loadNibNamed:@"TimelineListCell" owner:self options:Nil];
+    TimelineListCell *cell=[nib objectAtIndex:0];
+    return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{

@@ -9,6 +9,15 @@
 #import <Foundation/Foundation.h>
 #import "MockMall.h"
 
+@interface VisitData : NSObject
+@property(strong, nonatomic) NSDate *visitTime;
+@property(strong, nonatomic) MockMall *mall;
+
+-(id) initWithCurrentTime:(MockMall*)mall;
+
+@end
+
+
 @interface MockUser : NSObject {
     int accountPoints;
 }

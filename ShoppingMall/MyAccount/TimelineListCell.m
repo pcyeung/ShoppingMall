@@ -10,11 +10,16 @@
 
 @implementation TimelineListCell
 
-- (id)initWithFrame:(CGRect)frame
+-(id) initWithVisitData:(VisitData*)visitData
 {
-    self = [super initWithFrame:frame];
+    self = [super init];
     if (self) {			
-        // Initialization code
+        [mallNameLabel setText:[[visitData mall] mallName]];
+        
+        NSString* dateString = [NSDateFormatter localizedStringFromDate:[visitData visitTime]
+                                       dateStyle:NSDateFormatterShortStyle
+                                       timeStyle:NSDateFormatterShortStyle];
+        [checkInLabel setText:dateString];
     }
     return self;
 }

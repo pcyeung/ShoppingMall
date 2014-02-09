@@ -174,7 +174,6 @@
 		702E1407189A2DB400B59475 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 702E1406189A2DB400B59475 /* Security.framework */; };
 		702E1409189A2DCE00B59475 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 702E1408189A2DCE00B59475 /* libsqlite3.dylib */; };
 		702E140B189A2DDB00B59475 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 702E140A189A2DDB00B59475 /* libstdc++.dylib */; };
-		702E140D189A8AD900B59475 /* Sonic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 702E140C189A8AD900B59475 /* Sonic.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		702E140F189AD5C600B59475 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 702E140E189AD5C600B59475 /* Accelerate.framework */; };
 		706C70AE189D498C00B2C38C /* CheckInPageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 706C70AD189D498C00B2C38C /* CheckInPageView.xib */; };
 		706C70B1189D49EF00B2C38C /* CheckInPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 706C70B0189D49EF00B2C38C /* CheckInPageView.m */; };
@@ -404,7 +403,6 @@
 		702E1406189A2DB400B59475 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		702E1408189A2DCE00B59475 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		702E140A189A2DDB00B59475 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
-		702E140C189A8AD900B59475 /* Sonic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sonic.framework; path = "../sonic-ios-sdk-v4.70.111-prod/Core/Sonic.framework"; sourceTree = "<group>"; };
 		702E140E189AD5C600B59475 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		706C70AD189D498C00B2C38C /* CheckInPageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CheckInPageView.xib; sourceTree = "<group>"; };
 		706C70AF189D49EF00B2C38C /* CheckInPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckInPageView.h; sourceTree = "<group>"; };
@@ -443,7 +441,6 @@
 				23DD8C3C1895EE8A005F7A48 /* libiconv.dylib in Frameworks */,
 				23DD8C3A1895EE77005F7A48 /* CoreVideo.framework in Frameworks */,
 				23DD8C381895EE6B005F7A48 /* CoreMedia.framework in Frameworks */,
-				702E140D189A8AD900B59475 /* Sonic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -618,7 +615,6 @@
 			isa = PBXGroup;
 			children = (
 				702E140E189AD5C600B59475 /* Accelerate.framework */,
-				702E140C189A8AD900B59475 /* Sonic.framework */,
 				0959580618A0B8E8009C54A2 /* Sonic.framework */,
 				702E140A189A2DDB00B59475 /* libstdc++.dylib */,
 				702E1408189A2DCE00B59475 /* libsqlite3.dylib */,

@@ -5,8 +5,24 @@
 //  Created by KIEN-MAN NG on 2/2/14.
 //  Copyright (c) 2014 Macie. All rights reserved.
 //
+// testing123
 
 #import "MockUser.h"
+
+@implementation VisitData
+@synthesize visitTime = _visitTime;
+@synthesize mall= _mall;
+
+-(id) initWithCurrentTime:(MockMall*)mall {
+    self = [super init];
+    if (self) {
+        _visitTime = [[NSDate alloc]init];
+        _mall = mall;
+    }
+    return self;
+}
+
+@end
 
 @implementation MockUser
 
@@ -35,21 +51,17 @@
 }
 
 -(void)addVisit:(MockMall*)mall {
-    [_visitHistory addObject:[mall mallName]];
+    [_visitHistory addObject:[[VisitData alloc] initWithCurrentTime:mall]];
+
     NSInteger mallId = [mall getMallId];
     [_visitedMalls setObject:@"" forKey:[NSNumber numberWithInteger:mallId]];
-    NSLog([NSString stringWithFormat:@"add id: %d", [mall getMallId]]);
-
 }
 
--(BOOL)hasVisited:(MockMall*)mall {
+-(bool)hasVisited:(MockMall*)mall {
     NSInteger mallId = [mall getMallId];
     if ([_visitedMalls objectForKey:[NSNumber numberWithInteger:mallId]] != nil) {
         return YES;
-    }
-    
-    NSString* debString = [_visitedMalls objectForKey:[NSNumber numberWithInteger:mallId]];
-    NSLog([NSString stringWithFormat:@"add id: %@", debString]);
+    }    
     return NO;
 }
 

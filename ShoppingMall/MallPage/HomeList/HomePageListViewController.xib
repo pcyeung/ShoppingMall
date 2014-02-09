@@ -7,7 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomePageListViewController">
             <connections>
-                <outlet property="MyAccountBtn" destination="kWc-EH-JaZ" id="ooF-DI-bVr"/>
+                <outlet property="MyAccountBtn" destination="kWc-EH-JaZ" id="vVq-Hv-fye"/>
                 <outlet property="backBtn" destination="Mq2-dU-gVZ" id="xyN-uk-YbM"/>
                 <outlet property="giftBtn" destination="CIr-zz-Px5" id="3ky-FB-s2R"/>
                 <outlet property="list" destination="Pjz-Gg-unr" id="y7P-qg-rYz"/>
@@ -32,7 +32,7 @@
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="myAccountBTnClick" destination="-1" eventType="touchUpInside" id="vdP-hM-TAN"/>
+                        <action selector="myAccountBTnClick" destination="-1" eventType="touchUpInside" id="tye-JA-w1H"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mq2-dU-gVZ">
