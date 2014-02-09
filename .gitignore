@@ -4,3 +4,5 @@
 
 ShoppingMall.xcodeproj/xcuserdata/.*
 ShoppingMall.xcodeproj/project.xcworkspace/.*
+
+*.xcworkspacedata
