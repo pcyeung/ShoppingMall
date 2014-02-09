@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Macie. All rights reserved.
 //
 // testing123
-// Teddy
+// TeddyKien
 
 #import "MockUser.h"
 
