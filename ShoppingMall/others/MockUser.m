@@ -5,7 +5,7 @@
 //  Created by KIEN-MAN NG on 2/2/14.
 //  Copyright (c) 2014 Macie. All rights reserved.
 //
-// testing123
+// testing123 kienmantest
 
 #import "MockUser.h"
 
