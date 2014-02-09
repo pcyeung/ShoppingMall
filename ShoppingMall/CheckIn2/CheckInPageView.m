@@ -47,14 +47,19 @@
 
 - (id)initWithFrame:(CGRect)frame sonicCode:(SonicCodeHeard *) code nibName:(NSString *)nibName user:(MockUser*)user
 {
+    _user = user;
+    _mall = [[MockMall alloc] initWithSonicCode:code];
+    if ([_user hasVisited:_mall] == YES) {
+        return NULL;
+    }
+    [_user addVisit:_mall];
+
     self = [super initWithFrame:frame];
     if (self) {
         self.backgroundColor = [UIColor clearColor];
         NSArray *nibObjects = [[NSBundle mainBundle] loadNibNamed:nibName owner:self options:nil];
         [self addSubview:nibObjects[0]];
         clickCount = 0;
-        _user = user;
-        _mall = [[MockMall alloc] initWithSonicCode:code];
     }
     return self;
 }
@@ -72,11 +77,6 @@
 }
 
 - (void) showAnimated:(BOOL)animated {
-    if ([_user hasVisited:_mall]) {
-        return;
-    }
-
-    [_user addVisit:_mall];
     [mallNameLabel setText:[_mall mallName]];
     [centerTextLabel setText:[self pointBalanceText]];
     

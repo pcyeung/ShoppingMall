@@ -42,6 +42,18 @@
                 bonusPoints = 10;
                 mallId = 1;
                 break;
+            case 802396:
+                _mallName = @"时代广场";
+                _adsText = @"赠送烤鸡腿";
+                bonusPoints = 10;
+                mallId = 2;
+                break;
+            case 802399:
+                _mallName = @"世贸中心";
+                _adsText = @"赠送电影票";
+                bonusPoints = 15;
+                mallId = 3;
+                break;
             default:
                 _mallName = [NSString stringWithFormat:@"%d",beaconCode];
                 _adsText = @"Wings?";

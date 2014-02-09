@@ -20,6 +20,8 @@
     if (self) {
         accountPoints = 0;
         _userName = @"Jason Chau";
+        _visitHistory = [[NSMutableArray alloc] init];
+        _visitedMalls = [[NSMutableDictionary alloc] init];
     }
     return self;
 }
@@ -35,7 +37,9 @@
 -(void)addVisit:(MockMall*)mall {
     [_visitHistory addObject:[mall mallName]];
     NSInteger mallId = [mall getMallId];
-    [_visitedMalls setObject:NULL forKey:[NSNumber numberWithInteger:mallId]];
+    [_visitedMalls setObject:@"" forKey:[NSNumber numberWithInteger:mallId]];
+    NSLog([NSString stringWithFormat:@"add id: %d", [mall getMallId]]);
+
 }
 
 -(BOOL)hasVisited:(MockMall*)mall {
@@ -43,6 +47,9 @@
     if ([_visitedMalls objectForKey:[NSNumber numberWithInteger:mallId]] != nil) {
         return YES;
     }
+    
+    NSString* debString = [_visitedMalls objectForKey:[NSNumber numberWithInteger:mallId]];
+    NSLog([NSString stringWithFormat:@"add id: %@", debString]);
     return NO;
 }
 

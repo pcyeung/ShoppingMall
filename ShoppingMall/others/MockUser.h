@@ -21,6 +21,6 @@
 -(int)getAccountPoints;
 -(void)setAccountPoints:(int)points;
 -(void)addVisit:(MockMall*)mall;
--(BOOL)hasVisited:(MockMall*)mall;
+-(bool)hasVisited:(MockMall*)mall;
 
 @end

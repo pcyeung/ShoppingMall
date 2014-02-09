@@ -60,9 +60,9 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     GiftDetailPageViewController *giftDetailView;
     if (iPhone5) {
-        giftDetailView=[[GiftDetailPageViewController alloc]initWithNibName:@"GiftDetailPageViewController5" bundle:nil];
+        giftDetailView=[[GiftDetailPageViewController alloc]initWithNibName:@"GiftViewController5" bundle:nil];
     }else{
-        giftDetailView=[[GiftDetailPageViewController alloc]initWithNibName:@"GiftDetailPageViewController" bundle:nil];
+        giftDetailView=[[GiftDetailPageViewController alloc]initWithNibName:@"GiftViewController" bundle:nil];
     }
     [self.navigationController pushViewController:giftDetailView animated:YES];
 }

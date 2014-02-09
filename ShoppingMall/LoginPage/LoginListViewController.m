@@ -15,11 +15,14 @@
 
 @implementation LoginListViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+@synthesize user = _user;
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil user:(MockUser*)user
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        _user = user;
     }
     return self;
 }
@@ -39,9 +42,9 @@
 - (IBAction)renrenBtnClick {
     HomePageViewController *HomePageView;
     if (iPhone5) {
-        HomePageView=[[HomePageViewController alloc]initWithNibName:@"HomePageViewController5" bundle:nil];
+        HomePageView=[[HomePageViewController alloc]initWithNibName:@"HomePageViewController5" bundle:nil user:_user];
     }else{
-        HomePageView=[[HomePageViewController alloc]initWithNibName:@"HomePageViewController" bundle:nil];
+        HomePageView=[[HomePageViewController alloc]initWithNibName:@"HomePageViewController" bundle:nil user:_user];
     }
     [self.navigationController pushViewController:HomePageView animated:YES];
 }
@@ -49,9 +52,9 @@
 - (IBAction)weiboBtnClick {
     HomePageViewController *HomePageView;
     if (iPhone5) {
-        HomePageView=[[HomePageViewController alloc]initWithNibName:@"HomePageViewController5" bundle:nil];
+        HomePageView=[[HomePageViewController alloc]initWithNibName:@"HomePageViewController5" bundle:nil user:_user];
     }else{
-        HomePageView=[[HomePageViewController alloc]initWithNibName:@"HomePageViewController" bundle:nil];
+        HomePageView=[[HomePageViewController alloc]initWithNibName:@"HomePageViewController" bundle:nil user:_user];
     }
     [self.navigationController pushViewController:HomePageView animated:YES];
 }
@@ -59,9 +62,9 @@
 - (IBAction)qqBtnClick {
     HomePageViewController *HomePageView;
     if (iPhone5) {
-        HomePageView=[[HomePageViewController alloc]initWithNibName:@"HomePageViewController5" bundle:nil];
+        HomePageView=[[HomePageViewController alloc]initWithNibName:@"HomePageViewController5" bundle:nil user:_user];
     }else{
-        HomePageView=[[HomePageViewController alloc]initWithNibName:@"HomePageViewController" bundle:nil];
+        HomePageView=[[HomePageViewController alloc]initWithNibName:@"HomePageViewController" bundle:nil user:_user];
     }
     [self.navigationController pushViewController:HomePageView animated:YES];
 }

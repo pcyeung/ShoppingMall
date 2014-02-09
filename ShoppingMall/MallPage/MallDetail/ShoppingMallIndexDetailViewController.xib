@@ -7,6 +7,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShoppingMallIndexDetailViewController">
             <connections>
+                <outlet property="MyAccountBtn" destination="0E2-WS-osO" id="RBy-ht-J96"/>
+                <outlet property="backBtn" destination="dVW-pc-A3M" id="SLl-bG-gkf"/>
+                <outlet property="giftBtn" destination="3s9-tI-UVS" id="15F-lG-Oau"/>
+                <outlet property="shoppingMallListBtn" destination="r04-IM-QLe" id="MEK-nz-xUd"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>
@@ -26,6 +30,9 @@
                     <state key="normal" image="top_left_btn.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="myAccountBTnClick" destination="-1" eventType="touchUpInside" id="1hE-pB-dHz"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dVW-pc-A3M">
                     <rect key="frame" x="260" y="5" width="40" height="40"/>
@@ -34,6 +41,9 @@
                     <state key="normal" image="top_right_btn.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="backBtnClick" destination="-1" eventType="touchUpInside" id="P41-0A-qSX"/>
+                    </connections>
                 </button>
                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="bottom.png" translatesAutoresizingMaskIntoConstraints="NO" id="ewe-3Q-ues">
                     <rect key="frame" x="0.0" y="430" width="320" height="50"/>
@@ -46,6 +56,9 @@
                     <state key="normal" image="bottom_left_btn.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="shoppingMallListBtnClick" destination="-1" eventType="touchUpInside" id="iJ6-Ml-d92"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3s9-tI-UVS">
                     <rect key="frame" x="260" y="435" width="40" height="40"/>

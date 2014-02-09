@@ -17,11 +17,16 @@
 
 @implementation HomePageViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+@synthesize user = _user;
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil user:(MockUser*)user
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        _user = user;
+        mapView = [[MKMapView alloc]init];
+        [mapView setUserTrackingMode:MKUserTrackingModeFollow];
     }
     return self;
 }
@@ -42,9 +47,9 @@
 - (IBAction)myAccountBtnClick {
     MyAccountHomePageViewController *myAccountView;
     if (iPhone5) {
-        myAccountView=[[MyAccountHomePageViewController alloc]initWithNibName:@"MyAccountHomePageViewController5" bundle:nil];
+        myAccountView=[[MyAccountHomePageViewController alloc]initWithNibName:@"MyAccountHomePageViewController5" bundle:nil user:NULL];
     }else{
-        myAccountView=[[MyAccountHomePageViewController alloc]initWithNibName:@"MyAccountHomePageViewController" bundle:nil];
+        myAccountView=[[MyAccountHomePageViewController alloc]initWithNibName:@"MyAccountHomePageViewController" bundle:nil user:NULL];
     }
     [self.navigationController pushViewController:myAccountView animated:YES];
 }
@@ -64,13 +69,13 @@
 }
 
 - (IBAction)giftBtnClick{
-    GiftViewController *gift;
-    if (iPhone5) {
-        gift=[[GiftViewController alloc]initWithNibName:@"GiftViewController5" bundle:nil];
-    }else{
-        gift=[[GiftViewController alloc]initWithNibName:@"GiftViewController" bundle:nil];
-    }
-    [self.navigationController pushViewController:gift animated:YES];
+  //  GiftViewController *gift;
+  //  if (iPhone5) {
+  //      gift=[[GiftViewController alloc]initWithNibName:@"GiftViewController5" bundle:nil];
+   // }else{
+   //     gift=[[GiftViewController alloc]initWithNibName:@"GiftViewController" bundle:nil];
+   // }
+   // [self.navigationController pushViewController:gift animated:YES];
 }
 
 @end

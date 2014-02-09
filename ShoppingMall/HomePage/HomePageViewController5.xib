@@ -12,6 +12,7 @@
                 <outlet property="giftBtn" destination="ZAI-18-6Oi" id="w4x-sI-7oj"/>
                 <outlet property="listBtn" destination="kio-iW-4lJ" id="GlL-J3-5Gb"/>
                 <outlet property="mapBTn" destination="i93-YQ-b9Y" id="wxX-Pq-Tvs"/>
+                <outlet property="mapView" destination="RxM-5H-ONn" id="H1l-SE-9x0"/>
                 <outlet property="shoppingMallListBtn" destination="jNX-iC-kaG" id="Yb8-Ik-m7b"/>
                 <outlet property="view" destination="1" id="xs2-Ul-XS7"/>
             </connections>
@@ -93,7 +94,7 @@
                         <action selector="giftBtnClick" destination="-1" eventType="touchUpInside" id="xdF-un-2aU"/>
                     </connections>
                 </button>
-                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C85-uG-jMC">
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RxM-5H-ONn">
                     <rect key="frame" x="0.0" y="98" width="320" height="422"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                 </mapView>

@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ShoppingMallIndexDetailViewController : UIViewController
+@interface ShoppingMallIndexDetailViewController : UIViewController {
+    IBOutlet UIButton *MyAccountBtn;
+    IBOutlet UIButton *backBtn;
+    IBOutlet UIButton *shoppingMallListBtn;
+    IBOutlet UIButton *giftBtn;
+}
+- (IBAction)backBtnClick;
+- (IBAction)myAccountBTnClick;
+
+- (IBAction)shoppingMallListBtnClick;
 
 @end

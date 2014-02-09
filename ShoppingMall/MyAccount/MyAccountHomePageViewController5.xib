@@ -8,12 +8,12 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyAccountHomePageViewController">
             <connections>
                 <outlet property="MyAccountBtn" destination="ahq-SR-YnA" id="NuJ-8p-w5O"/>
-                <outlet property="accountDetail" destination="eqP-fy-dKU" id="KAy-sv-Epz"/>
                 <outlet property="accountIcon" destination="aYp-So-ohx" id="Fxp-WN-IVN"/>
                 <outlet property="backBtn" destination="5m1-OP-RNU" id="2pW-aG-fDk"/>
                 <outlet property="giftBtn" destination="jdS-DP-xTL" id="Jpg-zn-hQA"/>
                 <outlet property="pointBalanceLabel" destination="Yxb-3l-GrV" id="hTb-IX-QrO"/>
                 <outlet property="shoppingMallListBtn" destination="MDj-PN-74m" id="385-0J-8FP"/>
+                <outlet property="userNameLabel" destination="eqP-fy-dKU" id="fDS-3E-d39"/>
                 <outlet property="view" destination="1" id="QCI-Vh-im5"/>
             </connections>
         </placeholder>

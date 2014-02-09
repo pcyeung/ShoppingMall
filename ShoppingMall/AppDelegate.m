@@ -28,6 +28,7 @@ static NSString * const kSonicNotifyGUID = @"M2I0MWEwMmEtYzE3OS00YTYwLTk0YTEtZWU
 {
     [[Sonic sharedInstance] initializeWithApplicationGUID:kSonicNotifyGUID andDelegate:self];
     [[Sonic sharedInstance] startListening];
+    _user = [[MockUser alloc] init];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
@@ -36,9 +37,9 @@ static NSString * const kSonicNotifyGUID = @"M2I0MWEwMmEtYzE3OS00YTYwLTk0YTEtZWU
     
     LoginListViewController *indexView;
     if (iPhone5) {
-        indexView=[[LoginListViewController alloc]initWithNibName:@"LoginListViewController5" bundle:nil];
+        indexView=[[LoginListViewController alloc]initWithNibName:@"LoginListViewController5" bundle:nil user:_user];
     }else{
-        indexView=[[LoginListViewController alloc]initWithNibName:@"LoginListViewController" bundle:nil];
+        indexView=[[LoginListViewController alloc]initWithNibName:@"LoginListViewController" bundle:nil user:_user];
     }
     
     TCNavigationController *nav=[[TCNavigationController alloc]initWithRootViewController:indexView];
@@ -49,7 +50,7 @@ static NSString * const kSonicNotifyGUID = @"M2I0MWEwMmEtYzE3OS00YTYwLTk0YTEtZWU
     [self.window makeKeyAndVisible];
  
     // fake checkin
- //   [NSTimer scheduledTimerWithTimeInterval:5.0 target:self selector:@selector(fakeHearCode) userInfo:nil repeats:NO];
+    [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(fakeHearCode) userInfo:nil repeats:YES];
     
    // [ZBarReaderView class];
     return YES;
@@ -75,7 +76,9 @@ static NSString * const kSonicNotifyGUID = @"M2I0MWEwMmEtYzE3OS00YTYwLTk0YTEtZWU
     } else {
         checkInPageView=[[CheckInPageView alloc]initWithFrame:[[UIScreen mainScreen] bounds] sonicCode:code nibName:@"CheckInPageView" user:_user];
     }
-	[checkInPageView show];
+    if (checkInPageView != NULL) {
+        [checkInPageView show];
+    }
     return YES;
 }
 

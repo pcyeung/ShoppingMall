@@ -12,6 +12,7 @@
                 <outlet property="giftBtn" destination="YCA-fV-RP9" id="mxP-Bb-mKE"/>
                 <outlet property="listBtn" destination="YR7-Je-jr0" id="JTT-zf-sH1"/>
                 <outlet property="mapBTn" destination="1ba-F3-0QF" id="cS5-aM-ugZ"/>
+                <outlet property="mapView" destination="vNw-IT-Yun" id="mKe-UC-opg"/>
                 <outlet property="shoppingMallListBtn" destination="yS4-JW-cFF" id="OOc-O3-Lfm"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
