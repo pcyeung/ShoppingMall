@@ -182,6 +182,8 @@
 		706C70B9189E4A9E00B2C38C /* MockMall.m in Sources */ = {isa = PBXBuildFile; fileRef = 706C70B8189E4A9E00B2C38C /* MockMall.m */; };
 		706C70CB18A0D31600B2C38C /* TimelineListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 706C70CA18A0D31600B2C38C /* TimelineListCell.m */; };
 		706C70CD18A0DAF700B2C38C /* TimelineListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 706C70CC18A0DAF700B2C38C /* TimelineListCell.xib */; };
+		70807DFB18AA693800984161 /* redeem_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 70807DFA18AA693800984161 /* redeem_icon.png */; };
+		70807DFD18AA695600984161 /* timeline_scroll.png in Resources */ = {isa = PBXBuildFile; fileRef = 70807DFC18AA695600984161 /* timeline_scroll.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -415,6 +417,8 @@
 		706C70C918A0D31600B2C38C /* TimelineListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TimelineListCell.h; path = MyAccount/TimelineListCell.h; sourceTree = "<group>"; };
 		706C70CA18A0D31600B2C38C /* TimelineListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TimelineListCell.m; path = MyAccount/TimelineListCell.m; sourceTree = "<group>"; };
 		706C70CC18A0DAF700B2C38C /* TimelineListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimelineListCell.xib; sourceTree = "<group>"; };
+		70807DFA18AA693800984161 /* redeem_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redeem_icon.png; sourceTree = "<group>"; };
+		70807DFC18AA695600984161 /* timeline_scroll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = timeline_scroll.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -802,6 +806,8 @@
 		23D615181893A36F00C60E3E /* images */ = {
 			isa = PBXGroup;
 			children = (
+				70807DFC18AA695600984161 /* timeline_scroll.png */,
+				70807DFA18AA693800984161 /* redeem_icon.png */,
 				0959580A18A0BEFB009C54A2 /* mapView.png */,
 				236AB6321894D63900770E81 /* bg.png */,
 				2348433B1896166E00F752C3 /* line@2x.png */,
@@ -1055,6 +1061,7 @@
 				23D615761893A36F00C60E3E /* logo2.png in Resources */,
 				2348433E1896166E00F752C3 /* pick_bg@2x.png in Resources */,
 				236AB6421894D63900770E81 /* map_name.png in Resources */,
+				70807DFD18AA695600984161 /* timeline_scroll.png in Resources */,
 				23D615711893A36F00C60E3E /* h_05.png in Resources */,
 				236AB6071894AE0B00770E81 /* GiftListCell.xib in Resources */,
 				23D615741893A36F00C60E3E /* line2.png in Resources */,
@@ -1105,6 +1112,7 @@
 				236AB6441894D63900770E81 /* search_bg.png in Resources */,
 				23D615791893A36F00C60E3E /* logo5.png in Resources */,
 				23D6157D1893A36F00C60E3E /* num_gift.png in Resources */,
+				70807DFB18AA693800984161 /* redeem_icon.png in Resources */,
 				23D6159C1893A6AC00C60E3E /* HomePageViewController.xib in Resources */,
 				0959580918A0BB80009C54A2 /* GiftViewController5.xib in Resources */,
 				23D6156C1893A36F00C60E3E /* h12_bg1.png in Resources */,

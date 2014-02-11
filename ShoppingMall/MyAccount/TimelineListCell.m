@@ -17,7 +17,9 @@
         NSArray *nibObjects = [[NSBundle mainBundle] loadNibNamed:@"TimelineListCell" owner:self options:nil];
         [self addSubview:nibObjects[0]];
 
-        [mallNameLabel setText:[[visitData mall] mallName]];
+        MockMall* mall = [visitData mall];
+        [mallNameLabel setText:[mall mallName]];
+        [mallAddressLabel setText:[mall mallAddress]];
         NSString* dateString = [NSDateFormatter localizedStringFromDate:[visitData visitTime]
                                        dateStyle:NSDateFormatterShortStyle
                                        timeStyle:NSDateFormatterShortStyle];

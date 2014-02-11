@@ -29,7 +29,7 @@
         [userNameLabel setText:[_user userName]];
         
         int accountPoints = [_user getAccountPoints];
-        [pointBalanceLabel setText:[NSString stringWithFormat:@"Balance:%d", accountPoints]];
+        [pointBalanceLabel setText:[NSString stringWithFormat:@"%d points", accountPoints]];
         
     }
     return self;
