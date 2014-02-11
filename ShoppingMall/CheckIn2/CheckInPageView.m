@@ -45,9 +45,9 @@
     clickCount++;
 }
 
-- (id)initWithFrame:(CGRect)frame sonicCode:(SonicCodeHeard *) code nibName:(NSString *)nibName user:(MockUser*)user
+- (id)initWithFrame:(CGRect)frame sonicCode:(SonicCodeHeard *) code nibName:(NSString *)nibName
 {
-    _user = user;
+    _user = [MockUser sharedUserObject];
     _mall = [[MockMall alloc] initWithSonicCode:code];
     if ([_user hasVisited:_mall] == YES) {
         return NULL;

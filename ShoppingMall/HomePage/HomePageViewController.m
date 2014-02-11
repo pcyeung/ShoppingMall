@@ -17,14 +17,11 @@
 
 @implementation HomePageViewController
 
-@synthesize user = _user;
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil user:(MockUser*)user
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        _user = user;
         mapView = [[MKMapView alloc]init];
         [mapView setUserTrackingMode:MKUserTrackingModeFollow];
     }
@@ -47,9 +44,9 @@
 - (IBAction)myAccountBtnClick {
     MyAccountHomePageViewController *myAccountView;
     if (iPhone5) {
-        myAccountView=[[MyAccountHomePageViewController alloc]initWithNibName:@"MyAccountHomePageViewController5" bundle:nil user:NULL];
+        myAccountView=[[MyAccountHomePageViewController alloc]initWithNibName:@"MyAccountHomePageViewController5" bundle:nil];
     }else{
-        myAccountView=[[MyAccountHomePageViewController alloc]initWithNibName:@"MyAccountHomePageViewController" bundle:nil user:NULL];
+        myAccountView=[[MyAccountHomePageViewController alloc]initWithNibName:@"MyAccountHomePageViewController" bundle:nil];
     }
     [self.navigationController pushViewController:myAccountView animated:YES];
 }

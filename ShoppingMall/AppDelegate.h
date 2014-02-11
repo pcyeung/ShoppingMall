@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MockUser.h"
 #import "TCNavigationController.h"
 
 #import <Sonic/Sonic.h>
@@ -20,8 +19,6 @@
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
-@property (strong, nonatomic) MockUser *user;
-
 
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;

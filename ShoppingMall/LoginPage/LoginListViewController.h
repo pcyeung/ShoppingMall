@@ -8,7 +8,6 @@
 //Hello
 
 #import <UIKit/UIKit.h>
-#import "MockUser.h"
 
 @interface LoginListViewController : UIViewController{
     
@@ -17,9 +16,7 @@
     IBOutlet UIButton *qqBtn;
 }
 
-@property (strong, nonatomic) MockUser *user;
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil user:(MockUser*)user;
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil;
 - (IBAction)renrenBtnClick;
 - (IBAction)weiboBtnClick;
 - (IBAction)qqBtnClick;

@@ -20,7 +20,6 @@
 @synthesize managedObjectContext = _managedObjectContext;
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
-@synthesize user = _user;
 
 static NSString * const kSonicNotifyGUID = @"M2I0MWEwMmEtYzE3OS00YTYwLTk0YTEtZWU2NmZhNDFiMDRm";
 
@@ -28,7 +27,6 @@ static NSString * const kSonicNotifyGUID = @"M2I0MWEwMmEtYzE3OS00YTYwLTk0YTEtZWU
 {
     [[Sonic sharedInstance] initializeWithApplicationGUID:kSonicNotifyGUID andDelegate:self];
     [[Sonic sharedInstance] startListening];
-    _user = [[MockUser alloc] init];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
@@ -37,9 +35,9 @@ static NSString * const kSonicNotifyGUID = @"M2I0MWEwMmEtYzE3OS00YTYwLTk0YTEtZWU
     
     LoginListViewController *indexView;
     if (iPhone5) {
-        indexView=[[LoginListViewController alloc]initWithNibName:@"LoginListViewController5" bundle:nil user:_user];
+        indexView=[[LoginListViewController alloc]initWithNibName:@"LoginListViewController5" bundle:nil];
     }else{
-        indexView=[[LoginListViewController alloc]initWithNibName:@"LoginListViewController" bundle:nil user:_user];
+        indexView=[[LoginListViewController alloc]initWithNibName:@"LoginListViewController" bundle:nil];
     }
     
     TCNavigationController *nav=[[TCNavigationController alloc]initWithRootViewController:indexView];
@@ -72,9 +70,9 @@ static NSString * const kSonicNotifyGUID = @"M2I0MWEwMmEtYzE3OS00YTYwLTk0YTEtZWU
 - (BOOL)sonic:(Sonic *)sonic didHearCode:(SonicCodeHeard *)code {
     CheckInPageView *checkInPageView;
     if (iPhone5) {
-        checkInPageView=[[CheckInPageView alloc]initWithFrame:[[UIScreen mainScreen] bounds] sonicCode:code nibName:@"CheckInPageView5" user:_user];
+        checkInPageView=[[CheckInPageView alloc]initWithFrame:[[UIScreen mainScreen] bounds] sonicCode:code nibName:@"CheckInPageView5"];
     } else {
-        checkInPageView=[[CheckInPageView alloc]initWithFrame:[[UIScreen mainScreen] bounds] sonicCode:code nibName:@"CheckInPageView" user:_user];
+        checkInPageView=[[CheckInPageView alloc]initWithFrame:[[UIScreen mainScreen] bounds] sonicCode:code nibName:@"CheckInPageView"];
     }
     if (checkInPageView != NULL) {
         [checkInPageView show];

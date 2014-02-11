@@ -33,6 +33,15 @@
 @synthesize visitHistory = _visitHistory;
 @synthesize visitedMalls = _visitedMalls;
 
++ (id)sharedUserObject {
+    static MockUser *sharedUser = nil;
+    @synchronized(self) {
+        if (sharedUser == nil) {
+            sharedUser = [[self alloc] init];
+        }
+    }
+    return sharedUser;
+}
 
 - (id)init {
     self = [super init];

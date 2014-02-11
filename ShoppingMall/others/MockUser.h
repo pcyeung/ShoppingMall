@@ -26,7 +26,7 @@
 @property(strong, nonatomic) NSMutableArray *visitHistory;
 @property(strong, nonatomic) NSMutableDictionary *visitedMalls;
 
-
++ (id)sharedUserObject;
 -(int)getAccountPoints;
 -(void)setAccountPoints:(int)points;
 -(void)addVisit:(MockMall*)mall;
