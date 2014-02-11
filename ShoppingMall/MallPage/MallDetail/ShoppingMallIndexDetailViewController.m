@@ -66,4 +66,8 @@
     }
 }
 
+- (IBAction)numberOfGiftBtnClick {
+}
+
+
 @end
