@@ -12,6 +12,7 @@
 @interface TimelineListCell : UITableViewCell {
     IBOutlet UILabel *mallNameLabel;
     IBOutlet UILabel *checkInLabel;
+    IBOutlet UILabel *mallAddressLabel;
 }
 
 -(id) initWithVisitData:(VisitData*)visitData;

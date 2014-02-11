@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MockUser.h"
 #import <MapKit/MapKit.h>
 
 
@@ -21,14 +20,11 @@
     IBOutlet MKMapView *mapView;
 }
 
-@property (strong, nonatomic) MockUser *user;
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil user:(MockUser*)user;
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil;
 
 - (IBAction)myAccountBtnClick;
 - (IBAction)listBtnClick;
 - (IBAction)shoppingMallListBtnClick;
 - (IBAction)giftBtnClick;
-//- (IBA)
-
 
 @end

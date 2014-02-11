@@ -8,6 +8,7 @@
 
 #import "LoginListViewController.h"
 #import "HomePageViewController.h"
+#import "MyAccountHomePageViewController.h"
 
 @interface LoginListViewController ()
 
@@ -15,14 +16,11 @@
 
 @implementation LoginListViewController
 
-@synthesize user = _user;
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil user:(MockUser*)user
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        _user = user;
     }
     return self;
 }
@@ -42,9 +40,9 @@
 - (IBAction)renrenBtnClick {
     HomePageViewController *HomePageView;
     if (iPhone5) {
-        HomePageView=[[HomePageViewController alloc]initWithNibName:@"HomePageViewController5" bundle:nil user:_user];
+        HomePageView=[[HomePageViewController alloc]initWithNibName:@"HomePageViewController5" bundle:nil];
     }else{
-        HomePageView=[[HomePageViewController alloc]initWithNibName:@"HomePageViewController" bundle:nil user:_user];
+        HomePageView=[[HomePageViewController alloc]initWithNibName:@"HomePageViewController" bundle:nil];
     }
     [self.navigationController pushViewController:HomePageView animated:YES];
 }
@@ -52,9 +50,9 @@
 - (IBAction)weiboBtnClick {
     HomePageViewController *HomePageView;
     if (iPhone5) {
-        HomePageView=[[HomePageViewController alloc]initWithNibName:@"HomePageViewController5" bundle:nil user:_user];
+        HomePageView=[[HomePageViewController alloc]initWithNibName:@"HomePageViewController5" bundle:nil];
     }else{
-        HomePageView=[[HomePageViewController alloc]initWithNibName:@"HomePageViewController" bundle:nil user:_user];
+        HomePageView=[[HomePageViewController alloc]initWithNibName:@"HomePageViewController" bundle:nil];
     }
     [self.navigationController pushViewController:HomePageView animated:YES];
 }
@@ -62,9 +60,9 @@
 - (IBAction)qqBtnClick {
     HomePageViewController *HomePageView;
     if (iPhone5) {
-        HomePageView=[[HomePageViewController alloc]initWithNibName:@"HomePageViewController5" bundle:nil user:_user];
+        HomePageView=[[HomePageViewController alloc]initWithNibName:@"HomePageViewController5" bundle:nil];
     }else{
-        HomePageView=[[HomePageViewController alloc]initWithNibName:@"HomePageViewController" bundle:nil user:_user];
+        HomePageView=[[HomePageViewController alloc]initWithNibName:@"HomePageViewController" bundle:nil];
     }
     [self.navigationController pushViewController:HomePageView animated:YES];
 }

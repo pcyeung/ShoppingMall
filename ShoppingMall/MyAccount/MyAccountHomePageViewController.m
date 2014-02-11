@@ -11,6 +11,7 @@
 #import "GiftListViewController.h"
 #import "HomePageViewController.h"
 #import "TimelineListCell.h"
+#import "GiftViewController.h"
 
 @interface MyAccountHomePageViewController ()
 
@@ -20,16 +21,16 @@
 
 @synthesize user = _user;
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil user:(MockUser*)user
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        _user = user;
+        _user = [MockUser sharedUserObject];
         [userNameLabel setText:[_user userName]];
         
         int accountPoints = [_user getAccountPoints];
-        [pointBalanceLabel setText:[NSString stringWithFormat:@"Balance:%d", accountPoints]];
+        [pointBalanceLabel setText:[NSString stringWithFormat:@"%d points", accountPoints]];
         
     }
     return self;
@@ -41,14 +42,10 @@
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
- //   [[_user visitHistory] objectAtIndex:<#(NSUInteger)#>
-    
- //   TimelineListCell *cell = [[TimelineListCell alloc] initWithVisitData:[[_user visitHistory] ]
-  //  -(id) initWithVisitData:(VisitData*)visitData
-
-    
-    NSArray *nib=[[NSBundle mainBundle]loadNibNamed:@"TimelineListCell" owner:self options:Nil];
-    TimelineListCell *cell=[nib objectAtIndex:0];
+    int visitRow = [[_user visitHistory] count] - [indexPath row] - 1;
+    assert(visitRow >= 0);
+    VisitData* visitData = [[_user visitHistory] objectAtIndex:visitRow];
+    TimelineListCell *cell = [[TimelineListCell alloc] initWithVisitData:visitData];
     return cell;
 }
 
@@ -100,6 +97,24 @@
             [self.navigationController popToViewController:tem animated:YES];
         }
     }
+    
+}
+
+- (IBAction)giftBtnClick{
+    
+    GiftViewController *gift;
+    
+    if (iPhone5) {
+        
+        gift=[[GiftViewController alloc]initWithNibName:@"GiftViewController5" bundle:nil];
+        
+    }else{
+        
+        gift=[[GiftViewController alloc]initWithNibName:@"GiftViewController" bundle:nil];
+        
+    }
+    
+    [self.navigationController pushViewController:gift animated:YES];
     
 }
 @end

@@ -26,7 +26,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="h03_top_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="3K7-IU-MuM">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="85"/>
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vza-hB-bdZ">
@@ -48,26 +48,26 @@
                         <action selector="backBtnClick" destination="-1" eventType="touchUpInside" id="WN7-Cw-XkX"/>
                     </connections>
                 </button>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Jason Chou" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="106" translatesAutoresizingMaskIntoConstraints="NO" id="azE-ut-r7X">
-                    <rect key="frame" x="0.0" y="53" width="106" height="32"/>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Jason Chou" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="184" translatesAutoresizingMaskIntoConstraints="NO" id="azE-ut-r7X">
+                    <rect key="frame" x="68" y="8" width="184" height="32"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10 points" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="94" translatesAutoresizingMaskIntoConstraints="NO" id="KKh-lf-wT8">
-                    <rect key="frame" x="226" y="53" width="94" height="30"/>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10 points" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="101" translatesAutoresizingMaskIntoConstraints="NO" id="KKh-lf-wT8">
+                    <rect key="frame" x="24" y="116" width="101" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="textColor" red="1" green="0.35882128369999999" blue="0.055275750130000002" alpha="1" colorSpace="calibratedRGB"/>
                     <color key="highlightedColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                 </label>
                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="pic1.png" translatesAutoresizingMaskIntoConstraints="NO" id="Zbg-d1-yci">
-                    <rect key="frame" x="103" y="5" width="115" height="115"/>
+                    <rect key="frame" x="31" y="42" width="86" height="80"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GtO-eO-rLw">
-                    <rect key="frame" x="126" y="109" width="70" height="60"/>
+                    <rect key="frame" x="184" y="74" width="70" height="60"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <state key="normal" image="friends.png">
@@ -78,10 +78,10 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dsw-JV-vmy">
-                    <rect key="frame" x="261" y="109" width="45" height="60"/>
+                    <rect key="frame" x="266" y="74" width="45" height="60"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <state key="normal" image="gift.png">
+                    <state key="normal" image="redeem_icon.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -89,7 +89,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZQ9-Z1-rQW">
-                    <rect key="frame" x="21" y="109" width="45" height="60"/>
+                    <rect key="frame" x="126" y="74" width="45" height="60"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <state key="normal" image="info_icon.png">
@@ -121,9 +121,12 @@
                     <state key="normal" image="bottom_right_btn.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="giftBtnClick" destination="-1" eventType="touchUpInside" id="rcq-3N-L6B"/>
+                    </connections>
                 </button>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="aFS-th-1Gd">
-                    <rect key="frame" x="0.0" y="177" width="320" height="254"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="95" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="aFS-th-1Gd">
+                    <rect key="frame" x="0.0" y="148" width="320" height="283"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
@@ -138,13 +141,13 @@
     </objects>
     <resources>
         <image name="bottom.png" width="640" height="111"/>
-        <image name="bottom_left_btn.png" width="80" height="60"/>
-        <image name="bottom_right_btn.png" width="67" height="60"/>
+        <image name="bottom_left_btn.png" width="89" height="80"/>
+        <image name="bottom_right_btn.png" width="89" height="80"/>
         <image name="friends.png" width="153" height="140"/>
-        <image name="gift.png" width="91" height="140"/>
         <image name="h03_top_bg.png" width="640" height="458"/>
         <image name="info_icon.png" width="78" height="140"/>
         <image name="pic1.png" width="194" height="193"/>
+        <image name="redeem_icon.png" width="93" height="120"/>
         <image name="top_left_btn.png" width="70" height="70"/>
         <image name="top_right_btn.png" width="70" height="70"/>
     </resources>

@@ -14,6 +14,7 @@
 @implementation MockMall
 
 @synthesize mallName = _mallName;
+@synthesize mallAddress = _mallAddress;
 @synthesize adsText = _adsText;
 
 - (id)initWithSonicCode:(SonicCodeHeard*)code {
@@ -30,35 +31,26 @@
         }
         
         switch (beaconCode) {
-            case 0:
-                _mallName = @"APM";
-                _adsText = @"Free APM Burgers";
-                bonusPoints = 20;
-                mallId = 0;
-                break;
-            case 1:
-                _mallName = @"World Trade";
-                _adsText = @"World Trade Beer";
+            case 802396:
+                _mallName = @"时代广场";
+                _mallAddress = @"Wanchai";
+                _adsText = @"赠送烤鸡腿";
                 bonusPoints = 10;
                 mallId = 1;
                 break;
-            case 802396:
-                _mallName = @"时代广场";
-                _adsText = @"赠送烤鸡腿";
-                bonusPoints = 10;
-                mallId = 2;
-                break;
             case 802399:
                 _mallName = @"世贸中心";
+                _mallAddress = @"Wanchai";
                 _adsText = @"赠送电影票";
                 bonusPoints = 15;
                 mallId = 3;
                 break;
             default:
-                _mallName = [NSString stringWithFormat:@"%d",beaconCode];
-                _adsText = @"Wings?";
+                _mallName = [NSString stringWithFormat:@"Code %d",beaconCode];
+                _mallAddress = @"Wanchai";
+                _adsText = @"Free Wings?";
                 bonusPoints = 5;
-                mallId = 2;
+                mallId = 0;
                 break;
         }
     }

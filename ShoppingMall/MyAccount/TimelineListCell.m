@@ -13,13 +13,17 @@
 -(id) initWithVisitData:(VisitData*)visitData
 {
     self = [super init];
-    if (self) {			
-        [mallNameLabel setText:[[visitData mall] mallName]];
-        
+    if (self) {
+        NSArray *nibObjects = [[NSBundle mainBundle] loadNibNamed:@"TimelineListCell" owner:self options:nil];
+        [self addSubview:nibObjects[0]];
+
+        MockMall* mall = [visitData mall];
+        [mallNameLabel setText:[mall mallName]];
+        [mallAddressLabel setText:[mall mallAddress]];
         NSString* dateString = [NSDateFormatter localizedStringFromDate:[visitData visitTime]
                                        dateStyle:NSDateFormatterShortStyle
                                        timeStyle:NSDateFormatterShortStyle];
-        [checkInLabel setText:dateString];
+        [checkInLabel setText:[NSString stringWithFormat:@"Checked-in: %@", dateString]];
     }
     return self;
 }

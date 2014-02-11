@@ -13,6 +13,7 @@
                 <outlet property="giftBtn" destination="jdS-DP-xTL" id="Jpg-zn-hQA"/>
                 <outlet property="pointBalanceLabel" destination="Yxb-3l-GrV" id="hTb-IX-QrO"/>
                 <outlet property="shoppingMallListBtn" destination="MDj-PN-74m" id="385-0J-8FP"/>
+                <outlet property="timelineList" destination="3H2-AU-g6X" id="ZYZ-3p-qhi"/>
                 <outlet property="userNameLabel" destination="eqP-fy-dKU" id="fDS-3E-d39"/>
                 <outlet property="view" destination="1" id="QCI-Vh-im5"/>
             </connections>
@@ -23,7 +24,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="h03_top_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="lMU-FX-he1">
-                    <rect key="frame" x="-44" y="0.0" width="396" height="90"/>
+                    <rect key="frame" x="-44" y="0.0" width="396" height="63"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahq-SR-YnA">
@@ -45,15 +46,15 @@
                         <action selector="backBtnClick" destination="-1" eventType="touchUpInside" id="TKr-Vt-qWB"/>
                     </connections>
                 </button>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Jason Chou" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="114" translatesAutoresizingMaskIntoConstraints="NO" id="eqP-fy-dKU">
-                    <rect key="frame" x="-5" y="62" width="114" height="27"/>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Jason Chou" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="175" translatesAutoresizingMaskIntoConstraints="NO" id="eqP-fy-dKU">
+                    <rect key="frame" x="73" y="11" width="175" height="27"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="pic1.png" translatesAutoresizingMaskIntoConstraints="NO" id="aYp-So-ohx">
-                    <rect key="frame" x="100" y="5" width="120" height="120"/>
+                    <rect key="frame" x="34" y="42" width="86" height="80"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="bottom.png" translatesAutoresizingMaskIntoConstraints="NO" id="jg9-Vk-Ti4">
@@ -80,14 +81,14 @@
                     </state>
                 </button>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10 points" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="135" translatesAutoresizingMaskIntoConstraints="NO" id="Yxb-3l-GrV">
-                    <rect key="frame" x="204" y="62" width="135" height="26"/>
+                    <rect key="frame" x="10" y="121" width="135" height="26"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="textColor" red="1" green="0.35882128369999999" blue="0.055275750130000002" alpha="1" colorSpace="calibratedRGB"/>
                     <color key="highlightedColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                 </label>
                 <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YV5-Q0-3Fa">
-                    <rect key="frame" x="118" y="118" width="80" height="70"/>
+                    <rect key="frame" x="182" y="71" width="70" height="60"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <state key="normal" image="friends.png">
@@ -95,21 +96,30 @@
                     </state>
                 </button>
                 <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lxD-Rc-aiT">
-                    <rect key="frame" x="253" y="118" width="55" height="70"/>
+                    <rect key="frame" x="260" y="71" width="45" height="60"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <state key="normal" image="gift.png">
+                    <state key="normal" image="redeem_icon.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
                 <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aM2-cK-IWl">
-                    <rect key="frame" x="13" y="118" width="55" height="70"/>
+                    <rect key="frame" x="132" y="71" width="45" height="60"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <state key="normal" image="info_icon.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="95" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="3H2-AU-g6X">
+                    <rect key="frame" x="0.0" y="152" width="320" height="366"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="BBt-LV-PO9"/>
+                        <outlet property="delegate" destination="-1" id="Oz2-VW-GSc"/>
+                    </connections>
+                </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -117,13 +127,13 @@
     </objects>
     <resources>
         <image name="bottom.png" width="640" height="111"/>
-        <image name="bottom_left_btn.png" width="80" height="60"/>
-        <image name="bottom_right_btn.png" width="67" height="60"/>
+        <image name="bottom_left_btn.png" width="89" height="80"/>
+        <image name="bottom_right_btn.png" width="89" height="80"/>
         <image name="friends.png" width="153" height="140"/>
-        <image name="gift.png" width="91" height="140"/>
         <image name="h03_top_bg.png" width="640" height="458"/>
         <image name="info_icon.png" width="78" height="140"/>
         <image name="pic1.png" width="194" height="193"/>
+        <image name="redeem_icon.png" width="93" height="120"/>
         <image name="top_left_btn.png" width="70" height="70"/>
         <image name="top_right_btn.png" width="70" height="70"/>
     </resources>

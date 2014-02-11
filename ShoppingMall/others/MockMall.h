@@ -15,6 +15,7 @@
 }
 
 @property(strong, nonatomic) NSString *mallName;
+@property(strong, nonatomic) NSString *mallAddress;
 @property(strong, nonatomic) NSString *adsText;
 
 - (id)initWithSonicCode:(SonicCodeHeard *)code;
