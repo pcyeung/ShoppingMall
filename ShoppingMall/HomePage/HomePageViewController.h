@@ -26,7 +26,5 @@
 - (IBAction)listBtnClick;
 - (IBAction)shoppingMallListBtnClick;
 - (IBAction)giftBtnClick;
-//- (IBA)
-
 
 @end

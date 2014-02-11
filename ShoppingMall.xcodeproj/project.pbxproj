@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		0959580418A09FDD009C54A2 /* GiftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0959580218A09FDD009C54A2 /* GiftViewController.m */; };
 		0959580518A09FDD009C54A2 /* GiftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0959580318A09FDD009C54A2 /* GiftViewController.xib */; };
-		0959580718A0B8E8009C54A2 /* Sonic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0959580618A0B8E8009C54A2 /* Sonic.framework */; };
 		0959580918A0BB80009C54A2 /* GiftViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0959580818A0BB80009C54A2 /* GiftViewController5.xib */; };
 		0959580B18A0BEFB009C54A2 /* mapView.png in Resources */ = {isa = PBXBuildFile; fileRef = 0959580A18A0BEFB009C54A2 /* mapView.png */; };
+		09F0A65E18AA8951006E3B0C /* Sonic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F0A65D18AA8951006E3B0C /* Sonic.framework */; };
 		2348433D1896166E00F752C3 /* line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2348433B1896166E00F752C3 /* line@2x.png */; };
 		2348433E1896166E00F752C3 /* pick_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2348433C1896166E00F752C3 /* pick_bg@2x.png */; };
 		2348437C189648AE00F752C3 /* MallGiftListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 23484376189648AE00F752C3 /* MallGiftListCell.m */; };
@@ -200,9 +200,9 @@
 		0959580118A09FDD009C54A2 /* GiftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GiftViewController.h; path = Gift/GiftViewController.h; sourceTree = "<group>"; };
 		0959580218A09FDD009C54A2 /* GiftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GiftViewController.m; path = Gift/GiftViewController.m; sourceTree = "<group>"; };
 		0959580318A09FDD009C54A2 /* GiftViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GiftViewController.xib; path = Gift/GiftViewController.xib; sourceTree = "<group>"; };
-		0959580618A0B8E8009C54A2 /* Sonic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sonic.framework; path = Core/Sonic.framework; sourceTree = "<group>"; };
 		0959580818A0BB80009C54A2 /* GiftViewController5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GiftViewController5.xib; sourceTree = "<group>"; };
 		0959580A18A0BEFB009C54A2 /* mapView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapView.png; sourceTree = "<group>"; };
+		09F0A65D18AA8951006E3B0C /* Sonic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sonic.framework; path = Core/Sonic.framework; sourceTree = "<group>"; };
 		2348433B1896166E00F752C3 /* line@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "line@2x.png"; sourceTree = "<group>"; };
 		2348433C1896166E00F752C3 /* pick_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pick_bg@2x.png"; sourceTree = "<group>"; };
 		23484375189648AE00F752C3 /* MallGiftListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MallGiftListCell.h; sourceTree = "<group>"; };
@@ -433,7 +433,6 @@
 				702E1405189A2DA400B59475 /* AudioToolbox.framework in Frameworks */,
 				702E1403189A2D9A00B59475 /* SystemConfiguration.framework in Frameworks */,
 				702E1401189A2D8D00B59475 /* MobileCoreServices.framework in Frameworks */,
-				0959580718A0B8E8009C54A2 /* Sonic.framework in Frameworks */,
 				702E13FD189A2D6B00B59475 /* CoreAudio.framework in Frameworks */,
 				702E1407189A2DB400B59475 /* Security.framework in Frameworks */,
 				702E1409189A2DCE00B59475 /* libsqlite3.dylib in Frameworks */,
@@ -441,6 +440,7 @@
 				23D612F1189365F100C60E3E /* UIKit.framework in Frameworks */,
 				23D612ED189365F100C60E3E /* Foundation.framework in Frameworks */,
 				23D612EF189365F100C60E3E /* CoreGraphics.framework in Frameworks */,
+				09F0A65E18AA8951006E3B0C /* Sonic.framework in Frameworks */,
 				23DD8C401896076D005F7A48 /* QuartzCore.framework in Frameworks */,
 				23DD8C3C1895EE8A005F7A48 /* libiconv.dylib in Frameworks */,
 				23DD8C3A1895EE77005F7A48 /* CoreVideo.framework in Frameworks */,
@@ -618,8 +618,8 @@
 		23D612EB189365F100C60E3E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				09F0A65D18AA8951006E3B0C /* Sonic.framework */,
 				702E140E189AD5C600B59475 /* Accelerate.framework */,
-				0959580618A0B8E8009C54A2 /* Sonic.framework */,
 				702E140A189A2DDB00B59475 /* libstdc++.dylib */,
 				702E1408189A2DCE00B59475 /* libsqlite3.dylib */,
 				702E1406189A2DB400B59475 /* Security.framework */,
@@ -1331,6 +1331,7 @@
 					/Users/kienmanng/Downloads/ShoppingMall/Core,
 					"/Users/kienmanng/Downloads/sonic-ios-sdk-v4.70.111-prod/Core",
 					/Users/bear/Desktop/ShoppingMall/Core,
+					/Users/bear/Desktop/Work/ShoppingMall/Core,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ShoppingMall/ShoppingMall-Prefix.pch";
@@ -1364,6 +1365,7 @@
 					/Users/kienmanng/Downloads/ShoppingMall/Core,
 					"/Users/kienmanng/Downloads/sonic-ios-sdk-v4.70.111-prod/Core",
 					/Users/bear/Desktop/ShoppingMall/Core,
+					/Users/bear/Desktop/Work/ShoppingMall/Core,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ShoppingMall/ShoppingMall-Prefix.pch";

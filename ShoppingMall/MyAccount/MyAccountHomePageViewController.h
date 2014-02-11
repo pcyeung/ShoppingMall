@@ -34,4 +34,7 @@
 - (IBAction)giftListBTnClick;
 
 - (IBAction)shoppingMallListBtnClick;
+
+- (IBAction)giftBtnClick; //Teddy
+
 @end

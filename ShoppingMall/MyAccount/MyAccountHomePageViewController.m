@@ -11,6 +11,7 @@
 #import "GiftListViewController.h"
 #import "HomePageViewController.h"
 #import "TimelineListCell.h"
+#import "GiftViewController.h"
 
 @interface MyAccountHomePageViewController ()
 
@@ -96,6 +97,24 @@
             [self.navigationController popToViewController:tem animated:YES];
         }
     }
+    
+}
+
+- (IBAction)giftBtnClick{
+    
+    GiftViewController *gift;
+    
+    if (iPhone5) {
+        
+        gift=[[GiftViewController alloc]initWithNibName:@"GiftViewController5" bundle:nil];
+        
+    }else{
+        
+        gift=[[GiftViewController alloc]initWithNibName:@"GiftViewController" bundle:nil];
+        
+    }
+    
+    [self.navigationController pushViewController:gift animated:YES];
     
 }
 @end

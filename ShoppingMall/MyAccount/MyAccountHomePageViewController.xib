@@ -121,6 +121,9 @@
                     <state key="normal" image="bottom_right_btn.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="giftBtnClick" destination="-1" eventType="touchUpInside" id="rcq-3N-L6B"/>
+                    </connections>
                 </button>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="95" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="aFS-th-1Gd">
                     <rect key="frame" x="0.0" y="148" width="320" height="283"/>
