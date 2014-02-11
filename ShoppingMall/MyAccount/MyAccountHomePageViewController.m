@@ -41,8 +41,8 @@
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    int visitRow = [indexPath row];
-    assert(visitRow < [[_user visitHistory] count]);
+    int visitRow = [[_user visitHistory] count] - [indexPath row] - 1;
+    assert(visitRow >= 0);
     VisitData* visitData = [[_user visitHistory] objectAtIndex:visitRow];
     TimelineListCell *cell = [[TimelineListCell alloc] initWithVisitData:visitData];
     return cell;
