@@ -35,6 +35,10 @@
                     <rect key="frame" x="0.0" y="50" width="320" height="468"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Pjw-Ff-E7E"/>
+                        <outlet property="delegate" destination="-1" id="Mmt-eN-cTo"/>
+                    </connections>
                 </tableView>
                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="bottom.png" translatesAutoresizingMaskIntoConstraints="NO" id="IhK-QV-Bx8">
                     <rect key="frame" x="0.0" y="518" width="320" height="50"/>
@@ -63,8 +67,8 @@
     </objects>
     <resources>
         <image name="bottom.png" width="640" height="111"/>
-        <image name="bottom_left_btn.png" width="80" height="60"/>
-        <image name="bottom_right_btn.png" width="67" height="60"/>
+        <image name="bottom_left_btn.png" width="89" height="80"/>
+        <image name="bottom_right_btn.png" width="89" height="80"/>
         <image name="top_left_btn.png" width="70" height="70"/>
         <image name="top_right_btn.png" width="70" height="70"/>
     </resources>

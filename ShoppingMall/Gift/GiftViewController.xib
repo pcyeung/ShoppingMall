@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GiftViewController">
             <connections>
+                <outlet property="list" destination="7gp-TR-ptd" id="HT6-sq-ZTQ"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>
@@ -45,6 +46,10 @@
                     <rect key="frame" x="0.0" y="50" width="320" height="380"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="C8T-jJ-Kvx"/>
+                        <outlet property="delegate" destination="-1" id="e2v-6n-tZq"/>
+                    </connections>
                 </tableView>
                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="bottom.png" translatesAutoresizingMaskIntoConstraints="NO" id="3oA-FT-oo3">
                     <rect key="frame" x="0.0" y="430" width="320" height="50"/>
@@ -76,8 +81,8 @@
     </objects>
     <resources>
         <image name="bottom.png" width="640" height="111"/>
-        <image name="bottom_left_btn.png" width="80" height="60"/>
-        <image name="bottom_right_btn.png" width="67" height="60"/>
+        <image name="bottom_left_btn.png" width="89" height="80"/>
+        <image name="bottom_right_btn.png" width="89" height="80"/>
         <image name="top_left_btn.png" width="70" height="70"/>
         <image name="top_right_btn.png" width="70" height="70"/>
     </resources>
