@@ -10,6 +10,7 @@
 #import "MyAccountHomePageViewController.h"
 #import "HomePageViewController.h"
 #import "MallGiftListPageViewController.h"
+#import "HomePageListViewController.h"
 
 @interface ShoppingMallIndexDetailViewController ()
 
@@ -59,14 +60,49 @@
 }
 
 - (IBAction)shoppingMallListBtnClick {
+    
+    // Original implementation - Problem:
+    // Back to map view
+    /*
     for (UIViewController *tem in self.navigationController.viewControllers) {
         if ([tem isKindOfClass:[HomePageViewController class]]) {
             [self.navigationController popToViewController:tem animated:YES];
         }
     }
+    */
+    
+    // New implementation -
+    // Go to mall list
+    HomePageListViewController *mallPageListView;
+    
+    if (iPhone5) {
+        mallPageListView=[[HomePageListViewController alloc]initWithNibName:@"HomePageListViewController5" bundle:nil];
+    }else{
+        mallPageListView=[[HomePageListViewController alloc]initWithNibName:@"HomePageListViewController" bundle:nil];
+    }
+    [self.navigationController pushViewController:mallPageListView animated:YES];
 }
 
 - (IBAction)numberOfGiftBtnClick {
+    MallGiftListPageViewController *mallGiftListPageView;
+    
+    if (iPhone5) {
+        mallGiftListPageView=[[MallGiftListPageViewController alloc]initWithNibName:@"MallGiftListPageViewController5" bundle:nil];
+    }else{
+        mallGiftListPageView=[[MallGiftListPageViewController alloc]initWithNibName:@"MallGiftListPageViewController" bundle:nil];
+    }
+    [self.navigationController pushViewController:mallGiftListPageView animated:YES];
+}
+
+- (IBAction)giftBtnClick {
+    MallGiftListPageViewController *MallGiftListPageView;
+    
+    if (iPhone5) {
+        MallGiftListPageView=[[MallGiftListPageViewController alloc]initWithNibName:@"MallGiftListPageViewController5" bundle:nil];
+    }else{
+        MallGiftListPageView=[[MallGiftListPageViewController alloc]initWithNibName:@"MallGiftListPageViewController" bundle:nil];
+    }
+    [self.navigationController pushViewController:MallGiftListPageView animated:YES];
 }
 
 

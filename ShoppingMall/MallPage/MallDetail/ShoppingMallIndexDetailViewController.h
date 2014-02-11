@@ -22,6 +22,7 @@
 
 - (IBAction)shoppingMallListBtnClick;
 - (IBAction)numberOfGiftBtnClick;
+- (IBAction)giftBtnClick;
 
 
 @end

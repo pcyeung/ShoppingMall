@@ -11,6 +11,7 @@
 #import "MyAccountHomePageViewController.h"
 #import "HomePageViewController.h"
 #import "MallGiftListPageViewController.h"
+#import "ShoppingMallIndexDetailViewController.h"
 
 @interface HomePageListViewController ()
 
@@ -54,13 +55,15 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    MallGiftListPageViewController *mallGiftView;
-    if (iPhone5) {
-        mallGiftView=[[MallGiftListPageViewController alloc]initWithNibName:@"MallGiftListPageViewController5" bundle:nil];
+    ShoppingMallIndexDetailViewController *shoppingMallListView;
+    if (iPhone5){
+        shoppingMallListView = [[ShoppingMallIndexDetailViewController alloc]initWithNibName:@"ShoppingMallIndexDetailViewController5" bundle:nil];
     }else{
-        mallGiftView=[[MallGiftListPageViewController alloc]initWithNibName:@"MallGiftListPageViewController" bundle:nil];
+        shoppingMallListView = [[ShoppingMallIndexDetailViewController alloc]initWithNibName:@"ShoppingMallIndexDetailViewController" bundle:nil];
     }
-    [self.navigationController pushViewController:mallGiftView animated:YES];
+    
+    [self.navigationController pushViewController:shoppingMallListView animated:YES];
+    
 }
 
 - (IBAction)backBtnClick {
