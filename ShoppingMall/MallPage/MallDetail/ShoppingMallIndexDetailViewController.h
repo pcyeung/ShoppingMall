@@ -13,10 +13,15 @@
     IBOutlet UIButton *backBtn;
     IBOutlet UIButton *shoppingMallListBtn;
     IBOutlet UIButton *giftBtn;
+    IBOutlet UIButton *shoppingMallInfoBtn;
+    IBOutlet UIButton *shoppingMallBannerBtn;
+    IBOutlet UIButton *numberOfGiftBtn;
 }
 - (IBAction)backBtnClick;
 - (IBAction)myAccountBTnClick;
 
 - (IBAction)shoppingMallListBtnClick;
+- (IBAction)numberOfGiftBtnClick;
+
 
 @end

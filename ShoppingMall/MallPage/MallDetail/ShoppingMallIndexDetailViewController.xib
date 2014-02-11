@@ -10,6 +10,9 @@
                 <outlet property="MyAccountBtn" destination="0E2-WS-osO" id="RBy-ht-J96"/>
                 <outlet property="backBtn" destination="dVW-pc-A3M" id="SLl-bG-gkf"/>
                 <outlet property="giftBtn" destination="3s9-tI-UVS" id="15F-lG-Oau"/>
+                <outlet property="numberOfGiftBtn" destination="EXd-ht-Xap" id="Zmf-ng-1v1"/>
+                <outlet property="shoppingMallBannerBtn" destination="YCw-Yo-e8a" id="rFS-CE-Sqz"/>
+                <outlet property="shoppingMallInfoBtn" destination="c07-Rn-Djy" id="wg4-f2-9DS"/>
                 <outlet property="shoppingMallListBtn" destination="r04-IM-QLe" id="MEK-nz-xUd"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
@@ -71,17 +74,36 @@
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EXd-ht-Xap">
                     <rect key="frame" x="0.0" y="50" width="320" height="50"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" image="num_gift.png">
+                    <state key="normal" title="numberOfGiftBtn" image="num_gift.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="numberOfGiftBtnClick" destination="-1" eventType="touchUpInside" id="nVR-26-gN2"/>
+                    </connections>
                 </button>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HNH-3v-f5S">
                     <rect key="frame" x="0.0" y="100" width="320" height="330"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <subviews>
                         <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z2O-uA-hLA">
-                            <rect key="frame" x="0.0" y="0.0" width="320" height="170"/>
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="330"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YCw-Yo-e8a">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="bannerBtn" image="top_banner.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c07-Rn-Djy">
+                                    <rect key="frame" x="0.0" y="120" width="320" height="209"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="mallInfoBtn" image="h_02.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                            </subviews>
                         </scrollView>
                     </subviews>
                 </scrollView>
@@ -94,7 +116,9 @@
         <image name="bottom.png" width="640" height="111"/>
         <image name="bottom_left_btn.png" width="80" height="60"/>
         <image name="bottom_right_btn.png" width="67" height="60"/>
+        <image name="h_02.png" width="640" height="490"/>
         <image name="num_gift.png" width="640" height="98"/>
+        <image name="top_banner.png" width="640" height="330"/>
         <image name="top_left_btn.png" width="70" height="70"/>
         <image name="top_right_btn.png" width="70" height="70"/>
     </resources>
