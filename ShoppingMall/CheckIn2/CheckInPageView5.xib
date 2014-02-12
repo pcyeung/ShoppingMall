@@ -7,10 +7,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CheckInPageView">
             <connections>
-                <outlet property="centerTextLabel" destination="Mgq-gw-7v6" id="QEu-bw-Zdr"/>
-                <outlet property="checkInTextImage" destination="T99-Dx-S2s" id="95g-9Z-ZVx"/>
-                <outlet property="mallNameLabel" destination="jHt-AE-Leo" id="fay-PM-Rro"/>
-                <outlet property="okButton" destination="qiy-yg-eNi" id="TzY-wu-ryv"/>
+                <outlet property="centerTextLabel" destination="Mgq-gw-7v6" id="djx-YF-49f"/>
+                <outlet property="checkInTextImage" destination="T99-Dx-S2s" id="7fO-dI-aO7"/>
+                <outlet property="mallNameLabel" destination="jHt-AE-Leo" id="25C-m6-WlZ"/>
+                <outlet property="okButton" destination="esl-MN-yJ0" id="hr3-Ys-y6W"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -27,7 +27,7 @@
                         <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
                     </state>
                     <connections>
-                        <action selector="okButtonClick" destination="-1" eventType="touchUpInside" id="qrt-mn-qoG"/>
+                        <action selector="okButtonClick" destination="-1" eventType="touchUpInside" id="hAK-MF-jBD"/>
                     </connections>
                 </button>
                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="check_in.png" translatesAutoresizingMaskIntoConstraints="NO" id="T99-Dx-S2s">
@@ -109,7 +109,7 @@
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="okButtonClick" destination="-1" eventType="touchUpInside" id="SyC-7t-fI1"/>
+                        <action selector="okButtonClick" destination="-1" eventType="touchUpInside" id="dfg-w9-bfG"/>
                     </connections>
                 </button>
             </subviews>

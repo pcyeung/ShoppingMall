@@ -105,8 +105,8 @@
     </objects>
     <resources>
         <image name="bottom.png" width="640" height="111"/>
-        <image name="bottom_left_btn.png" width="80" height="60"/>
-        <image name="bottom_right_btn.png" width="67" height="60"/>
+        <image name="bottom_left_btn.png" width="89" height="80"/>
+        <image name="bottom_right_btn.png" width="89" height="80"/>
         <image name="h04_list.png" width="84" height="43"/>
         <image name="h04_map.png" width="89" height="48"/>
         <image name="top_grey_bg.png" width="640" height="98"/>

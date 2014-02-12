@@ -10,7 +10,10 @@
                 <outlet property="MyAccountBtn" destination="ahq-SR-YnA" id="NuJ-8p-w5O"/>
                 <outlet property="accountIcon" destination="aYp-So-ohx" id="Fxp-WN-IVN"/>
                 <outlet property="backBtn" destination="5m1-OP-RNU" id="2pW-aG-fDk"/>
+                <outlet property="friendsBtn" destination="YV5-Q0-3Fa" id="8If-hi-D6Y"/>
                 <outlet property="giftBtn" destination="jdS-DP-xTL" id="Jpg-zn-hQA"/>
+                <outlet property="giftListBtn" destination="lxD-Rc-aiT" id="Z4Y-Rm-yqb"/>
+                <outlet property="infoBtn" destination="aM2-cK-IWl" id="eas-Rf-4h0"/>
                 <outlet property="pointBalanceLabel" destination="Yxb-3l-GrV" id="hTb-IX-QrO"/>
                 <outlet property="shoppingMallListBtn" destination="MDj-PN-74m" id="385-0J-8FP"/>
                 <outlet property="timelineList" destination="3H2-AU-g6X" id="ZYZ-3p-qhi"/>
@@ -79,6 +82,9 @@
                     <state key="normal" image="bottom_right_btn.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="giftBtnClick" destination="-1" eventType="touchUpInside" id="O0Q-pF-gXJ"/>
+                    </connections>
                 </button>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10 points" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="135" translatesAutoresizingMaskIntoConstraints="NO" id="Yxb-3l-GrV">
                     <rect key="frame" x="10" y="121" width="135" height="26"/>
@@ -94,6 +100,9 @@
                     <state key="normal" image="friends.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="friendsBtnClick" destination="-1" eventType="touchUpInside" id="AMI-bH-Efz"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lxD-Rc-aiT">
                     <rect key="frame" x="260" y="71" width="45" height="60"/>
@@ -102,6 +111,9 @@
                     <state key="normal" image="redeem_icon.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="giftListBTnClick" destination="-1" eventType="touchUpInside" id="DOm-EY-kkT"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aM2-cK-IWl">
                     <rect key="frame" x="132" y="71" width="45" height="60"/>
@@ -110,6 +122,9 @@
                     <state key="normal" image="info_icon.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="infoBtnClick" destination="-1" eventType="touchUpInside" id="O1m-65-6CY"/>
+                    </connections>
                 </button>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="95" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="3H2-AU-g6X">
                     <rect key="frame" x="0.0" y="152" width="320" height="366"/>

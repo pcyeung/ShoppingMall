@@ -13,6 +13,7 @@
                 <outlet property="friendsBtn" destination="GtO-eO-rLw" id="q2T-Jr-lNI"/>
                 <outlet property="giftBtn" destination="nh6-zI-JJX" id="mZ1-Pt-qgc"/>
                 <outlet property="giftListBtn" destination="Dsw-JV-vmy" id="LIv-sD-54e"/>
+                <outlet property="infoBtn" destination="ZQ9-Z1-rQW" id="3b7-sY-Jrf"/>
                 <outlet property="pointBalanceLabel" destination="KKh-lf-wT8" id="q89-1S-XrU"/>
                 <outlet property="shoppingMallListBtn" destination="u17-r8-kmA" id="qfv-5c-qAL"/>
                 <outlet property="timelineList" destination="aFS-th-1Gd" id="TcZ-DH-iud"/>
@@ -96,7 +97,7 @@
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="giftListBTnClick" destination="-1" eventType="touchUpInside" id="TK8-Qd-Iof"/>
+                        <action selector="infoBtnClick" destination="-1" eventType="touchUpInside" id="SAm-DU-aQ2"/>
                     </connections>
                 </button>
                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="bottom.png" translatesAutoresizingMaskIntoConstraints="NO" id="kK9-7Z-LV1">

@@ -7,7 +7,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GiftViewController">
             <connections>
+                <outlet property="MyAccountBtn" destination="elT-TB-pz8" id="xBq-jZ-VH0"/>
+                <outlet property="backBtn" destination="y91-Nj-xtR" id="jSl-9M-ytc"/>
+                <outlet property="giftBtn" destination="6v8-0g-Oig" id="M5x-Ov-tIT"/>
                 <outlet property="list" destination="7gp-TR-ptd" id="HT6-sq-ZTQ"/>
+                <outlet property="shoppingMallListBtn" destination="ztu-M8-kYi" id="e1M-ol-lKQ"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>

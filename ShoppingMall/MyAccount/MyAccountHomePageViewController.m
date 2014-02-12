@@ -76,6 +76,7 @@
 }
 
 - (IBAction)infoBtnClick {
+    [self buttonClickToClass:@"InfoSettingViewController" iPhone5Nib:@"InfoSettingViewController5" nib:@"InfoSettingViewController"];
 }
 
 - (IBAction)friendsBtnClick {

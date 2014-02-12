@@ -185,6 +185,10 @@
 		70807DFB18AA693800984161 /* redeem_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 70807DFA18AA693800984161 /* redeem_icon.png */; };
 		70807DFD18AA695600984161 /* timeline_scroll.png in Resources */ = {isa = PBXBuildFile; fileRef = 70807DFC18AA695600984161 /* timeline_scroll.png */; };
 		70807E0018ABA37700984161 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70807DFF18ABA37700984161 /* BaseViewController.m */; };
+		70807E0218ABB8BC00984161 /* personal_settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 70807E0118ABB8BC00984161 /* personal_settings.png */; };
+		70807E0718ABBCA100984161 /* InfoSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70807E0518ABBCA100984161 /* InfoSettingViewController.m */; };
+		70807E0818ABBCA100984161 /* InfoSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807E0618ABBCA100984161 /* InfoSettingViewController.xib */; };
+		70807E0A18ABBF9600984161 /* InfoSettingViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807E0918ABBF9600984161 /* InfoSettingViewController5.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -422,6 +426,11 @@
 		70807DFC18AA695600984161 /* timeline_scroll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = timeline_scroll.png; sourceTree = "<group>"; };
 		70807DFE18ABA37700984161 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		70807DFF18ABA37700984161 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		70807E0118ABB8BC00984161 /* personal_settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = personal_settings.png; sourceTree = "<group>"; };
+		70807E0418ABBCA100984161 /* InfoSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InfoSettingViewController.h; path = MyAccount/InfoPage/InfoSettingViewController.h; sourceTree = "<group>"; };
+		70807E0518ABBCA100984161 /* InfoSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InfoSettingViewController.m; path = MyAccount/InfoPage/InfoSettingViewController.m; sourceTree = "<group>"; };
+		70807E0618ABBCA100984161 /* InfoSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = InfoSettingViewController.xib; path = MyAccount/InfoPage/InfoSettingViewController.xib; sourceTree = "<group>"; };
+		70807E0918ABBF9600984161 /* InfoSettingViewController5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = InfoSettingViewController5.xib; path = MyAccount/InfoPage/InfoSettingViewController5.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -811,6 +820,7 @@
 		23D615181893A36F00C60E3E /* images */ = {
 			isa = PBXGroup;
 			children = (
+				70807E0118ABB8BC00984161 /* personal_settings.png */,
 				70807DFC18AA695600984161 /* timeline_scroll.png */,
 				70807DFA18AA693800984161 /* redeem_icon.png */,
 				0959580A18A0BEFB009C54A2 /* mapView.png */,
@@ -900,6 +910,7 @@
 		23D6159F1893B7F400C60E3E /* MyAccount */ = {
 			isa = PBXGroup;
 			children = (
+				70807E0318ABBC7100984161 /* InfoPage */,
 				706C70C618A0CF2F00B2C38C /* TimelineCell */,
 				236AB5FD1894AE0B00770E81 /* GiftPage */,
 				236AB5AA18949EEF00770E81 /* FriendsPage */,
@@ -944,6 +955,17 @@
 				706C70CC18A0DAF700B2C38C /* TimelineListCell.xib */,
 			);
 			name = TimelineCell;
+			sourceTree = "<group>";
+		};
+		70807E0318ABBC7100984161 /* InfoPage */ = {
+			isa = PBXGroup;
+			children = (
+				70807E0418ABBCA100984161 /* InfoSettingViewController.h */,
+				70807E0518ABBCA100984161 /* InfoSettingViewController.m */,
+				70807E0618ABBCA100984161 /* InfoSettingViewController.xib */,
+				70807E0918ABBF9600984161 /* InfoSettingViewController5.xib */,
+			);
+			name = InfoPage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1053,6 +1075,7 @@
 				236AB6091894AE0B00770E81 /* GiftListViewController.xib in Resources */,
 				0959580B18A0BEFB009C54A2 /* mapView.png in Resources */,
 				23D6156F1893A36F00C60E3E /* h13_bg.png in Resources */,
+				70807E0A18ABBF9600984161 /* InfoSettingViewController5.xib in Resources */,
 				23D615681893A36F00C60E3E /* h08_map.png in Resources */,
 				23D6136D1893680700C60E3E /* whiteArrow@2x.png in Resources */,
 				23D615691893A36F00C60E3E /* h08_text.png in Resources */,
@@ -1067,6 +1090,7 @@
 				2348433E1896166E00F752C3 /* pick_bg@2x.png in Resources */,
 				236AB6421894D63900770E81 /* map_name.png in Resources */,
 				70807DFD18AA695600984161 /* timeline_scroll.png in Resources */,
+				70807E0818ABBCA100984161 /* InfoSettingViewController.xib in Resources */,
 				23D615711893A36F00C60E3E /* h_05.png in Resources */,
 				236AB6071894AE0B00770E81 /* GiftListCell.xib in Resources */,
 				23D615741893A36F00C60E3E /* line2.png in Resources */,
@@ -1086,6 +1110,7 @@
 				23D6158E1893A36F00C60E3E /* side_bar.png in Resources */,
 				236AB6121894B29E00770E81 /* GiftDetailPageViewController5.xib in Resources */,
 				23D615941893A36F00C60E3E /* top_right_btn.png in Resources */,
+				70807E0218ABB8BC00984161 /* personal_settings.png in Resources */,
 				23D615611893A36F00C60E3E /* gift.png in Resources */,
 				706C70B3189E3E8D00B2C38C /* CheckInPageView5.xib in Resources */,
 				23D6156A1893A36F00C60E3E /* h09_text.png in Resources */,
@@ -1162,6 +1187,7 @@
 				23D613801893680700C60E3E /* TCNavigationController.m in Sources */,
 				23D6137A1893680700C60E3E /* SDWebImagePrefetcher.m in Sources */,
 				2348437C189648AE00F752C3 /* MallGiftListCell.m in Sources */,
+				70807E0718ABBCA100984161 /* InfoSettingViewController.m in Sources */,
 				23D613791893680700C60E3E /* SDWebImageManager.m in Sources */,
 				23D613621893680700C60E3E /* CommonInstance.m in Sources */,
 				70807E0018ABA37700984161 /* BaseViewController.m in Sources */,
