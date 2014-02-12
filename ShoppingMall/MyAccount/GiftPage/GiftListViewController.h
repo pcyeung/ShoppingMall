@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface GiftListViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>{
+@interface GiftListViewController : BaseViewController<UITableViewDataSource,UITableViewDelegate>{
     IBOutlet UIButton *MyAccountBtn;
     IBOutlet UIButton *backBtn;
     IBOutlet UIButton *shoppingMallListBtn;

@@ -55,15 +55,7 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    ShoppingMallIndexDetailViewController *shoppingMallListView;
-    if (iPhone5){
-        shoppingMallListView = [[ShoppingMallIndexDetailViewController alloc]initWithNibName:@"ShoppingMallIndexDetailViewController5" bundle:nil];
-    }else{
-        shoppingMallListView = [[ShoppingMallIndexDetailViewController alloc]initWithNibName:@"ShoppingMallIndexDetailViewController" bundle:nil];
-    }
-    
-    [self.navigationController pushViewController:shoppingMallListView animated:YES];
-    
+    [self buttonClickToClass:@"ShoppingMallIndexDetailViewController" iPhone5Nib:@"ShoppingMallIndexDetailViewController5" nib:@"ShoppingMallIndexDetailViewController"];
 }
 
 - (IBAction)backBtnClick {
@@ -71,27 +63,11 @@
 }
 
 - (IBAction)myAccountBTnClick {
-    for (UIViewController *tem in self.navigationController.viewControllers) {
-        if ([tem isKindOfClass:[MyAccountHomePageViewController class]]) {
-            [self.navigationController popToViewController:tem animated:YES];
-        }
-    }
-    
-    MyAccountHomePageViewController *myAccountView;
-    if (iPhone5) {
-        myAccountView=[[MyAccountHomePageViewController alloc]initWithNibName:@"MyAccountHomePageViewController5" bundle:nil];
-    }else{
-        myAccountView=[[MyAccountHomePageViewController alloc]initWithNibName:@"MyAccountHomePageViewController" bundle:nil];
-    }
-    [self.navigationController pushViewController:myAccountView animated:YES];
+    [self buttonClickToClass:@"MyAccountHomePageViewController" iPhone5Nib:@"MyAccountHomePageViewController5" nib:@"MyAccountHomePageViewController"];
 }
 
 - (IBAction)shoppingMallListBtnClick {
-    for (UIViewController *tem in self.navigationController.viewControllers) {
-        if ([tem isKindOfClass:[HomePageViewController class]]) {
-            [self.navigationController popToViewController:tem animated:YES];
-        }
-    }
+    [self buttonClickToClass:@"HomePageViewController" iPhone5Nib:@"HomePageViewController" nib:@"HomePageViewController"];
 }
 
 @end

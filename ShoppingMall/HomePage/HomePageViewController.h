@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
+#import "BaseViewController.h"
 
-
-@interface HomePageViewController : UIViewController {
+@interface HomePageViewController : BaseViewController {
     IBOutlet UIButton *MyAccountBtn;
     IBOutlet UIButton *backBtn;
     IBOutlet UIButton *mapBTn;

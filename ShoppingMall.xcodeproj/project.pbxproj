@@ -184,6 +184,7 @@
 		706C70CD18A0DAF700B2C38C /* TimelineListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 706C70CC18A0DAF700B2C38C /* TimelineListCell.xib */; };
 		70807DFB18AA693800984161 /* redeem_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 70807DFA18AA693800984161 /* redeem_icon.png */; };
 		70807DFD18AA695600984161 /* timeline_scroll.png in Resources */ = {isa = PBXBuildFile; fileRef = 70807DFC18AA695600984161 /* timeline_scroll.png */; };
+		70807E0018ABA37700984161 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70807DFF18ABA37700984161 /* BaseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -419,6 +420,8 @@
 		706C70CC18A0DAF700B2C38C /* TimelineListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimelineListCell.xib; sourceTree = "<group>"; };
 		70807DFA18AA693800984161 /* redeem_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redeem_icon.png; sourceTree = "<group>"; };
 		70807DFC18AA695600984161 /* timeline_scroll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = timeline_scroll.png; sourceTree = "<group>"; };
+		70807DFE18ABA37700984161 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		70807DFF18ABA37700984161 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -645,6 +648,8 @@
 		23D612F4189365F100C60E3E /* ShoppingMall */ = {
 			isa = PBXGroup;
 			children = (
+				70807DFE18ABA37700984161 /* BaseViewController.h */,
+				70807DFF18ABA37700984161 /* BaseViewController.m */,
 				23D612FD189365F100C60E3E /* AppDelegate.h */,
 				23D612FE189365F100C60E3E /* AppDelegate.m */,
 				706C70AC189D497800B2C38C /* CheckIn */,
@@ -1159,6 +1164,7 @@
 				2348437C189648AE00F752C3 /* MallGiftListCell.m in Sources */,
 				23D613791893680700C60E3E /* SDWebImageManager.m in Sources */,
 				23D613621893680700C60E3E /* CommonInstance.m in Sources */,
+				70807E0018ABA37700984161 /* BaseViewController.m in Sources */,
 				236AB6201894C4A800770E81 /* HomePageListViewController.m in Sources */,
 				23D613751893680700C60E3E /* SDWebImageCompat.m in Sources */,
 				23D6136E1893680700C60E3E /* TopEGORefreshTableHeaderView.m in Sources */,

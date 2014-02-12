@@ -7,19 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface GiftDetailPageViewController : UIViewController{
+@interface GiftDetailPageViewController : BaseViewController{
     IBOutlet UIButton *MyAccountBtn;
     IBOutlet UIButton *backBtn;
-    IBOutlet UIButton *mapBTn;
-    IBOutlet UIButton *listBtn;
     IBOutlet UIButton *shoppingMallListBtn;
     IBOutlet UIButton *giftBtn;
 }
 - (IBAction)myAccountBtnClick;
 - (IBAction)backBtnClick;
-- (IBAction)mapBtnClick;
-- (IBAction)listBTnClick;
 - (IBAction)shoppingMallListBtnClick;
 - (IBAction)scanBtnClick;
+- (IBAction)giftBtnClick;
 @end

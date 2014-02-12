@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 #import "MockUser.h"
 
-@interface MyAccountHomePageViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>{
+@interface MyAccountHomePageViewController : BaseViewController<UITableViewDataSource,UITableViewDelegate>{
     IBOutlet UIButton *MyAccountBtn;
     IBOutlet UIButton *backBtn;
     IBOutlet UIButton *shoppingMallListBtn;

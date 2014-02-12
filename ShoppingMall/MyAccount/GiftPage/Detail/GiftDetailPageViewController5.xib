@@ -10,8 +10,6 @@
                 <outlet property="MyAccountBtn" destination="MA4-Yn-jQv" id="SKz-Dc-geD"/>
                 <outlet property="backBtn" destination="za5-Kq-HTl" id="AzR-7k-tQB"/>
                 <outlet property="giftBtn" destination="yUV-gr-xQx" id="VhN-ka-Lcz"/>
-                <outlet property="listBtn" destination="NiR-63-lin" id="OvF-Fe-RxV"/>
-                <outlet property="mapBTn" destination="4Zj-Rs-XLX" id="SX1-b6-Vo7"/>
                 <outlet property="shoppingMallListBtn" destination="0UI-7z-32l" id="UMB-2G-VWo"/>
                 <outlet property="view" destination="1" id="ogq-E6-WGD"/>
             </connections>
@@ -47,34 +45,8 @@
                         <action selector="backBtnClick" destination="-1" eventType="touchUpInside" id="8KO-f2-kuy"/>
                     </connections>
                 </button>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="top_grey_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="Dgr-5E-tqi">
-                    <rect key="frame" x="0.0" y="50" width="320" height="50"/>
-                    <autoresizingMask key="autoresizingMask"/>
-                </imageView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Zj-Rs-XLX">
-                    <rect key="frame" x="62" y="60" width="55" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <state key="normal" image="h04_map.png">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="mapBtnClick" destination="-1" eventType="touchUpInside" id="Zpw-Cp-tFf"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NiR-63-lin">
-                    <rect key="frame" x="203" y="60" width="55" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <state key="normal" image="h04_list.png">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="listBTnClick" destination="-1" eventType="touchUpInside" id="BCU-sd-7Wr"/>
-                    </connections>
-                </button>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzw-nm-q09">
-                    <rect key="frame" x="0.0" y="100" width="320" height="418"/>
+                    <rect key="frame" x="0.0" y="49" width="320" height="470"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <subviews>
                         <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="pic2.png" translatesAutoresizingMaskIntoConstraints="NO" id="NFK-5S-SBy">
@@ -143,6 +115,9 @@
                     <state key="normal" image="bottom_right_btn.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="giftBtnClick" destination="-1" eventType="touchUpInside" id="dA8-tC-ulX"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -153,12 +128,9 @@
         <image name="bottom.png" width="640" height="111"/>
         <image name="bottom_left_btn.png" width="89" height="80"/>
         <image name="bottom_right_btn.png" width="89" height="80"/>
-        <image name="h04_list.png" width="84" height="43"/>
-        <image name="h04_map.png" width="89" height="48"/>
         <image name="logo1.png" width="129" height="62"/>
         <image name="pic2.png" width="254" height="255"/>
         <image name="scan.png" width="183" height="64"/>
-        <image name="top_grey_bg.png" width="640" height="98"/>
         <image name="top_left_btn.png" width="70" height="70"/>
         <image name="top_right_btn.png" width="70" height="70"/>
     </resources>

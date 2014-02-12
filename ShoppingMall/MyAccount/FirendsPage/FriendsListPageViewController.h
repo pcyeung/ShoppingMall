@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface FriendsListPageViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>{
+@interface FriendsListPageViewController : BaseViewController<UITableViewDataSource,UITableViewDelegate>{
     IBOutlet UIButton *MyAccountBtn;
     IBOutlet UIButton *backBtn;
     IBOutlet UIButton *serachBtn;

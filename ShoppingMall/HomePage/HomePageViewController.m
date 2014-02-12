@@ -73,37 +73,18 @@
 
 
 - (IBAction)myAccountBtnClick {
-    MyAccountHomePageViewController *myAccountView;
-    if (iPhone5) {
-        myAccountView=[[MyAccountHomePageViewController alloc]initWithNibName:@"MyAccountHomePageViewController5" bundle:nil];
-    }else{
-        myAccountView=[[MyAccountHomePageViewController alloc]initWithNibName:@"MyAccountHomePageViewController" bundle:nil];
-    }
-    [self.navigationController pushViewController:myAccountView animated:YES];
-}
+    [self buttonClickToClass:@"MyAccountHomePageViewController" iPhone5Nib:@"MyAccountHomePageViewController5" nib:@"MyAccountHomePageViewController"];
+  }
 
 - (IBAction)listBtnClick {
-    HomePageListViewController *listPageView;
-    if (iPhone5) {
-        listPageView=[[HomePageListViewController alloc]initWithNibName:@"HomePageListViewController5" bundle:nil];
-    }else{
-        listPageView=[[HomePageListViewController alloc]initWithNibName:@"HomePageListViewController" bundle:nil];
-    }
-    [self.navigationController pushViewController:listPageView animated:YES];
+    [self buttonClickToClass:@"HomePageListViewController" iPhone5Nib:@"HomePageListViewController5" nib:@"HomePageListViewController"];
 }
 
-- (IBAction)shoppingMallListBtnClick {
-   
+- (IBAction)shoppingMallListBtnClick {   
 }
 
 - (IBAction)giftBtnClick{
-    GiftViewController *gift;
-    if (iPhone5) {
-        gift=[[GiftViewController alloc]initWithNibName:@"GiftViewController5" bundle:nil];
-    }else{
-        gift=[[GiftViewController alloc]initWithNibName:@"GiftViewController" bundle:nil];
-    }
-    [self.navigationController pushViewController:gift animated:YES];
+    [self buttonClickToClass:@"GiftViewController" iPhone5Nib:@"GiftViewController5" nib:@"GiftViewController"];
 }
 
 @end

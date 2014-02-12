@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface GiftViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>{
+@interface GiftViewController : BaseViewController<UITableViewDataSource,UITableViewDelegate>{
     IBOutlet UIButton *MyAccountBtn;
     IBOutlet UIButton *backBtn;
     IBOutlet UIButton *shoppingMallListBtn;
@@ -20,20 +21,3 @@
 - (IBAction)shoppingMallListBtnClick;
 
 @end
-
-
-/*
-
- @interface GiftListViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>{
- IBOutlet UIButton *MyAccountBtn;
- IBOutlet UIButton *backBtn;
- IBOutlet UIButton *shoppingMallListBtn;
- IBOutlet UIButton *giftBtn;
- IBOutlet UITableView *list;
- }
- - (IBAction)backBtnClick;
- - (IBAction)myAccountBTnClick;
- - (IBAction)shoppingMallListBtnClick;
- @end
-
-*/

@@ -58,13 +58,7 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    GiftDetailPageViewController *giftDetailView;
-    if (iPhone5) {
-        giftDetailView=[[GiftDetailPageViewController alloc]initWithNibName:@"GiftDetailPageViewController5" bundle:nil];
-    }else{
-        giftDetailView=[[GiftDetailPageViewController alloc]initWithNibName:@"GiftDetailPageViewController" bundle:nil];
-    }
-    [self.navigationController pushViewController:giftDetailView animated:YES];
+    [self buttonClickToClass:@"GiftDetailPageViewController" iPhone5Nib:@"GiftDetailPageViewController5" nib:@"GiftDetailPageViewController"];
 }
 
 - (IBAction)backBtnClick {
@@ -72,27 +66,11 @@
 }
 
 - (IBAction)myAccountBTnClick {
-    for (UIViewController *tem in self.navigationController.viewControllers) {
-        if ([tem isKindOfClass:[MyAccountHomePageViewController class]]) {
-            [self.navigationController popToViewController:tem animated:YES];
-        }
-    }
-    
-    MyAccountHomePageViewController *myAccountView;
-    if (iPhone5) {
-        myAccountView=[[MyAccountHomePageViewController alloc]initWithNibName:@"MyAccountHomePageViewController5" bundle:nil];
-    }else{
-        myAccountView=[[MyAccountHomePageViewController alloc]initWithNibName:@"MyAccountHomePageViewController" bundle:nil];
-    }
-    [self.navigationController pushViewController:myAccountView animated:YES];
+    [self buttonClickToClass:@"MyAccountHomePageViewController" iPhone5Nib:@"MyAccountHomePageViewController5" nib:@"MyAccountHomePageViewController"];
 }
 
 - (IBAction)shoppingMallListBtnClick {
-    for (UIViewController *tem in self.navigationController.viewControllers) {
-        if ([tem isKindOfClass:[HomePageViewController class]]) {
-            [self.navigationController popToViewController:tem animated:YES];
-        }
-    }
+    [self buttonClickToClass:@"HomePageViewController" iPhone5Nib:@"HomePageViewController5" nib:@"HomePageViewController"];
 }
 
 

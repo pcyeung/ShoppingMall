@@ -45,51 +45,20 @@
 }
 
 - (IBAction)myAccountBtnClick {
-    for (UIViewController *tem in self.navigationController.viewControllers) {
-        if ([tem isKindOfClass:[MyAccountHomePageViewController class]]) {
-            [self.navigationController popToViewController:tem animated:YES];
-        }
-    }
-    
-    MyAccountHomePageViewController *myAccountView;
-    if (iPhone5) {
-        myAccountView=[[MyAccountHomePageViewController alloc]initWithNibName:@"MyAccountHomePageViewController5" bundle:nil];
-    }else{
-        myAccountView=[[MyAccountHomePageViewController alloc]initWithNibName:@"MyAccountHomePageViewController" bundle:nil];
-    }
-    [self.navigationController pushViewController:myAccountView animated:YES];
-}
-
-- (IBAction)mapBtnClick {
-}
-
-- (IBAction)listBTnClick{
-    HomePageListViewController *listPageView;
-    if (iPhone5) {
-        listPageView=[[HomePageListViewController alloc]initWithNibName:@"HomePageListViewController5" bundle:nil];
-    }else{
-        listPageView=[[HomePageListViewController alloc]initWithNibName:@"HomePageListViewController" bundle:nil];
-    }
-    [self.navigationController pushViewController:listPageView animated:YES];
+    [self buttonClickToClass:@"MyAccountHomePageViewController" iPhone5Nib:@"MyAccountHomePageViewController5" nib:@"MyAccountHomePageViewController"];
 }
 
 - (IBAction)shoppingMallListBtnClick {
-    for (UIViewController *tem in self.navigationController.viewControllers) {
-        if ([tem isKindOfClass:[HomePageViewController class]]) {
-            [self.navigationController popToViewController:tem animated:YES];
-        }
-    }
-    
+    [self buttonClickToClass:@"HomePageListViewController" iPhone5Nib:@"HomePageListViewController5" nib:@"HomePageListViewController"];
 }
 
+
+
 - (IBAction)scanBtnClick {
-//    GiftScanPageViewController *scanPageView;
-//    if (iPhone5) {
-//        scanPageView=[[GiftScanPageViewController alloc]initWithNibName:@"GiftScanPageViewController5" bundle:nil];
-//    }else{
-//        scanPageView=[[GiftScanPageViewController alloc]initWithNibName:@"GiftScanPageViewController" bundle:nil];
-//    }
-//    [self.navigationController pushViewController:scanPageView animated:YES];
+}
+
+- (IBAction)giftBtnClick {
+    [self buttonClickToClass:@"GiftListViewController" iPhone5Nib:@"GiftListViewController5" nib:@"GiftListViewController"];
 }
 
 

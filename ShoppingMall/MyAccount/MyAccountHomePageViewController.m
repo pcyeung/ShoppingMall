@@ -72,49 +72,17 @@
 }
 
 - (IBAction)friendsBtnClick {
-    FriendsListPageViewController *friendsListView;
-    if (iPhone5) {
-        friendsListView=[[FriendsListPageViewController alloc]initWithNibName:@"FriendsListPageViewController5" bundle:nil];
-    }else{
-        friendsListView=[[FriendsListPageViewController alloc]initWithNibName:@"FriendsListPageViewController" bundle:nil];
-    }
-    [self.navigationController pushViewController:friendsListView animated:YES];
+    [self buttonClickToClass:@"FriendsListPageViewController" iPhone5Nib:@"FriendsListPageViewController5" nib:@"FriendsListPageViewController"];
 }
 
 - (IBAction)giftListBTnClick {
-    GiftListViewController *giftListView;
-    if (iPhone5) {
-        giftListView=[[GiftListViewController alloc]initWithNibName:@"GiftListViewController5" bundle:nil];
-    }else{
-        giftListView=[[GiftListViewController alloc]initWithNibName:@"GiftListViewController" bundle:nil];
-    }
-    [self.navigationController pushViewController:giftListView animated:YES];
 }
 
 - (IBAction)shoppingMallListBtnClick {
-    for (UIViewController *tem in self.navigationController.viewControllers) {
-        if ([tem isKindOfClass:[HomePageViewController class]]) {
-            [self.navigationController popToViewController:tem animated:YES];
-        }
-    }
-    
+    [self buttonClickToClass:@"HomePageViewController" iPhone5Nib:@"HomePageViewController5" nib:@"HomePageViewController"];
 }
 
 - (IBAction)giftBtnClick{
-    
-    GiftViewController *gift;
-    
-    if (iPhone5) {
-        
-        gift=[[GiftViewController alloc]initWithNibName:@"GiftViewController5" bundle:nil];
-        
-    }else{
-        
-        gift=[[GiftViewController alloc]initWithNibName:@"GiftViewController" bundle:nil];
-        
-    }
-    
-    [self.navigationController pushViewController:gift animated:YES];
-    
+    [self buttonClickToClass:@"GiftViewController" iPhone5Nib:@"GiftViewController5" nib:@"GiftViewController"];
 }
 @end

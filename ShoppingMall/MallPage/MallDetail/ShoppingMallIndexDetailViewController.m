@@ -44,65 +44,19 @@
 }
 
 - (IBAction)myAccountBTnClick {
-    for (UIViewController *tem in self.navigationController.viewControllers) {
-        if ([tem isKindOfClass:[MyAccountHomePageViewController class]]) {
-            [self.navigationController popToViewController:tem animated:YES];
-        }
-    }
-    
-    MyAccountHomePageViewController *myAccountView;
-    if (iPhone5) {
-        myAccountView=[[MyAccountHomePageViewController alloc]initWithNibName:@"MyAccountHomePageViewController5" bundle:nil];
-    }else{
-        myAccountView=[[MyAccountHomePageViewController alloc]initWithNibName:@"MyAccountHomePageViewController" bundle:nil];
-    }
-    [self.navigationController pushViewController:myAccountView animated:YES];
+    [self buttonClickToClass:@"MyAccountHomePageViewController" iPhone5Nib:@"MyAccountHomePageViewController5" nib:@"MyAccountHomePageViewController"];
 }
 
 - (IBAction)shoppingMallListBtnClick {
-    
-    // Original implementation - Problem:
-    // Back to map view
-    /*
-    for (UIViewController *tem in self.navigationController.viewControllers) {
-        if ([tem isKindOfClass:[HomePageViewController class]]) {
-            [self.navigationController popToViewController:tem animated:YES];
-        }
-    }
-    */
-    
-    // New implementation -
-    // Go to mall list
-    HomePageListViewController *mallPageListView;
-    
-    if (iPhone5) {
-        mallPageListView=[[HomePageListViewController alloc]initWithNibName:@"HomePageListViewController5" bundle:nil];
-    }else{
-        mallPageListView=[[HomePageListViewController alloc]initWithNibName:@"HomePageListViewController" bundle:nil];
-    }
-    [self.navigationController pushViewController:mallPageListView animated:YES];
+    [self buttonClickToClass:@"HomePageListViewController" iPhone5Nib:@"HomePageListViewController5" nib:@"HomePageListViewController"];
 }
 
 - (IBAction)numberOfGiftBtnClick {
-    MallGiftListPageViewController *mallGiftListPageView;
-    
-    if (iPhone5) {
-        mallGiftListPageView=[[MallGiftListPageViewController alloc]initWithNibName:@"MallGiftListPageViewController5" bundle:nil];
-    }else{
-        mallGiftListPageView=[[MallGiftListPageViewController alloc]initWithNibName:@"MallGiftListPageViewController" bundle:nil];
-    }
-    [self.navigationController pushViewController:mallGiftListPageView animated:YES];
+    [self buttonClickToClass:@"MallGiftListPageViewController" iPhone5Nib:@"MallGiftListPageViewController5" nib:@"MallGiftListPageViewController"];
 }
 
 - (IBAction)giftBtnClick {
-    MallGiftListPageViewController *MallGiftListPageView;
-    
-    if (iPhone5) {
-        MallGiftListPageView=[[MallGiftListPageViewController alloc]initWithNibName:@"MallGiftListPageViewController5" bundle:nil];
-    }else{
-        MallGiftListPageView=[[MallGiftListPageViewController alloc]initWithNibName:@"MallGiftListPageViewController" bundle:nil];
-    }
-    [self.navigationController pushViewController:MallGiftListPageView animated:YES];
+    [self buttonClickToClass:@"MallGiftListPageViewController" iPhone5Nib:@"MallGiftListPageViewController5" nib:@"MallGiftListPageViewController"];
 }
 
 
