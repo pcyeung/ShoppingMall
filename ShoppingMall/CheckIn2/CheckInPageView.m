@@ -7,6 +7,7 @@
 //
 
 #import "CheckInPageView.h"
+#import "MyAccountHomePageViewController.h"
 
 #import <Sonic/SonicAudioHeardCode.h>
 #import <Sonic/SonicBluetoothCodeHeard.h>
@@ -52,7 +53,6 @@
     if ([_user hasVisited:_mall] == YES) {
         return NULL;
     }
-    [_user addVisit:_mall];
 
     self = [super initWithFrame:frame];
     if (self) {
@@ -64,21 +64,29 @@
     return self;
 }
 
-- (void) show {
-    [self showAnimated:YES];
+- (void) showWithController:(UINavigationController*)controller {
+    [self showAnimated:YES withController:controller];
 }
 
-- (NSString*) pointBalanceText {
+- (void) refreshAccountInfoWithController:(UINavigationController*)controller {
+    for (UIViewController *tem in controller.viewControllers) {
+        if ([tem isKindOfClass:[MyAccountHomePageViewController class]]) {
+            [(MyAccountHomePageViewController*)tem refreshData];
+            return;
+        }
+    }
+}
+
+- (void) showAnimated:(BOOL)animated withController:(UINavigationController*)controller {
+    [_user addVisit:_mall];
     int accountPoints = [_user getAccountPoints];
     accountPoints += [_mall getBonusPoints];
     [_user setAccountPoints:accountPoints];
+    [self refreshAccountInfoWithController:controller];
     
-    return [NSString stringWithFormat:@"+ %dpts!  Balance:%d", [_mall getBonusPoints], accountPoints];
-}
-
-- (void) showAnimated:(BOOL)animated {
+    NSString* pointBalanceText = [NSString stringWithFormat:@"+ %dpts!  Balance:%d", [_mall getBonusPoints], accountPoints];
     [mallNameLabel setText:[_mall mallName]];
-    [centerTextLabel setText:[self pointBalanceText]];
+    [centerTextLabel setText:pointBalanceText];
     
 	_window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     _window.windowLevel = UIWindowLevelAlert;

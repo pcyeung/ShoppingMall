@@ -25,9 +25,7 @@
 @property (strong, nonatomic) MockMall *mall;
 
 - (id)initWithFrame:(CGRect)frame sonicCode:(SonicCodeHeard *) code nibName:(NSString *)nibName;
-- (NSString*) pointBalanceText;
-
-- (void)show;
+- (void)showWithController:(UINavigationController*)controller;
 
 -(IBAction)okButtonClick;
 

@@ -48,7 +48,7 @@ static NSString * const kSonicNotifyGUID = @"M2I0MWEwMmEtYzE3OS00YTYwLTk0YTEtZWU
     [self.window makeKeyAndVisible];
  
     // fake checkin
-    [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(fakeHearCode) userInfo:nil repeats:YES];
+    [NSTimer scheduledTimerWithTimeInterval:10.0 target:self selector:@selector(fakeHearCode) userInfo:nil repeats:YES];
     
    // [ZBarReaderView class];
     return YES;
@@ -75,7 +75,7 @@ static NSString * const kSonicNotifyGUID = @"M2I0MWEwMmEtYzE3OS00YTYwLTk0YTEtZWU
         checkInPageView=[[CheckInPageView alloc]initWithFrame:[[UIScreen mainScreen] bounds] sonicCode:code nibName:@"CheckInPageView"];
     }
     if (checkInPageView != NULL) {
-        [checkInPageView show];
+        [checkInPageView showWithController:_Controller];
     }
     return YES;
 }

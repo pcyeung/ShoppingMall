@@ -28,6 +28,7 @@
 @property (strong, nonatomic) MockUser *user;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil;
+- (void)refreshData;
 
 - (IBAction)backBtnClick;
 - (IBAction)infoBtnClick;

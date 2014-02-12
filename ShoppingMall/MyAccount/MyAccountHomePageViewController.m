@@ -27,13 +27,20 @@
     if (self) {
         // Custom initialization
         _user = [MockUser sharedUserObject];
-        [userNameLabel setText:[_user userName]];
-        
-        int accountPoints = [_user getAccountPoints];
-        [pointBalanceLabel setText:[NSString stringWithFormat:@"%d points", accountPoints]];
-        
     }
     return self;
+}
+
+- (void)loadView {
+    [super loadView];
+    [self refreshData];
+}
+
+- (void)refreshData {
+    [userNameLabel setText:[_user userName]];
+    int accountPoints = [_user getAccountPoints];
+    [pointBalanceLabel setText:[NSString stringWithFormat:@"%d points", accountPoints]];
+    [timelineList reloadData];
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
