@@ -11,6 +11,7 @@
 		0959580518A09FDD009C54A2 /* GiftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0959580318A09FDD009C54A2 /* GiftViewController.xib */; };
 		0959580918A0BB80009C54A2 /* GiftViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0959580818A0BB80009C54A2 /* GiftViewController5.xib */; };
 		0959580B18A0BEFB009C54A2 /* mapView.png in Resources */ = {isa = PBXBuildFile; fileRef = 0959580A18A0BEFB009C54A2 /* mapView.png */; };
+		09A26BC718AC891D0010191A /* nexusae0_btn_myl_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 09A26BC618AC891D0010191A /* nexusae0_btn_myl_normal.png */; };
 		09F0A65E18AA8951006E3B0C /* Sonic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F0A65D18AA8951006E3B0C /* Sonic.framework */; };
 		2348433D1896166E00F752C3 /* line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2348433B1896166E00F752C3 /* line@2x.png */; };
 		2348433E1896166E00F752C3 /* pick_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2348433C1896166E00F752C3 /* pick_bg@2x.png */; };
@@ -207,6 +208,7 @@
 		0959580318A09FDD009C54A2 /* GiftViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GiftViewController.xib; path = Gift/GiftViewController.xib; sourceTree = "<group>"; };
 		0959580818A0BB80009C54A2 /* GiftViewController5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GiftViewController5.xib; sourceTree = "<group>"; };
 		0959580A18A0BEFB009C54A2 /* mapView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapView.png; sourceTree = "<group>"; };
+		09A26BC618AC891D0010191A /* nexusae0_btn_myl_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nexusae0_btn_myl_normal.png; sourceTree = "<group>"; };
 		09F0A65D18AA8951006E3B0C /* Sonic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sonic.framework; path = Core/Sonic.framework; sourceTree = "<group>"; };
 		2348433B1896166E00F752C3 /* line@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "line@2x.png"; sourceTree = "<group>"; };
 		2348433C1896166E00F752C3 /* pick_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pick_bg@2x.png"; sourceTree = "<group>"; };
@@ -820,6 +822,7 @@
 		23D615181893A36F00C60E3E /* images */ = {
 			isa = PBXGroup;
 			children = (
+				09A26BC618AC891D0010191A /* nexusae0_btn_myl_normal.png */,
 				70807E0118ABB8BC00984161 /* personal_settings.png */,
 				70807DFC18AA695600984161 /* timeline_scroll.png */,
 				70807DFA18AA693800984161 /* redeem_icon.png */,
@@ -1130,6 +1133,7 @@
 				23D615911893A36F00C60E3E /* top_confir.png in Resources */,
 				23D6157F1893A36F00C60E3E /* pic1.png in Resources */,
 				23D6156D1893A36F00C60E3E /* h12_line.png in Resources */,
+				09A26BC718AC891D0010191A /* nexusae0_btn_myl_normal.png in Resources */,
 				23D6159E1893A6DA00C60E3E /* HomePageViewController5.xib in Resources */,
 				23D615881893A36F00C60E3E /* renren2.png in Resources */,
 				23D6155C1893A36F00C60E3E /* cancel.png in Resources */,

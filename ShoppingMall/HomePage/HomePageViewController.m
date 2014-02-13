@@ -43,6 +43,19 @@
     region.center = location;
     [aMapView setRegion:region animated:YES];
 }*/
+- (IBAction)locate:(id)sender {
+    MKCoordinateRegion region;
+    MKCoordinateSpan span;
+    MKUserLocation *UserLocation = mapView.userLocation;
+    span.latitudeDelta = 0.01;
+    span.longitudeDelta = 0.01;
+    CLLocationCoordinate2D location;
+    location.latitude = UserLocation.coordinate.latitude;
+    location.longitude = UserLocation.coordinate.longitude;
+    region.span = span;
+    region.center = location;
+    [mapView setRegion:region animated:YES];
+}
 
 //Implementing map view location centering when view is initialized, but not tracking the user
 - (void)viewDidLoad

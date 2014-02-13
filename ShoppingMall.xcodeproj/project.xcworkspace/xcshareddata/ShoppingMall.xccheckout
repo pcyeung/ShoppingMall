@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>28728F93-1C7B-4AD2-9B35-4D480D9629F3</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ShoppingMall</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>57F8FC20-8CB8-441D-AFD4-CE233E767988</key>
+		<string>https://github.com/kmn1024/ShoppingMall.git</string>
+		<key>BF2F3C44-C167-4635-8DED-DFCEB3ADA045</key>
+		<string>https://github.com/kmn1024/ShoppingMall.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ShoppingMall.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>57F8FC20-8CB8-441D-AFD4-CE233E767988</key>
+		<string>../../ShoppingMall</string>
+		<key>BF2F3C44-C167-4635-8DED-DFCEB3ADA045</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/kmn1024/ShoppingMall.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>BF2F3C44-C167-4635-8DED-DFCEB3ADA045</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BF2F3C44-C167-4635-8DED-DFCEB3ADA045</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ShoppingMall</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>57F8FC20-8CB8-441D-AFD4-CE233E767988</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ShoppingMall</string>
+		</dict>
+	</array>
+</dict>
+</plist>
