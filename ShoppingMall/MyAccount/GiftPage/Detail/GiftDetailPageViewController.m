@@ -55,6 +55,16 @@
 
 
 - (IBAction)scanBtnClick {
+    // Implement the action here
+}
+
+- (IBAction)listBtnClick {
+    [self buttonClickToClass:@"HomePageListViewController" iPhone5Nib:@"HomePageListViewController5" nib:@"HomePageListViewController"];
+}
+
+- (IBAction)mapBtnClick {
+    // Implement the action here
+    [self buttonClickToClass:@"HomePageViewController" iPhone5Nib:@"HomePageViewController5" nib:@"HomePageViewController"];
 }
 
 - (IBAction)giftBtnClick {
