@@ -27,9 +27,6 @@
 		236AB5CA1894AA4300770E81 /* FriendsListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 236AB5C91894AA4300770E81 /* FriendsListCell.xib */; };
 		236AB6061894AE0B00770E81 /* GiftListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 236AB6001894AE0B00770E81 /* GiftListCell.m */; };
 		236AB6071894AE0B00770E81 /* GiftListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 236AB6011894AE0B00770E81 /* GiftListCell.xib */; };
-		236AB6081894AE0B00770E81 /* GiftListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 236AB6031894AE0B00770E81 /* GiftListViewController.m */; };
-		236AB6091894AE0B00770E81 /* GiftListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 236AB6041894AE0B00770E81 /* GiftListViewController.xib */; };
-		236AB60A1894AE0B00770E81 /* GiftListViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 236AB6051894AE0B00770E81 /* GiftListViewController5.xib */; };
 		236AB60F1894B28F00770E81 /* GiftDetailPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 236AB60D1894B28F00770E81 /* GiftDetailPageViewController.m */; };
 		236AB6101894B28F00770E81 /* GiftDetailPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 236AB60E1894B28F00770E81 /* GiftDetailPageViewController.xib */; };
 		236AB6121894B29E00770E81 /* GiftDetailPageViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 236AB6111894B29E00770E81 /* GiftDetailPageViewController5.xib */; };
@@ -229,10 +226,6 @@
 		236AB5FF1894AE0B00770E81 /* GiftListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiftListCell.h; sourceTree = "<group>"; };
 		236AB6001894AE0B00770E81 /* GiftListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiftListCell.m; sourceTree = "<group>"; };
 		236AB6011894AE0B00770E81 /* GiftListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GiftListCell.xib; sourceTree = "<group>"; };
-		236AB6021894AE0B00770E81 /* GiftListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiftListViewController.h; sourceTree = "<group>"; };
-		236AB6031894AE0B00770E81 /* GiftListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiftListViewController.m; sourceTree = "<group>"; };
-		236AB6041894AE0B00770E81 /* GiftListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GiftListViewController.xib; sourceTree = "<group>"; };
-		236AB6051894AE0B00770E81 /* GiftListViewController5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GiftListViewController5.xib; sourceTree = "<group>"; };
 		236AB60C1894B28F00770E81 /* GiftDetailPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GiftDetailPageViewController.h; path = Detail/GiftDetailPageViewController.h; sourceTree = "<group>"; };
 		236AB60D1894B28F00770E81 /* GiftDetailPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GiftDetailPageViewController.m; path = Detail/GiftDetailPageViewController.m; sourceTree = "<group>"; };
 		236AB60E1894B28F00770E81 /* GiftDetailPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GiftDetailPageViewController.xib; path = Detail/GiftDetailPageViewController.xib; sourceTree = "<group>"; };
@@ -479,6 +472,8 @@
 		0959580018A09FAA009C54A2 /* Gift */ = {
 			isa = PBXGroup;
 			children = (
+				236AB5FE1894AE0B00770E81 /* Cell */,
+				236AB60B1894B21600770E81 /* Detail */,
 				0959580118A09FDD009C54A2 /* GiftViewController.h */,
 				0959580218A09FDD009C54A2 /* GiftViewController.m */,
 				0959580318A09FDD009C54A2 /* GiftViewController.xib */,
@@ -532,20 +527,6 @@
 			name = Cell;
 			sourceTree = "<group>";
 		};
-		236AB5FD1894AE0B00770E81 /* GiftPage */ = {
-			isa = PBXGroup;
-			children = (
-				236AB60B1894B21600770E81 /* Detail */,
-				236AB5FE1894AE0B00770E81 /* Cell */,
-				236AB6021894AE0B00770E81 /* GiftListViewController.h */,
-				236AB6031894AE0B00770E81 /* GiftListViewController.m */,
-				236AB6041894AE0B00770E81 /* GiftListViewController.xib */,
-				236AB6051894AE0B00770E81 /* GiftListViewController5.xib */,
-			);
-			name = GiftPage;
-			path = MyAccount/GiftPage;
-			sourceTree = "<group>";
-		};
 		236AB5FE1894AE0B00770E81 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -553,7 +534,8 @@
 				236AB6001894AE0B00770E81 /* GiftListCell.m */,
 				236AB6011894AE0B00770E81 /* GiftListCell.xib */,
 			);
-			path = Cell;
+			name = Cell;
+			path = MyAccount/GiftPage/Cell;
 			sourceTree = "<group>";
 		};
 		236AB60B1894B21600770E81 /* Detail */ = {
@@ -565,6 +547,7 @@
 				236AB6111894B29E00770E81 /* GiftDetailPageViewController5.xib */,
 			);
 			name = Detail;
+			path = MyAccount/GiftPage;
 			sourceTree = "<group>";
 		};
 		236AB6131894B9CB00770E81 /* MallPage */ = {
@@ -915,7 +898,6 @@
 			children = (
 				70807E0318ABBC7100984161 /* InfoPage */,
 				706C70C618A0CF2F00B2C38C /* TimelineCell */,
-				236AB5FD1894AE0B00770E81 /* GiftPage */,
 				236AB5AA18949EEF00770E81 /* FriendsPage */,
 				23D615A01893B84000C60E3E /* MyAccountHomePageViewController.h */,
 				23D615A11893B84000C60E3E /* MyAccountHomePageViewController.m */,
@@ -1073,9 +1055,7 @@
 				23D6158A1893A36F00C60E3E /* scan_bg.png in Resources */,
 				23D6157E1893A36F00C60E3E /* num_gift_03.png in Resources */,
 				23D6156B1893A36F00C60E3E /* h12_bg.png in Resources */,
-				236AB60A1894AE0B00770E81 /* GiftListViewController5.xib in Resources */,
 				23D612F9189365F100C60E3E /* InfoPlist.strings in Resources */,
-				236AB6091894AE0B00770E81 /* GiftListViewController.xib in Resources */,
 				0959580B18A0BEFB009C54A2 /* mapView.png in Resources */,
 				23D6156F1893A36F00C60E3E /* h13_bg.png in Resources */,
 				70807E0A18ABBF9600984161 /* InfoSettingViewController5.xib in Resources */,
@@ -1180,7 +1160,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				236AB6081894AE0B00770E81 /* GiftListViewController.m in Sources */,
 				23D613641893680700C60E3E /* EGORefreshTableHeaderView.m in Sources */,
 				23D613721893680700C60E3E /* MKAnnotationView+WebCache.m in Sources */,
 				23D615A31893B84000C60E3E /* MyAccountHomePageViewController.m in Sources */,

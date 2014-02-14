@@ -9,7 +9,6 @@
 #import "FriendsListPageViewController.h"
 #import "FriendsListCell.h"
 #import "MyAccountHomePageViewController.h"
-#import "GiftListViewController.h"
 
 @interface FriendsListPageViewController ()
 

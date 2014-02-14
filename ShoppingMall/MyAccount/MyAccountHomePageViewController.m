@@ -8,7 +8,6 @@
 
 #import "MyAccountHomePageViewController.h"
 #import "FriendsListPageViewController.h"
-#import "GiftListViewController.h"
 #import "HomePageViewController.h"
 #import "TimelineListCell.h"
 #import "GiftViewController.h"

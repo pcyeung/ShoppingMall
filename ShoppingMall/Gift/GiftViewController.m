@@ -7,7 +7,6 @@
 //
 
 #import "GiftViewController.h"
-//#import "GiftListViewController.h"
 #import "GiftListCell.h"
 #import "MyAccountHomePageViewController.h"
 #import "GiftDetailPageViewController.h"
@@ -19,8 +18,6 @@
 @end
 
 @implementation GiftViewController
-
-//@implementation GiftListViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

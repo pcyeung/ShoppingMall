@@ -58,7 +58,7 @@
 }
 
 - (IBAction)giftBtnClick {
-    [self buttonClickToClass:@"GiftListViewController" iPhone5Nib:@"GiftListViewController5" nib:@"GiftListViewController"];
+    [self buttonClickToClass:@"GiftViewController" iPhone5Nib:@"GiftViewController5" nib:@"GiftViewController"];
 }
 
 
