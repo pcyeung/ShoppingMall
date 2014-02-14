@@ -8,6 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScanQRViewController">
             <connections>
                 <outlet property="QRCodeBtn" destination="BnX-Kd-8Sf" id="nW3-oK-Qcq"/>
+                <outlet property="view" destination="3QZ-bZ-2ud" id="Ydb-xf-jyG"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -26,6 +27,9 @@
                     <state key="normal" image="top_left_btn.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="myAccountBtnClick" destination="-1" eventType="touchUpInside" id="s3G-Ik-PpO"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iVW-CC-bAe">
                     <rect key="frame" x="260" y="5" width="40" height="40"/>
@@ -34,6 +38,9 @@
                     <state key="normal" image="top_right_btn.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="backBtnClick" destination="-1" eventType="touchUpInside" id="kkp-X8-Sqc"/>
+                    </connections>
                 </button>
                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="bottom.png" translatesAutoresizingMaskIntoConstraints="NO" id="byN-dA-RXk">
                     <rect key="frame" x="0.0" y="518" width="320" height="50"/>
@@ -46,6 +53,9 @@
                     <state key="normal" image="bottom_left_btn.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="shoppingMallBtnClick" destination="-1" eventType="touchUpInside" id="q1c-z5-ARx"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kqu-uc-wVG">
                     <rect key="frame" x="260" y="523" width="40" height="40"/>
@@ -54,6 +64,9 @@
                     <state key="normal" image="bottom_right_btn.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="giftBtnClick" destination="-1" eventType="touchUpInside" id="HIM-GX-zI8"/>
+                    </connections>
                 </button>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="scan_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="QJw-rc-WDR">
                     <rect key="frame" x="0.0" y="48" width="320" height="472"/>

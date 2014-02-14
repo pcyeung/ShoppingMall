@@ -10,6 +10,7 @@
 #import "MyAccountHomePageViewController.h"
 //#import "GiftScanPageViewController.h"
 #import "HomePageViewController.h"
+#import "ScanQRViewController.h"
 
 @interface GiftDetailPageViewController ()
 

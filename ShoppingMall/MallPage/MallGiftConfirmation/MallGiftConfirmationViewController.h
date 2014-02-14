@@ -7,7 +7,14 @@
 //
 
 #import "BaseViewController.h"
+#import "MyAccountHomePageViewController.h"
+#import "HomePageViewController.h"
+#import "MallGiftListPageViewController.h"
 
 @interface MallGiftConfirmationViewController : BaseViewController
 
+- (IBAction)myAccountBtnClick;
+- (IBAction)backBtnClick;
+- (IBAction)shoppingMallBtnClick;
+- (IBAction)giftBtnClick;
 @end

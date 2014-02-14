@@ -5,8 +5,11 @@
 //  Created by Alex Cheung on 14/2/14.
 //  Copyright (c) 2014 Macie. All rights reserved.
 //
-
+#import <UIKit/UIKit.h>
 #import "ScanQRViewController.h"
+#import "MyAccountHomePageViewController.h"
+#import "HomePageViewController.h"
+#import "MallGiftListPageViewController.h"
 
 @interface ScanQRViewController ()
 
@@ -36,5 +39,24 @@
 }
 
 - (IBAction)QRCodeBtnClick {
+    // Handle the QR Code scan here
+    [self buttonClickToClass:@"MallGiftConfirmationViewController" iPhone5Nib:@"MallGiftConfirmationViewController5" nib:@"MallGiftConfirmationViewController"];
 }
+
+- (IBAction)backBtnClick {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (IBAction)myAccountBtnClick {
+    [self buttonClickToClass:@"MyAccountHomePageViewController" iPhone5Nib:@"MyAccountHomePageViewController5" nib:@"MyAccountHomePageViewController"];
+}
+
+- (IBAction)shoppingMallBtnClick {
+    [self buttonClickToClass:@"HomePageViewController" iPhone5Nib:@"HomePageViewController5" nib:@"HomePageViewController"];
+}
+
+- (IBAction)giftBtnClick {
+    [self buttonClickToClass:@"GiftViewController" iPhone5Nib:@"GiftViewController5" nib:@"GiftViewController"];
+}
+
 @end
