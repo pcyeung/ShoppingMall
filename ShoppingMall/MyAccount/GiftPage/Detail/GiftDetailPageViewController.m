@@ -55,6 +55,7 @@
 
 - (IBAction)scanBtnClick {
     // Implement the action here
+    [self buttonClickToClass:@"ScanQRViewController" iPhone5Nib:@"ScanQRViewController5" nib:@"ScanQRViewController"];
 }
 
 - (IBAction)giftBtnClick {

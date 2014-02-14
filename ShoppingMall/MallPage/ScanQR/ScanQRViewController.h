@@ -11,5 +11,6 @@
 @interface ScanQRViewController : BaseViewController<UITableViewDataSource,UITableViewDelegate>{
     IBOutlet UIButton *QRCodeBtn;
 }
+- (IBAction)QRCodeBtnClick;
 
 @end
