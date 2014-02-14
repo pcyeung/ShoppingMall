@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0959580418A09FDD009C54A2 /* GiftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0959580218A09FDD009C54A2 /* GiftViewController.m */; };
 		0959580518A09FDD009C54A2 /* GiftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0959580318A09FDD009C54A2 /* GiftViewController.xib */; };
-		0959580918A0BB80009C54A2 /* GiftViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0959580818A0BB80009C54A2 /* GiftViewController5.xib */; };
 		0959580B18A0BEFB009C54A2 /* mapView.png in Resources */ = {isa = PBXBuildFile; fileRef = 0959580A18A0BEFB009C54A2 /* mapView.png */; };
 		09A26BC718AC891D0010191A /* nexusae0_btn_myl_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 09A26BC618AC891D0010191A /* nexusae0_btn_myl_normal.png */; };
 		09F0A65E18AA8951006E3B0C /* Sonic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F0A65D18AA8951006E3B0C /* Sonic.framework */; };
@@ -25,11 +24,6 @@
 		236AB5C418949F8300770E81 /* FriendsListPageViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 236AB5C318949F8300770E81 /* FriendsListPageViewController5.xib */; };
 		236AB5C81894AA3100770E81 /* FriendsListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 236AB5C71894AA3000770E81 /* FriendsListCell.m */; };
 		236AB5CA1894AA4300770E81 /* FriendsListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 236AB5C91894AA4300770E81 /* FriendsListCell.xib */; };
-		236AB6061894AE0B00770E81 /* GiftListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 236AB6001894AE0B00770E81 /* GiftListCell.m */; };
-		236AB6071894AE0B00770E81 /* GiftListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 236AB6011894AE0B00770E81 /* GiftListCell.xib */; };
-		236AB60F1894B28F00770E81 /* GiftDetailPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 236AB60D1894B28F00770E81 /* GiftDetailPageViewController.m */; };
-		236AB6101894B28F00770E81 /* GiftDetailPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 236AB60E1894B28F00770E81 /* GiftDetailPageViewController.xib */; };
-		236AB6121894B29E00770E81 /* GiftDetailPageViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 236AB6111894B29E00770E81 /* GiftDetailPageViewController5.xib */; };
 		236AB6201894C4A800770E81 /* HomePageListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 236AB61E1894C4A800770E81 /* HomePageListViewController.m */; };
 		236AB6211894C4A800770E81 /* HomePageListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 236AB61F1894C4A800770E81 /* HomePageListViewController.xib */; };
 		236AB6231894C4BB00770E81 /* HomePageListViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 236AB6221894C4BB00770E81 /* HomePageListViewController5.xib */; };
@@ -187,6 +181,12 @@
 		70807E0718ABBCA100984161 /* InfoSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70807E0518ABBCA100984161 /* InfoSettingViewController.m */; };
 		70807E0818ABBCA100984161 /* InfoSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807E0618ABBCA100984161 /* InfoSettingViewController.xib */; };
 		70807E0A18ABBF9600984161 /* InfoSettingViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807E0918ABBF9600984161 /* InfoSettingViewController5.xib */; };
+		70807E1818AE84EB00984161 /* GiftViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807E1718AE84EB00984161 /* GiftViewController5.xib */; };
+		70807E1D18AE857C00984161 /* GiftListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 70807E1B18AE857C00984161 /* GiftListCell.m */; };
+		70807E1E18AE857C00984161 /* GiftListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807E1C18AE857C00984161 /* GiftListCell.xib */; };
+		70807E2418AE85B700984161 /* GiftDetailPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70807E2118AE85B700984161 /* GiftDetailPageViewController.m */; };
+		70807E2518AE85B700984161 /* GiftDetailPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807E2218AE85B700984161 /* GiftDetailPageViewController.xib */; };
+		70807E2618AE85B700984161 /* GiftDetailPageViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807E2318AE85B700984161 /* GiftDetailPageViewController5.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -203,7 +203,6 @@
 		0959580118A09FDD009C54A2 /* GiftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GiftViewController.h; path = Gift/GiftViewController.h; sourceTree = "<group>"; };
 		0959580218A09FDD009C54A2 /* GiftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GiftViewController.m; path = Gift/GiftViewController.m; sourceTree = "<group>"; };
 		0959580318A09FDD009C54A2 /* GiftViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GiftViewController.xib; path = Gift/GiftViewController.xib; sourceTree = "<group>"; };
-		0959580818A0BB80009C54A2 /* GiftViewController5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GiftViewController5.xib; sourceTree = "<group>"; };
 		0959580A18A0BEFB009C54A2 /* mapView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapView.png; sourceTree = "<group>"; };
 		09A26BC618AC891D0010191A /* nexusae0_btn_myl_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nexusae0_btn_myl_normal.png; sourceTree = "<group>"; };
 		09F0A65D18AA8951006E3B0C /* Sonic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sonic.framework; path = Core/Sonic.framework; sourceTree = "<group>"; };
@@ -223,13 +222,6 @@
 		236AB5C61894AA3000770E81 /* FriendsListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FriendsListCell.h; path = MyAccount/FirendsPage/Cell/FriendsListCell.h; sourceTree = "<group>"; };
 		236AB5C71894AA3000770E81 /* FriendsListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FriendsListCell.m; path = MyAccount/FirendsPage/Cell/FriendsListCell.m; sourceTree = "<group>"; };
 		236AB5C91894AA4300770E81 /* FriendsListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FriendsListCell.xib; path = MyAccount/FirendsPage/Cell/FriendsListCell.xib; sourceTree = "<group>"; };
-		236AB5FF1894AE0B00770E81 /* GiftListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiftListCell.h; sourceTree = "<group>"; };
-		236AB6001894AE0B00770E81 /* GiftListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiftListCell.m; sourceTree = "<group>"; };
-		236AB6011894AE0B00770E81 /* GiftListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GiftListCell.xib; sourceTree = "<group>"; };
-		236AB60C1894B28F00770E81 /* GiftDetailPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GiftDetailPageViewController.h; path = Detail/GiftDetailPageViewController.h; sourceTree = "<group>"; };
-		236AB60D1894B28F00770E81 /* GiftDetailPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GiftDetailPageViewController.m; path = Detail/GiftDetailPageViewController.m; sourceTree = "<group>"; };
-		236AB60E1894B28F00770E81 /* GiftDetailPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GiftDetailPageViewController.xib; path = Detail/GiftDetailPageViewController.xib; sourceTree = "<group>"; };
-		236AB6111894B29E00770E81 /* GiftDetailPageViewController5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GiftDetailPageViewController5.xib; path = Detail/GiftDetailPageViewController5.xib; sourceTree = "<group>"; };
 		236AB61D1894C4A800770E81 /* HomePageListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomePageListViewController.h; path = MallPage/HomeList/HomePageListViewController.h; sourceTree = "<group>"; };
 		236AB61E1894C4A800770E81 /* HomePageListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomePageListViewController.m; path = MallPage/HomeList/HomePageListViewController.m; sourceTree = "<group>"; };
 		236AB61F1894C4A800770E81 /* HomePageListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HomePageListViewController.xib; path = MallPage/HomeList/HomePageListViewController.xib; sourceTree = "<group>"; };
@@ -426,6 +418,14 @@
 		70807E0518ABBCA100984161 /* InfoSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InfoSettingViewController.m; path = MyAccount/InfoPage/InfoSettingViewController.m; sourceTree = "<group>"; };
 		70807E0618ABBCA100984161 /* InfoSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = InfoSettingViewController.xib; path = MyAccount/InfoPage/InfoSettingViewController.xib; sourceTree = "<group>"; };
 		70807E0918ABBF9600984161 /* InfoSettingViewController5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = InfoSettingViewController5.xib; path = MyAccount/InfoPage/InfoSettingViewController5.xib; sourceTree = "<group>"; };
+		70807E1718AE84EB00984161 /* GiftViewController5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GiftViewController5.xib; path = Gift/GiftViewController5.xib; sourceTree = "<group>"; };
+		70807E1A18AE857C00984161 /* GiftListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiftListCell.h; sourceTree = "<group>"; };
+		70807E1B18AE857C00984161 /* GiftListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiftListCell.m; sourceTree = "<group>"; };
+		70807E1C18AE857C00984161 /* GiftListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GiftListCell.xib; sourceTree = "<group>"; };
+		70807E2018AE85B700984161 /* GiftDetailPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiftDetailPageViewController.h; sourceTree = "<group>"; };
+		70807E2118AE85B700984161 /* GiftDetailPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiftDetailPageViewController.m; sourceTree = "<group>"; };
+		70807E2218AE85B700984161 /* GiftDetailPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GiftDetailPageViewController.xib; sourceTree = "<group>"; };
+		70807E2318AE85B700984161 /* GiftDetailPageViewController5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GiftDetailPageViewController5.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -472,12 +472,12 @@
 		0959580018A09FAA009C54A2 /* Gift */ = {
 			isa = PBXGroup;
 			children = (
-				236AB5FE1894AE0B00770E81 /* Cell */,
-				236AB60B1894B21600770E81 /* Detail */,
+				70807E1F18AE85B700984161 /* Detail */,
+				70807E1918AE857C00984161 /* Cell */,
 				0959580118A09FDD009C54A2 /* GiftViewController.h */,
 				0959580218A09FDD009C54A2 /* GiftViewController.m */,
 				0959580318A09FDD009C54A2 /* GiftViewController.xib */,
-				0959580818A0BB80009C54A2 /* GiftViewController5.xib */,
+				70807E1718AE84EB00984161 /* GiftViewController5.xib */,
 			);
 			name = Gift;
 			sourceTree = "<group>";
@@ -525,29 +525,6 @@
 				236AB5C91894AA4300770E81 /* FriendsListCell.xib */,
 			);
 			name = Cell;
-			sourceTree = "<group>";
-		};
-		236AB5FE1894AE0B00770E81 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				236AB5FF1894AE0B00770E81 /* GiftListCell.h */,
-				236AB6001894AE0B00770E81 /* GiftListCell.m */,
-				236AB6011894AE0B00770E81 /* GiftListCell.xib */,
-			);
-			name = Cell;
-			path = MyAccount/GiftPage/Cell;
-			sourceTree = "<group>";
-		};
-		236AB60B1894B21600770E81 /* Detail */ = {
-			isa = PBXGroup;
-			children = (
-				236AB60C1894B28F00770E81 /* GiftDetailPageViewController.h */,
-				236AB60D1894B28F00770E81 /* GiftDetailPageViewController.m */,
-				236AB60E1894B28F00770E81 /* GiftDetailPageViewController.xib */,
-				236AB6111894B29E00770E81 /* GiftDetailPageViewController5.xib */,
-			);
-			name = Detail;
-			path = MyAccount/GiftPage;
 			sourceTree = "<group>";
 		};
 		236AB6131894B9CB00770E81 /* MallPage */ = {
@@ -953,6 +930,29 @@
 			name = InfoPage;
 			sourceTree = "<group>";
 		};
+		70807E1918AE857C00984161 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				70807E1A18AE857C00984161 /* GiftListCell.h */,
+				70807E1B18AE857C00984161 /* GiftListCell.m */,
+				70807E1C18AE857C00984161 /* GiftListCell.xib */,
+			);
+			name = Cell;
+			path = Gift/Cell;
+			sourceTree = "<group>";
+		};
+		70807E1F18AE85B700984161 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				70807E2018AE85B700984161 /* GiftDetailPageViewController.h */,
+				70807E2118AE85B700984161 /* GiftDetailPageViewController.m */,
+				70807E2218AE85B700984161 /* GiftDetailPageViewController.xib */,
+				70807E2318AE85B700984161 /* GiftDetailPageViewController5.xib */,
+			);
+			name = Detail;
+			path = Gift/Detail;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1044,6 +1044,7 @@
 				23D615731893A36F00C60E3E /* info_icon.png in Resources */,
 				2348437D189648AE00F752C3 /* MallGiftListCell.xib in Resources */,
 				23D6158C1893A36F00C60E3E /* search_icon.png in Resources */,
+				70807E2618AE85B700984161 /* GiftDetailPageViewController5.xib in Resources */,
 				23D615771893A36F00C60E3E /* logo3.png in Resources */,
 				23D615A41893B84000C60E3E /* MyAccountHomePageViewController.xib in Resources */,
 				23D615631893A36F00C60E3E /* h03_top_bg.png in Resources */,
@@ -1075,7 +1076,7 @@
 				70807DFD18AA695600984161 /* timeline_scroll.png in Resources */,
 				70807E0818ABBCA100984161 /* InfoSettingViewController.xib in Resources */,
 				23D615711893A36F00C60E3E /* h_05.png in Resources */,
-				236AB6071894AE0B00770E81 /* GiftListCell.xib in Resources */,
+				70807E2518AE85B700984161 /* GiftDetailPageViewController.xib in Resources */,
 				23D615741893A36F00C60E3E /* line2.png in Resources */,
 				236AB5C418949F8300770E81 /* FriendsListPageViewController5.xib in Resources */,
 				236AB6451894D63900770E81 /* top_banner.png in Resources */,
@@ -1085,13 +1086,13 @@
 				23D6155D1893A36F00C60E3E /* check_in.png in Resources */,
 				236AB63D1894D63900770E81 /* bg.png in Resources */,
 				2348437F189648AE00F752C3 /* MallGiftListPageViewController.xib in Resources */,
+				70807E1818AE84EB00984161 /* GiftViewController5.xib in Resources */,
 				236AB6401894D63900770E81 /* line.png in Resources */,
 				236AB6311894D42500770E81 /* ShoppingMallIndexDetailViewController5.xib in Resources */,
 				23D613671893680700C60E3E /* blueArrow.png in Resources */,
 				23D615801893A36F00C60E3E /* pic2.png in Resources */,
 				0959580518A09FDD009C54A2 /* GiftViewController.xib in Resources */,
 				23D6158E1893A36F00C60E3E /* side_bar.png in Resources */,
-				236AB6121894B29E00770E81 /* GiftDetailPageViewController5.xib in Resources */,
 				23D615941893A36F00C60E3E /* top_right_btn.png in Resources */,
 				70807E0218ABB8BC00984161 /* personal_settings.png in Resources */,
 				23D615611893A36F00C60E3E /* gift.png in Resources */,
@@ -1120,6 +1121,7 @@
 				23D6157A1893A36F00C60E3E /* map_icon.png in Resources */,
 				23D615661893A36F00C60E3E /* h04_text.png in Resources */,
 				23D615851893A36F00C60E3E /* redeemed_btn.png in Resources */,
+				70807E1E18AE857C00984161 /* GiftListCell.xib in Resources */,
 				23D615931893A36F00C60E3E /* top_left_btn.png in Resources */,
 				236AB6471894D63900770E81 /* weibo.png in Resources */,
 				236AB63E1894D63900770E81 /* bottom.png in Resources */,
@@ -1128,10 +1130,8 @@
 				23D6157D1893A36F00C60E3E /* num_gift.png in Resources */,
 				70807DFB18AA693800984161 /* redeem_icon.png in Resources */,
 				23D6159C1893A6AC00C60E3E /* HomePageViewController.xib in Resources */,
-				0959580918A0BB80009C54A2 /* GiftViewController5.xib in Resources */,
 				23D6156C1893A36F00C60E3E /* h12_bg1.png in Resources */,
 				23D615701893A36F00C60E3E /* h_03.png in Resources */,
-				236AB6101894B28F00770E81 /* GiftDetailPageViewController.xib in Resources */,
 				23D6138A18936B0B00C60E3E /* LoginListViewController5.xib in Resources */,
 				236AB6231894C4BB00770E81 /* HomePageListViewController5.xib in Resources */,
 				23D615831893A36F00C60E3E /* pic5.png in Resources */,
@@ -1163,6 +1163,7 @@
 				23D613641893680700C60E3E /* EGORefreshTableHeaderView.m in Sources */,
 				23D613721893680700C60E3E /* MKAnnotationView+WebCache.m in Sources */,
 				23D615A31893B84000C60E3E /* MyAccountHomePageViewController.m in Sources */,
+				70807E1D18AE857C00984161 /* GiftListCell.m in Sources */,
 				23D6137F1893680700C60E3E /* UIImageView+WebCache.m in Sources */,
 				23D61302189365F100C60E3E /* ShoppingMall.xcdatamodeld in Sources */,
 				2348437E189648AE00F752C3 /* MallGiftListPageViewController.m in Sources */,
@@ -1177,9 +1178,9 @@
 				236AB6201894C4A800770E81 /* HomePageListViewController.m in Sources */,
 				23D613751893680700C60E3E /* SDWebImageCompat.m in Sources */,
 				23D6136E1893680700C60E3E /* TopEGORefreshTableHeaderView.m in Sources */,
+				70807E2418AE85B700984161 /* GiftDetailPageViewController.m in Sources */,
 				706C70B9189E4A9E00B2C38C /* MockMall.m in Sources */,
 				23D613761893680700C60E3E /* SDWebImageDecoder.m in Sources */,
-				236AB6061894AE0B00770E81 /* GiftListCell.m in Sources */,
 				23D6137D1893680700C60E3E /* UIImage+MultiFormat.m in Sources */,
 				23D613811893680700C60E3E /* TPKeyboardAvoidingScrollView.m in Sources */,
 				23D6137E1893680700C60E3E /* UIImage+WebP.m in Sources */,
@@ -1198,7 +1199,6 @@
 				23D612FB189365F100C60E3E /* main.m in Sources */,
 				23D613741893680700C60E3E /* SDImageCache.m in Sources */,
 				706C70B1189D49EF00B2C38C /* CheckInPageView.m in Sources */,
-				236AB60F1894B28F00770E81 /* GiftDetailPageViewController.m in Sources */,
 				23D6137B1893680700C60E3E /* UIButton+WebCache.m in Sources */,
 				706C70CB18A0D31600B2C38C /* TimelineListCell.m in Sources */,
 				23D613631893680700C60E3E /* Reachability.m in Sources */,
