@@ -14,14 +14,10 @@
     IBOutlet UIButton *backBtn;
     IBOutlet UIButton *shoppingMallListBtn;
     IBOutlet UIButton *giftBtn;
-    IBOutlet UIButton *mapBtn;
-    IBOutlet UIButton *listBtn;
 }
 - (IBAction)myAccountBtnClick;
 - (IBAction)backBtnClick;
-- (IBAction)shoppingMallListBtnClick;
+- (IBAction)shoppingMallBtnClick;
 - (IBAction)scanBtnClick;
-- (IBAction)listBtnClick;
-- (IBAction)mapBtnClick;
 - (IBAction)giftBtnClick;
 @end

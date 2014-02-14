@@ -10,7 +10,6 @@
 #import "MyAccountHomePageViewController.h"
 #import "HomePageViewController.h"
 #import "MallGiftListPageViewController.h"
-#import "HomePageListViewController.h"
 
 @interface ShoppingMallIndexDetailViewController ()
 
@@ -47,8 +46,8 @@
     [self buttonClickToClass:@"MyAccountHomePageViewController" iPhone5Nib:@"MyAccountHomePageViewController5" nib:@"MyAccountHomePageViewController"];
 }
 
-- (IBAction)shoppingMallListBtnClick {
-    [self buttonClickToClass:@"HomePageListViewController" iPhone5Nib:@"HomePageListViewController5" nib:@"HomePageListViewController"];
+- (IBAction)shoppingMallBtnClick {
+    [self buttonClickToClass:@"HomePageViewController" iPhone5Nib:@"HomePageViewController5" nib:@"HomePageViewController"];
 }
 
 - (IBAction)numberOfGiftBtnClick {

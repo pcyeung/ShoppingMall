@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment defaultVersion="1536" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
@@ -10,8 +10,6 @@
                 <outlet property="MyAccountBtn" destination="yqh-ek-7FC" id="ELd-ZS-04U"/>
                 <outlet property="backBtn" destination="dWe-Gs-HtE" id="20j-q6-Nlt"/>
                 <outlet property="giftBtn" destination="QN6-NZ-4IZ" id="m5a-xO-wdT"/>
-                <outlet property="listBtn" destination="LYr-Qh-8Al" id="dbs-oa-KyM"/>
-                <outlet property="mapBtn" destination="ucl-bL-BVY" id="eJS-t1-Zxg"/>
                 <outlet property="shoppingMallListBtn" destination="gcK-NX-HDE" id="D1j-IF-AHg"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
@@ -21,32 +19,6 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="top_grey_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="rAw-eC-1wT">
-                    <rect key="frame" x="0.0" y="50" width="320" height="50"/>
-                    <autoresizingMask key="autoresizingMask"/>
-                </imageView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ucl-bL-BVY">
-                    <rect key="frame" x="62" y="60" width="55" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <state key="normal" image="h04_map.png">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="mapBtnClick" destination="-1" eventType="touchUpInside" id="sgr-ZX-Ooh"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LYr-Qh-8Al">
-                    <rect key="frame" x="203" y="60" width="55" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <state key="normal" image="h04_list.png">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="listBtnClick" destination="-1" eventType="touchUpInside" id="nxM-1K-S5q"/>
-                    </connections>
-                </button>
                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="bottom.png" translatesAutoresizingMaskIntoConstraints="NO" id="xjq-ue-MT1">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
                     <autoresizingMask key="autoresizingMask"/>
@@ -74,7 +46,7 @@
                     </connections>
                 </button>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jgb-Fw-Gzk">
-                    <rect key="frame" x="0.0" y="98" width="320" height="335"/>
+                    <rect key="frame" x="0.0" y="50" width="320" height="383"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <subviews>
                         <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="pic2.png" translatesAutoresizingMaskIntoConstraints="NO" id="hNa-kU-aN8">
@@ -134,7 +106,7 @@
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="shoppingMallListBtnClick" destination="-1" eventType="touchUpInside" id="OXm-B6-SaO"/>
+                        <action selector="shoppingMallBtnClick" destination="-1" eventType="touchUpInside" id="kUA-0u-nH1"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QN6-NZ-4IZ">
@@ -157,12 +129,9 @@
         <image name="bottom.png" width="640" height="111"/>
         <image name="bottom_left_btn.png" width="89" height="80"/>
         <image name="bottom_right_btn.png" width="89" height="80"/>
-        <image name="h04_list.png" width="84" height="43"/>
-        <image name="h04_map.png" width="89" height="48"/>
         <image name="logo1.png" width="129" height="62"/>
         <image name="pic2.png" width="254" height="255"/>
         <image name="scan.png" width="183" height="64"/>
-        <image name="top_grey_bg.png" width="640" height="98"/>
         <image name="top_left_btn.png" width="70" height="70"/>
         <image name="top_right_btn.png" width="70" height="70"/>
     </resources>

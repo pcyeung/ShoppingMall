@@ -10,11 +10,9 @@
 #import "BaseViewController.h"
 
 @interface InfoSettingViewController : BaseViewController {
-    IBOutlet UIButton *myAccntBtn;
     IBOutlet UIButton *backBtn;
 }
 
-- (IBAction)myAccntBtnClick;
 - (IBAction)backBtnClick;
 
 

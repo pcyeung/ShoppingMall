@@ -7,7 +7,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FriendsListPageViewController">
             <connections>
-                <outlet property="MyAccountBtn" destination="Yu0-tb-vYg" id="jMR-Gu-jtK"/>
                 <outlet property="backBtn" destination="Ltk-Vh-2RC" id="Q1u-91-tUD"/>
                 <outlet property="cancelBtn" destination="lTd-xE-ayc" id="BdV-3U-N6M"/>
                 <outlet property="key" destination="Dw0-m1-oXa" id="sqY-Gg-32d"/>
@@ -25,17 +24,6 @@
                     <rect key="frame" x="0.0" y="1" width="320" height="50"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yu0-tb-vYg">
-                    <rect key="frame" x="20" y="6" width="40" height="40"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <state key="normal" image="top_left_btn.png">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="myAccountBTnClick" destination="-1" eventType="touchUpInside" id="9Kf-OF-mbk"/>
-                    </connections>
-                </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ltk-Vh-2RC">
                     <rect key="frame" x="260" y="6" width="40" height="40"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -95,7 +83,6 @@
         <image name="search.png" width="381" height="61"/>
         <image name="search_icon.png" width="38" height="38"/>
         <image name="top_grey_bg.png" width="640" height="98"/>
-        <image name="top_left_btn.png" width="70" height="70"/>
         <image name="top_right_btn.png" width="70" height="70"/>
     </resources>
 </document>

@@ -60,7 +60,7 @@
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="shoppingMallListBtnClick" destination="-1" eventType="touchUpInside" id="iJ6-Ml-d92"/>
+                        <action selector="shoppingMallBtnClick" destination="-1" eventType="touchUpInside" id="cQg-xu-PVp"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3s9-tI-UVS">

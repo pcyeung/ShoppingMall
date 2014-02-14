@@ -35,10 +35,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)myAccntBtnClick {
-    [self buttonClickToClass:@"MyAccountHomePageViewController" iPhone5Nib:@"MyAccountHomePageViewController5" nib:@"MyAccountHomePageViewController"];
-}
-
 - (IBAction)backBtnClick {
     [self.navigationController popViewControllerAnimated:YES];
 }

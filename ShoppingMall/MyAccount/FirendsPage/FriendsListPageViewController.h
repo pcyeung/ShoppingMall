@@ -10,7 +10,6 @@
 #import "BaseViewController.h"
 
 @interface FriendsListPageViewController : BaseViewController<UITableViewDataSource,UITableViewDelegate>{
-    IBOutlet UIButton *MyAccountBtn;
     IBOutlet UIButton *backBtn;
     IBOutlet UIButton *serachBtn;
     IBOutlet UITextField *key;
@@ -18,5 +17,4 @@
     IBOutlet UITableView *list;
 }
 - (IBAction)backBtnClick;
-- (IBAction)myAccountBTnClick;
 @end

@@ -21,7 +21,7 @@
 - (IBAction)backBtnClick;
 - (IBAction)myAccountBTnClick;
 
-- (IBAction)shoppingMallListBtnClick;
+- (IBAction)shoppingMallBtnClick;
 - (IBAction)numberOfGiftBtnClick;
 - (IBAction)giftBtnClick;
 

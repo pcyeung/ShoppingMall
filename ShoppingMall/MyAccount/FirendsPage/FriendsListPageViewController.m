@@ -56,7 +56,4 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
-- (IBAction)myAccountBTnClick {
-    [self buttonClickToClass:@"MyAccountHomePageViewController" iPhone5Nib:@"MyAccountHomePageViewController5" nib:@"MyAccountHomePageViewController"];
-}
 @end
