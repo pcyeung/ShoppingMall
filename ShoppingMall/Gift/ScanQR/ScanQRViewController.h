@@ -11,7 +11,7 @@
 #import "HomePageViewController.h"
 #import "MallGiftListPageViewController.h"
 
-@interface ScanQRViewController : BaseViewController<UITableViewDataSource,UITableViewDelegate>{
+@interface ScanQRViewController : BaseViewController {
     IBOutlet UIButton *QRCodeBtn;
 }
 - (IBAction)QRCodeBtnClick;

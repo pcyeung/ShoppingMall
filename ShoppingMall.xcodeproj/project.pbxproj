@@ -187,6 +187,9 @@
 		70807E2418AE85B700984161 /* GiftDetailPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70807E2118AE85B700984161 /* GiftDetailPageViewController.m */; };
 		70807E2518AE85B700984161 /* GiftDetailPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807E2218AE85B700984161 /* GiftDetailPageViewController.xib */; };
 		70807E2618AE85B700984161 /* GiftDetailPageViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807E2318AE85B700984161 /* GiftDetailPageViewController5.xib */; };
+		70807E3418AF16B800984161 /* ScanQRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70807E3118AF16B800984161 /* ScanQRViewController.m */; };
+		70807E3518AF16B800984161 /* ScanQRViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807E3218AF16B800984161 /* ScanQRViewController.xib */; };
+		70807E3618AF16B800984161 /* ScanQRViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807E3318AF16B800984161 /* ScanQRViewController5.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -426,6 +429,10 @@
 		70807E2118AE85B700984161 /* GiftDetailPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiftDetailPageViewController.m; sourceTree = "<group>"; };
 		70807E2218AE85B700984161 /* GiftDetailPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GiftDetailPageViewController.xib; sourceTree = "<group>"; };
 		70807E2318AE85B700984161 /* GiftDetailPageViewController5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GiftDetailPageViewController5.xib; sourceTree = "<group>"; };
+		70807E3018AF16B800984161 /* ScanQRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanQRViewController.h; sourceTree = "<group>"; };
+		70807E3118AF16B800984161 /* ScanQRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanQRViewController.m; sourceTree = "<group>"; };
+		70807E3218AF16B800984161 /* ScanQRViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScanQRViewController.xib; sourceTree = "<group>"; };
+		70807E3318AF16B800984161 /* ScanQRViewController5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScanQRViewController5.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -472,6 +479,7 @@
 		0959580018A09FAA009C54A2 /* Gift */ = {
 			isa = PBXGroup;
 			children = (
+				70807E2F18AF16B800984161 /* ScanQR */,
 				70807E1F18AE85B700984161 /* Detail */,
 				70807E1918AE857C00984161 /* Cell */,
 				0959580118A09FDD009C54A2 /* GiftViewController.h */,
@@ -953,6 +961,18 @@
 			path = Gift/Detail;
 			sourceTree = "<group>";
 		};
+		70807E2F18AF16B800984161 /* ScanQR */ = {
+			isa = PBXGroup;
+			children = (
+				70807E3018AF16B800984161 /* ScanQRViewController.h */,
+				70807E3118AF16B800984161 /* ScanQRViewController.m */,
+				70807E3218AF16B800984161 /* ScanQRViewController.xib */,
+				70807E3318AF16B800984161 /* ScanQRViewController5.xib */,
+			);
+			name = ScanQR;
+			path = Gift/ScanQR;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1086,6 +1106,7 @@
 				23D6155D1893A36F00C60E3E /* check_in.png in Resources */,
 				236AB63D1894D63900770E81 /* bg.png in Resources */,
 				2348437F189648AE00F752C3 /* MallGiftListPageViewController.xib in Resources */,
+				70807E3618AF16B800984161 /* ScanQRViewController5.xib in Resources */,
 				70807E1818AE84EB00984161 /* GiftViewController5.xib in Resources */,
 				236AB6401894D63900770E81 /* line.png in Resources */,
 				236AB6311894D42500770E81 /* ShoppingMallIndexDetailViewController5.xib in Resources */,
@@ -1095,6 +1116,7 @@
 				23D6158E1893A36F00C60E3E /* side_bar.png in Resources */,
 				23D615941893A36F00C60E3E /* top_right_btn.png in Resources */,
 				70807E0218ABB8BC00984161 /* personal_settings.png in Resources */,
+				70807E3518AF16B800984161 /* ScanQRViewController.xib in Resources */,
 				23D615611893A36F00C60E3E /* gift.png in Resources */,
 				706C70B3189E3E8D00B2C38C /* CheckInPageView5.xib in Resources */,
 				23D6156A1893A36F00C60E3E /* h09_text.png in Resources */,
@@ -1200,6 +1222,7 @@
 				23D613741893680700C60E3E /* SDImageCache.m in Sources */,
 				706C70B1189D49EF00B2C38C /* CheckInPageView.m in Sources */,
 				23D6137B1893680700C60E3E /* UIButton+WebCache.m in Sources */,
+				70807E3418AF16B800984161 /* ScanQRViewController.m in Sources */,
 				706C70CB18A0D31600B2C38C /* TimelineListCell.m in Sources */,
 				23D613631893680700C60E3E /* Reachability.m in Sources */,
 				236AB5C218949F7000770E81 /* FriendsListPageViewController.m in Sources */,
