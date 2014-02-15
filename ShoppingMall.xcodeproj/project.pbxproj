@@ -190,6 +190,10 @@
 		70807E3418AF16B800984161 /* ScanQRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70807E3118AF16B800984161 /* ScanQRViewController.m */; };
 		70807E3518AF16B800984161 /* ScanQRViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807E3218AF16B800984161 /* ScanQRViewController.xib */; };
 		70807E3618AF16B800984161 /* ScanQRViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807E3318AF16B800984161 /* ScanQRViewController5.xib */; };
+		70807E3B18AF172300984161 /* RedeemedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70807E3918AF172300984161 /* RedeemedViewController.m */; };
+		70807E3C18AF172300984161 /* RedeemedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807E3A18AF172300984161 /* RedeemedViewController.xib */; };
+		70807E4118AF192900984161 /* RedeemedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 70807E3E18AF192900984161 /* RedeemedCell.m */; };
+		70807E4218AF192900984161 /* RedeemedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807E4018AF192900984161 /* RedeemedCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -433,6 +437,12 @@
 		70807E3118AF16B800984161 /* ScanQRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanQRViewController.m; sourceTree = "<group>"; };
 		70807E3218AF16B800984161 /* ScanQRViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScanQRViewController.xib; sourceTree = "<group>"; };
 		70807E3318AF16B800984161 /* ScanQRViewController5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScanQRViewController5.xib; sourceTree = "<group>"; };
+		70807E3818AF172300984161 /* RedeemedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RedeemedViewController.h; path = MyAccount/RedeemedPage/RedeemedViewController.h; sourceTree = "<group>"; };
+		70807E3918AF172300984161 /* RedeemedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RedeemedViewController.m; path = MyAccount/RedeemedPage/RedeemedViewController.m; sourceTree = "<group>"; };
+		70807E3A18AF172300984161 /* RedeemedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RedeemedViewController.xib; path = MyAccount/RedeemedPage/RedeemedViewController.xib; sourceTree = "<group>"; };
+		70807E3E18AF192900984161 /* RedeemedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedeemedCell.m; sourceTree = "<group>"; };
+		70807E3F18AF192900984161 /* RedeemedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedeemedCell.h; sourceTree = "<group>"; };
+		70807E4018AF192900984161 /* RedeemedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RedeemedCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -881,6 +891,7 @@
 		23D6159F1893B7F400C60E3E /* MyAccount */ = {
 			isa = PBXGroup;
 			children = (
+				70807E3718AF16FF00984161 /* RedeemedPage */,
 				70807E0318ABBC7100984161 /* InfoPage */,
 				706C70C618A0CF2F00B2C38C /* TimelineCell */,
 				236AB5AA18949EEF00770E81 /* FriendsPage */,
@@ -971,6 +982,28 @@
 			);
 			name = ScanQR;
 			path = Gift/ScanQR;
+			sourceTree = "<group>";
+		};
+		70807E3718AF16FF00984161 /* RedeemedPage */ = {
+			isa = PBXGroup;
+			children = (
+				70807E3D18AF192900984161 /* Cell */,
+				70807E3818AF172300984161 /* RedeemedViewController.h */,
+				70807E3918AF172300984161 /* RedeemedViewController.m */,
+				70807E3A18AF172300984161 /* RedeemedViewController.xib */,
+			);
+			name = RedeemedPage;
+			sourceTree = "<group>";
+		};
+		70807E3D18AF192900984161 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				70807E3E18AF192900984161 /* RedeemedCell.m */,
+				70807E3F18AF192900984161 /* RedeemedCell.h */,
+				70807E4018AF192900984161 /* RedeemedCell.xib */,
+			);
+			name = Cell;
+			path = MyAccount/RedeemedPage/Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1118,6 +1151,7 @@
 				70807E0218ABB8BC00984161 /* personal_settings.png in Resources */,
 				70807E3518AF16B800984161 /* ScanQRViewController.xib in Resources */,
 				23D615611893A36F00C60E3E /* gift.png in Resources */,
+				70807E3C18AF172300984161 /* RedeemedViewController.xib in Resources */,
 				706C70B3189E3E8D00B2C38C /* CheckInPageView5.xib in Resources */,
 				23D6156A1893A36F00C60E3E /* h09_text.png in Resources */,
 				23D613661893680700C60E3E /* blackArrow@2x.png in Resources */,
@@ -1158,6 +1192,7 @@
 				236AB6231894C4BB00770E81 /* HomePageListViewController5.xib in Resources */,
 				23D615831893A36F00C60E3E /* pic5.png in Resources */,
 				23D615621893A36F00C60E3E /* h03_mid_bg.png in Resources */,
+				70807E4218AF192900984161 /* RedeemedCell.xib in Resources */,
 				23D6156E1893A36F00C60E3E /* h12_pic.png in Resources */,
 				23D6158B1893A36F00C60E3E /* search.png in Resources */,
 				23D615811893A36F00C60E3E /* pic3.png in Resources */,
@@ -1199,12 +1234,14 @@
 				70807E0018ABA37700984161 /* BaseViewController.m in Sources */,
 				236AB6201894C4A800770E81 /* HomePageListViewController.m in Sources */,
 				23D613751893680700C60E3E /* SDWebImageCompat.m in Sources */,
+				70807E4118AF192900984161 /* RedeemedCell.m in Sources */,
 				23D6136E1893680700C60E3E /* TopEGORefreshTableHeaderView.m in Sources */,
 				70807E2418AE85B700984161 /* GiftDetailPageViewController.m in Sources */,
 				706C70B9189E4A9E00B2C38C /* MockMall.m in Sources */,
 				23D613761893680700C60E3E /* SDWebImageDecoder.m in Sources */,
 				23D6137D1893680700C60E3E /* UIImage+MultiFormat.m in Sources */,
 				23D613811893680700C60E3E /* TPKeyboardAvoidingScrollView.m in Sources */,
+				70807E3B18AF172300984161 /* RedeemedViewController.m in Sources */,
 				23D6137E1893680700C60E3E /* UIImage+WebP.m in Sources */,
 				236AB6271894C5FE00770E81 /* HomePageListCell.m in Sources */,
 				23D613781893680700C60E3E /* SDWebImageDownloaderOperation.m in Sources */,

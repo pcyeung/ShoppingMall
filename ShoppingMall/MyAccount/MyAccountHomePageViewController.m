@@ -83,6 +83,7 @@
 }
 
 - (IBAction)giftListBTnClick {
+    [self buttonClickToClass:@"RedeemedViewController" iPhone5Nib:@"RedeemedViewController5" nib:@"RedeemedViewController"];
 }
 
 - (IBAction)shoppingMallListBtnClick {
