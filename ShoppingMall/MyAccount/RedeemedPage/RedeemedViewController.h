@@ -17,6 +17,7 @@
 
 @property (strong, nonatomic) MockUser *user;
 
+- (void)refreshData;
 - (IBAction)backBtnClick;
 
 

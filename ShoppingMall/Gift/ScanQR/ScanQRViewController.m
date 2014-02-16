@@ -10,6 +10,7 @@
 #import "MyAccountHomePageViewController.h"
 #import "HomePageViewController.h"
 #import "MallGiftListPageViewController.h"
+#import "RedeemedViewController.h"
 
 @interface ScanQRViewController ()
 
@@ -38,9 +39,18 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)refreshRedeemedList {
+    for (UIViewController *tem in self.navigationController.viewControllers) {
+        if ([tem isKindOfClass:[RedeemedViewController class]]) {
+            [(RedeemedViewController*)tem refreshData];
+            return;
+        }
+    }
+}
+
 - (IBAction)QRCodeBtnClick {
     // Handle the QR Code scan here
-    [[MockUser sharedUserObject] addPrize:@"Book"];
+    [[MockUser sharedUserObject] addPrize:@"Book" controller:self.navigationController];
     [self buttonClickToClass:@"MallGiftConfirmationViewController" iPhone5Nib:@"MallGiftConfirmationViewController5" nib:@"MallGiftConfirmationViewController"];
 }
 

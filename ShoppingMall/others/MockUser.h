@@ -43,9 +43,9 @@
 + (id)sharedUserObject;
 -(int)getAccountPoints;
 -(void)setAccountPoints:(int)points;
--(void)addVisit:(MockMall*)mall;
+-(void)addVisit:(MockMall*)mall controller:(UINavigationController*)controller;
 -(bool)hasVisited:(MockMall*)mall;
 
--(void)addPrize:(NSString*)name;
+-(void)addPrize:(NSString*)name controller:(UINavigationController*)controller;
 
 @end

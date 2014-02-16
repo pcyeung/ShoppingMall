@@ -11,6 +11,8 @@
 // Great2
 
 #import "MockUser.h"
+#import "MyAccountHomePageViewController.h"
+#import "RedeemedViewController.h"
 
 @implementation PrizeData
 @synthesize prizeName = _prizeName;
@@ -68,6 +70,7 @@
         _userName = @"Jason Chau";
         _visitHistory = [[NSMutableArray alloc] init];
         _visitedMalls = [[NSMutableDictionary alloc] init];
+        _prizeHistory = [[NSMutableArray alloc] init];
     }
     return self;
 }
@@ -80,11 +83,18 @@
     accountPoints = points;
 }
 
--(void)addVisit:(MockMall*)mall {
+-(void)addVisit:(MockMall*)mall controller:(UINavigationController*)controller {
     [_visitHistory addObject:[[VisitData alloc] initWithCurrentTime:mall]];
 
     NSInteger mallId = [mall getMallId];
     [_visitedMalls setObject:@"" forKey:[NSNumber numberWithInteger:mallId]];
+    
+    for (UIViewController *tem in controller.viewControllers) {
+        if ([tem isKindOfClass:[MyAccountHomePageViewController class]]) {
+            [(MyAccountHomePageViewController*)tem refreshData];
+            return;
+        }
+    }
 }
 
 -(bool)hasVisited:(MockMall*)mall {
@@ -95,9 +105,16 @@
     return NO;
 }
 
--(void)addPrize:(NSString*)name {
+-(void)addPrize:(NSString*)name controller:(UINavigationController*)controller {
     PrizeData* data = [[PrizeData alloc] initWithPrizeName:name];
     [_prizeHistory addObject:data];
+    
+    for (UIViewController *tem in controller.viewControllers) {
+        if ([tem isKindOfClass:[RedeemedViewController class]]) {
+            [(RedeemedViewController*)tem refreshData];
+            return;
+        }
+    }
 }
 
 @end

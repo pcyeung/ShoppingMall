@@ -30,7 +30,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    [self refreshData];
+}
+
+- (void)refreshData {
+    [list reloadData];
 }
 
 - (void)didReceiveMemoryWarning
@@ -49,7 +53,10 @@
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    PrizeData* prize = [[_user prizeHistory] objectAtIndex:[indexPath row]];
+    int prizeRow = [[_user prizeHistory] count] - [indexPath row] - 1;
+    assert(prizeRow >= 0);
+
+    PrizeData* prize = [[_user prizeHistory] objectAtIndex:prizeRow];
 
     NSString* redeemed;
     if ([prize getIsRedeemed]) {
