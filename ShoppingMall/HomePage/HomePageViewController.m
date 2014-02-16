@@ -13,22 +13,6 @@
 #import "AddressAnnotation.h"
 #import "MockMall.h"
 
-@interface MallAnnotation ()
-@end
-
-@implementation MallAnnotation
-
-@synthesize coordinate = _coordinate;
-- (id) initFromMockMall:(MockMall*)mall {
-    self = [super init];
-    if (self) {
-        _coordinate = [mall getCoordinates];
-    }
-    return self;
-}
-@end
-
-
 
 @interface HomePageViewController ()
 

@@ -111,15 +111,6 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
         </view>
-        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" id="56c-Og-h3k">
-            <rect key="frame" x="0.0" y="0.0" width="10" height="84"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
-            <inset key="contentEdgeInsets" minX="1" minY="0.0" maxX="1" maxY="0.0"/>
-            <state key="normal" image="nexusae0_btn_myl_normal.png">
-                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-            </state>
-        </button>
     </objects>
     <resources>
         <image name="bottom.png" width="640" height="111"/>
