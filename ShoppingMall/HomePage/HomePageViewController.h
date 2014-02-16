@@ -9,6 +9,16 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 #import "BaseViewController.h"
+#import "MockMall.h"
+
+@interface MallAnnotation : NSObject<MKAnnotation> {
+}
+
+@property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
+- (id) initFromMockMall:(MockMall*)mall;
+
+@end
+
 
 @interface HomePageViewController : BaseViewController {
     IBOutlet UIButton *MyAccountBtn;

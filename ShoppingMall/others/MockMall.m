@@ -95,4 +95,8 @@
     return beaconId;
 }
 
+- (CLLocationCoordinate2D) getCoordinates {
+    return coordinates;
+}
+
 @end

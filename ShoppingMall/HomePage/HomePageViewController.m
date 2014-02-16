@@ -11,6 +11,23 @@
 #import "HomePageListViewController.h"
 #import "GiftViewController.h"
 
+@interface MallAnnotation ()
+@end
+
+@implementation MallAnnotation
+
+@synthesize coordinate = _coordinate;
+- (id) initFromMockMall:(MockMall*)mall {
+    self = [super init];
+    if (self) {
+        _coordinate = [mall getCoordinates];
+    }
+    return self;
+}
+@end
+
+
+
 @interface HomePageViewController ()
 
 @end
@@ -77,6 +94,7 @@
     NSArray* malls = [MockMall getAllMallData];
     for (MockMall* mall in malls) {
         // Add mall pins to map
+        MallAnnotation* annotation = [[MallAnnotation alloc] initFromMockMall:mall];
     }
 }
 
