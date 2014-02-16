@@ -194,6 +194,7 @@
 		70807E3C18AF172300984161 /* RedeemedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807E3A18AF172300984161 /* RedeemedViewController.xib */; };
 		70807E4118AF192900984161 /* RedeemedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 70807E3E18AF192900984161 /* RedeemedCell.m */; };
 		70807E4218AF192900984161 /* RedeemedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807E4018AF192900984161 /* RedeemedCell.xib */; };
+		70807E4418B0B58300984161 /* RedeemedViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807E4318B0B58300984161 /* RedeemedViewController5.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -443,6 +444,7 @@
 		70807E3E18AF192900984161 /* RedeemedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedeemedCell.m; sourceTree = "<group>"; };
 		70807E3F18AF192900984161 /* RedeemedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedeemedCell.h; sourceTree = "<group>"; };
 		70807E4018AF192900984161 /* RedeemedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RedeemedCell.xib; sourceTree = "<group>"; };
+		70807E4318B0B58300984161 /* RedeemedViewController5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RedeemedViewController5.xib; path = MyAccount/RedeemedPage/RedeemedViewController5.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -991,6 +993,7 @@
 				70807E3818AF172300984161 /* RedeemedViewController.h */,
 				70807E3918AF172300984161 /* RedeemedViewController.m */,
 				70807E3A18AF172300984161 /* RedeemedViewController.xib */,
+				70807E4318B0B58300984161 /* RedeemedViewController5.xib */,
 			);
 			name = RedeemedPage;
 			sourceTree = "<group>";
@@ -1195,6 +1198,7 @@
 				70807E4218AF192900984161 /* RedeemedCell.xib in Resources */,
 				23D6156E1893A36F00C60E3E /* h12_pic.png in Resources */,
 				23D6158B1893A36F00C60E3E /* search.png in Resources */,
+				70807E4418B0B58300984161 /* RedeemedViewController5.xib in Resources */,
 				23D615811893A36F00C60E3E /* pic3.png in Resources */,
 				23D6155B1893A36F00C60E3E /* bottom_right_btn.png in Resources */,
 				23D615671893A36F00C60E3E /* h05_text.png in Resources */,
