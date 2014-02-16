@@ -73,7 +73,12 @@
     region.span = span;
     region.center = location;
     [mapView setRegion:region animated:YES];
+    
+    NSArray* malls = [MockMall getAllMallData];
+    for (MockMall* mall in malls) {
+        // Add mall pins to map
     }
+}
 
 
 - (void)didReceiveMemoryWarning

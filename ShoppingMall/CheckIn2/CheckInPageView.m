@@ -49,7 +49,7 @@
 - (id)initWithFrame:(CGRect)frame sonicCode:(SonicCodeHeard *) code nibName:(NSString *)nibName
 {
     _user = [MockUser sharedUserObject];
-    _mall = [[MockMall alloc] initWithSonicCode:code];
+    _mall = [MockMall getMallWithSonicCode:code];
     if ([_user hasVisited:_mall] == YES) {
         return NULL;
     }

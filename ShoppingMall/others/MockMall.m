@@ -17,44 +17,70 @@
 @synthesize mallAddress = _mallAddress;
 @synthesize adsText = _adsText;
 
-- (id)initWithSonicCode:(SonicCodeHeard*)code {
+- (id)initMallWithName:(NSString*)name address:(NSString*)address ads:(NSString*)ads bonusPoints:(int)bp  mallId:(int)mid beaconId:(int)bid latitude:(float)latitude longitude:(float)longtitude {
     self = [super init];
     if (self) {
-        // Initialization code
-        int beaconCode = -1;
-        if ([code isKindOfClass:[SonicBluetoothCodeHeard class]]) {
-            SonicBluetoothCodeHeard* blueHeard = (SonicBluetoothCodeHeard*) code;
-            beaconCode = [blueHeard beaconCode];
-        } else if ([code isKindOfClass:[SonicAudioHeardCode class]]) {
-            SonicAudioHeardCode* audioHeard = (SonicAudioHeardCode*) code;
-            beaconCode = [audioHeard beaconCode];
-        }
-        
-        switch (beaconCode) {
-            case 802396:
-                _mallName = @"时代广场";
-                _mallAddress = @"Wanchai";
-                _adsText = @"赠送烤鸡腿";
-                bonusPoints = 10;
-                mallId = 1;
-                break;
-            case 802399:
-                _mallName = @"世贸中心";
-                _mallAddress = @"Wanchai";
-                _adsText = @"赠送电影票";
-                bonusPoints = 15;
-                mallId = 3;
-                break;
-            default:
-                _mallName = [NSString stringWithFormat:@"Code %d",beaconCode];
-                _mallAddress = @"Wanchai";
-                _adsText = @"Free Wings?";
-                bonusPoints = 5;
-                mallId = 0;
-                break;
-        }
+        _mallName = name;
+        _mallAddress = address;
+        _adsText = ads;
+        bonusPoints = bp;
+        beaconId = bid;
+        mallId = mid;
+        coordinates.latitude = latitude;
+        coordinates.longitude = longtitude;
     }
     return self;
+}
+
++ (NSArray*)getAllMallData {
+    static NSArray *allMalls;
+    if (allMalls == nil) {
+        allMalls =
+            [NSArray arrayWithObjects:
+             [[MockMall alloc]initMallWithName:@"时代广场" address:@"Wanchai" ads:@"赠送烤鸡腿" bonusPoints:10 mallId:1 beaconId:802396 latitude:0 longitude:0],
+             [[MockMall alloc]initMallWithName:@"世贸中心" address:@"Causeway Bay" ads:@"赠送电影票" bonusPoints:15 mallId:2 beaconId:802399 latitude:0 longitude:0],
+             nil];
+    }
+    return allMalls;
+}
+
++ (NSDictionary*)getBeaconIdMap {
+    static NSDictionary *beaconIdMap;
+    if (beaconIdMap == nil) {
+        NSArray* allMalls = [MockMall getAllMallData];
+        NSMutableArray* beaconIds = [[NSMutableArray alloc]init];
+        for (MockMall* mall in allMalls) {
+            [beaconIds addObject:[[NSNumber alloc]initWithInt:[mall getBeaconId]]];
+        }
+        beaconIdMap = [[NSDictionary alloc]initWithObjects:allMalls forKeys:beaconIds];
+    }
+    return beaconIdMap;
+}
+
++ (void)load {
+    [super load];
+    [MockMall getAllMallData];
+}
+
++ (MockMall*)getMallWithSonicCode:(SonicCodeHeard*)code {
+    int beaconCode = -1;
+    if ([code isKindOfClass:[SonicBluetoothCodeHeard class]]) {
+        SonicBluetoothCodeHeard* blueHeard = (SonicBluetoothCodeHeard*) code;
+        beaconCode = [blueHeard beaconCode];
+    } else if ([code isKindOfClass:[SonicAudioHeardCode class]]) {
+        SonicAudioHeardCode* audioHeard = (SonicAudioHeardCode*) code;
+        beaconCode = [audioHeard beaconCode];
+    }
+    
+    if (beaconCode == -1) {
+        return [[MockMall alloc]initMallWithName:@"Unrecognized" address:[NSString stringWithFormat:@"%d", beaconCode] ads:@"Free books" bonusPoints:5 mallId:-1 beaconId:-1 latitude:0 longitude:0];
+    }
+
+    NSNumber* beaconNumber = [[NSNumber alloc]initWithInt:beaconCode];
+    NSDictionary* beaconMap = [MockMall getBeaconIdMap];
+    MockMall* mall = [beaconMap objectForKey:beaconNumber];
+    assert(mall != nil);
+    return mall;
 }
 
 - (int) getBonusPoints {
@@ -63,6 +89,10 @@
 
 - (int) getMallId {
     return mallId;
+}
+
+- (int) getBeaconId {
+    return beaconId;
 }
 
 @end

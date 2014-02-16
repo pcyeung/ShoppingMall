@@ -8,18 +8,24 @@
 
 #import <Foundation/Foundation.h>
 #import <Sonic/SonicAudioHeardCode.h>
+#import <CoreLocation/CoreLocation.h>
 
 @interface MockMall : NSObject {
     int bonusPoints;
     int mallId;
+    int beaconId;
+    CLLocationCoordinate2D coordinates;
 }
 
 @property(strong, nonatomic) NSString *mallName;
 @property(strong, nonatomic) NSString *mallAddress;
 @property(strong, nonatomic) NSString *adsText;
 
-- (id)initWithSonicCode:(SonicCodeHeard *)code;
++ (MockMall*)getMallWithSonicCode:(SonicCodeHeard *)code;
++ (NSArray*)getAllMallData;
+
 - (int) getBonusPoints;
 - (int) getMallId;
+- (int) getBeaconId;
 
 @end
