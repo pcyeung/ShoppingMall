@@ -10,6 +10,7 @@
 #import "MyAccountHomePageViewController.h"
 #import "HomePageListViewController.h"
 #import "GiftViewController.h"
+#import "AddressAnnotation.h"
 
 @interface MallAnnotation ()
 @end
@@ -92,10 +93,29 @@
     [mapView setRegion:region animated:YES];
     
     NSArray* malls = [MockMall getAllMallData];
+    NSInteger num = malls.count;
     for (MockMall* mall in malls) {
         // Add mall pins to map
         MallAnnotation* annotation = [[MallAnnotation alloc] initFromMockMall:mall];
+//        num++;
+        }
+    CLLocationCoordinate2D* locations[num];
+    for(int i = 0;i < num; i++)
+    {
+        CLLocationCoordinate2D temp = [malls[i] getCoordinates];
+        locations[i]->latitude = temp.latitude;
+        locations[i]->longitude = temp.longitude;
+        
     }
+    for (int i = 0; i < num; i++){
+        CLLocationCoordinate2D  ctrpoint;
+        ctrpoint.latitude = locations[i]->latitude;
+        ctrpoint.longitude = locations[i]->longitude;
+        AddressAnnotation *addAnnotation = [[AddressAnnotation alloc] initWithCoordinate:ctrpoint];
+        [mapView addAnnotation:addAnnotation];
+        //[addAnnotation release];
+    }
+    
 }
 
 
