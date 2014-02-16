@@ -195,6 +195,7 @@
 		70807E4118AF192900984161 /* RedeemedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 70807E3E18AF192900984161 /* RedeemedCell.m */; };
 		70807E4218AF192900984161 /* RedeemedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807E4018AF192900984161 /* RedeemedCell.xib */; };
 		70807E4418B0B58300984161 /* RedeemedViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807E4318B0B58300984161 /* RedeemedViewController5.xib */; };
+		70807E4718B0C3C300984161 /* AddressAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 70807E4618B0C3C300984161 /* AddressAnnotation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -445,6 +446,8 @@
 		70807E3F18AF192900984161 /* RedeemedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedeemedCell.h; sourceTree = "<group>"; };
 		70807E4018AF192900984161 /* RedeemedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RedeemedCell.xib; sourceTree = "<group>"; };
 		70807E4318B0B58300984161 /* RedeemedViewController5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RedeemedViewController5.xib; path = MyAccount/RedeemedPage/RedeemedViewController5.xib; sourceTree = "<group>"; };
+		70807E4518B0C3C300984161 /* AddressAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddressAnnotation.h; path = HomePage/AddressAnnotation.h; sourceTree = "<group>"; };
+		70807E4618B0C3C300984161 /* AddressAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddressAnnotation.m; path = HomePage/AddressAnnotation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -882,6 +885,8 @@
 		23D615971893A63A00C60E3E /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
+				70807E4518B0C3C300984161 /* AddressAnnotation.h */,
+				70807E4618B0C3C300984161 /* AddressAnnotation.m */,
 				23D615981893A6AC00C60E3E /* HomePageViewController.h */,
 				23D615991893A6AC00C60E3E /* HomePageViewController.m */,
 				23D6159A1893A6AC00C60E3E /* HomePageViewController.xib */,
@@ -1252,6 +1257,7 @@
 				23D6138618936AD500C60E3E /* LoginListViewController.m in Sources */,
 				236AB5C81894AA3100770E81 /* FriendsListCell.m in Sources */,
 				23D613771893680700C60E3E /* SDWebImageDownloader.m in Sources */,
+				70807E4718B0C3C300984161 /* AddressAnnotation.m in Sources */,
 				23D6137C1893680700C60E3E /* UIImage+GIF.m in Sources */,
 				236AB62E1894D41300770E81 /* ShoppingMallIndexDetailViewController.m in Sources */,
 				706C70B6189E41F400B2C38C /* MockUser.m in Sources */,
