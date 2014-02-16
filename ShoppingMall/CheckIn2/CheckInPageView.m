@@ -50,7 +50,7 @@
 {
     _user = [MockUser sharedUserObject];
     _mall = [MockMall getMallWithSonicCode:code];
-    if ([_user hasVisited:_mall] == YES) {
+    if (_mall == nil || [_user hasVisited:_mall] == YES) {
         return NULL;
     }
 

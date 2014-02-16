@@ -79,7 +79,6 @@
     NSNumber* beaconNumber = [[NSNumber alloc]initWithInt:beaconCode];
     NSDictionary* beaconMap = [MockMall getBeaconIdMap];
     MockMall* mall = [beaconMap objectForKey:beaconNumber];
-    assert(mall != nil);
     return mall;
 }
 
