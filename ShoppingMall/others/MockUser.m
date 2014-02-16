@@ -12,6 +12,22 @@
 
 #import "MockUser.h"
 
+@implementation PrizeData
+@synthesize prizeName = _prizeName;
+
+- (id) initWithPrizeName:(NSString*)name {
+    self = [super init];
+    if (self) {
+        isRedeemed = NO;
+        _prizeName = name;
+    }
+    return self;
+}
+- (bool) getIsRedeemed {
+    return isRedeemed;
+}
+@end
+
 @implementation VisitData
 @synthesize visitTime = _visitTime;
 @synthesize mall= _mall;
@@ -32,6 +48,8 @@
 @synthesize userName = _userName;
 @synthesize visitHistory = _visitHistory;
 @synthesize visitedMalls = _visitedMalls;
+
+@synthesize prizeHistory = _prizeHistory;
 
 + (id)sharedUserObject {
     static MockUser *sharedUser = nil;
@@ -75,6 +93,11 @@
         return YES;
     }    
     return NO;
+}
+
+-(void)addPrize:(NSString*)name {
+    PrizeData* data = [[PrizeData alloc] initWithPrizeName:name];
+    [_prizeHistory addObject:data];
 }
 
 @end

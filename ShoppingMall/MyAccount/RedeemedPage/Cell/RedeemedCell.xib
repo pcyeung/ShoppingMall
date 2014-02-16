@@ -8,6 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RedeemedCell">
             <connections>
                 <outlet property="descLabel" destination="ySq-uI-T4T" id="XvJ-yQ-EsO"/>
+                <outlet property="nameLabel" destination="3e5-Zy-qVh" id="Zdf-eJ-S14"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

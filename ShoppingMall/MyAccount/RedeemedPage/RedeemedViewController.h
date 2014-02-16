@@ -7,12 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-#include "BaseViewController.h"
+#import "BaseViewController.h"
+#import "MockUser.h"
 
 @interface RedeemedViewController : BaseViewController<UITableViewDataSource,UITableViewDelegate>{
     IBOutlet UIButton *backBtn;
     IBOutlet UITableView *list;
 }
+
+@property (strong, nonatomic) MockUser *user;
+
 - (IBAction)backBtnClick;
 
 

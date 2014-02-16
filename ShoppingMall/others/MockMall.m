@@ -37,8 +37,8 @@
     if (allMalls == nil) {
         allMalls =
             [NSArray arrayWithObjects:
-             [[MockMall alloc]initMallWithName:@"时代广场" address:@"Wanchai" ads:@"赠送烤鸡腿" bonusPoints:10 mallId:1 beaconId:802396 latitude:0 longitude:0],
-             [[MockMall alloc]initMallWithName:@"世贸中心" address:@"Causeway Bay" ads:@"赠送电影票" bonusPoints:15 mallId:2 beaconId:802399 latitude:0 longitude:0],
+             [[MockMall alloc]initMallWithName:@"时代广场" address:@"Wanchai" ads:@"赠送烤鸡腿" bonusPoints:10 mallId:1 beaconId:802396 latitude:22.278151 longitude:114.181706],
+             [[MockMall alloc]initMallWithName:@"世贸中心" address:@"Causeway Bay" ads:@"赠送电影票" bonusPoints:15 mallId:2 beaconId:802399 latitude:22.281528 longitude:114.184219],
              nil];
     }
     return allMalls;

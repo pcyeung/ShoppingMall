@@ -40,6 +40,7 @@
 
 - (IBAction)QRCodeBtnClick {
     // Handle the QR Code scan here
+    [[MockUser sharedUserObject] addPrize:@"Book"];
     [self buttonClickToClass:@"MallGiftConfirmationViewController" iPhone5Nib:@"MallGiftConfirmationViewController5" nib:@"MallGiftConfirmationViewController"];
 }
 

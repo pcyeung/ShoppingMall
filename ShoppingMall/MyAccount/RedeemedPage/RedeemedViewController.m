@@ -7,7 +7,8 @@
 //
 
 #import "RedeemedViewController.h"
-#include "RedeemedCell.h"
+#import "RedeemedCell.h"
+#import "MockUser.h"
 
 @interface RedeemedViewController ()
 
@@ -15,11 +16,13 @@
 
 @implementation RedeemedViewController
 
+@synthesize user = _user;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        _user = [MockUser sharedUserObject];
     }
     return self;
 }
@@ -41,14 +44,20 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 10;
+    int prizeCount = [[_user prizeHistory] count];
+    return MIN(prizeCount, 10);
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    if ([indexPath row] % 2 == 0) {
-        return [[RedeemedCell alloc] initWithStatus:@"Redeemed"];
+    PrizeData* prize = [[_user prizeHistory] objectAtIndex:[indexPath row]];
+
+    NSString* redeemed;
+    if ([prize getIsRedeemed]) {
+        redeemed = @"Redeemed";
+    } else {
+        redeemed = @"Not redeemed";
     }
-    return [[RedeemedCell alloc] initWithStatus:@"Not redeemed"];
+    return [[RedeemedCell alloc] initWithName:[prize prizeName] status:redeemed];
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{

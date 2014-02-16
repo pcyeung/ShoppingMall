@@ -10,14 +10,14 @@
 
 @implementation RedeemedCell
 
--(id) initWithStatus:(NSString*)status
-{
+-(id) initWithName:(NSString*)name status:(NSString*)status {
     self = [super init];
     if (self) {
         NSArray *nibObjects = [[NSBundle mainBundle] loadNibNamed:@"RedeemedCell" owner:self options:nil];
         [self addSubview:nibObjects[0]];
         
         [descLabel setText:status];
+        [nameLabel setText:name];
     }
     return self;
 }

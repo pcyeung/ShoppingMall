@@ -10,8 +10,9 @@
 
 @interface RedeemedCell : UITableViewCell {
     IBOutlet UILabel *descLabel;
+    IBOutlet UILabel *nameLabel;
 }
 
--(id) initWithStatus:(NSString*)status;
+-(id) initWithName:(NSString*)name status:(NSString*)status;
 
 @end
