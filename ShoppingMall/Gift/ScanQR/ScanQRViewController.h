@@ -10,14 +10,24 @@
 #import "MyAccountHomePageViewController.h"
 #import "HomePageViewController.h"
 #import "MallGiftListPageViewController.h"
+#import "ZBarSDK.h"
 
-@interface ScanQRViewController : BaseViewController {
-    IBOutlet UIButton *QRCodeBtn;
+@interface ScanQRViewController : BaseViewController<ZBarReaderDelegate,ZBarReaderViewDelegate>{
+    IBOutlet UIButton *backBtn;
+    
+    int num;
+    BOOL upOrdown;
+    NSTimer * timer;
+    
+    ZBarReaderView *readerView;
+    NSMutableDictionary *dic;
 }
-- (IBAction)QRCodeBtnClick;
-- (IBAction)myAccountBtnClick;
+
+@property (nonatomic, strong) UIImageView * line;
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil withDic:(NSMutableDictionary *)sender;
+
 - (IBAction)backBtnClick;
-- (IBAction)shoppingMallBtnClick;
-- (IBAction)giftBtnClick;
+
 
 @end

@@ -196,6 +196,17 @@
 		70807E4218AF192900984161 /* RedeemedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807E4018AF192900984161 /* RedeemedCell.xib */; };
 		70807E4418B0B58300984161 /* RedeemedViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807E4318B0B58300984161 /* RedeemedViewController5.xib */; };
 		70807E4718B0C3C300984161 /* AddressAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 70807E4618B0C3C300984161 /* AddressAnnotation.m */; };
+		70807EE718B23D6E00984161 /* libzbar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70807EE118B23D6E00984161 /* libzbar.a */; };
+		70807EE818B23D6E00984161 /* zbar-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 70807EE318B23D6E00984161 /* zbar-back.png */; };
+		70807EE918B23D6E00984161 /* zbar-help.html in Resources */ = {isa = PBXBuildFile; fileRef = 70807EE418B23D6E00984161 /* zbar-help.html */; };
+		70807EEA18B23D6E00984161 /* zbar-helpicons.png in Resources */ = {isa = PBXBuildFile; fileRef = 70807EE518B23D6E00984161 /* zbar-helpicons.png */; };
+		70807EEB18B23D6E00984161 /* zbar-samples.png in Resources */ = {isa = PBXBuildFile; fileRef = 70807EE618B23D6E00984161 /* zbar-samples.png */; };
+		70807EF218B23FC800984161 /* QRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70807EEF18B23FC800984161 /* QRCodeViewController.m */; };
+		70807EF318B23FC800984161 /* QRCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807EF018B23FC800984161 /* QRCodeViewController.xib */; };
+		70807EF418B23FC800984161 /* QRCodeViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807EF118B23FC800984161 /* QRCodeViewController5.xib */; };
+		70807EFA18B23FD200984161 /* ConfirmationPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70807EF718B23FD200984161 /* ConfirmationPageViewController.m */; };
+		70807EFB18B23FD200984161 /* ConfirmationPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807EF818B23FD200984161 /* ConfirmationPageViewController.xib */; };
+		70807EFC18B23FD200984161 /* ConfirmationPageViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807EF918B23FD200984161 /* ConfirmationPageViewController5.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -448,6 +459,39 @@
 		70807E4318B0B58300984161 /* RedeemedViewController5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RedeemedViewController5.xib; path = MyAccount/RedeemedPage/RedeemedViewController5.xib; sourceTree = "<group>"; };
 		70807E4518B0C3C300984161 /* AddressAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddressAnnotation.h; path = HomePage/AddressAnnotation.h; sourceTree = "<group>"; };
 		70807E4618B0C3C300984161 /* AddressAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddressAnnotation.m; path = HomePage/AddressAnnotation.m; sourceTree = "<group>"; };
+		70807ECD18B23D6E00984161 /* Decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Decoder.h; sourceTree = "<group>"; };
+		70807ECE18B23D6E00984161 /* Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exception.h; sourceTree = "<group>"; };
+		70807ECF18B23D6E00984161 /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
+		70807ED018B23D6E00984161 /* ImageScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageScanner.h; sourceTree = "<group>"; };
+		70807ED118B23D6E00984161 /* Processor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Processor.h; sourceTree = "<group>"; };
+		70807ED218B23D6E00984161 /* Scanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scanner.h; sourceTree = "<group>"; };
+		70807ED318B23D6E00984161 /* Symbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Symbol.h; sourceTree = "<group>"; };
+		70807ED418B23D6E00984161 /* Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
+		70807ED518B23D6E00984161 /* Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Window.h; sourceTree = "<group>"; };
+		70807ED618B23D6E00984161 /* zbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zbar.h; sourceTree = "<group>"; };
+		70807ED718B23D6E00984161 /* ZBarCameraSimulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarCameraSimulator.h; sourceTree = "<group>"; };
+		70807ED818B23D6E00984161 /* ZBarCaptureReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarCaptureReader.h; sourceTree = "<group>"; };
+		70807ED918B23D6E00984161 /* ZBarHelpController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarHelpController.h; sourceTree = "<group>"; };
+		70807EDA18B23D6E00984161 /* ZBarImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarImage.h; sourceTree = "<group>"; };
+		70807EDB18B23D6E00984161 /* ZBarImageScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarImageScanner.h; sourceTree = "<group>"; };
+		70807EDC18B23D6E00984161 /* ZBarReaderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderController.h; sourceTree = "<group>"; };
+		70807EDD18B23D6E00984161 /* ZBarReaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderView.h; sourceTree = "<group>"; };
+		70807EDE18B23D6E00984161 /* ZBarReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderViewController.h; sourceTree = "<group>"; };
+		70807EDF18B23D6E00984161 /* ZBarSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarSDK.h; sourceTree = "<group>"; };
+		70807EE018B23D6E00984161 /* ZBarSymbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarSymbol.h; sourceTree = "<group>"; };
+		70807EE118B23D6E00984161 /* libzbar.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libzbar.a; sourceTree = "<group>"; };
+		70807EE318B23D6E00984161 /* zbar-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-back.png"; sourceTree = "<group>"; };
+		70807EE418B23D6E00984161 /* zbar-help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "zbar-help.html"; sourceTree = "<group>"; };
+		70807EE518B23D6E00984161 /* zbar-helpicons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-helpicons.png"; sourceTree = "<group>"; };
+		70807EE618B23D6E00984161 /* zbar-samples.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-samples.png"; sourceTree = "<group>"; };
+		70807EEE18B23FC800984161 /* QRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeViewController.h; sourceTree = "<group>"; };
+		70807EEF18B23FC800984161 /* QRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeViewController.m; sourceTree = "<group>"; };
+		70807EF018B23FC800984161 /* QRCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QRCodeViewController.xib; sourceTree = "<group>"; };
+		70807EF118B23FC800984161 /* QRCodeViewController5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QRCodeViewController5.xib; sourceTree = "<group>"; };
+		70807EF618B23FD200984161 /* ConfirmationPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfirmationPageViewController.h; sourceTree = "<group>"; };
+		70807EF718B23FD200984161 /* ConfirmationPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfirmationPageViewController.m; sourceTree = "<group>"; };
+		70807EF818B23FD200984161 /* ConfirmationPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfirmationPageViewController.xib; sourceTree = "<group>"; };
+		70807EF918B23FD200984161 /* ConfirmationPageViewController5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfirmationPageViewController5.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -457,6 +501,7 @@
 			files = (
 				702E140F189AD5C600B59475 /* Accelerate.framework in Frameworks */,
 				702E13FF189A2D7700B59475 /* CoreBluetooth.framework in Frameworks */,
+				70807EE718B23D6E00984161 /* libzbar.a in Frameworks */,
 				23DD8C361895EE5B005F7A48 /* AVFoundation.framework in Frameworks */,
 				23D612F3189365F100C60E3E /* CoreData.framework in Frameworks */,
 				702E1405189A2DA400B59475 /* AudioToolbox.framework in Frameworks */,
@@ -596,6 +641,7 @@
 		23D612E0189365F000C60E3E = {
 			isa = PBXGroup;
 			children = (
+				70807EC918B23D6E00984161 /* ZBarSDK */,
 				23D612F4189365F100C60E3E /* ShoppingMall */,
 				23D61311189365F100C60E3E /* ShoppingMallTests */,
 				23D612EB189365F100C60E3E /* Frameworks */,
@@ -982,6 +1028,8 @@
 		70807E2F18AF16B800984161 /* ScanQR */ = {
 			isa = PBXGroup;
 			children = (
+				70807EF518B23FD200984161 /* Confirmation */,
+				70807EED18B23FC800984161 /* Receipt */,
 				70807E3018AF16B800984161 /* ScanQRViewController.h */,
 				70807E3118AF16B800984161 /* ScanQRViewController.m */,
 				70807E3218AF16B800984161 /* ScanQRViewController.xib */,
@@ -1012,6 +1060,92 @@
 			);
 			name = Cell;
 			path = MyAccount/RedeemedPage/Cell;
+			sourceTree = "<group>";
+		};
+		70807EC918B23D6E00984161 /* ZBarSDK */ = {
+			isa = PBXGroup;
+			children = (
+				70807ECA18B23D6E00984161 /* Headers */,
+				70807EE118B23D6E00984161 /* libzbar.a */,
+				70807EE218B23D6E00984161 /* Resources */,
+			);
+			path = ZBarSDK;
+			sourceTree = "<group>";
+		};
+		70807ECA18B23D6E00984161 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				70807ECB18B23D6E00984161 /* ZBarSDK */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		70807ECB18B23D6E00984161 /* ZBarSDK */ = {
+			isa = PBXGroup;
+			children = (
+				70807ECC18B23D6E00984161 /* zbar */,
+				70807ED618B23D6E00984161 /* zbar.h */,
+				70807ED718B23D6E00984161 /* ZBarCameraSimulator.h */,
+				70807ED818B23D6E00984161 /* ZBarCaptureReader.h */,
+				70807ED918B23D6E00984161 /* ZBarHelpController.h */,
+				70807EDA18B23D6E00984161 /* ZBarImage.h */,
+				70807EDB18B23D6E00984161 /* ZBarImageScanner.h */,
+				70807EDC18B23D6E00984161 /* ZBarReaderController.h */,
+				70807EDD18B23D6E00984161 /* ZBarReaderView.h */,
+				70807EDE18B23D6E00984161 /* ZBarReaderViewController.h */,
+				70807EDF18B23D6E00984161 /* ZBarSDK.h */,
+				70807EE018B23D6E00984161 /* ZBarSymbol.h */,
+			);
+			path = ZBarSDK;
+			sourceTree = "<group>";
+		};
+		70807ECC18B23D6E00984161 /* zbar */ = {
+			isa = PBXGroup;
+			children = (
+				70807ECD18B23D6E00984161 /* Decoder.h */,
+				70807ECE18B23D6E00984161 /* Exception.h */,
+				70807ECF18B23D6E00984161 /* Image.h */,
+				70807ED018B23D6E00984161 /* ImageScanner.h */,
+				70807ED118B23D6E00984161 /* Processor.h */,
+				70807ED218B23D6E00984161 /* Scanner.h */,
+				70807ED318B23D6E00984161 /* Symbol.h */,
+				70807ED418B23D6E00984161 /* Video.h */,
+				70807ED518B23D6E00984161 /* Window.h */,
+			);
+			path = zbar;
+			sourceTree = "<group>";
+		};
+		70807EE218B23D6E00984161 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				70807EE318B23D6E00984161 /* zbar-back.png */,
+				70807EE418B23D6E00984161 /* zbar-help.html */,
+				70807EE518B23D6E00984161 /* zbar-helpicons.png */,
+				70807EE618B23D6E00984161 /* zbar-samples.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		70807EED18B23FC800984161 /* Receipt */ = {
+			isa = PBXGroup;
+			children = (
+				70807EEE18B23FC800984161 /* QRCodeViewController.h */,
+				70807EEF18B23FC800984161 /* QRCodeViewController.m */,
+				70807EF018B23FC800984161 /* QRCodeViewController.xib */,
+				70807EF118B23FC800984161 /* QRCodeViewController5.xib */,
+			);
+			path = Receipt;
+			sourceTree = "<group>";
+		};
+		70807EF518B23FD200984161 /* Confirmation */ = {
+			isa = PBXGroup;
+			children = (
+				70807EF618B23FD200984161 /* ConfirmationPageViewController.h */,
+				70807EF718B23FD200984161 /* ConfirmationPageViewController.m */,
+				70807EF818B23FD200984161 /* ConfirmationPageViewController.xib */,
+				70807EF918B23FD200984161 /* ConfirmationPageViewController5.xib */,
+			);
+			path = Confirmation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1095,6 +1229,7 @@
 				236AB6211894C4A800770E81 /* HomePageListViewController.xib in Resources */,
 				23D615651893A36F00C60E3E /* h04_map.png in Resources */,
 				236AB5CA1894AA4300770E81 /* FriendsListCell.xib in Resources */,
+				70807EFB18B23FD200984161 /* ConfirmationPageViewController.xib in Resources */,
 				23D615721893A36F00C60E3E /* h_07.png in Resources */,
 				23D615921893A36F00C60E3E /* top_grey_bg.png in Resources */,
 				23D6138718936AD500C60E3E /* LoginListViewController.xib in Resources */,
@@ -1120,6 +1255,7 @@
 				23D612F9189365F100C60E3E /* InfoPlist.strings in Resources */,
 				0959580B18A0BEFB009C54A2 /* mapView.png in Resources */,
 				23D6156F1893A36F00C60E3E /* h13_bg.png in Resources */,
+				70807EF318B23FC800984161 /* QRCodeViewController.xib in Resources */,
 				70807E0A18ABBF9600984161 /* InfoSettingViewController5.xib in Resources */,
 				23D615681893A36F00C60E3E /* h08_map.png in Resources */,
 				23D6136D1893680700C60E3E /* whiteArrow@2x.png in Resources */,
@@ -1161,11 +1297,13 @@
 				23D615611893A36F00C60E3E /* gift.png in Resources */,
 				70807E3C18AF172300984161 /* RedeemedViewController.xib in Resources */,
 				706C70B3189E3E8D00B2C38C /* CheckInPageView5.xib in Resources */,
+				70807EEA18B23D6E00984161 /* zbar-helpicons.png in Resources */,
 				23D6156A1893A36F00C60E3E /* h09_text.png in Resources */,
 				23D613661893680700C60E3E /* blackArrow@2x.png in Resources */,
 				2348433D1896166E00F752C3 /* line@2x.png in Resources */,
 				23D6136C1893680700C60E3E /* whiteArrow.png in Resources */,
 				23D615891893A36F00C60E3E /* scan.png in Resources */,
+				70807EF418B23FC800984161 /* QRCodeViewController5.xib in Resources */,
 				236AB6291894C61000770E81 /* HomePageListCell.xib in Resources */,
 				23D615A61893B92C00C60E3E /* MyAccountHomePageViewController5.xib in Resources */,
 				236AB63F1894D63900770E81 /* h_02.png in Resources */,
@@ -1183,6 +1321,7 @@
 				23D615881893A36F00C60E3E /* renren2.png in Resources */,
 				23D6155C1893A36F00C60E3E /* cancel.png in Resources */,
 				23D6157A1893A36F00C60E3E /* map_icon.png in Resources */,
+				70807EE818B23D6E00984161 /* zbar-back.png in Resources */,
 				23D615661893A36F00C60E3E /* h04_text.png in Resources */,
 				23D615851893A36F00C60E3E /* redeemed_btn.png in Resources */,
 				70807E1E18AE857C00984161 /* GiftListCell.xib in Resources */,
@@ -1193,8 +1332,10 @@
 				23D615791893A36F00C60E3E /* logo5.png in Resources */,
 				23D6157D1893A36F00C60E3E /* num_gift.png in Resources */,
 				70807DFB18AA693800984161 /* redeem_icon.png in Resources */,
+				70807EFC18B23FD200984161 /* ConfirmationPageViewController5.xib in Resources */,
 				23D6159C1893A6AC00C60E3E /* HomePageViewController.xib in Resources */,
 				23D6156C1893A36F00C60E3E /* h12_bg1.png in Resources */,
+				70807EE918B23D6E00984161 /* zbar-help.html in Resources */,
 				23D615701893A36F00C60E3E /* h_03.png in Resources */,
 				23D6138A18936B0B00C60E3E /* LoginListViewController5.xib in Resources */,
 				236AB6231894C4BB00770E81 /* HomePageListViewController5.xib in Resources */,
@@ -1205,6 +1346,7 @@
 				23D6158B1893A36F00C60E3E /* search.png in Resources */,
 				70807E4418B0B58300984161 /* RedeemedViewController5.xib in Resources */,
 				23D615811893A36F00C60E3E /* pic3.png in Resources */,
+				70807EEB18B23D6E00984161 /* zbar-samples.png in Resources */,
 				23D6155B1893A36F00C60E3E /* bottom_right_btn.png in Resources */,
 				23D615671893A36F00C60E3E /* h05_text.png in Resources */,
 				23D615601893A36F00C60E3E /* friends.png in Resources */,
@@ -1246,6 +1388,7 @@
 				70807E4118AF192900984161 /* RedeemedCell.m in Sources */,
 				23D6136E1893680700C60E3E /* TopEGORefreshTableHeaderView.m in Sources */,
 				70807E2418AE85B700984161 /* GiftDetailPageViewController.m in Sources */,
+				70807EFA18B23FD200984161 /* ConfirmationPageViewController.m in Sources */,
 				706C70B9189E4A9E00B2C38C /* MockMall.m in Sources */,
 				23D613761893680700C60E3E /* SDWebImageDecoder.m in Sources */,
 				23D6137D1893680700C60E3E /* UIImage+MultiFormat.m in Sources */,
@@ -1253,6 +1396,7 @@
 				70807E3B18AF172300984161 /* RedeemedViewController.m in Sources */,
 				23D6137E1893680700C60E3E /* UIImage+WebP.m in Sources */,
 				236AB6271894C5FE00770E81 /* HomePageListCell.m in Sources */,
+				70807EF218B23FC800984161 /* QRCodeViewController.m in Sources */,
 				23D613781893680700C60E3E /* SDWebImageDownloaderOperation.m in Sources */,
 				23D6138618936AD500C60E3E /* LoginListViewController.m in Sources */,
 				236AB5C81894AA3100770E81 /* FriendsListCell.m in Sources */,
@@ -1425,6 +1569,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/source/Desktop/ShoppingMall/ShoppingMall/others,
+					/Users/kienmanng/Downloads/ShoppingMall/ZBarSDK,
 				);
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1459,6 +1604,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/source/Desktop/ShoppingMall/ShoppingMall/others,
+					/Users/kienmanng/Downloads/ShoppingMall/ZBarSDK,
 				);
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";

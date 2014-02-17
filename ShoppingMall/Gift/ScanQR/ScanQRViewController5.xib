@@ -7,7 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScanQRViewController">
             <connections>
-                <outlet property="QRCodeBtn" destination="BnX-Kd-8Sf" id="nW3-oK-Qcq"/>
+                <outlet property="backBtn" destination="iVW-CC-bAe" id="8IO-Xn-T5m"/>
                 <outlet property="view" destination="3QZ-bZ-2ud" id="Ydb-xf-jyG"/>
             </connections>
         </placeholder>
@@ -20,17 +20,6 @@
                     <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JCU-RF-sJ4">
-                    <rect key="frame" x="20" y="5" width="40" height="40"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <state key="normal" image="top_left_btn.png">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="myAccountBtnClick" destination="-1" eventType="touchUpInside" id="s3G-Ik-PpO"/>
-                    </connections>
-                </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iVW-CC-bAe">
                     <rect key="frame" x="260" y="5" width="40" height="40"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -39,50 +28,13 @@
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="backBtnClick" destination="-1" eventType="touchUpInside" id="kkp-X8-Sqc"/>
+                        <action selector="backBtnClick" destination="-1" eventType="touchUpInside" id="bQ5-0D-aFh"/>
                     </connections>
                 </button>
                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="bottom.png" translatesAutoresizingMaskIntoConstraints="NO" id="byN-dA-RXk">
                     <rect key="frame" x="0.0" y="518" width="320" height="50"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pab-mF-4iE">
-                    <rect key="frame" x="20" y="523" width="40" height="40"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <state key="normal" image="bottom_left_btn.png">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="shoppingMallBtnClick" destination="-1" eventType="touchUpInside" id="q1c-z5-ARx"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kqu-uc-wVG">
-                    <rect key="frame" x="260" y="523" width="40" height="40"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <state key="normal" image="bottom_right_btn.png">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="giftBtnClick" destination="-1" eventType="touchUpInside" id="HIM-GX-zI8"/>
-                    </connections>
-                </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="scan_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="QJw-rc-WDR">
-                    <rect key="frame" x="0.0" y="48" width="320" height="472"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                </imageView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BnX-Kd-8Sf">
-                    <rect key="frame" x="40" y="164" width="240" height="240"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <state key="normal" title="Button" image="h_07.png">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="QRCodeBtnClick" destination="-1" eventType="touchUpInside" id="Bbk-uP-1ij"/>
-                    </connections>
-                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -90,11 +42,6 @@
     </objects>
     <resources>
         <image name="bottom.png" width="640" height="111"/>
-        <image name="bottom_left_btn.png" width="89" height="80"/>
-        <image name="bottom_right_btn.png" width="89" height="80"/>
-        <image name="h_07.png" width="511" height="509"/>
-        <image name="scan_bg.png" width="640" height="916"/>
-        <image name="top_left_btn.png" width="70" height="70"/>
         <image name="top_right_btn.png" width="70" height="70"/>
     </resources>
 </document>
