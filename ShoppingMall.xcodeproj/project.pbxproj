@@ -206,6 +206,7 @@
 		70807EFA18B23FD200984161 /* ConfirmationPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70807EF718B23FD200984161 /* ConfirmationPageViewController.m */; };
 		70807EFB18B23FD200984161 /* ConfirmationPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807EF818B23FD200984161 /* ConfirmationPageViewController.xib */; };
 		70807EFC18B23FD200984161 /* ConfirmationPageViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807EF918B23FD200984161 /* ConfirmationPageViewController5.xib */; };
+		70807F2118B39F1300984161 /* ShoppingMallIndexDetailViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807F2018B39F1300984161 /* ShoppingMallIndexDetailViewController5.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -490,6 +491,7 @@
 		70807EF718B23FD200984161 /* ConfirmationPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfirmationPageViewController.m; sourceTree = "<group>"; };
 		70807EF818B23FD200984161 /* ConfirmationPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfirmationPageViewController.xib; sourceTree = "<group>"; };
 		70807EF918B23FD200984161 /* ConfirmationPageViewController5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfirmationPageViewController5.xib; sourceTree = "<group>"; };
+		70807F2018B39F1300984161 /* ShoppingMallIndexDetailViewController5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ShoppingMallIndexDetailViewController5.xib; path = MallPage/MallDetail/ShoppingMallIndexDetailViewController5.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -631,6 +633,7 @@
 				236AB62B1894D41300770E81 /* ShoppingMallIndexDetailViewController.h */,
 				236AB62C1894D41300770E81 /* ShoppingMallIndexDetailViewController.m */,
 				236AB62D1894D41300770E81 /* ShoppingMallIndexDetailViewController.xib */,
+				70807F2018B39F1300984161 /* ShoppingMallIndexDetailViewController5.xib */,
 			);
 			name = MallDetail;
 			sourceTree = "<group>";
@@ -1315,6 +1318,7 @@
 				09A26BC718AC891D0010191A /* nexusae0_btn_myl_normal.png in Resources */,
 				23D6159E1893A6DA00C60E3E /* HomePageViewController5.xib in Resources */,
 				23D615881893A36F00C60E3E /* renren2.png in Resources */,
+				70807F2118B39F1300984161 /* ShoppingMallIndexDetailViewController5.xib in Resources */,
 				23D6155C1893A36F00C60E3E /* cancel.png in Resources */,
 				23D6157A1893A36F00C60E3E /* map_icon.png in Resources */,
 				70807EE818B23D6E00984161 /* zbar-back.png in Resources */,
