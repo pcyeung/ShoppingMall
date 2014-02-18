@@ -26,5 +26,7 @@
 - (int) getBonusPoints;
 - (int) getBeaconId;
 - (CLLocationCoordinate2D) getCoordinates;
+- (NSString*) getMallName;
+- (NSString*) getMallAddress;
 
 @end

@@ -14,6 +14,7 @@
 #import "MockMall.h"
 
 
+
 @interface HomePageViewController ()
 
 @end
@@ -80,10 +81,13 @@
     NSArray* malls = [MockMall getAllMallData];
     for (MockMall* mall in malls) {
         CLLocationCoordinate2D coordinate = [mall getCoordinates];
-        AddressAnnotation *addAnnotation = [[AddressAnnotation alloc] initWithCoordinate:coordinate];
+        NSString *title = [mall getMallName];
+        NSString *subtitle = [mall getMallAddress];
+        AddressAnnotation *addAnnotation = [[AddressAnnotation alloc] initWithCoordinate:coordinate title:title SubTitle:subtitle];
         [mapView addAnnotation:addAnnotation];
     }
-    
+
+
 }
 
 

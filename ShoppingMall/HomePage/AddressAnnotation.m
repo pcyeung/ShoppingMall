@@ -4,16 +4,27 @@
 @synthesize coordinate;
 
 - (NSString *)subtitle{
-	return nil;
+	return subtitle;
 }
 
 - (NSString *)title{
-	return nil;
+	return title;
 }
 
--(id)initWithCoordinate:(CLLocationCoordinate2D) c{
+-(id)initWithCoordinate:(CLLocationCoordinate2D)c
+                  title:(NSString*)t
+               SubTitle:(NSString*)s {
 	coordinate=c;
+    title = t;
+    subtitle = s;
 	return self;
 }
+
+-(id)initWithCoordinate:(CLLocationCoordinate2D)c
+{
+    coordinate=c;
+    return self;
+}
+
 
 @end

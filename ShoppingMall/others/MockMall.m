@@ -219,4 +219,15 @@
     return coordinates;
 }
 
+- (NSString*) getMallName
+{
+    return _mallName;
+}
+
+- (NSString*) getMallAddress
+{
+    return _mallAddress;
+}
+
+
 @end
