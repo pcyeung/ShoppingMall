@@ -31,7 +31,6 @@
 		236AB6291894C61000770E81 /* HomePageListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 236AB6281894C61000770E81 /* HomePageListCell.xib */; };
 		236AB62E1894D41300770E81 /* ShoppingMallIndexDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 236AB62C1894D41300770E81 /* ShoppingMallIndexDetailViewController.m */; };
 		236AB62F1894D41300770E81 /* ShoppingMallIndexDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 236AB62D1894D41300770E81 /* ShoppingMallIndexDetailViewController.xib */; };
-		236AB6311894D42500770E81 /* ShoppingMallIndexDetailViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 236AB6301894D42500770E81 /* ShoppingMallIndexDetailViewController5.xib */; };
 		236AB63D1894D63900770E81 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 236AB6321894D63900770E81 /* bg.png */; };
 		236AB63E1894D63900770E81 /* bottom.png in Resources */ = {isa = PBXBuildFile; fileRef = 236AB6331894D63900770E81 /* bottom.png */; };
 		236AB63F1894D63900770E81 /* h_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 236AB6341894D63900770E81 /* h_02.png */; };
@@ -252,7 +251,6 @@
 		236AB62B1894D41300770E81 /* ShoppingMallIndexDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShoppingMallIndexDetailViewController.h; path = MallPage/MallDetail/ShoppingMallIndexDetailViewController.h; sourceTree = "<group>"; };
 		236AB62C1894D41300770E81 /* ShoppingMallIndexDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShoppingMallIndexDetailViewController.m; path = MallPage/MallDetail/ShoppingMallIndexDetailViewController.m; sourceTree = "<group>"; };
 		236AB62D1894D41300770E81 /* ShoppingMallIndexDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ShoppingMallIndexDetailViewController.xib; path = MallPage/MallDetail/ShoppingMallIndexDetailViewController.xib; sourceTree = "<group>"; };
-		236AB6301894D42500770E81 /* ShoppingMallIndexDetailViewController5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ShoppingMallIndexDetailViewController5.xib; path = MallPage/MallDetail/ShoppingMallIndexDetailViewController5.xib; sourceTree = "<group>"; };
 		236AB6321894D63900770E81 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
 		236AB6331894D63900770E81 /* bottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bottom.png; sourceTree = "<group>"; };
 		236AB6341894D63900770E81 /* h_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = h_02.png; sourceTree = "<group>"; };
@@ -633,7 +631,6 @@
 				236AB62B1894D41300770E81 /* ShoppingMallIndexDetailViewController.h */,
 				236AB62C1894D41300770E81 /* ShoppingMallIndexDetailViewController.m */,
 				236AB62D1894D41300770E81 /* ShoppingMallIndexDetailViewController.xib */,
-				236AB6301894D42500770E81 /* ShoppingMallIndexDetailViewController5.xib */,
 			);
 			name = MallDetail;
 			sourceTree = "<group>";
@@ -1286,7 +1283,6 @@
 				70807E3618AF16B800984161 /* ScanQRViewController5.xib in Resources */,
 				70807E1818AE84EB00984161 /* GiftViewController5.xib in Resources */,
 				236AB6401894D63900770E81 /* line.png in Resources */,
-				236AB6311894D42500770E81 /* ShoppingMallIndexDetailViewController5.xib in Resources */,
 				23D613671893680700C60E3E /* blueArrow.png in Resources */,
 				23D615801893A36F00C60E3E /* pic2.png in Resources */,
 				0959580518A09FDD009C54A2 /* GiftViewController.xib in Resources */,

@@ -8,22 +8,30 @@
 
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
+#import "MockMall.h"
 
 @interface ShoppingMallIndexDetailViewController : BaseViewController {
     IBOutlet UIButton *MyAccountBtn;
     IBOutlet UIButton *backBtn;
     IBOutlet UIButton *shoppingMallListBtn;
     IBOutlet UIButton *giftBtn;
-    IBOutlet UIButton *shoppingMallInfoBtn;
     IBOutlet UIButton *shoppingMallBannerBtn;
     IBOutlet UIButton *numberOfGiftBtn;
+    
+    IBOutlet UILabel *mallName;
+    IBOutlet UILabel *mallAddress;
 }
+
+@property(strong, nonatomic) MockMall *mall;
+
 - (IBAction)backBtnClick;
 - (IBAction)myAccountBTnClick;
 
 - (IBAction)shoppingMallBtnClick;
 - (IBAction)numberOfGiftBtnClick;
 - (IBAction)giftBtnClick;
+
+- (void)initWithMall:(MockMall*)mall;
 
 
 @end

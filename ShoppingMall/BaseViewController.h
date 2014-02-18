@@ -10,6 +10,7 @@
 
 @interface BaseViewController : UIViewController
 
+- (UIViewController*)buttonClickGetClass:(NSString*)aClass iPhone5Nib:(NSString*)nib5 nib:(NSString*)nib;
 - (void)buttonClickToClass:(NSString*)aClass iPhone5Nib:(NSString*)nib5 nib:(NSString*)nib;
 
 @end

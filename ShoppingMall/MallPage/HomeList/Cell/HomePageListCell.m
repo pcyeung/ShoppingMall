@@ -26,4 +26,9 @@
     // Configure the view for the selected state
 }
 
+- (void)initWithMall:(MockMall *)mall {
+    name.text = [mall mallName];
+    address.text = [mall mallAddress];
+}
+
 @end

@@ -45,17 +45,23 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 10;
+    return MAX(10, [[MockMall getAllMallData]count]);
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     NSArray *nib=[[NSBundle mainBundle]loadNibNamed:@"HomePageListCell" owner:self options:Nil];
+    
     HomePageListCell *cell=[nib objectAtIndex:0];
+    MockMall* mall = [[MockMall getAllMallData]objectAtIndex:[indexPath row]];
+    [cell initWithMall:mall];
     return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    [self buttonClickToClass:@"ShoppingMallIndexDetailViewController" iPhone5Nib:@"ShoppingMallIndexDetailViewController5" nib:@"ShoppingMallIndexDetailViewController"];
+    MockMall* mall = [[MockMall getAllMallData]objectAtIndex:[indexPath row]];
+    ShoppingMallIndexDetailViewController* controller = (ShoppingMallIndexDetailViewController*)[self buttonClickGetClass:@"ShoppingMallIndexDetailViewController" iPhone5Nib:@"ShoppingMallIndexDetailViewController5" nib:@"ShoppingMallIndexDetailViewController"];
+    [controller initWithMall:mall];
+    [self.navigationController pushViewController:controller animated:YES];
 }
 
 - (IBAction)backBtnClick {

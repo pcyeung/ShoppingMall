@@ -17,6 +17,8 @@
 
 @implementation ShoppingMallIndexDetailViewController
 
+@synthesize mall = _mall;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -29,7 +31,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    mallName.text = [_mall mallName];
+    mallAddress.text = [_mall mallAddress];
 }
 
 - (void)didReceiveMemoryWarning
@@ -58,5 +62,8 @@
     [self buttonClickToClass:@"MallGiftListPageViewController" iPhone5Nib:@"MallGiftListPageViewController5" nib:@"MallGiftListPageViewController"];
 }
 
+- (void)initWithMall:(MockMall*)mall {
+    _mall = mall;
+}
 
 @end

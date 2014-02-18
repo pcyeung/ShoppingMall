@@ -10,9 +10,10 @@
                 <outlet property="MyAccountBtn" destination="0E2-WS-osO" id="RBy-ht-J96"/>
                 <outlet property="backBtn" destination="dVW-pc-A3M" id="SLl-bG-gkf"/>
                 <outlet property="giftBtn" destination="3s9-tI-UVS" id="15F-lG-Oau"/>
+                <outlet property="mallAddress" destination="lAb-GI-Eao" id="uc6-GP-7aV"/>
+                <outlet property="mallName" destination="Kes-2l-GWo" id="Qwc-ZO-jrN"/>
                 <outlet property="numberOfGiftBtn" destination="EXd-ht-Xap" id="Zmf-ng-1v1"/>
                 <outlet property="shoppingMallBannerBtn" destination="YCw-Yo-e8a" id="rFS-CE-Sqz"/>
-                <outlet property="shoppingMallInfoBtn" destination="c07-Rn-Djy" id="wg4-f2-9DS"/>
                 <outlet property="shoppingMallListBtn" destination="r04-IM-QLe" id="MEK-nz-xUd"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
@@ -93,19 +94,45 @@
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YCw-Yo-e8a">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+                                    <rect key="frame" x="0.0" y="1" width="320" height="160"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <state key="normal" title="bannerBtn" image="top_banner.png">
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c07-Rn-Djy">
-                                    <rect key="frame" x="0.0" y="160" width="320" height="260"/>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="欧美汇购物中心" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kes-2l-GWo">
+                                    <rect key="frame" x="0.0" y="170" width="320" height="27"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <state key="normal" title="mallInfoBtn" image="h_02.png">
-                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                    </state>
-                                </button>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="北京市海淀区丹棱街1号" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="lAb-GI-Eao">
+                                    <rect key="frame" x="20" y="198" width="280" height="35"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="logo1.png" translatesAutoresizingMaskIntoConstraints="NO" id="OHo-vO-wfl">
+                                    <rect key="frame" x="67" y="236" width="72" height="35"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </imageView>
+                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="logo2.png" translatesAutoresizingMaskIntoConstraints="NO" id="kwE-aC-pZG">
+                                    <rect key="frame" x="153" y="241" width="110" height="25"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </imageView>
+                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="logo3.png" translatesAutoresizingMaskIntoConstraints="NO" id="a2C-3X-4Ur">
+                                    <rect key="frame" x="31" y="279" width="66" height="35"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </imageView>
+                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="logo4.png" translatesAutoresizingMaskIntoConstraints="NO" id="e1n-zs-X3b">
+                                    <rect key="frame" x="123" y="279" width="70" height="35"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </imageView>
+                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="logo5.png" translatesAutoresizingMaskIntoConstraints="NO" id="PXg-F3-5Af">
+                                    <rect key="frame" x="219" y="284" width="70" height="25"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </imageView>
                             </subviews>
                         </scrollView>
                     </subviews>
@@ -119,7 +146,11 @@
         <image name="bottom.png" width="640" height="111"/>
         <image name="bottom_left_btn.png" width="89" height="80"/>
         <image name="bottom_right_btn.png" width="89" height="80"/>
-        <image name="h_02.png" width="640" height="490"/>
+        <image name="logo1.png" width="129" height="62"/>
+        <image name="logo2.png" width="151" height="39"/>
+        <image name="logo3.png" width="116" height="64"/>
+        <image name="logo4.png" width="116" height="74"/>
+        <image name="logo5.png" width="125" height="30"/>
         <image name="num_gift.png" width="640" height="98"/>
         <image name="top_banner.png" width="640" height="330"/>
         <image name="top_left_btn.png" width="70" height="70"/>

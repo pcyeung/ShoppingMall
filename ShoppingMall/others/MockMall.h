@@ -12,7 +12,6 @@
 
 @interface MockMall : NSObject {
     int bonusPoints;
-    int mallId;
     int beaconId;
     CLLocationCoordinate2D coordinates;
 }
@@ -25,7 +24,6 @@
 + (NSArray*)getAllMallData;
 
 - (int) getBonusPoints;
-- (int) getMallId;
 - (int) getBeaconId;
 - (CLLocationCoordinate2D) getCoordinates;
 

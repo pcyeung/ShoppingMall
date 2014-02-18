@@ -35,6 +35,23 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (UIViewController*)buttonClickGetClass:(NSString*)aClass iPhone5Nib:(NSString*)nib5 nib:(NSString*)nib {
+    Class class = NSClassFromString(aClass);
+    for (UIViewController *tem in self.navigationController.viewControllers) {
+        if ([tem isKindOfClass:class]) {
+            return tem;
+        }
+    }
+    
+    UIViewController *viewController;
+    if (iPhone5) {
+        viewController=[[class alloc]initWithNibName:nib5 bundle:nil];
+    }else{
+        viewController=[[class alloc]initWithNibName:nib bundle:nil];
+    }
+    return viewController;
+}
+
 - (void)buttonClickToClass:(NSString*)aClass iPhone5Nib:(NSString*)nib5 nib:(NSString*)nib {
     Class class = NSClassFromString(aClass);
     for (UIViewController *tem in self.navigationController.viewControllers) {

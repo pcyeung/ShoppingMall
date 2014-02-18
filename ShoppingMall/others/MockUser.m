@@ -86,7 +86,7 @@
 -(void)addVisit:(MockMall*)mall controller:(UINavigationController*)controller {
     [_visitHistory addObject:[[VisitData alloc] initWithCurrentTime:mall]];
 
-    NSInteger mallId = [mall getMallId];
+    NSInteger mallId = [mall getBeaconId];
     [_visitedMalls setObject:@"" forKey:[NSNumber numberWithInteger:mallId]];
     
     for (UIViewController *tem in controller.viewControllers) {
@@ -98,7 +98,7 @@
 }
 
 -(bool)hasVisited:(MockMall*)mall {
-    NSInteger mallId = [mall getMallId];
+    NSInteger mallId = [mall getBeaconId];
     if ([_visitedMalls objectForKey:[NSNumber numberWithInteger:mallId]] != nil) {
         return YES;
     }    
