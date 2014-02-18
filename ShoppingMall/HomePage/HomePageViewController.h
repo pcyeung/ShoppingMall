@@ -11,7 +11,7 @@
 #import "BaseViewController.h"
 #import "MockMall.h"
 
-@interface HomePageViewController : BaseViewController {
+@interface HomePageViewController : BaseViewController <MKMapViewDelegate> {
     IBOutlet UIButton *MyAccountBtn;
     IBOutlet UIButton *backBtn;
     IBOutlet UIButton *mapBTn;

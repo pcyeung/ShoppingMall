@@ -12,6 +12,7 @@
 #import "GiftViewController.h"
 #import "AddressAnnotation.h"
 #import "MockMall.h"
+#import "ShoppingMallIndexDetailViewController.h"
 
 
 
@@ -65,6 +66,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    mapView.delegate = self;
     // Do any additional setup after loading the view from its nib.
     MKCoordinateRegion region;
     MKCoordinateSpan span;
@@ -87,7 +89,6 @@
         [mapView addAnnotation:addAnnotation];
     }
 
-
 }
 
 
@@ -98,7 +99,27 @@
   
 }
 
+- (MKAnnotationView *) mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>) annotation
+{
+    if (annotation == mapView.userLocation)
+    {
+        return nil;
+    }
+    else{
+        MKPinAnnotationView *newAnnotation = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"pinLocation"];
+    
+        newAnnotation.canShowCallout = YES;
+        newAnnotation.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+    
+        return newAnnotation;
+    }
+}
 
+- (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control{
+    
+    [self buttonClickToClass:@"ShoppingMallIndexDetailViewController" iPhone5Nib:@"ShoppingMallIndexDetailViewController5" nib:@"ShoppingMallIndexDetailViewController"];
+    
+}
 
 - (IBAction)myAccountBtnClick {
     [self buttonClickToClass:@"MyAccountHomePageViewController" iPhone5Nib:@"MyAccountHomePageViewController5" nib:@"MyAccountHomePageViewController"];
