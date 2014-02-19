@@ -200,11 +200,9 @@
 		70807EF218B23FC800984161 /* QRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70807EEF18B23FC800984161 /* QRCodeViewController.m */; };
 		70807EF318B23FC800984161 /* QRCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807EF018B23FC800984161 /* QRCodeViewController.xib */; };
 		70807EF418B23FC800984161 /* QRCodeViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807EF118B23FC800984161 /* QRCodeViewController5.xib */; };
-		70807EFA18B23FD200984161 /* ConfirmationPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70807EF718B23FD200984161 /* ConfirmationPageViewController.m */; };
-		70807EFB18B23FD200984161 /* ConfirmationPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807EF818B23FD200984161 /* ConfirmationPageViewController.xib */; };
-		70807EFC18B23FD200984161 /* ConfirmationPageViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807EF918B23FD200984161 /* ConfirmationPageViewController5.xib */; };
 		70807F2118B39F1300984161 /* ShoppingMallIndexDetailViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807F2018B39F1300984161 /* ShoppingMallIndexDetailViewController5.xib */; };
 		70807F2418B4D5EF00984161 /* MockGift.m in Sources */ = {isa = PBXBuildFile; fileRef = 70807F2318B4D5EF00984161 /* MockGift.m */; };
+		70807F2618B4F70000984161 /* GiftDetailPageViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807F2518B4F70000984161 /* GiftDetailPageViewController5.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -481,13 +479,10 @@
 		70807EEF18B23FC800984161 /* QRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeViewController.m; sourceTree = "<group>"; };
 		70807EF018B23FC800984161 /* QRCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QRCodeViewController.xib; sourceTree = "<group>"; };
 		70807EF118B23FC800984161 /* QRCodeViewController5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QRCodeViewController5.xib; sourceTree = "<group>"; };
-		70807EF618B23FD200984161 /* ConfirmationPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfirmationPageViewController.h; sourceTree = "<group>"; };
-		70807EF718B23FD200984161 /* ConfirmationPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfirmationPageViewController.m; sourceTree = "<group>"; };
-		70807EF818B23FD200984161 /* ConfirmationPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfirmationPageViewController.xib; sourceTree = "<group>"; };
-		70807EF918B23FD200984161 /* ConfirmationPageViewController5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfirmationPageViewController5.xib; sourceTree = "<group>"; };
 		70807F2018B39F1300984161 /* ShoppingMallIndexDetailViewController5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ShoppingMallIndexDetailViewController5.xib; path = MallPage/MallDetail/ShoppingMallIndexDetailViewController5.xib; sourceTree = "<group>"; };
 		70807F2218B4D5EF00984161 /* MockGift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockGift.h; sourceTree = "<group>"; };
 		70807F2318B4D5EF00984161 /* MockGift.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockGift.m; sourceTree = "<group>"; };
+		70807F2518B4F70000984161 /* GiftDetailPageViewController5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GiftDetailPageViewController5.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1006,6 +1001,7 @@
 				70807E2018AE85B700984161 /* GiftDetailPageViewController.h */,
 				70807E2118AE85B700984161 /* GiftDetailPageViewController.m */,
 				70807E2218AE85B700984161 /* GiftDetailPageViewController.xib */,
+				70807F2518B4F70000984161 /* GiftDetailPageViewController5.xib */,
 			);
 			name = Detail;
 			path = Gift/Detail;
@@ -1014,7 +1010,6 @@
 		70807E2F18AF16B800984161 /* ScanQR */ = {
 			isa = PBXGroup;
 			children = (
-				70807EF518B23FD200984161 /* Confirmation */,
 				70807EED18B23FC800984161 /* Receipt */,
 				70807E3018AF16B800984161 /* ScanQRViewController.h */,
 				70807E3118AF16B800984161 /* ScanQRViewController.m */,
@@ -1123,17 +1118,6 @@
 			path = Receipt;
 			sourceTree = "<group>";
 		};
-		70807EF518B23FD200984161 /* Confirmation */ = {
-			isa = PBXGroup;
-			children = (
-				70807EF618B23FD200984161 /* ConfirmationPageViewController.h */,
-				70807EF718B23FD200984161 /* ConfirmationPageViewController.m */,
-				70807EF818B23FD200984161 /* ConfirmationPageViewController.xib */,
-				70807EF918B23FD200984161 /* ConfirmationPageViewController5.xib */,
-			);
-			path = Confirmation;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1215,7 +1199,6 @@
 				236AB6211894C4A800770E81 /* HomePageListViewController.xib in Resources */,
 				23D615651893A36F00C60E3E /* h04_map.png in Resources */,
 				236AB5CA1894AA4300770E81 /* FriendsListCell.xib in Resources */,
-				70807EFB18B23FD200984161 /* ConfirmationPageViewController.xib in Resources */,
 				23D615721893A36F00C60E3E /* h_07.png in Resources */,
 				23D615921893A36F00C60E3E /* top_grey_bg.png in Resources */,
 				23D6138718936AD500C60E3E /* LoginListViewController.xib in Resources */,
@@ -1291,6 +1274,7 @@
 				23D615A61893B92C00C60E3E /* MyAccountHomePageViewController5.xib in Resources */,
 				236AB63F1894D63900770E81 /* h_02.png in Resources */,
 				23D613691893680700C60E3E /* grayArrow.png in Resources */,
+				70807F2618B4F70000984161 /* GiftDetailPageViewController5.xib in Resources */,
 				23D61304189365F100C60E3E /* Images.xcassets in Resources */,
 				236AB62F1894D41300770E81 /* ShoppingMallIndexDetailViewController.xib in Resources */,
 				706C70CD18A0DAF700B2C38C /* TimelineListCell.xib in Resources */,
@@ -1316,7 +1300,6 @@
 				23D615791893A36F00C60E3E /* logo5.png in Resources */,
 				23D6157D1893A36F00C60E3E /* num_gift.png in Resources */,
 				70807DFB18AA693800984161 /* redeem_icon.png in Resources */,
-				70807EFC18B23FD200984161 /* ConfirmationPageViewController5.xib in Resources */,
 				23D6159C1893A6AC00C60E3E /* HomePageViewController.xib in Resources */,
 				23D6156C1893A36F00C60E3E /* h12_bg1.png in Resources */,
 				70807EE918B23D6E00984161 /* zbar-help.html in Resources */,
@@ -1371,7 +1354,6 @@
 				70807E4118AF192900984161 /* RedeemedCell.m in Sources */,
 				23D6136E1893680700C60E3E /* TopEGORefreshTableHeaderView.m in Sources */,
 				70807E2418AE85B700984161 /* GiftDetailPageViewController.m in Sources */,
-				70807EFA18B23FD200984161 /* ConfirmationPageViewController.m in Sources */,
 				706C70B9189E4A9E00B2C38C /* MockMall.m in Sources */,
 				23D613761893680700C60E3E /* SDWebImageDecoder.m in Sources */,
 				23D6137D1893680700C60E3E /* UIImage+MultiFormat.m in Sources */,

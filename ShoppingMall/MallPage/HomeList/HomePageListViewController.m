@@ -61,7 +61,7 @@
     MockMall* mall = [[MockMall getAllMallData]objectAtIndex:[indexPath row]];
     ShoppingMallIndexDetailViewController* controller = (ShoppingMallIndexDetailViewController*)[self buttonClickGetClass:@"ShoppingMallIndexDetailViewController" iPhone5Nib:@"ShoppingMallIndexDetailViewController5" nib:@"ShoppingMallIndexDetailViewController"];
     [controller initWithMall:mall];
-    [self.navigationController pushViewController:controller animated:YES];
+    [self popOrPush:@"ShoppingMallIndexDetailViewController" controller:controller];
 }
 
 - (IBAction)backBtnClick {

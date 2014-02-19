@@ -68,6 +68,20 @@
         viewController=[[class alloc]initWithNibName:nib bundle:nil];
     }
     [self.navigationController pushViewController:viewController animated:YES];
+    
+}
+
+- (void)popOrPush:(NSString*)aClass controller:(UIViewController*)controller {
+    Class class = NSClassFromString(aClass);
+    for (UIViewController *tem in self.navigationController.viewControllers) {
+        if ([tem isKindOfClass:class]) {
+            [self.navigationController popToViewController:tem animated:YES];
+            return;
+        }
+    }
+    
+    [self.navigationController pushViewController:controller animated:YES];
+    
 }
 
 @end

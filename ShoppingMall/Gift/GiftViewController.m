@@ -69,8 +69,8 @@
     MockGift* gift = [[MockGift getAllGiftData]objectAtIndex:[indexPath row]];
     GiftDetailPageViewController* controller = (GiftDetailPageViewController*)[self buttonClickGetClass:@"GiftDetailPageViewController" iPhone5Nib:@"GiftDetailPageViewController5" nib:@"GiftDetailPageViewController"];
     
-    [controller initWithGift:gift mall:[self getMallForRow:[indexPath row]]];
-    [self.navigationController pushViewController:controller animated:YES];
+    [controller initWithGift:gift mall:[self getMallForRow:[indexPath row]] redeemed:NO];
+    [self popOrPush:@"GiftDetailPageViewController" controller:controller];
 }
 
 - (IBAction)backBtnClick {

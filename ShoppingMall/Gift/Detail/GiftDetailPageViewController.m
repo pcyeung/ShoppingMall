@@ -62,16 +62,28 @@
 
 - (IBAction)scanBtnClick {
     // Implement the action here
-    [self buttonClickToClass:@"ScanQRViewController" iPhone5Nib:@"ScanQRViewController5" nib:@"ScanQRViewController"];
+    if (isRedeemedFlow) {
+        [self buttonClickToClass:@"QRCodeViewController" iPhone5Nib:@"QRCodeViewController5" nib:@"QRCodeViewController"];
+        return;
+    }
+    ScanQRViewController* controller = (ScanQRViewController*)[self buttonClickGetClass:@"ScanQRViewController" iPhone5Nib:@"ScanQRViewController5" nib:@"ScanQRViewController"];
+    [controller initWithGift:_gift mall:_mall];
+    [self popOrPush:@"ScanQRViewController" controller:controller];
 }
 
 - (IBAction)giftBtnClick {
     [self buttonClickToClass:@"GiftViewController" iPhone5Nib:@"GiftViewController5" nib:@"GiftViewController"];
 }
 
-- (void)initWithGift:(MockGift*)gift mall:(MockMall*)mall {
+- (void)initWithGift:(MockGift*)gift mall:(MockMall*)mall redeemed:(BOOL)redeemed {
     _gift = gift;
     _mall = mall;
+    isRedeemedFlow = redeemed;
+    if (redeemed) {
+        scanBtn.imageView.image = [UIImage imageNamed:@"redeemed_btn.png"];
+    } else {
+        scanBtn.imageView.image = [UIImage imageNamed:@"scan.png"];
+    }
 }
 
 @end

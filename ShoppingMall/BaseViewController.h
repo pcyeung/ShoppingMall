@@ -12,5 +12,6 @@
 
 - (UIViewController*)buttonClickGetClass:(NSString*)aClass iPhone5Nib:(NSString*)nib5 nib:(NSString*)nib;
 - (void)buttonClickToClass:(NSString*)aClass iPhone5Nib:(NSString*)nib5 nib:(NSString*)nib;
+- (void)popOrPush:(NSString*)aClass controller:(UIViewController*)controller;
 
 @end

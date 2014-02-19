@@ -11,9 +11,11 @@
 #import "HomePageViewController.h"
 #import "MallGiftListPageViewController.h"
 #import "ZBarSDK.h"
+#import "MockGift.h"
 
 @interface ScanQRViewController : BaseViewController<ZBarReaderDelegate,ZBarReaderViewDelegate>{
     IBOutlet UIButton *backBtn;
+    IBOutlet UIButton *scannedBtn;
     
     int num;
     BOOL upOrdown;
@@ -23,11 +25,14 @@
     NSMutableDictionary *dic;
 }
 
+@property (nonatomic, strong) MockMall * mall;
+@property (nonatomic, strong) MockGift * gift;
 @property (nonatomic, strong) UIImageView * line;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil withDic:(NSMutableDictionary *)sender;
+- (void) initWithGift:(MockGift*)gift mall:(MockMall*)mall;
 
 - (IBAction)backBtnClick;
-
+- (IBAction)scannedBtnClick;
 
 @end

@@ -24,6 +24,8 @@
     IBOutlet UIImageView *brandImage;
     IBOutlet UILabel *descriptionLabel;
     IBOutlet UILabel *sizeLabel;
+    
+    BOOL isRedeemedFlow;
 }
 - (IBAction)myAccountBtnClick;
 - (IBAction)backBtnClick;
@@ -34,7 +36,7 @@
 @property(strong, nonatomic) MockMall *mall;
 @property(strong, nonatomic) MockGift *gift;
 
-- (void)initWithGift:(MockGift*)gift mall:(MockMall*)mall;
+- (void)initWithGift:(MockGift*)gift mall:(MockMall*)mall redeemed:(BOOL)redeemed;
 
 
 @end

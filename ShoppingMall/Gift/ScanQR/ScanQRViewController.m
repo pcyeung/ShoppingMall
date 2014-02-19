@@ -11,13 +11,17 @@
 #import "HomePageViewController.h"
 #import "MallGiftListPageViewController.h"
 #import "RedeemedViewController.h"
-#import "ConfirmationPageViewController.h"
+#import "GiftDetailPageViewController.h"
 
 @interface ScanQRViewController ()
 
 @end
 
 @implementation ScanQRViewController
+
+@synthesize mall = _mall;
+@synthesize gift = _gift;
+@synthesize line = _line;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -85,20 +89,28 @@
     return CGRectMake(x, y, width, height);
 }
 
+- (IBAction)scannedBtnClick {
+    GiftDetailPageViewController* controller = (GiftDetailPageViewController*)[self buttonClickGetClass:@"GiftDetailPageViewController" iPhone5Nib:@"GiftDetailPageViewController5" nib:@"GiftDetailPageViewController"];
+    
+    [[MockUser sharedUserObject] addPrize:_gift mall:_mall controller:self.navigationController];
+    [controller initWithGift:_gift mall:_mall redeemed:YES];
+    [self popOrPush:@"GiftDetailPageViewController" controller:controller];
+}
+
 -(void)readerView:(ZBarReaderView *)readerView didReadSymbols:(ZBarSymbolSet *)symbols fromImage:(UIImage *)image{
     for (ZBarSymbol *symbol in symbols) {
         NSLog(@"%@",symbol.data);
         break;
     }
-    ConfirmationPageViewController *confirmationPageView;
-    if (iPhone5) {
-        confirmationPageView=[[ConfirmationPageViewController alloc]initWithNibName:@"ConfirmationPageViewController5" bundle:nil withDic:dic];
-    }else{
-        confirmationPageView=[[ConfirmationPageViewController alloc]initWithNibName:@"ConfirmationPageViewController" bundle:nil withDic:dic];
-    }
-    [self.navigationController pushViewController:confirmationPageView animated:YES];
     [readerView stop];
+    [self scannedBtnClick];
 }
+
+- (void) initWithGift:(MockGift*)gift mall:(MockMall*)mall {
+    _gift = gift;
+    _mall = mall;
+}
+
 
 -(void)animation1
 {

@@ -8,14 +8,16 @@
 
 #import <Foundation/Foundation.h>
 #import "MockMall.h"
+#import "MockGift.h"
 
 // PrizeData
 @interface PrizeData : NSObject {
     bool isRedeemed;
 }
-@property(strong, nonatomic) NSString *prizeName;
+@property(strong, nonatomic) MockGift *prize;
+@property(strong, nonatomic) MockMall *mall;
 
-- (id) initWithPrizeName:(NSString*)name;
+- (id) initWithPrize:(MockGift*)prize mall:(MockMall*)mall;
 - (bool) getIsRedeemed;
 
 @end
@@ -46,6 +48,6 @@
 -(void)addVisit:(MockMall*)mall controller:(UINavigationController*)controller;
 -(bool)hasVisited:(MockMall*)mall;
 
--(void)addPrize:(NSString*)name controller:(UINavigationController*)controller;
+-(void)addPrize:(MockGift*)prize mall:(MockMall*)mall controller:(UINavigationController*)controller;
 
 @end

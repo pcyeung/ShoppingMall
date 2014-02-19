@@ -7,12 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MockGift.h"
+#import "MockMall.h"
 
 @interface RedeemedCell : UITableViewCell {
     IBOutlet UILabel *descLabel;
     IBOutlet UILabel *nameLabel;
+    IBOutlet UILabel *mallLabel;
 }
 
--(id) initWithName:(NSString*)name status:(NSString*)status;
+-(id) initWithGift:(MockGift*)gift mall:(MockMall*)mall status:(NSString*)status;
 
 @end

@@ -9,6 +9,7 @@
 #import "RedeemedViewController.h"
 #import "RedeemedCell.h"
 #import "MockUser.h"
+#import "GiftDetailPageViewController.h"
 
 @interface RedeemedViewController ()
 
@@ -64,11 +65,17 @@
     } else {
         redeemed = @"Not redeemed";
     }
-    return [[RedeemedCell alloc] initWithName:[prize prizeName] status:redeemed];
+    return [[RedeemedCell alloc] initWithGift:[prize prize] mall:[prize mall] status:redeemed];
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    // Not selectable
+    int prizeRow = [[_user prizeHistory] count] - [indexPath row] - 1;
+    assert(prizeRow >= 0);
+    PrizeData* prize = [[_user prizeHistory] objectAtIndex:prizeRow];
+    
+    GiftDetailPageViewController* controller = (GiftDetailPageViewController*)[self buttonClickGetClass:@"GiftDetailPageViewController" iPhone5Nib:@"GiftDetailPageViewController5" nib:@"GiftDetailPageViewController"];
+    [controller initWithGift:[prize prize] mall:[prize mall] redeemed:YES];
+    [self popOrPush:@"GiftDetailPageViewController" controller:controller];
 }
 
 - (IBAction)backBtnClick {

@@ -15,13 +15,15 @@
 #import "RedeemedViewController.h"
 
 @implementation PrizeData
-@synthesize prizeName = _prizeName;
+@synthesize prize = _prize;
+@synthesize mall = _mall;
 
-- (id) initWithPrizeName:(NSString*)name {
+- (id) initWithPrize:(MockGift*)prize mall:(MockMall*)mall {
     self = [super init];
     if (self) {
         isRedeemed = NO;
-        _prizeName = name;
+        _prize = prize;
+        _mall = mall;
     }
     return self;
 }
@@ -105,8 +107,8 @@
     return NO;
 }
 
--(void)addPrize:(NSString*)name controller:(UINavigationController*)controller {
-    PrizeData* data = [[PrizeData alloc] initWithPrizeName:name];
+-(void)addPrize:(MockGift*)prize mall:(MockMall*)mall controller:(UINavigationController*)controller {
+    PrizeData* data = [[PrizeData alloc] initWithPrize:prize mall:mall];
     [_prizeHistory addObject:data];
     
     for (UIViewController *tem in controller.viewControllers) {
