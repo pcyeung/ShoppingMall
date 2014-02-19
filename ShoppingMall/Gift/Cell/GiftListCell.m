@@ -26,4 +26,11 @@
     // Configure the view for the selected state
 }
 
+- (void) initWithGift:(MockGift*)gift mall:(MockMall*)mall {
+    mallName.text = [mall mallName];
+    giftName.text = [gift giftName];
+    points.text = [NSString stringWithFormat:@"积分：%d", [gift getPoints]];
+}
+
+
 @end

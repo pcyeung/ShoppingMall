@@ -9,8 +9,15 @@
             <connections>
                 <outlet property="MyAccountBtn" destination="yqh-ek-7FC" id="ELd-ZS-04U"/>
                 <outlet property="backBtn" destination="dWe-Gs-HtE" id="20j-q6-Nlt"/>
+                <outlet property="brandImage" destination="qyE-N3-vf7" id="lnf-fc-msP"/>
+                <outlet property="descriptionLabel" destination="Zap-VN-bpR" id="Ugk-3y-ap1"/>
                 <outlet property="giftBtn" destination="QN6-NZ-4IZ" id="m5a-xO-wdT"/>
+                <outlet property="giftImage" destination="hNa-kU-aN8" id="sXo-3r-BaQ"/>
+                <outlet property="giftNameLabel" destination="DIs-Fg-GGP" id="oTd-GU-0JG"/>
+                <outlet property="mallLabel" destination="G4N-Pg-j2t" id="sP8-f8-TAO"/>
+                <outlet property="scanBtn" destination="DhJ-tH-AJk" id="v39-Rv-bM5"/>
                 <outlet property="shoppingMallListBtn" destination="gcK-NX-HDE" id="D1j-IF-AHg"/>
+                <outlet property="sizeLabel" destination="Qt4-zm-fHS" id="iK5-3R-hrO"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>
@@ -50,7 +57,7 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <subviews>
                         <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="pic2.png" translatesAutoresizingMaskIntoConstraints="NO" id="hNa-kU-aN8">
-                            <rect key="frame" x="20" y="20" width="135" height="135"/>
+                            <rect key="frame" x="20" y="17" width="135" height="135"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </imageView>
                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ECMall" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G4N-Pg-j2t">
@@ -59,14 +66,14 @@
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="UNIQLO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DIs-Fg-GGP">
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SHIRT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DIs-Fg-GGP">
                             <rect key="frame" x="163" y="44" width="137" height="22"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="logo1.png" translatesAutoresizingMaskIntoConstraints="NO" id="qyE-N3-vf7">
-                            <rect key="frame" x="20" y="172" width="80" height="40"/>
+                            <rect key="frame" x="20" y="171" width="80" height="40"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </imageView>
                         <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DhJ-tH-AJk">

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
+#import "MockMall.h"
 
 @interface MallGiftListPageViewController : BaseViewController<UITableViewDataSource,UITableViewDelegate>{
     IBOutlet UIButton *MyAccountBtn;
@@ -19,5 +20,9 @@
 - (IBAction)backBtnClick;
 - (IBAction)myAccountBTnClick;
 - (IBAction)shoppingMallListBtnClick;
+
+@property(strong, nonatomic) MockMall *mall;
+
+- (void) initWithMall:(MockMall*)mall;
 
 @end

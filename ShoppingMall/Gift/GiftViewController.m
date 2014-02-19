@@ -11,7 +11,8 @@
 #import "MyAccountHomePageViewController.h"
 #import "GiftDetailPageViewController.h"
 #import "HomePageViewController.h"
-
+#import "MockGift.h"
+#import "MockMall.h"
 
 @interface GiftViewController ()
 
@@ -45,17 +46,31 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 10;
+    return MIN(10, [[MockGift getAllGiftData]count]);
+}
+
+-(MockMall*) getMallForRow:(int)row {
+    // Random but systematically select mall.
+    NSArray* allMalls = [MockMall getAllMallData];
+    int mallIndex = row % [allMalls count];
+    return [allMalls objectAtIndex:mallIndex];
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     NSArray *nib=[[NSBundle mainBundle]loadNibNamed:@"GiftListCell" owner:self options:Nil];
+    
     GiftListCell *cell=[nib objectAtIndex:0];
+    MockGift* gift = [[MockGift getAllGiftData]objectAtIndex:[indexPath row]];
+    [cell initWithGift:gift mall:[self getMallForRow:[indexPath row]]];
     return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    [self buttonClickToClass:@"GiftDetailPageViewController" iPhone5Nib:@"GiftDetailPageViewController5" nib:@"GiftDetailPageViewController"];
+    MockGift* gift = [[MockGift getAllGiftData]objectAtIndex:[indexPath row]];
+    GiftDetailPageViewController* controller = (GiftDetailPageViewController*)[self buttonClickGetClass:@"GiftDetailPageViewController" iPhone5Nib:@"GiftDetailPageViewController5" nib:@"GiftDetailPageViewController"];
+    
+    [controller initWithGift:gift mall:[self getMallForRow:[indexPath row]]];
+    [self.navigationController pushViewController:controller animated:YES];
 }
 
 - (IBAction)backBtnClick {

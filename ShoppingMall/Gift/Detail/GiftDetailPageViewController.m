@@ -8,7 +8,6 @@
 
 #import "GiftDetailPageViewController.h"
 #import "MyAccountHomePageViewController.h"
-//#import "GiftScanPageViewController.h"
 #import "HomePageViewController.h"
 #import "ScanQRViewController.h"
 
@@ -17,6 +16,9 @@
 @end
 
 @implementation GiftDetailPageViewController
+
+@synthesize mall = _mall;
+@synthesize gift = _gift;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -30,7 +32,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    mallLabel.text = [_mall mallName];
+    giftNameLabel.text = [_gift giftName];
+    giftImage.image = [UIImage imageNamed:[_gift giftImage]];
+    brandImage.image = [UIImage imageNamed:[_gift brandLogo]];
+    descriptionLabel.text = [_gift giftDetail];
+    sizeLabel.text = [_gift giftSize];
 }
 
 - (void)didReceiveMemoryWarning
@@ -53,7 +60,6 @@
 }
 
 
-
 - (IBAction)scanBtnClick {
     // Implement the action here
     [self buttonClickToClass:@"ScanQRViewController" iPhone5Nib:@"ScanQRViewController5" nib:@"ScanQRViewController"];
@@ -63,5 +69,9 @@
     [self buttonClickToClass:@"GiftViewController" iPhone5Nib:@"GiftViewController5" nib:@"GiftViewController"];
 }
 
+- (void)initWithGift:(MockGift*)gift mall:(MockMall*)mall {
+    _gift = gift;
+    _mall = mall;
+}
 
 @end

@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MockGift.h"
+#import "MockMall.h"
 
-@interface GiftListCell : UITableViewCell
+@interface GiftListCell : UITableViewCell {
+    IBOutlet UILabel *points;
+    IBOutlet UILabel *mallName;
+    IBOutlet UILabel *giftName;
+}
+
+- (void) initWithGift:(MockGift*)gift mall:(MockMall*)mall;
 
 @end

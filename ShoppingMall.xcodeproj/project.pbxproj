@@ -14,8 +14,6 @@
 		09F0A65E18AA8951006E3B0C /* Sonic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F0A65D18AA8951006E3B0C /* Sonic.framework */; };
 		2348433D1896166E00F752C3 /* line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2348433B1896166E00F752C3 /* line@2x.png */; };
 		2348433E1896166E00F752C3 /* pick_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2348433C1896166E00F752C3 /* pick_bg@2x.png */; };
-		2348437C189648AE00F752C3 /* MallGiftListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 23484376189648AE00F752C3 /* MallGiftListCell.m */; };
-		2348437D189648AE00F752C3 /* MallGiftListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23484377189648AE00F752C3 /* MallGiftListCell.xib */; };
 		2348437E189648AE00F752C3 /* MallGiftListPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23484379189648AE00F752C3 /* MallGiftListPageViewController.m */; };
 		2348437F189648AE00F752C3 /* MallGiftListPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2348437A189648AE00F752C3 /* MallGiftListPageViewController.xib */; };
 		23484380189648AE00F752C3 /* MallGiftListPageViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2348437B189648AE00F752C3 /* MallGiftListPageViewController5.xib */; };
@@ -185,7 +183,6 @@
 		70807E1E18AE857C00984161 /* GiftListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807E1C18AE857C00984161 /* GiftListCell.xib */; };
 		70807E2418AE85B700984161 /* GiftDetailPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70807E2118AE85B700984161 /* GiftDetailPageViewController.m */; };
 		70807E2518AE85B700984161 /* GiftDetailPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807E2218AE85B700984161 /* GiftDetailPageViewController.xib */; };
-		70807E2618AE85B700984161 /* GiftDetailPageViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807E2318AE85B700984161 /* GiftDetailPageViewController5.xib */; };
 		70807E3418AF16B800984161 /* ScanQRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70807E3118AF16B800984161 /* ScanQRViewController.m */; };
 		70807E3518AF16B800984161 /* ScanQRViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807E3218AF16B800984161 /* ScanQRViewController.xib */; };
 		70807E3618AF16B800984161 /* ScanQRViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807E3318AF16B800984161 /* ScanQRViewController5.xib */; };
@@ -207,6 +204,7 @@
 		70807EFB18B23FD200984161 /* ConfirmationPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807EF818B23FD200984161 /* ConfirmationPageViewController.xib */; };
 		70807EFC18B23FD200984161 /* ConfirmationPageViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807EF918B23FD200984161 /* ConfirmationPageViewController5.xib */; };
 		70807F2118B39F1300984161 /* ShoppingMallIndexDetailViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807F2018B39F1300984161 /* ShoppingMallIndexDetailViewController5.xib */; };
+		70807F2418B4D5EF00984161 /* MockGift.m in Sources */ = {isa = PBXBuildFile; fileRef = 70807F2318B4D5EF00984161 /* MockGift.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -228,9 +226,6 @@
 		09F0A65D18AA8951006E3B0C /* Sonic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sonic.framework; path = Core/Sonic.framework; sourceTree = "<group>"; };
 		2348433B1896166E00F752C3 /* line@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "line@2x.png"; sourceTree = "<group>"; };
 		2348433C1896166E00F752C3 /* pick_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pick_bg@2x.png"; sourceTree = "<group>"; };
-		23484375189648AE00F752C3 /* MallGiftListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MallGiftListCell.h; sourceTree = "<group>"; };
-		23484376189648AE00F752C3 /* MallGiftListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MallGiftListCell.m; sourceTree = "<group>"; };
-		23484377189648AE00F752C3 /* MallGiftListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MallGiftListCell.xib; sourceTree = "<group>"; };
 		23484378189648AE00F752C3 /* MallGiftListPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MallGiftListPageViewController.h; sourceTree = "<group>"; };
 		23484379189648AE00F752C3 /* MallGiftListPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MallGiftListPageViewController.m; sourceTree = "<group>"; };
 		2348437A189648AE00F752C3 /* MallGiftListPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MallGiftListPageViewController.xib; sourceTree = "<group>"; };
@@ -444,7 +439,6 @@
 		70807E2018AE85B700984161 /* GiftDetailPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiftDetailPageViewController.h; sourceTree = "<group>"; };
 		70807E2118AE85B700984161 /* GiftDetailPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiftDetailPageViewController.m; sourceTree = "<group>"; };
 		70807E2218AE85B700984161 /* GiftDetailPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GiftDetailPageViewController.xib; sourceTree = "<group>"; };
-		70807E2318AE85B700984161 /* GiftDetailPageViewController5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GiftDetailPageViewController5.xib; sourceTree = "<group>"; };
 		70807E3018AF16B800984161 /* ScanQRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanQRViewController.h; sourceTree = "<group>"; };
 		70807E3118AF16B800984161 /* ScanQRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanQRViewController.m; sourceTree = "<group>"; };
 		70807E3218AF16B800984161 /* ScanQRViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScanQRViewController.xib; sourceTree = "<group>"; };
@@ -492,6 +486,8 @@
 		70807EF818B23FD200984161 /* ConfirmationPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfirmationPageViewController.xib; sourceTree = "<group>"; };
 		70807EF918B23FD200984161 /* ConfirmationPageViewController5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfirmationPageViewController5.xib; sourceTree = "<group>"; };
 		70807F2018B39F1300984161 /* ShoppingMallIndexDetailViewController5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ShoppingMallIndexDetailViewController5.xib; path = MallPage/MallDetail/ShoppingMallIndexDetailViewController5.xib; sourceTree = "<group>"; };
+		70807F2218B4D5EF00984161 /* MockGift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockGift.h; sourceTree = "<group>"; };
+		70807F2318B4D5EF00984161 /* MockGift.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockGift.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -553,7 +549,6 @@
 		23484373189648AE00F752C3 /* MallGift */ = {
 			isa = PBXGroup;
 			children = (
-				23484374189648AE00F752C3 /* Cell */,
 				23484378189648AE00F752C3 /* MallGiftListPageViewController.h */,
 				23484379189648AE00F752C3 /* MallGiftListPageViewController.m */,
 				2348437A189648AE00F752C3 /* MallGiftListPageViewController.xib */,
@@ -561,16 +556,6 @@
 			);
 			name = MallGift;
 			path = MallPage/MallGift;
-			sourceTree = "<group>";
-		};
-		23484374189648AE00F752C3 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				23484375189648AE00F752C3 /* MallGiftListCell.h */,
-				23484376189648AE00F752C3 /* MallGiftListCell.m */,
-				23484377189648AE00F752C3 /* MallGiftListCell.xib */,
-			);
-			path = Cell;
 			sourceTree = "<group>";
 		};
 		236AB5AA18949EEF00770E81 /* FriendsPage */ = {
@@ -977,6 +962,8 @@
 				706C70B5189E41F400B2C38C /* MockUser.m */,
 				706C70B7189E4A9E00B2C38C /* MockMall.h */,
 				706C70B8189E4A9E00B2C38C /* MockMall.m */,
+				70807F2218B4D5EF00984161 /* MockGift.h */,
+				70807F2318B4D5EF00984161 /* MockGift.m */,
 			);
 			name = DataStore;
 			sourceTree = "<group>";
@@ -1019,7 +1006,6 @@
 				70807E2018AE85B700984161 /* GiftDetailPageViewController.h */,
 				70807E2118AE85B700984161 /* GiftDetailPageViewController.m */,
 				70807E2218AE85B700984161 /* GiftDetailPageViewController.xib */,
-				70807E2318AE85B700984161 /* GiftDetailPageViewController5.xib */,
 			);
 			name = Detail;
 			path = Gift/Detail;
@@ -1238,9 +1224,7 @@
 				23D615841893A36F00C60E3E /* qq.png in Resources */,
 				23D615821893A36F00C60E3E /* pic4.png in Resources */,
 				23D615731893A36F00C60E3E /* info_icon.png in Resources */,
-				2348437D189648AE00F752C3 /* MallGiftListCell.xib in Resources */,
 				23D6158C1893A36F00C60E3E /* search_icon.png in Resources */,
-				70807E2618AE85B700984161 /* GiftDetailPageViewController5.xib in Resources */,
 				23D615771893A36F00C60E3E /* logo3.png in Resources */,
 				23D615A41893B84000C60E3E /* MyAccountHomePageViewController.xib in Resources */,
 				23D615631893A36F00C60E3E /* h03_top_bg.png in Resources */,
@@ -1378,7 +1362,6 @@
 				23D6159B1893A6AC00C60E3E /* HomePageViewController.m in Sources */,
 				23D613801893680700C60E3E /* TCNavigationController.m in Sources */,
 				23D6137A1893680700C60E3E /* SDWebImagePrefetcher.m in Sources */,
-				2348437C189648AE00F752C3 /* MallGiftListCell.m in Sources */,
 				70807E0718ABBCA100984161 /* InfoSettingViewController.m in Sources */,
 				23D613791893680700C60E3E /* SDWebImageManager.m in Sources */,
 				23D613621893680700C60E3E /* CommonInstance.m in Sources */,
@@ -1394,6 +1377,7 @@
 				23D6137D1893680700C60E3E /* UIImage+MultiFormat.m in Sources */,
 				23D613811893680700C60E3E /* TPKeyboardAvoidingScrollView.m in Sources */,
 				70807E3B18AF172300984161 /* RedeemedViewController.m in Sources */,
+				70807F2418B4D5EF00984161 /* MockGift.m in Sources */,
 				23D6137E1893680700C60E3E /* UIImage+WebP.m in Sources */,
 				236AB6271894C5FE00770E81 /* HomePageListCell.m in Sources */,
 				70807EF218B23FC800984161 /* QRCodeViewController.m in Sources */,

@@ -55,7 +55,10 @@
 }
 
 - (IBAction)numberOfGiftBtnClick {
-    [self buttonClickToClass:@"MallGiftListPageViewController" iPhone5Nib:@"MallGiftListPageViewController5" nib:@"MallGiftListPageViewController"];
+    MallGiftListPageViewController* controller =
+    [self buttonClickGetClass:@"MallGiftListPageViewController" iPhone5Nib:@"MallGiftListPageViewController5" nib:@"MallGiftListPageViewController"];
+    [controller initWithMall:_mall];
+    [self.navigationController pushViewController:controller animated:YES];
 }
 
 - (IBAction)giftBtnClick {

@@ -7,7 +7,7 @@
 //
 
 #import "MallGiftListPageViewController.h"
-#import "MallGiftListCell.h"
+#import "GiftListCell.h"
 #import "MyAccountHomePageViewController.h"
 #import "GiftDetailPageViewController.h"
 #import "HomePageViewController.h"
@@ -18,6 +18,8 @@
 @end
 
 @implementation MallGiftListPageViewController
+
+@synthesize mall = _mall;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -45,18 +47,25 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 10;
+    return MIN(10, [[MockGift getAllGiftData]count]);
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    NSArray *nib=[[NSBundle mainBundle]loadNibNamed:@"MallGiftListCell" owner:self options:Nil];
-    MallGiftListCell *cell=[nib objectAtIndex:0];
+    NSArray *nib=[[NSBundle mainBundle]loadNibNamed:@"GiftListCell" owner:self options:Nil];
+    
+    GiftListCell *cell=[nib objectAtIndex:0];
+    MockGift* gift = [[MockGift getAllGiftData]objectAtIndex:[indexPath row]];
+    [cell initWithGift:gift mall:_mall];
     return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    [self buttonClickToClass:@"GiftDetailPageViewController" iPhone5Nib:@"GiftDetailPageViewController5" nib:@"GiftDetailPageViewController"];
- }
+    MockGift* gift = [[MockGift getAllGiftData]objectAtIndex:[indexPath row]];
+    GiftDetailPageViewController* controller = (GiftDetailPageViewController*)[self buttonClickGetClass:@"GiftDetailPageViewController" iPhone5Nib:@"GiftDetailPageViewController5" nib:@"GiftDetailPageViewController"];
+    
+    [controller initWithGift:gift mall:_mall];
+    [self.navigationController pushViewController:controller animated:YES];
+}
 
 - (IBAction)backBtnClick {
     [self.navigationController popViewControllerAnimated:YES];
@@ -68,6 +77,10 @@
 
 - (IBAction)shoppingMallListBtnClick {
     [self buttonClickToClass:@"HomePageViewController" iPhone5Nib:@"HomePageViewController5" nib:@"HomePageViewController"];
+}
+
+- (void) initWithMall:(MockMall*)mall {
+    _mall = mall;
 }
 
 @end
