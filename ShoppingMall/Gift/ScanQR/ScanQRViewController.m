@@ -9,7 +9,6 @@
 #import "ScanQRViewController.h"
 #import "MyAccountHomePageViewController.h"
 #import "HomePageViewController.h"
-#import "MallGiftListPageViewController.h"
 #import "RedeemedViewController.h"
 #import "GiftDetailPageViewController.h"
 

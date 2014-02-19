@@ -20,6 +20,8 @@
 - (IBAction)backBtnClick;
 - (IBAction)myAccountBTnClick;
 - (IBAction)shoppingMallListBtnClick;
+- (IBAction)giftListBtnClick;
+
 
 @property(strong, nonatomic) MockMall *mall;
 

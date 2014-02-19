@@ -79,6 +79,10 @@
     [self buttonClickToClass:@"HomePageViewController" iPhone5Nib:@"HomePageViewController5" nib:@"HomePageViewController"];
 }
 
+- (IBAction)giftListBtnClick {
+    [self buttonClickToClass:@"GiftViewController" iPhone5Nib:@"GiftViewController5" nib:@"GiftViewController"];
+}
+
 - (void) initWithMall:(MockMall*)mall {
     _mall = mall;
 }

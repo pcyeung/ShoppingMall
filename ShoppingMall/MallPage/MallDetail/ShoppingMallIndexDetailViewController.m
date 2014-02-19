@@ -62,7 +62,7 @@
 }
 
 - (IBAction)giftBtnClick {
-    [self buttonClickToClass:@"MallGiftListPageViewController" iPhone5Nib:@"MallGiftListPageViewController5" nib:@"MallGiftListPageViewController"];
+    [self buttonClickToClass:@"GiftViewController" iPhone5Nib:@"GiftViewController5" nib:@"GiftViewController"];
 }
 
 - (void)initWithMall:(MockMall*)mall {

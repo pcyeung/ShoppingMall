@@ -9,7 +9,6 @@
 #import "BaseViewController.h"
 #import "MyAccountHomePageViewController.h"
 #import "HomePageViewController.h"
-#import "MallGiftListPageViewController.h"
 #import "ZBarSDK.h"
 #import "MockGift.h"
 
