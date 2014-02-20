@@ -6,16 +6,16 @@
 //  Copyright (c) 2014年 Macie. All rights reserved.
 //
 
-#import "GiftDetailPageViewController.h"
+#import "QRConfirmViewController.h"
 #import "MyAccountHomePageViewController.h"
 #import "HomePageViewController.h"
 #import "ScanQRViewController.h"
 
-@interface GiftDetailPageViewController ()
+@interface QRConfirmViewController ()
 
 @end
 
-@implementation GiftDetailPageViewController
+@implementation QRConfirmViewController
 
 @synthesize mall = _mall;
 @synthesize gift = _gift;
@@ -61,10 +61,8 @@
 
 
 - (IBAction)scanBtnClick {
-    // Implement the action here
-    ScanQRViewController* controller = (ScanQRViewController*)[self buttonClickGetClass:@"ScanQRViewController" iPhone5Nib:@"ScanQRViewController5" nib:@"ScanQRViewController"];
-    [controller initWithGift:_gift mall:_mall];
-    [self popOrPush:@"ScanQRViewController" controller:controller];
+    [self buttonClickToClass:@"QRCodeViewController" iPhone5Nib:@"QRCodeViewController5" nib:@"QRCodeViewController"];
+        return;
 }
 
 - (IBAction)giftBtnClick {

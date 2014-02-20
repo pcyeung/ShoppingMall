@@ -203,6 +203,10 @@
 		70807F2118B39F1300984161 /* ShoppingMallIndexDetailViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807F2018B39F1300984161 /* ShoppingMallIndexDetailViewController5.xib */; };
 		70807F2418B4D5EF00984161 /* MockGift.m in Sources */ = {isa = PBXBuildFile; fileRef = 70807F2318B4D5EF00984161 /* MockGift.m */; };
 		70807F2618B4F70000984161 /* GiftDetailPageViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807F2518B4F70000984161 /* GiftDetailPageViewController5.xib */; };
+		709F243218B66261000C4292 /* QRConfirmViewController.h in Resources */ = {isa = PBXBuildFile; fileRef = 709F243118B66261000C4292 /* QRConfirmViewController.h */; };
+		709F243518B66299000C4292 /* QRConfirmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 709F243418B66299000C4292 /* QRConfirmViewController.m */; };
+		709F243718B662C0000C4292 /* QRConfirmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 709F243618B662C0000C4292 /* QRConfirmViewController.xib */; };
+		709F243B18B664B4000C4292 /* QRConfirmViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 709F243A18B664B4000C4292 /* QRConfirmViewController5.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -483,6 +487,10 @@
 		70807F2218B4D5EF00984161 /* MockGift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockGift.h; sourceTree = "<group>"; };
 		70807F2318B4D5EF00984161 /* MockGift.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockGift.m; sourceTree = "<group>"; };
 		70807F2518B4F70000984161 /* GiftDetailPageViewController5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GiftDetailPageViewController5.xib; sourceTree = "<group>"; };
+		709F243118B66261000C4292 /* QRConfirmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QRConfirmViewController.h; path = Confirmation/QRConfirmViewController.h; sourceTree = "<group>"; };
+		709F243418B66299000C4292 /* QRConfirmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QRConfirmViewController.m; path = ShoppingMall/Gift/ScanQR/Confirmation/QRConfirmViewController.m; sourceTree = SOURCE_ROOT; };
+		709F243618B662C0000C4292 /* QRConfirmViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = QRConfirmViewController.xib; path = ShoppingMall/Gift/ScanQR/Confirmation/QRConfirmViewController.xib; sourceTree = SOURCE_ROOT; };
+		709F243A18B664B4000C4292 /* QRConfirmViewController5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = QRConfirmViewController5.xib; path = Confirmation/QRConfirmViewController5.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1010,6 +1018,7 @@
 		70807E2F18AF16B800984161 /* ScanQR */ = {
 			isa = PBXGroup;
 			children = (
+				709F243318B6626D000C4292 /* Confirm */,
 				70807EED18B23FC800984161 /* Receipt */,
 				70807E3018AF16B800984161 /* ScanQRViewController.h */,
 				70807E3118AF16B800984161 /* ScanQRViewController.m */,
@@ -1118,6 +1127,17 @@
 			path = Receipt;
 			sourceTree = "<group>";
 		};
+		709F243318B6626D000C4292 /* Confirm */ = {
+			isa = PBXGroup;
+			children = (
+				709F243618B662C0000C4292 /* QRConfirmViewController.xib */,
+				709F243A18B664B4000C4292 /* QRConfirmViewController5.xib */,
+				709F243418B66299000C4292 /* QRConfirmViewController.m */,
+				709F243118B66261000C4292 /* QRConfirmViewController.h */,
+			);
+			name = Confirm;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1198,6 +1218,7 @@
 			files = (
 				236AB6211894C4A800770E81 /* HomePageListViewController.xib in Resources */,
 				23D615651893A36F00C60E3E /* h04_map.png in Resources */,
+				709F243B18B664B4000C4292 /* QRConfirmViewController5.xib in Resources */,
 				236AB5CA1894AA4300770E81 /* FriendsListCell.xib in Resources */,
 				23D615721893A36F00C60E3E /* h_07.png in Resources */,
 				23D615921893A36F00C60E3E /* top_grey_bg.png in Resources */,
@@ -1209,6 +1230,7 @@
 				23D615731893A36F00C60E3E /* info_icon.png in Resources */,
 				23D6158C1893A36F00C60E3E /* search_icon.png in Resources */,
 				23D615771893A36F00C60E3E /* logo3.png in Resources */,
+				709F243718B662C0000C4292 /* QRConfirmViewController.xib in Resources */,
 				23D615A41893B84000C60E3E /* MyAccountHomePageViewController.xib in Resources */,
 				23D615631893A36F00C60E3E /* h03_top_bg.png in Resources */,
 				23D6158D1893A36F00C60E3E /* share_btn.png in Resources */,
@@ -1229,6 +1251,7 @@
 				23D615691893A36F00C60E3E /* h08_text.png in Resources */,
 				23D615641893A36F00C60E3E /* h04_list.png in Resources */,
 				706C70AE189D498C00B2C38C /* CheckInPageView.xib in Resources */,
+				709F243218B66261000C4292 /* QRConfirmViewController.h in Resources */,
 				236AB6461894D63900770E81 /* top.png in Resources */,
 				23D615861893A36F00C60E3E /* reflash_icon.png in Resources */,
 				23D613651893680700C60E3E /* blackArrow.png in Resources */,
@@ -1381,6 +1404,7 @@
 				23D6137B1893680700C60E3E /* UIButton+WebCache.m in Sources */,
 				70807E3418AF16B800984161 /* ScanQRViewController.m in Sources */,
 				706C70CB18A0D31600B2C38C /* TimelineListCell.m in Sources */,
+				709F243518B66299000C4292 /* QRConfirmViewController.m in Sources */,
 				23D613631893680700C60E3E /* Reachability.m in Sources */,
 				236AB5C218949F7000770E81 /* FriendsListPageViewController.m in Sources */,
 				23D613711893680700C60E3E /* OpenUDID.m in Sources */,

@@ -63,7 +63,7 @@
     MockGift* gift = [[MockGift getAllGiftData]objectAtIndex:[indexPath row]];
     GiftDetailPageViewController* controller = (GiftDetailPageViewController*)[self buttonClickGetClass:@"GiftDetailPageViewController" iPhone5Nib:@"GiftDetailPageViewController5" nib:@"GiftDetailPageViewController"];
     
-    [controller initWithGift:gift mall:_mall redeemed:NO];
+    [controller initWithGift:gift mall:_mall];
     [self popOrPush:@"GiftDetailPageViewController" controller:controller];
 }
 

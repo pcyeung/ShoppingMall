@@ -10,17 +10,10 @@
 
 @implementation RedeemedCell
 
--(id) initWithGift:(MockGift*)gift mall:(MockMall*)mall status:(NSString*)status {
-    self = [super init];
-    if (self) {
-        NSArray *nibObjects = [[NSBundle mainBundle] loadNibNamed:@"RedeemedCell" owner:self options:nil];
-        [self addSubview:nibObjects[0]];
-        
-        [descLabel setText:status];
-        [nameLabel setText:[gift giftName]];
-        [mallLabel setText:[mall mallName]];
-    }
-    return self;
+-(void) initWithGift:(MockGift*)gift mall:(MockMall*)mall status:(NSString*)status {
+    [descLabel setText:status];
+    [nameLabel setText:[gift giftName]];
+    [mallLabel setText:[mall mallName]];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated

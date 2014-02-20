@@ -16,6 +16,6 @@
     IBOutlet UILabel *mallLabel;
 }
 
--(id) initWithGift:(MockGift*)gift mall:(MockMall*)mall status:(NSString*)status;
+-(void) initWithGift:(MockGift*)gift mall:(MockMall*)mall status:(NSString*)status;
 
 @end

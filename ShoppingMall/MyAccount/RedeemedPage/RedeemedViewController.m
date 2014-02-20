@@ -9,7 +9,7 @@
 #import "RedeemedViewController.h"
 #import "RedeemedCell.h"
 #import "MockUser.h"
-#import "GiftDetailPageViewController.h"
+#import "QRConfirmViewController.h"
 
 @interface RedeemedViewController ()
 
@@ -65,7 +65,12 @@
     } else {
         redeemed = @"Not redeemed";
     }
-    return [[RedeemedCell alloc] initWithGift:[prize prize] mall:[prize mall] status:redeemed];
+    
+    NSArray *nib=[[NSBundle mainBundle]loadNibNamed:@"RedeemedCell" owner:self options:Nil];
+    
+    RedeemedCell *cell=[nib objectAtIndex:0];
+    [cell initWithGift:[prize prize] mall:[prize mall] status:redeemed];
+    return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -73,9 +78,9 @@
     assert(prizeRow >= 0);
     PrizeData* prize = [[_user prizeHistory] objectAtIndex:prizeRow];
     
-    GiftDetailPageViewController* controller = (GiftDetailPageViewController*)[self buttonClickGetClass:@"GiftDetailPageViewController" iPhone5Nib:@"GiftDetailPageViewController5" nib:@"GiftDetailPageViewController"];
-    [controller initWithGift:[prize prize] mall:[prize mall] redeemed:YES];
-    [self popOrPush:@"GiftDetailPageViewController" controller:controller];
+    QRConfirmViewController* controller = (QRConfirmViewController*)[self buttonClickGetClass:@"QRConfirmViewController" iPhone5Nib:@"QRConfirmViewController5" nib:@"QRConfirmViewController"];
+    [controller initWithGift:[prize prize] mall:[prize mall]];
+    [self popOrPush:@"QRConfirmViewController" controller:controller];
 }
 
 - (IBAction)backBtnClick {

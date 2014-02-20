@@ -11,7 +11,7 @@
 #import "MockGift.h"
 #import "MockMall.h"
 
-@interface GiftDetailPageViewController : BaseViewController{
+@interface QRConfirmViewController : BaseViewController{
     IBOutlet UIButton *MyAccountBtn;
     IBOutlet UIButton *backBtn;
     IBOutlet UIButton *shoppingMallListBtn;
