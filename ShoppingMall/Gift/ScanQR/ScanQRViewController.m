@@ -56,6 +56,12 @@
     image.frame = CGRectMake(20, 20, 280, readerView.frame.size.height-40);
     [readerView addSubview:image];
     
+    // Handle Single Tab action on the Scanning View
+    UITapGestureRecognizer *singleTab = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(scannedBtnClick)];
+    singleTab.numberOfTapsRequired = 1;
+    readerView.userInteractionEnabled = YES;
+    [readerView addGestureRecognizer:singleTab];
+    
     
     _line = [[UIImageView alloc] initWithFrame:CGRectMake(0, 10, 280, 2)];
     _line.image = [UIImage imageNamed:@"line@2x.png"];
