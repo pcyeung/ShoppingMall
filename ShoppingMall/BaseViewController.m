@@ -35,13 +35,8 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (UIViewController*)buttonClickGetClass:(NSString*)aClass iPhone5Nib:(NSString*)nib5 nib:(NSString*)nib {
++ (UIViewController*)buttonClickGetClass:(NSString*)aClass iPhone5Nib:(NSString*)nib5 nib:(NSString*)nib navController:(UINavigationController*)navController {
     Class class = NSClassFromString(aClass);
-    for (UIViewController *tem in self.navigationController.viewControllers) {
-        if ([tem isKindOfClass:class]) {
-            return tem;
-        }
-    }
     
     UIViewController *viewController;
     if (iPhone5) {
@@ -52,14 +47,16 @@
     return viewController;
 }
 
++ (void)popOrPush:(NSString*)aClass controller:(UIViewController*)controller navController:(UINavigationController*)navController {
+    [navController pushViewController:controller animated:YES];
+}
+
+- (UIViewController*)buttonClickGetClass:(NSString*)aClass iPhone5Nib:(NSString*)nib5 nib:(NSString*)nib {
+    return [BaseViewController buttonClickGetClass:aClass iPhone5Nib:nib5 nib:nib navController:self.navigationController];
+}
+
 - (void)buttonClickToClass:(NSString*)aClass iPhone5Nib:(NSString*)nib5 nib:(NSString*)nib {
     Class class = NSClassFromString(aClass);
-    for (UIViewController *tem in self.navigationController.viewControllers) {
-        if ([tem isKindOfClass:class]) {
-            [self.navigationController popToViewController:tem animated:YES];
-            return;
-        }
-    }
     
     UIViewController *viewController;
     if (iPhone5) {
@@ -72,16 +69,7 @@
 }
 
 - (void)popOrPush:(NSString*)aClass controller:(UIViewController*)controller {
-    Class class = NSClassFromString(aClass);
-    for (UIViewController *tem in self.navigationController.viewControllers) {
-        if ([tem isKindOfClass:class]) {
-            [self.navigationController popToViewController:tem animated:YES];
-            return;
-        }
-    }
-    
-    [self.navigationController pushViewController:controller animated:YES];
-    
+    [BaseViewController popOrPush:aClass controller:controller navController:self.navigationController];
 }
 
 @end

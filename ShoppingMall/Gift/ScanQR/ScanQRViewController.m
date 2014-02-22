@@ -11,6 +11,7 @@
 #import "HomePageViewController.h"
 #import "RedeemedViewController.h"
 #import "QRConfirmViewController.h"
+#import "GiftDetailPageViewController.h"
 
 @interface ScanQRViewController ()
 
@@ -96,10 +97,20 @@
 
 - (IBAction)scannedBtnClick {
     QRConfirmViewController* controller = (QRConfirmViewController*)[self buttonClickGetClass:@"QRConfirmViewController" iPhone5Nib:@"QRConfirmViewController5" nib:@"QRConfirmViewController"];
-    
     [[MockUser sharedUserObject] addPrize:_gift mall:_mall controller:self.navigationController];
     [controller initWithGift:_gift mall:_mall];
     [self popOrPush:@"QRConfirmViewController" controller:controller];
+    
+    // Remove the scanner and preview page.
+    NSMutableArray *navigationArray = [[NSMutableArray alloc] init];
+    for (UIViewController* tem in self.navigationController.viewControllers) {
+        if ([tem isKindOfClass:[ScanQRViewController class]] ||
+            [tem isKindOfClass:[GiftDetailPageViewController class]]) {
+            continue;
+        }
+        [navigationArray addObject:tem];
+    }
+    self.navigationController.viewControllers = navigationArray;
 }
 
 -(void)readerView:(ZBarReaderView *)readerView didReadSymbols:(ZBarSymbolSet *)symbols fromImage:(UIImage *)image{
@@ -107,6 +118,7 @@
         NSLog(@"%@",symbol.data);
         break;
     }
+    
     [readerView stop];
     [self scannedBtnClick];
 }

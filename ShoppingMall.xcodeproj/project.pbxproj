@@ -205,8 +205,13 @@
 		70807F2618B4F70000984161 /* GiftDetailPageViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807F2518B4F70000984161 /* GiftDetailPageViewController5.xib */; };
 		709F243218B66261000C4292 /* QRConfirmViewController.h in Resources */ = {isa = PBXBuildFile; fileRef = 709F243118B66261000C4292 /* QRConfirmViewController.h */; };
 		709F243518B66299000C4292 /* QRConfirmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 709F243418B66299000C4292 /* QRConfirmViewController.m */; };
-		709F243718B662C0000C4292 /* QRConfirmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 709F243618B662C0000C4292 /* QRConfirmViewController.xib */; };
-		709F243B18B664B4000C4292 /* QRConfirmViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 709F243A18B664B4000C4292 /* QRConfirmViewController5.xib */; };
+		709F243718B662C0000C4292 /* QRConfirmViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 709F243618B662C0000C4292 /* QRConfirmViewController5.xib */; };
+		709F243B18B664B4000C4292 /* QRConfirmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 709F243A18B664B4000C4292 /* QRConfirmViewController.xib */; };
+		709F243E18B8FF07000C4292 /* MockShop.m in Sources */ = {isa = PBXBuildFile; fileRef = 709F243D18B8FF07000C4292 /* MockShop.m */; };
+		709F244318B90470000C4292 /* ShopPromoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 709F244118B90470000C4292 /* ShopPromoViewController.m */; };
+		709F244418B90470000C4292 /* ShopPromoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 709F244218B90470000C4292 /* ShopPromoViewController.xib */; };
+		709F244618B90A7B000C4292 /* hm_shop.png in Resources */ = {isa = PBXBuildFile; fileRef = 709F244518B90A7B000C4292 /* hm_shop.png */; };
+		709F244818B90B68000C4292 /* ShopPromoViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 709F244718B90B68000C4292 /* ShopPromoViewController5.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -489,8 +494,15 @@
 		70807F2518B4F70000984161 /* GiftDetailPageViewController5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GiftDetailPageViewController5.xib; sourceTree = "<group>"; };
 		709F243118B66261000C4292 /* QRConfirmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QRConfirmViewController.h; path = Confirmation/QRConfirmViewController.h; sourceTree = "<group>"; };
 		709F243418B66299000C4292 /* QRConfirmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QRConfirmViewController.m; path = ShoppingMall/Gift/ScanQR/Confirmation/QRConfirmViewController.m; sourceTree = SOURCE_ROOT; };
-		709F243618B662C0000C4292 /* QRConfirmViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = QRConfirmViewController.xib; path = ShoppingMall/Gift/ScanQR/Confirmation/QRConfirmViewController.xib; sourceTree = SOURCE_ROOT; };
-		709F243A18B664B4000C4292 /* QRConfirmViewController5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = QRConfirmViewController5.xib; path = Confirmation/QRConfirmViewController5.xib; sourceTree = "<group>"; };
+		709F243618B662C0000C4292 /* QRConfirmViewController5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = QRConfirmViewController5.xib; path = ShoppingMall/Gift/ScanQR/Confirmation/QRConfirmViewController5.xib; sourceTree = SOURCE_ROOT; };
+		709F243A18B664B4000C4292 /* QRConfirmViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = QRConfirmViewController.xib; path = Confirmation/QRConfirmViewController.xib; sourceTree = "<group>"; };
+		709F243C18B8FF07000C4292 /* MockShop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockShop.h; sourceTree = "<group>"; };
+		709F243D18B8FF07000C4292 /* MockShop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockShop.m; sourceTree = "<group>"; };
+		709F244018B90470000C4292 /* ShopPromoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShopPromoViewController.h; path = Shop/ShopPromoViewController.h; sourceTree = "<group>"; };
+		709F244118B90470000C4292 /* ShopPromoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShopPromoViewController.m; path = Shop/ShopPromoViewController.m; sourceTree = "<group>"; };
+		709F244218B90470000C4292 /* ShopPromoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ShopPromoViewController.xib; path = Shop/ShopPromoViewController.xib; sourceTree = "<group>"; };
+		709F244518B90A7B000C4292 /* hm_shop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hm_shop.png; sourceTree = "<group>"; };
+		709F244718B90B68000C4292 /* ShopPromoViewController5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ShopPromoViewController5.xib; path = Shop/ShopPromoViewController5.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -676,6 +688,7 @@
 		23D612F4189365F100C60E3E /* ShoppingMall */ = {
 			isa = PBXGroup;
 			children = (
+				709F243F18B9042D000C4292 /* Shop */,
 				70807DFE18ABA37700984161 /* BaseViewController.h */,
 				70807DFF18ABA37700984161 /* BaseViewController.m */,
 				23D612FD189365F100C60E3E /* AppDelegate.h */,
@@ -839,6 +852,7 @@
 		23D615181893A36F00C60E3E /* images */ = {
 			isa = PBXGroup;
 			children = (
+				709F244518B90A7B000C4292 /* hm_shop.png */,
 				09A26BC618AC891D0010191A /* nexusae0_btn_myl_normal.png */,
 				70807E0118ABB8BC00984161 /* personal_settings.png */,
 				70807DFC18AA695600984161 /* timeline_scroll.png */,
@@ -967,6 +981,8 @@
 				706C70B8189E4A9E00B2C38C /* MockMall.m */,
 				70807F2218B4D5EF00984161 /* MockGift.h */,
 				70807F2318B4D5EF00984161 /* MockGift.m */,
+				709F243C18B8FF07000C4292 /* MockShop.h */,
+				709F243D18B8FF07000C4292 /* MockShop.m */,
 			);
 			name = DataStore;
 			sourceTree = "<group>";
@@ -1130,12 +1146,23 @@
 		709F243318B6626D000C4292 /* Confirm */ = {
 			isa = PBXGroup;
 			children = (
-				709F243618B662C0000C4292 /* QRConfirmViewController.xib */,
-				709F243A18B664B4000C4292 /* QRConfirmViewController5.xib */,
+				709F243618B662C0000C4292 /* QRConfirmViewController5.xib */,
+				709F243A18B664B4000C4292 /* QRConfirmViewController.xib */,
 				709F243418B66299000C4292 /* QRConfirmViewController.m */,
 				709F243118B66261000C4292 /* QRConfirmViewController.h */,
 			);
 			name = Confirm;
+			sourceTree = "<group>";
+		};
+		709F243F18B9042D000C4292 /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				709F244018B90470000C4292 /* ShopPromoViewController.h */,
+				709F244118B90470000C4292 /* ShopPromoViewController.m */,
+				709F244218B90470000C4292 /* ShopPromoViewController.xib */,
+				709F244718B90B68000C4292 /* ShopPromoViewController5.xib */,
+			);
+			name = Shop;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1218,7 +1245,7 @@
 			files = (
 				236AB6211894C4A800770E81 /* HomePageListViewController.xib in Resources */,
 				23D615651893A36F00C60E3E /* h04_map.png in Resources */,
-				709F243B18B664B4000C4292 /* QRConfirmViewController5.xib in Resources */,
+				709F243B18B664B4000C4292 /* QRConfirmViewController.xib in Resources */,
 				236AB5CA1894AA4300770E81 /* FriendsListCell.xib in Resources */,
 				23D615721893A36F00C60E3E /* h_07.png in Resources */,
 				23D615921893A36F00C60E3E /* top_grey_bg.png in Resources */,
@@ -1230,12 +1257,13 @@
 				23D615731893A36F00C60E3E /* info_icon.png in Resources */,
 				23D6158C1893A36F00C60E3E /* search_icon.png in Resources */,
 				23D615771893A36F00C60E3E /* logo3.png in Resources */,
-				709F243718B662C0000C4292 /* QRConfirmViewController.xib in Resources */,
+				709F243718B662C0000C4292 /* QRConfirmViewController5.xib in Resources */,
 				23D615A41893B84000C60E3E /* MyAccountHomePageViewController.xib in Resources */,
 				23D615631893A36F00C60E3E /* h03_top_bg.png in Resources */,
 				23D6158D1893A36F00C60E3E /* share_btn.png in Resources */,
 				23D613681893680700C60E3E /* blueArrow@2x.png in Resources */,
 				23D6155E1893A36F00C60E3E /* check_in2.png in Resources */,
+				709F244618B90A7B000C4292 /* hm_shop.png in Resources */,
 				236AB5C118949F7000770E81 /* FriendsListPageViewController.xib in Resources */,
 				23D6136B1893680700C60E3E /* IconRefreshArrow.png in Resources */,
 				23D6158A1893A36F00C60E3E /* scan_bg.png in Resources */,
@@ -1260,6 +1288,7 @@
 				23D615761893A36F00C60E3E /* logo2.png in Resources */,
 				2348433E1896166E00F752C3 /* pick_bg@2x.png in Resources */,
 				236AB6421894D63900770E81 /* map_name.png in Resources */,
+				709F244418B90470000C4292 /* ShopPromoViewController.xib in Resources */,
 				70807DFD18AA695600984161 /* timeline_scroll.png in Resources */,
 				70807E0818ABBCA100984161 /* InfoSettingViewController.xib in Resources */,
 				23D615711893A36F00C60E3E /* h_05.png in Resources */,
@@ -1278,6 +1307,7 @@
 				236AB6401894D63900770E81 /* line.png in Resources */,
 				23D613671893680700C60E3E /* blueArrow.png in Resources */,
 				23D615801893A36F00C60E3E /* pic2.png in Resources */,
+				709F244818B90B68000C4292 /* ShopPromoViewController5.xib in Resources */,
 				0959580518A09FDD009C54A2 /* GiftViewController.xib in Resources */,
 				23D6158E1893A36F00C60E3E /* side_bar.png in Resources */,
 				23D615941893A36F00C60E3E /* top_right_btn.png in Resources */,
@@ -1362,6 +1392,7 @@
 				23D613721893680700C60E3E /* MKAnnotationView+WebCache.m in Sources */,
 				23D615A31893B84000C60E3E /* MyAccountHomePageViewController.m in Sources */,
 				70807E1D18AE857C00984161 /* GiftListCell.m in Sources */,
+				709F243E18B8FF07000C4292 /* MockShop.m in Sources */,
 				23D6137F1893680700C60E3E /* UIImageView+WebCache.m in Sources */,
 				23D61302189365F100C60E3E /* ShoppingMall.xcdatamodeld in Sources */,
 				2348437E189648AE00F752C3 /* MallGiftListPageViewController.m in Sources */,
@@ -1383,6 +1414,7 @@
 				23D613811893680700C60E3E /* TPKeyboardAvoidingScrollView.m in Sources */,
 				70807E3B18AF172300984161 /* RedeemedViewController.m in Sources */,
 				70807F2418B4D5EF00984161 /* MockGift.m in Sources */,
+				709F244318B90470000C4292 /* ShopPromoViewController.m in Sources */,
 				23D6137E1893680700C60E3E /* UIImage+WebP.m in Sources */,
 				236AB6271894C5FE00770E81 /* HomePageListCell.m in Sources */,
 				70807EF218B23FC800984161 /* QRCodeViewController.m in Sources */,

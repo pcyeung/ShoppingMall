@@ -8,7 +8,6 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScanQRViewController">
             <connections>
                 <outlet property="backBtn" destination="R7k-Kj-jO9" id="kRw-ag-KQK"/>
-                <outlet property="scannedBtn" destination="8Pj-dy-8Sx" id="Ico-NL-4Tx"/>
                 <outlet property="view" destination="lYB-TY-xnN" id="kFo-mS-ecM"/>
             </connections>
         </placeholder>
@@ -36,16 +35,6 @@
                     <rect key="frame" x="0.0" y="430" width="320" height="50"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Pj-dy-8Sx">
-                    <rect key="frame" x="20" y="440" width="263" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title=".">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="scannedBtnClick" destination="-1" eventType="touchUpInside" id="crT-Xa-Rqp"/>
-                    </connections>
-                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics"/>

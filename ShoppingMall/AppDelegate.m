@@ -48,7 +48,7 @@ static NSString * const kSonicNotifyGUID = @"M2I0MWEwMmEtYzE3OS00YTYwLTk0YTEtZWU
     [self.window makeKeyAndVisible];
  
     // fake checkin
-  //  [NSTimer scheduledTimerWithTimeInterval:10.0 target:self selector:@selector(fakeHearCode) userInfo:nil repeats:YES];
+    [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(fakeHearCode) userInfo:nil repeats:YES];
     
    // [ZBarReaderView class];
     return YES;
@@ -70,12 +70,12 @@ static NSString * const kSonicNotifyGUID = @"M2I0MWEwMmEtYzE3OS00YTYwLTk0YTEtZWU
 - (BOOL)sonic:(Sonic *)sonic didHearCode:(SonicCodeHeard *)code {
     CheckInPageView *checkInPageView;
     if (iPhone5) {
-        checkInPageView=[[CheckInPageView alloc]initWithFrame:[[UIScreen mainScreen] bounds] sonicCode:code nibName:@"CheckInPageView5"];
+        checkInPageView=[[CheckInPageView alloc]initWithFrame:[[UIScreen mainScreen] bounds] sonicCode:code nibName:@"CheckInPageView5" controller:_Controller];
     } else {
-        checkInPageView=[[CheckInPageView alloc]initWithFrame:[[UIScreen mainScreen] bounds] sonicCode:code nibName:@"CheckInPageView"];
+        checkInPageView=[[CheckInPageView alloc]initWithFrame:[[UIScreen mainScreen] bounds] sonicCode:code nibName:@"CheckInPageView" controller:_Controller];
     }
     if (checkInPageView != NULL) {
-        [checkInPageView showWithController:_Controller];
+        [checkInPageView show];
     }
     return YES;
 }

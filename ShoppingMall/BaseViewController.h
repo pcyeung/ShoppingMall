@@ -14,4 +14,8 @@
 - (void)buttonClickToClass:(NSString*)aClass iPhone5Nib:(NSString*)nib5 nib:(NSString*)nib;
 - (void)popOrPush:(NSString*)aClass controller:(UIViewController*)controller;
 
++ (UIViewController*)buttonClickGetClass:(NSString*)aClass iPhone5Nib:(NSString*)nib5 nib:(NSString*)nib navController:(UINavigationController*)navController;
++ (void)popOrPush:(NSString*)aClass controller:(UIViewController*)controller navController:(UINavigationController*)navController;
+
+
 @end
