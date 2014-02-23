@@ -8,7 +8,6 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomePageViewController">
             <connections>
                 <outlet property="MyAccountBtn" destination="mqc-KP-g9H" id="syH-8q-21n"/>
-                <outlet property="backBtn" destination="as8-rn-fhw" id="31M-os-CaG"/>
                 <outlet property="giftBtn" destination="YCA-fV-RP9" id="mxP-Bb-mKE"/>
                 <outlet property="listBtn" destination="YR7-Je-jr0" id="JTT-zf-sH1"/>
                 <outlet property="mapBTn" destination="1ba-F3-0QF" id="cS5-aM-ugZ"/>
@@ -36,13 +35,6 @@
                     <connections>
                         <action selector="myAccountBtnClick" destination="-1" eventType="touchUpInside" id="wq7-oj-D7r"/>
                     </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="as8-rn-fhw">
-                    <rect key="frame" x="260" y="5" width="40" height="40"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" image="top_right_btn.png">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
                 </button>
                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="top_grey_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="r2Z-dN-Yrn">
                     <rect key="frame" x="0.0" y="50" width="320" height="50"/>
@@ -121,6 +113,5 @@
         <image name="nexusae0_btn_myl_normal.png" width="84" height="84"/>
         <image name="top_grey_bg.png" width="640" height="98"/>
         <image name="top_left_btn.png" width="70" height="70"/>
-        <image name="top_right_btn.png" width="70" height="70"/>
     </resources>
 </document>

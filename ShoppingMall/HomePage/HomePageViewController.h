@@ -13,7 +13,6 @@
 
 @interface HomePageViewController : BaseViewController <MKMapViewDelegate> {
     IBOutlet UIButton *MyAccountBtn;
-    IBOutlet UIButton *backBtn;
     IBOutlet UIButton *mapBTn;
     IBOutlet UIButton *listBtn;
     IBOutlet UIButton *shoppingMallListBtn;

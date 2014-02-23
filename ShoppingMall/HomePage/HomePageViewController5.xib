@@ -8,7 +8,6 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomePageViewController">
             <connections>
                 <outlet property="MyAccountBtn" destination="lPk-bh-7ll" id="Rph-cL-lCD"/>
-                <outlet property="backBtn" destination="crz-rI-Jr8" id="0oO-81-3w6"/>
                 <outlet property="giftBtn" destination="ZAI-18-6Oi" id="w4x-sI-7oj"/>
                 <outlet property="listBtn" destination="kio-iW-4lJ" id="GlL-J3-5Gb"/>
                 <outlet property="mapBTn" destination="i93-YQ-b9Y" id="wxX-Pq-Tvs"/>
@@ -36,14 +35,6 @@
                     <connections>
                         <action selector="myAccountBtnClick" destination="-1" eventType="touchUpInside" id="VAy-uY-5xJ"/>
                     </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="crz-rI-Jr8">
-                    <rect key="frame" x="260" y="5" width="40" height="40"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <state key="normal" image="top_right_btn.png">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
                 </button>
                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="top_grey_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="6IL-Kd-YLb">
                     <rect key="frame" x="0.0" y="50" width="320" height="50"/>
@@ -122,6 +113,5 @@
         <image name="nexusae0_btn_myl_normal.png" width="84" height="84"/>
         <image name="top_grey_bg.png" width="640" height="98"/>
         <image name="top_left_btn.png" width="70" height="70"/>
-        <image name="top_right_btn.png" width="70" height="70"/>
     </resources>
 </document>

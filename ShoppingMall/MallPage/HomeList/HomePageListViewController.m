@@ -72,7 +72,7 @@
 }
 
 - (IBAction)shoppingMallListBtnClick {
-    [self buttonClickToClass:@"HomePageViewController" iPhone5Nib:@"HomePageViewController" nib:@"HomePageViewController"];
+    [self buttonClickToClass:@"HomePageViewController" iPhone5Nib:@"HomePageViewController5" nib:@"HomePageViewController"];
 }
 
 - (IBAction)giftListBtnClick {
