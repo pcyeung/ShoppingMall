@@ -19,6 +19,7 @@
 @property(strong, nonatomic) NSString *mallName;
 @property(strong, nonatomic) NSString *mallAddress;
 @property(strong, nonatomic) NSString *adsText;
+@property(strong, nonatomic) NSString *distance;
 
 + (MockMall*)getMallWithSonicCode:(SonicCodeHeard *)code;
 + (NSArray*)getAllMallData;

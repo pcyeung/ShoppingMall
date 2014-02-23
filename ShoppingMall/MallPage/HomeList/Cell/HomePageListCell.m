@@ -29,6 +29,8 @@
 - (void)initWithMall:(MockMall *)mall {
     name.text = [mall mallName];
     address.text = [mall mallAddress];
+    points.text = [NSString stringWithFormat:@"%d分", [mall getBonusPoints]];
+    distance.text = [mall distance];
 }
 
 @end

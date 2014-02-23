@@ -24,16 +24,36 @@
     return self;
 }
 
-+ (MockShop*)getSampleShop {
-    static MockShop *theShop;
-    if (theShop == nil) {
++ (NSArray*)getSampleShops {
+    static NSMutableArray *allShops;
+    if (allShops == nil) {
+        allShops = [[NSMutableArray alloc]init];
+        
         NSMutableDictionary *dic=[[NSMutableDictionary alloc]init];
         [dic setObject:@"H&M" forKey:@"shop"];
-        [dic setObject:@"logo4.png" forKey:@"logo-image"];
+        [dic setObject:@"ad01.png" forKey:@"logo-image"];
         [dic setObject:@"" forKey:@"ad-image"];
-        theShop = [[MockShop alloc]initWithData:dic];
+        [allShops addObject:[[MockShop alloc]initWithData:dic]];
+        
+        [dic removeAllObjects];
+        [dic setObject:@"H&M" forKey:@"shop"];
+        [dic setObject:@"ad02.png" forKey:@"logo-image"];
+        [dic setObject:@"" forKey:@"ad-image"];
+        [allShops addObject:[[MockShop alloc]initWithData:dic]];
+        
+        [dic removeAllObjects];
+        [dic setObject:@"H&M" forKey:@"shop"];
+        [dic setObject:@"ad03.png" forKey:@"logo-image"];
+        [dic setObject:@"" forKey:@"ad-image"];
+        [allShops addObject:[[MockShop alloc]initWithData:dic]];
+        
+        [dic removeAllObjects];
+        [dic setObject:@"H&M" forKey:@"shop"];
+        [dic setObject:@"ad04.png" forKey:@"logo-image"];
+        [dic setObject:@"" forKey:@"ad-image"];
+        [allShops addObject:[[MockShop alloc]initWithData:dic]];
     }
-    return theShop;
+    return allShops;
 }
 
 

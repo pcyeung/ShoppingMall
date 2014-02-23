@@ -48,7 +48,7 @@ static NSString * const kSonicNotifyGUID = @"M2I0MWEwMmEtYzE3OS00YTYwLTk0YTEtZWU
     [self.window makeKeyAndVisible];
  
     // fake checkin
-   // [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(fakeHearCode) userInfo:nil repeats:YES];
+    [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(fakeHearCode) userInfo:nil repeats:YES];
     
    // [ZBarReaderView class];
     return YES;

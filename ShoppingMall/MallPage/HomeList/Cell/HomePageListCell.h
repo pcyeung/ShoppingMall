@@ -12,6 +12,9 @@
 @interface HomePageListCell : UITableViewCell {
     IBOutlet UILabel *name;
     IBOutlet UILabel *address;
+    
+    IBOutlet UILabel *points;
+    IBOutlet UILabel *distance;
 }
 
 - (void) initWithMall:(MockMall*)mall;

@@ -16,6 +16,7 @@
 @synthesize mallName = _mallName;
 @synthesize mallAddress = _mallAddress;
 @synthesize adsText = _adsText;
+@synthesize distance = _distance;
 
 - (id)initWithData:(NSDictionary*)dataDict {
     self = [super init];
@@ -25,6 +26,7 @@
         _adsText = [dataDict objectForKey:@"ads-string"];
         bonusPoints = [(NSNumber*)[dataDict objectForKey:@"bonus-points"] intValue];
         beaconId = [(NSNumber*)[dataDict objectForKey:@"beacon-id"] intValue];
+        _distance = [dataDict objectForKey:@"distance"];
         coordinates.latitude = [(NSNumber*)[dataDict objectForKey:@"latitude"] doubleValue];
         coordinates.longitude = [(NSNumber*)[dataDict objectForKey:@"longitude"] doubleValue];
     }
@@ -43,6 +45,7 @@
         [dic setObject:@"http://www.ecmall.com.cn/plus/list.php?tid=4" forKey:@"url"];
         [dic setObject:@802396 forKey:@"beacon-id"];
         [dic setObject:@"赠送烤鸡腿" forKey:@"ads-string"];
+        [dic setObject:@"100m" forKey:@"distance"];
         [dic setObject:@22.278151 forKey:@"latitude"];
         [dic setObject:@114.181706 forKey:@"longitude"];
         [dic setObject:@10 forKey:@"bonus-points"];
@@ -55,6 +58,7 @@
         [dic setObject:@"http://sogo.junefield.com/brand.php" forKey:@"url"];
         [dic setObject:@802397 forKey:@"beacon-id"];
         [dic setObject:@"赠送烤鸡腿" forKey:@"ads-string"];
+        [dic setObject:@"100m" forKey:@"distance"];
         [dic setObject:@22.278151 forKey:@"latitude"];
         [dic setObject:@114.181706 forKey:@"longitude"];
         [dic setObject:@10 forKey:@"bonus-points"];
@@ -67,6 +71,7 @@
         [dic setObject:@"http://data.house.sina.com.cn/bj68149/xinxi/" forKey:@"url"];
         [dic setObject:@802398 forKey:@"beacon-id"];
         [dic setObject:@"赠送烤鸡腿" forKey:@"ads-string"];
+        [dic setObject:@"150m" forKey:@"distance"];
         [dic setObject:@22.278151 forKey:@"latitude"];
         [dic setObject:@114.181706 forKey:@"longitude"];
         [dic setObject:@10 forKey:@"bonus-points"];
@@ -79,6 +84,7 @@
         [dic setObject:@"http://www.xidanjoycity.com/about/index.html" forKey:@"url"];
         [dic setObject:@802399 forKey:@"beacon-id"];
         [dic setObject:@"赠送烤鸡腿" forKey:@"ads-string"];
+        [dic setObject:@"500m" forKey:@"distance"];
         [dic setObject:@22.278151 forKey:@"latitude"];
         [dic setObject:@114.181706 forKey:@"longitude"];
         [dic setObject:@10 forKey:@"bonus-points"];
@@ -91,6 +97,7 @@
         [dic setObject:@"http://www.cyjoycity.com/index.html" forKey:@"url"];
         [dic setObject:@1 forKey:@"beacon-id"];
         [dic setObject:@"赠送烤鸡腿" forKey:@"ads-string"];
+        [dic setObject:@"1km" forKey:@"distance"];
         [dic setObject:@22.278151 forKey:@"latitude"];
         [dic setObject:@114.181706 forKey:@"longitude"];
         [dic setObject:@10 forKey:@"bonus-points"];
@@ -103,6 +110,7 @@
         [dic setObject:@"http://about.yintai.com/intime/bj.html" forKey:@"url"];
         [dic setObject:@2 forKey:@"beacon-id"];
         [dic setObject:@"赠送烤鸡腿" forKey:@"ads-string"];
+        [dic setObject:@"5km" forKey:@"distance"];
         [dic setObject:@22.278151 forKey:@"latitude"];
         [dic setObject:@114.181706 forKey:@"longitude"];
         [dic setObject:@10 forKey:@"bonus-points"];
@@ -115,6 +123,7 @@
         [dic setObject:@"http://www.ginza-mall.com/shop/detail.aspx" forKey:@"url"];
         [dic setObject:@3 forKey:@"beacon-id"];
         [dic setObject:@"赠送烤鸡腿" forKey:@"ads-string"];
+        [dic setObject:@"10km" forKey:@"distance"];
         [dic setObject:@22.278151 forKey:@"latitude"];
         [dic setObject:@114.181706 forKey:@"longitude"];
         [dic setObject:@10 forKey:@"bonus-points"];
@@ -127,6 +136,7 @@
         [dic setObject:@"http://www.theplace.cn/" forKey:@"url"];
         [dic setObject:@4 forKey:@"beacon-id"];
         [dic setObject:@"赠送烤鸡腿" forKey:@"ads-string"];
+        [dic setObject:@"10km" forKey:@"distance"];
         [dic setObject:@22.278151 forKey:@"latitude"];
         [dic setObject:@114.181706 forKey:@"longitude"];
         [dic setObject:@10 forKey:@"bonus-points"];
@@ -139,6 +149,7 @@
         [dic setObject:@"http://www.parkviewgreen.com/cn/shop/" forKey:@"url"];
         [dic setObject:@5 forKey:@"beacon-id"];
         [dic setObject:@"赠送烤鸡腿" forKey:@"ads-string"];
+        [dic setObject:@"10km" forKey:@"distance"];
         [dic setObject:@22.278151 forKey:@"latitude"];
         [dic setObject:@114.181706 forKey:@"longitude"];
         [dic setObject:@10 forKey:@"bonus-points"];
@@ -151,6 +162,7 @@
         [dic setObject:@"http://www.beijingapm.cn/templates/T_search/index.aspx?nodeid=9" forKey:@"url"];
         [dic setObject:@6 forKey:@"beacon-id"];
         [dic setObject:@"赠送烤鸡腿" forKey:@"ads-string"];
+        [dic setObject:@"1okm" forKey:@"distance"];
         [dic setObject:@22.278151 forKey:@"latitude"];
         [dic setObject:@114.181706 forKey:@"longitude"];
         [dic setObject:@10 forKey:@"bonus-points"];

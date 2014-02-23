@@ -16,11 +16,14 @@
 @interface CheckInPageView : UIView {
     int clickCount;
     IBOutlet UILabel   *mallNameLabel;
-    IBOutlet UILabel   *topTextLabel;
-    IBOutlet UILabel   *centerTextLabel;
-    
+    IBOutlet UILabel   *topTextLabel;    
     IBOutlet UIImageView *checkInTextImage;
+
     IBOutlet UIButton *adButton1;
+    IBOutlet UIButton *adButton2;
+    IBOutlet UIButton *adButton3;
+    IBOutlet UIButton *adButton4;
+
     IBOutlet UIButton *okButton;
 }
 

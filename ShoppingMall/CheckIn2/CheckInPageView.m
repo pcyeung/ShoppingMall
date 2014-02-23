@@ -44,10 +44,14 @@
         NSString* path = [[NSBundle mainBundle] pathForResource:@"check_in2" ofType:@"png"];
         UIImage* newCheckInTextImage = [[UIImage alloc]initWithContentsOfFile:path];
         [checkInTextImage setImage:newCheckInTextImage];
-
         [topTextLabel setText:@"商场优惠"];
-        [centerTextLabel setText:@""];
-        [self enableButton:adButton1 withShop:[MockShop getSampleShop]];
+        
+        NSArray* shops = [MockShop getSampleShops];
+        [self enableButton:adButton1 withShop:[shops objectAtIndex:0]];
+        [self enableButton:adButton2 withShop:[shops objectAtIndex:1]];
+        [self enableButton:adButton3 withShop:[shops objectAtIndex:2]];
+        [self enableButton:adButton4 withShop:[shops objectAtIndex:3]];
+
     } else {
         [self closePopup];
     }
@@ -58,7 +62,7 @@
     [self closePopup];
     
     ShopPromoViewController* controller = (ShopPromoViewController*)[BaseViewController buttonClickGetClass:@"ShopPromoViewController" iPhone5Nib:@"ShopPromoViewController5" nib:@"ShopPromoViewController" navController:_controller];
-    [controller initWithShop:[MockShop getSampleShop]];
+    [controller initWithShop:[[MockShop getSampleShops] objectAtIndex:0]];
     [BaseViewController popOrPush:@"ShopPromoViewController" controller:controller navController:_controller];
 }
 
@@ -88,15 +92,22 @@
 - (void) disableButton:(UIButton*)button {
     button.enabled = NO;
     [button setBackgroundImage:nil forState:UIControlStateNormal];
+    [button setImage:nil forState:UIControlStateNormal];
 }
 
 - (void) enableButton:(UIButton*)button withShop:(MockShop*)shop {
     button.enabled = YES;
     [button setBackgroundImage:[UIImage imageNamed:[shop logoImage]] forState:UIControlStateNormal];
+    [button setImage:[UIImage imageNamed:[shop logoImage]] forState:UIControlStateNormal];
 }
 
 - (void) showAnimated:(BOOL)animated {
     [self disableButton:adButton1];
+    [self disableButton:adButton2];
+    [self disableButton:adButton3];
+    [self disableButton:adButton4];
+
+    [topTextLabel setText:@""];
     
     int accountPoints = [_user getAccountPoints];
     accountPoints += [_mall getBonusPoints];
@@ -105,7 +116,7 @@
     
     NSString* pointBalanceText = [NSString stringWithFormat:@"加%d分!  总分:%d", [_mall getBonusPoints], accountPoints];
     [mallNameLabel setText:[_mall mallName]];
-    [centerTextLabel setText:pointBalanceText];
+    [topTextLabel setText:pointBalanceText];
     
 	_window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     _window.windowLevel = UIWindowLevelAlert;

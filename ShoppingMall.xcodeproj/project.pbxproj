@@ -155,8 +155,12 @@
 		23DD8C3A1895EE77005F7A48 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23DD8C391895EE77005F7A48 /* CoreVideo.framework */; };
 		23DD8C3C1895EE8A005F7A48 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 23DD8C3B1895EE8A005F7A48 /* libiconv.dylib */; };
 		23DD8C401896076D005F7A48 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23DD8C3F1896076D005F7A48 /* QuartzCore.framework */; };
-		7014FA7E18B9EFC4005CD562 /* CheckInPageView5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7014FA7D18B9EFC4005CD562 /* CheckInPageView5.xib */; };
 		7014FA8018B9F1C6005CD562 /* QRCodeViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7014FA7F18B9F1C6005CD562 /* QRCodeViewController5.xib */; };
+		7014FA8618B9FCBA005CD562 /* ad01.png in Resources */ = {isa = PBXBuildFile; fileRef = 7014FA8218B9FCBA005CD562 /* ad01.png */; };
+		7014FA8718B9FCBA005CD562 /* ad02.png in Resources */ = {isa = PBXBuildFile; fileRef = 7014FA8318B9FCBA005CD562 /* ad02.png */; };
+		7014FA8818B9FCBA005CD562 /* ad03.png in Resources */ = {isa = PBXBuildFile; fileRef = 7014FA8418B9FCBA005CD562 /* ad03.png */; };
+		7014FA8918B9FCBA005CD562 /* ad04.png in Resources */ = {isa = PBXBuildFile; fileRef = 7014FA8518B9FCBA005CD562 /* ad04.png */; };
+		7014FA8B18BA0171005CD562 /* CheckInPageView5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7014FA8A18BA0171005CD562 /* CheckInPageView5.xib */; };
 		702E13FD189A2D6B00B59475 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 702E13FC189A2D6B00B59475 /* CoreAudio.framework */; };
 		702E13FF189A2D7700B59475 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 702E13FE189A2D7700B59475 /* CoreBluetooth.framework */; };
 		702E1401189A2D8D00B59475 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 702E1400189A2D8D00B59475 /* MobileCoreServices.framework */; };
@@ -410,8 +414,12 @@
 		23DD8C391895EE77005F7A48 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		23DD8C3B1895EE8A005F7A48 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 		23DD8C3F1896076D005F7A48 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		7014FA7D18B9EFC4005CD562 /* CheckInPageView5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CheckInPageView5.xib; sourceTree = "<group>"; };
 		7014FA7F18B9F1C6005CD562 /* QRCodeViewController5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QRCodeViewController5.xib; sourceTree = "<group>"; };
+		7014FA8218B9FCBA005CD562 /* ad01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ad01.png; sourceTree = "<group>"; };
+		7014FA8318B9FCBA005CD562 /* ad02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ad02.png; sourceTree = "<group>"; };
+		7014FA8418B9FCBA005CD562 /* ad03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ad03.png; sourceTree = "<group>"; };
+		7014FA8518B9FCBA005CD562 /* ad04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ad04.png; sourceTree = "<group>"; };
+		7014FA8A18BA0171005CD562 /* CheckInPageView5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CheckInPageView5.xib; sourceTree = "<group>"; };
 		702E13FC189A2D6B00B59475 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		702E13FE189A2D7700B59475 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		702E1400189A2D8D00B59475 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
@@ -852,6 +860,7 @@
 		23D615181893A36F00C60E3E /* images */ = {
 			isa = PBXGroup;
 			children = (
+				7014FA8118B9FCBA005CD562 /* ads */,
 				709F244518B90A7B000C4292 /* hm_shop.png */,
 				09A26BC618AC891D0010191A /* nexusae0_btn_myl_normal.png */,
 				70807E0118ABB8BC00984161 /* personal_settings.png */,
@@ -958,11 +967,22 @@
 			name = MyAccount;
 			sourceTree = "<group>";
 		};
+		7014FA8118B9FCBA005CD562 /* ads */ = {
+			isa = PBXGroup;
+			children = (
+				7014FA8218B9FCBA005CD562 /* ad01.png */,
+				7014FA8318B9FCBA005CD562 /* ad02.png */,
+				7014FA8418B9FCBA005CD562 /* ad03.png */,
+				7014FA8518B9FCBA005CD562 /* ad04.png */,
+			);
+			path = ads;
+			sourceTree = "<group>";
+		};
 		706C70AC189D497800B2C38C /* CheckIn */ = {
 			isa = PBXGroup;
 			children = (
 				706C70AD189D498C00B2C38C /* CheckInPageView.xib */,
-				7014FA7D18B9EFC4005CD562 /* CheckInPageView5.xib */,
+				7014FA8A18BA0171005CD562 /* CheckInPageView5.xib */,
 				706C70AF189D49EF00B2C38C /* CheckInPageView.h */,
 				706C70B0189D49EF00B2C38C /* CheckInPageView.m */,
 			);
@@ -1243,7 +1263,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7014FA7E18B9EFC4005CD562 /* CheckInPageView5.xib in Resources */,
 				236AB6211894C4A800770E81 /* HomePageListViewController.xib in Resources */,
 				23D615651893A36F00C60E3E /* h04_map.png in Resources */,
 				709F243B18B664B4000C4292 /* QRConfirmViewController.xib in Resources */,
@@ -1269,6 +1288,7 @@
 				23D6136B1893680700C60E3E /* IconRefreshArrow.png in Resources */,
 				23D6158A1893A36F00C60E3E /* scan_bg.png in Resources */,
 				23D6157E1893A36F00C60E3E /* num_gift_03.png in Resources */,
+				7014FA8718B9FCBA005CD562 /* ad02.png in Resources */,
 				23D6156B1893A36F00C60E3E /* h12_bg.png in Resources */,
 				23D612F9189365F100C60E3E /* InfoPlist.strings in Resources */,
 				0959580B18A0BEFB009C54A2 /* mapView.png in Resources */,
@@ -1276,6 +1296,7 @@
 				70807EF318B23FC800984161 /* QRCodeViewController.xib in Resources */,
 				70807E0A18ABBF9600984161 /* InfoSettingViewController5.xib in Resources */,
 				23D615681893A36F00C60E3E /* h08_map.png in Resources */,
+				7014FA8618B9FCBA005CD562 /* ad01.png in Resources */,
 				23D6136D1893680700C60E3E /* whiteArrow@2x.png in Resources */,
 				23D615691893A36F00C60E3E /* h08_text.png in Resources */,
 				23D615641893A36F00C60E3E /* h04_list.png in Resources */,
@@ -1298,6 +1319,7 @@
 				236AB5C418949F8300770E81 /* FriendsListPageViewController5.xib in Resources */,
 				236AB6451894D63900770E81 /* top_banner.png in Resources */,
 				23D615781893A36F00C60E3E /* logo4.png in Resources */,
+				7014FA8B18BA0171005CD562 /* CheckInPageView5.xib in Resources */,
 				23484380189648AE00F752C3 /* MallGiftListPageViewController5.xib in Resources */,
 				23D6155F1893A36F00C60E3E /* content_bg1.png in Resources */,
 				23D6155D1893A36F00C60E3E /* check_in.png in Resources */,
@@ -1349,9 +1371,11 @@
 				23D615931893A36F00C60E3E /* top_left_btn.png in Resources */,
 				236AB6471894D63900770E81 /* weibo.png in Resources */,
 				236AB63E1894D63900770E81 /* bottom.png in Resources */,
+				7014FA8918B9FCBA005CD562 /* ad04.png in Resources */,
 				236AB6441894D63900770E81 /* search_bg.png in Resources */,
 				23D615791893A36F00C60E3E /* logo5.png in Resources */,
 				23D6157D1893A36F00C60E3E /* num_gift.png in Resources */,
+				7014FA8818B9FCBA005CD562 /* ad03.png in Resources */,
 				70807DFB18AA693800984161 /* redeem_icon.png in Resources */,
 				23D6159C1893A6AC00C60E3E /* HomePageViewController.xib in Resources */,
 				23D6156C1893A36F00C60E3E /* h12_bg1.png in Resources */,

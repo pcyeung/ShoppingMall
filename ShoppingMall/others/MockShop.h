@@ -15,6 +15,6 @@
 @property(strong, nonatomic) NSString *logoImage;
 @property(strong, nonatomic) NSString *adImage;
 
-+ (MockShop*)getSampleShop;
++ (NSArray*)getSampleShops;
 
 @end
