@@ -12,13 +12,28 @@
 #import "ZBarSDK.h"
 #import "MockGift.h"
 
-@interface ScanQRViewController : BaseViewController<ZBarReaderDelegate,ZBarReaderViewDelegate>{
-    IBOutlet UIButton *backBtn;
-    IBOutlet UIButton *scannedBtn;
-    
+@interface Scanner : NSObject {
     int num;
     BOOL upOrdown;
     NSTimer * timer;
+    ZBarReaderView *readerView;
+    
+    int width;
+    int height;
+}
+
+@property (nonatomic, strong) UIImageView * line;
+
+- (id)initWithWidth:(int)w height:(int)h;
+- (ZBarReaderView*) getReaderView;
+- (void)stop;
+
+@end
+
+
+@interface ScanQRViewController : BaseViewController<ZBarReaderDelegate,ZBarReaderViewDelegate>{
+    IBOutlet UIButton *backBtn;
+    IBOutlet UIButton *scannedBtn;
     
     ZBarReaderView *readerView;
     NSMutableDictionary *dic;
@@ -26,7 +41,6 @@
 
 @property (nonatomic, strong) MockMall * mall;
 @property (nonatomic, strong) MockGift * gift;
-@property (nonatomic, strong) UIImageView * line;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil withDic:(NSMutableDictionary *)sender;
 - (void) initWithGift:(MockGift*)gift mall:(MockMall*)mall;
