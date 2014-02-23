@@ -94,7 +94,6 @@
     for (UIViewController *tem in controller.viewControllers) {
         if ([tem isKindOfClass:[MyAccountHomePageViewController class]]) {
             [(MyAccountHomePageViewController*)tem refreshData];
-            return;
         }
     }
 }
@@ -114,7 +113,6 @@
     for (UIViewController *tem in controller.viewControllers) {
         if ([tem isKindOfClass:[RedeemedViewController class]]) {
             [(RedeemedViewController*)tem refreshData];
-            return;
         }
     }
 }

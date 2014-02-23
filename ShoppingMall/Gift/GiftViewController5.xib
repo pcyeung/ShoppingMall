@@ -7,10 +7,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GiftViewController">
             <connections>
-                <outlet property="MyAccountBtn" destination="bMg-n2-xX0" id="xJw-Mu-FXH"/>
-                <outlet property="giftBtn" destination="LyN-Mz-UDN" id="jsK-DT-hjN"/>
-                <outlet property="list" destination="hc5-5s-HMq" id="mOI-IM-LOI"/>
-                <outlet property="shoppingMallListBtn" destination="zZ7-b1-0H1" id="mlZ-Ox-7eJ"/>
+                <outlet property="MyAccountBtn" destination="elT-TB-pz8" id="xBq-jZ-VH0"/>
+                <outlet property="backBtn" destination="y91-Nj-xtR" id="jSl-9M-ytc"/>
+                <outlet property="giftBtn" destination="6v8-0g-Oig" id="M5x-Ov-tIT"/>
+                <outlet property="list" destination="7gp-TR-ptd" id="HT6-sq-ZTQ"/>
+                <outlet property="shoppingMallListBtn" destination="ztu-M8-kYi" id="e1M-ol-lKQ"/>
+                <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -18,11 +20,11 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="bottom.png" translatesAutoresizingMaskIntoConstraints="NO" id="0HG-zB-oHR">
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="bottom.png" translatesAutoresizingMaskIntoConstraints="NO" id="OP7-4h-ZGG">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMg-n2-xX0">
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elT-TB-pz8">
                     <rect key="frame" x="20" y="5" width="40" height="40"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -30,10 +32,10 @@
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="myAccountBTnClick" destination="-1" eventType="touchUpInside" id="PXl-Tp-Joc"/>
+                        <action selector="myAccountBTnClick" destination="-1" eventType="touchUpInside" id="ZSd-9p-V4g"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XOa-gP-eOP">
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y91-Nj-xtR">
                     <rect key="frame" x="260" y="5" width="40" height="40"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -41,35 +43,35 @@
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="backBtnClick" destination="-1" eventType="touchUpInside" id="YYP-xv-MS4"/>
+                        <action selector="backBtnClick" destination="-1" eventType="touchUpInside" id="YK7-Mj-mUp"/>
                     </connections>
                 </button>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="95" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="hc5-5s-HMq">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="95" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="7gp-TR-ptd">
                     <rect key="frame" x="0.0" y="50" width="320" height="468"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <connections>
-                        <outlet property="dataSource" destination="-1" id="Pjw-Ff-E7E"/>
-                        <outlet property="delegate" destination="-1" id="Mmt-eN-cTo"/>
+                        <outlet property="dataSource" destination="-1" id="C8T-jJ-Kvx"/>
+                        <outlet property="delegate" destination="-1" id="e2v-6n-tZq"/>
                     </connections>
                 </tableView>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="bottom.png" translatesAutoresizingMaskIntoConstraints="NO" id="IhK-QV-Bx8">
-                    <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="bottom.png" translatesAutoresizingMaskIntoConstraints="NO" id="3oA-FT-oo3">
+                    <rect key="frame" x="0.0" y="519" width="320" height="50"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zZ7-b1-0H1">
-                    <rect key="frame" x="20" y="523" width="40" height="40"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ztu-M8-kYi">
+                    <rect key="frame" x="20" y="524" width="40" height="40"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <state key="normal" image="bottom_left_btn.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="shoppingMallListBtnClick" destination="-1" eventType="touchUpInside" id="i44-g2-Fey"/>
+                        <action selector="shoppingMallListBtnClick" destination="-1" eventType="touchUpInside" id="kOs-fg-jMp"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LyN-Mz-UDN">
-                    <rect key="frame" x="260" y="523" width="40" height="40"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6v8-0g-Oig">
+                    <rect key="frame" x="260" y="524" width="40" height="40"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <state key="normal" image="bottom_right_btn.png">

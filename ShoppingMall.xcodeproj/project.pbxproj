@@ -178,7 +178,6 @@
 		70807E0718ABBCA100984161 /* InfoSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70807E0518ABBCA100984161 /* InfoSettingViewController.m */; };
 		70807E0818ABBCA100984161 /* InfoSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807E0618ABBCA100984161 /* InfoSettingViewController.xib */; };
 		70807E0A18ABBF9600984161 /* InfoSettingViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807E0918ABBF9600984161 /* InfoSettingViewController5.xib */; };
-		70807E1818AE84EB00984161 /* GiftViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807E1718AE84EB00984161 /* GiftViewController5.xib */; };
 		70807E1D18AE857C00984161 /* GiftListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 70807E1B18AE857C00984161 /* GiftListCell.m */; };
 		70807E1E18AE857C00984161 /* GiftListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807E1C18AE857C00984161 /* GiftListCell.xib */; };
 		70807E2418AE85B700984161 /* GiftDetailPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70807E2118AE85B700984161 /* GiftDetailPageViewController.m */; };
@@ -212,6 +211,7 @@
 		709F244418B90470000C4292 /* ShopPromoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 709F244218B90470000C4292 /* ShopPromoViewController.xib */; };
 		709F244618B90A7B000C4292 /* hm_shop.png in Resources */ = {isa = PBXBuildFile; fileRef = 709F244518B90A7B000C4292 /* hm_shop.png */; };
 		709F244818B90B68000C4292 /* ShopPromoViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 709F244718B90B68000C4292 /* ShopPromoViewController5.xib */; };
+		709F244A18B91140000C4292 /* GiftViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 709F244918B91140000C4292 /* GiftViewController5.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -439,7 +439,6 @@
 		70807E0518ABBCA100984161 /* InfoSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InfoSettingViewController.m; path = MyAccount/InfoPage/InfoSettingViewController.m; sourceTree = "<group>"; };
 		70807E0618ABBCA100984161 /* InfoSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = InfoSettingViewController.xib; path = MyAccount/InfoPage/InfoSettingViewController.xib; sourceTree = "<group>"; };
 		70807E0918ABBF9600984161 /* InfoSettingViewController5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = InfoSettingViewController5.xib; path = MyAccount/InfoPage/InfoSettingViewController5.xib; sourceTree = "<group>"; };
-		70807E1718AE84EB00984161 /* GiftViewController5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GiftViewController5.xib; path = Gift/GiftViewController5.xib; sourceTree = "<group>"; };
 		70807E1A18AE857C00984161 /* GiftListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiftListCell.h; sourceTree = "<group>"; };
 		70807E1B18AE857C00984161 /* GiftListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiftListCell.m; sourceTree = "<group>"; };
 		70807E1C18AE857C00984161 /* GiftListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GiftListCell.xib; sourceTree = "<group>"; };
@@ -503,6 +502,7 @@
 		709F244218B90470000C4292 /* ShopPromoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ShopPromoViewController.xib; path = Shop/ShopPromoViewController.xib; sourceTree = "<group>"; };
 		709F244518B90A7B000C4292 /* hm_shop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hm_shop.png; sourceTree = "<group>"; };
 		709F244718B90B68000C4292 /* ShopPromoViewController5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ShopPromoViewController5.xib; path = Shop/ShopPromoViewController5.xib; sourceTree = "<group>"; };
+		709F244918B91140000C4292 /* GiftViewController5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GiftViewController5.xib; path = Gift/GiftViewController5.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -556,7 +556,7 @@
 				0959580118A09FDD009C54A2 /* GiftViewController.h */,
 				0959580218A09FDD009C54A2 /* GiftViewController.m */,
 				0959580318A09FDD009C54A2 /* GiftViewController.xib */,
-				70807E1718AE84EB00984161 /* GiftViewController5.xib */,
+				709F244918B91140000C4292 /* GiftViewController5.xib */,
 			);
 			name = Gift;
 			sourceTree = "<group>";
@@ -1303,7 +1303,6 @@
 				236AB63D1894D63900770E81 /* bg.png in Resources */,
 				2348437F189648AE00F752C3 /* MallGiftListPageViewController.xib in Resources */,
 				70807E3618AF16B800984161 /* ScanQRViewController5.xib in Resources */,
-				70807E1818AE84EB00984161 /* GiftViewController5.xib in Resources */,
 				236AB6401894D63900770E81 /* line.png in Resources */,
 				23D613671893680700C60E3E /* blueArrow.png in Resources */,
 				23D615801893A36F00C60E3E /* pic2.png in Resources */,
@@ -1323,6 +1322,7 @@
 				23D6136C1893680700C60E3E /* whiteArrow.png in Resources */,
 				23D615891893A36F00C60E3E /* scan.png in Resources */,
 				70807EF418B23FC800984161 /* QRCodeViewController5.xib in Resources */,
+				709F244A18B91140000C4292 /* GiftViewController5.xib in Resources */,
 				236AB6291894C61000770E81 /* HomePageListCell.xib in Resources */,
 				23D615A61893B92C00C60E3E /* MyAccountHomePageViewController5.xib in Resources */,
 				236AB63F1894D63900770E81 /* h_02.png in Resources */,
