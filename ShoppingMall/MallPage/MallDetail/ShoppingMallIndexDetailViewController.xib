@@ -8,6 +8,11 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShoppingMallIndexDetailViewController">
             <connections>
                 <outlet property="MyAccountBtn" destination="0E2-WS-osO" id="RBy-ht-J96"/>
+                <outlet property="adButton1" destination="OHo-vO-wfl" id="Nsd-NX-xzq"/>
+                <outlet property="adButton2" destination="kwE-aC-pZG" id="4Ut-O7-fMN"/>
+                <outlet property="adButton3" destination="a2C-3X-4Ur" id="XU7-KE-DWO"/>
+                <outlet property="adButton4" destination="e1n-zs-X3b" id="ufJ-cm-V23"/>
+                <outlet property="adButton5" destination="PXg-F3-5Af" id="iuI-RH-iNk"/>
                 <outlet property="backBtn" destination="dVW-pc-A3M" id="SLl-bG-gkf"/>
                 <outlet property="giftBtn" destination="3s9-tI-UVS" id="15F-lG-Oau"/>
                 <outlet property="mallAddress" destination="lAb-GI-Eao" id="uc6-GP-7aV"/>
@@ -118,11 +123,11 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </imageView>
                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="logo2.png" translatesAutoresizingMaskIntoConstraints="NO" id="kwE-aC-pZG">
-                                    <rect key="frame" x="153" y="241" width="110" height="25"/>
+                                    <rect key="frame" x="153" y="240" width="110" height="25"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </imageView>
                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="logo3.png" translatesAutoresizingMaskIntoConstraints="NO" id="a2C-3X-4Ur">
-                                    <rect key="frame" x="31" y="279" width="66" height="35"/>
+                                    <rect key="frame" x="31" y="280" width="66" height="35"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </imageView>
                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="logo4.png" translatesAutoresizingMaskIntoConstraints="NO" id="e1n-zs-X3b">

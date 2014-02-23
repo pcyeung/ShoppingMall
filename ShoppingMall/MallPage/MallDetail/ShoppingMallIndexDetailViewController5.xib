@@ -8,6 +8,11 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShoppingMallIndexDetailViewController">
             <connections>
                 <outlet property="MyAccountBtn" destination="0E2-WS-osO" id="RBy-ht-J96"/>
+                <outlet property="adButton1" destination="OHo-vO-wfl" id="sTu-O5-bhW"/>
+                <outlet property="adButton2" destination="kwE-aC-pZG" id="qcA-d2-rcy"/>
+                <outlet property="adButton3" destination="a2C-3X-4Ur" id="o1F-k5-ogb"/>
+                <outlet property="adButton4" destination="e1n-zs-X3b" id="FOT-eG-Ies"/>
+                <outlet property="adButton5" destination="PXg-F3-5Af" id="Y0c-Gd-fHr"/>
                 <outlet property="backBtn" destination="dVW-pc-A3M" id="SLl-bG-gkf"/>
                 <outlet property="giftBtn" destination="3s9-tI-UVS" id="15F-lG-Oau"/>
                 <outlet property="mallAddress" destination="lAb-GI-Eao" id="uc6-GP-7aV"/>

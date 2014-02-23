@@ -28,13 +28,30 @@
     return self;
 }
 
+-(void)setUpAdButton:(UIView*)view {
+    // Handle Single Tab action on the Scanning View
+    UITapGestureRecognizer *singleTab = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(adButtonClick)];
+    singleTab.numberOfTapsRequired = 1;
+    view.userInteractionEnabled = YES;
+    [view addGestureRecognizer:singleTab];
+}
+
+- (IBAction)adButtonClick {
+    [self buttonClickToClass:@"ShopPromoViewController" iPhone5Nib:@"ShopPromoViewController5" nib:@"ShopPromoViewController"];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
     mallName.text = [_mall mallName];
     mallAddress.text = [_mall mallAddress];
-}
+    [self setUpAdButton:adButton1];
+    [self setUpAdButton:adButton2];
+    [self setUpAdButton:adButton3];
+    [self setUpAdButton:adButton4];
+    [self setUpAdButton:adButton5];
+  }
 
 - (void)didReceiveMemoryWarning
 {

@@ -20,6 +20,12 @@
     
     IBOutlet UILabel *mallName;
     IBOutlet UILabel *mallAddress;
+    
+    IBOutlet UIImageView *adButton1;
+    IBOutlet UIImageView *adButton2;
+    IBOutlet UIImageView *adButton3;
+    IBOutlet UIImageView *adButton4;
+    IBOutlet UIImageView *adButton5;
 }
 
 @property(strong, nonatomic) MockMall *mall;
@@ -32,6 +38,7 @@
 - (IBAction)giftBtnClick;
 
 - (void)initWithMall:(MockMall*)mall;
+
 
 
 @end

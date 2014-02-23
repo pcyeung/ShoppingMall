@@ -5,6 +5,7 @@
 //  Created by Codeguesser on 2014/1/25.
 //  Copyright (c) 2014年 Macie. All rights reserved.
 //
+#import <Sonic/SonicContent.h>
 
 #import "LoginListViewController.h"
 #import "HomePageViewController.h"
@@ -44,6 +45,7 @@
     }else{
         HomePageView=[[HomePageViewController alloc]initWithNibName:@"HomePageViewController" bundle:nil];
     }
+    [[Sonic sharedInstance] startListening];
     [self.navigationController pushViewController:HomePageView animated:YES];
 }
 
@@ -54,6 +56,7 @@
     }else{
         HomePageView=[[HomePageViewController alloc]initWithNibName:@"HomePageViewController" bundle:nil];
     }
+    [[Sonic sharedInstance] startListening];
     [self.navigationController pushViewController:HomePageView animated:YES];
 }
 
@@ -64,6 +67,7 @@
     }else{
         HomePageView=[[HomePageViewController alloc]initWithNibName:@"HomePageViewController" bundle:nil];
     }
+    [[Sonic sharedInstance] startListening];
     [self.navigationController pushViewController:HomePageView animated:YES];
 }
 @end
