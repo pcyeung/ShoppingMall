@@ -160,7 +160,7 @@
 		7014FA8718B9FCBA005CD562 /* ad02.png in Resources */ = {isa = PBXBuildFile; fileRef = 7014FA8318B9FCBA005CD562 /* ad02.png */; };
 		7014FA8818B9FCBA005CD562 /* ad03.png in Resources */ = {isa = PBXBuildFile; fileRef = 7014FA8418B9FCBA005CD562 /* ad03.png */; };
 		7014FA8918B9FCBA005CD562 /* ad04.png in Resources */ = {isa = PBXBuildFile; fileRef = 7014FA8518B9FCBA005CD562 /* ad04.png */; };
-		7014FA8B18BA0171005CD562 /* CheckInPageView5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7014FA8A18BA0171005CD562 /* CheckInPageView5.xib */; };
+		7014FA8B18BA0171005CD562 /* CheckInPageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7014FA8A18BA0171005CD562 /* CheckInPageView.xib */; };
 		702E13FD189A2D6B00B59475 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 702E13FC189A2D6B00B59475 /* CoreAudio.framework */; };
 		702E13FF189A2D7700B59475 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 702E13FE189A2D7700B59475 /* CoreBluetooth.framework */; };
 		702E1401189A2D8D00B59475 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 702E1400189A2D8D00B59475 /* MobileCoreServices.framework */; };
@@ -170,7 +170,7 @@
 		702E1409189A2DCE00B59475 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 702E1408189A2DCE00B59475 /* libsqlite3.dylib */; };
 		702E140B189A2DDB00B59475 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 702E140A189A2DDB00B59475 /* libstdc++.dylib */; };
 		702E140F189AD5C600B59475 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 702E140E189AD5C600B59475 /* Accelerate.framework */; };
-		706C70AE189D498C00B2C38C /* CheckInPageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 706C70AD189D498C00B2C38C /* CheckInPageView.xib */; };
+		706C70AE189D498C00B2C38C /* CheckInPageView5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 706C70AD189D498C00B2C38C /* CheckInPageView5.xib */; };
 		706C70B1189D49EF00B2C38C /* CheckInPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 706C70B0189D49EF00B2C38C /* CheckInPageView.m */; };
 		706C70B6189E41F400B2C38C /* MockUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 706C70B5189E41F400B2C38C /* MockUser.m */; };
 		706C70B9189E4A9E00B2C38C /* MockMall.m in Sources */ = {isa = PBXBuildFile; fileRef = 706C70B8189E4A9E00B2C38C /* MockMall.m */; };
@@ -419,7 +419,7 @@
 		7014FA8318B9FCBA005CD562 /* ad02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ad02.png; sourceTree = "<group>"; };
 		7014FA8418B9FCBA005CD562 /* ad03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ad03.png; sourceTree = "<group>"; };
 		7014FA8518B9FCBA005CD562 /* ad04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ad04.png; sourceTree = "<group>"; };
-		7014FA8A18BA0171005CD562 /* CheckInPageView5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CheckInPageView5.xib; sourceTree = "<group>"; };
+		7014FA8A18BA0171005CD562 /* CheckInPageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CheckInPageView.xib; sourceTree = "<group>"; };
 		702E13FC189A2D6B00B59475 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		702E13FE189A2D7700B59475 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		702E1400189A2D8D00B59475 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
@@ -429,7 +429,7 @@
 		702E1408189A2DCE00B59475 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		702E140A189A2DDB00B59475 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		702E140E189AD5C600B59475 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
-		706C70AD189D498C00B2C38C /* CheckInPageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CheckInPageView.xib; sourceTree = "<group>"; };
+		706C70AD189D498C00B2C38C /* CheckInPageView5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CheckInPageView5.xib; sourceTree = "<group>"; };
 		706C70AF189D49EF00B2C38C /* CheckInPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckInPageView.h; sourceTree = "<group>"; };
 		706C70B0189D49EF00B2C38C /* CheckInPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckInPageView.m; sourceTree = "<group>"; };
 		706C70B4189E41F400B2C38C /* MockUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockUser.h; sourceTree = "<group>"; };
@@ -981,8 +981,8 @@
 		706C70AC189D497800B2C38C /* CheckIn */ = {
 			isa = PBXGroup;
 			children = (
-				706C70AD189D498C00B2C38C /* CheckInPageView.xib */,
-				7014FA8A18BA0171005CD562 /* CheckInPageView5.xib */,
+				706C70AD189D498C00B2C38C /* CheckInPageView5.xib */,
+				7014FA8A18BA0171005CD562 /* CheckInPageView.xib */,
 				706C70AF189D49EF00B2C38C /* CheckInPageView.h */,
 				706C70B0189D49EF00B2C38C /* CheckInPageView.m */,
 			);
@@ -1300,7 +1300,7 @@
 				23D6136D1893680700C60E3E /* whiteArrow@2x.png in Resources */,
 				23D615691893A36F00C60E3E /* h08_text.png in Resources */,
 				23D615641893A36F00C60E3E /* h04_list.png in Resources */,
-				706C70AE189D498C00B2C38C /* CheckInPageView.xib in Resources */,
+				706C70AE189D498C00B2C38C /* CheckInPageView5.xib in Resources */,
 				709F243218B66261000C4292 /* QRConfirmViewController.h in Resources */,
 				236AB6461894D63900770E81 /* top.png in Resources */,
 				23D615861893A36F00C60E3E /* reflash_icon.png in Resources */,
@@ -1319,7 +1319,7 @@
 				236AB5C418949F8300770E81 /* FriendsListPageViewController5.xib in Resources */,
 				236AB6451894D63900770E81 /* top_banner.png in Resources */,
 				23D615781893A36F00C60E3E /* logo4.png in Resources */,
-				7014FA8B18BA0171005CD562 /* CheckInPageView5.xib in Resources */,
+				7014FA8B18BA0171005CD562 /* CheckInPageView.xib in Resources */,
 				23484380189648AE00F752C3 /* MallGiftListPageViewController5.xib in Resources */,
 				23D6155F1893A36F00C60E3E /* content_bg1.png in Resources */,
 				23D6155D1893A36F00C60E3E /* check_in.png in Resources */,
