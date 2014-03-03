@@ -9,7 +9,7 @@
 #import "GiftDetailPageViewController.h"
 #import "MyAccountHomePageViewController.h"
 #import "HomePageViewController.h"
-#import "ScanQRViewController.h"
+#import "QRConfirmViewController.h"
 
 @interface GiftDetailPageViewController ()
 
@@ -36,8 +36,7 @@
     giftNameLabel.text = [_gift giftName];
     giftImage.image = [UIImage imageNamed:[_gift giftImage]];
     brandImage.image = [UIImage imageNamed:[_gift brandLogo]];
-    descriptionLabel.text = [_gift giftDetail];
-    sizeLabel.text = [_gift giftSize];
+    sizeText.text = [_gift giftSize];
 }
 
 - (void)didReceiveMemoryWarning
@@ -61,10 +60,19 @@
 
 
 - (IBAction)scanBtnClick {
-    // Implement the action here
-    ScanQRViewController* controller = (ScanQRViewController*)[self buttonClickGetClass:@"ScanQRViewController" iPhone5Nib:@"ScanQRViewController5" nib:@"ScanQRViewController"];
+    QRConfirmViewController* controller = (QRConfirmViewController*)[self buttonClickGetClass:@"QRConfirmViewController" iPhone5Nib:@"QRConfirmViewController5" nib:@"QRConfirmViewController"];
+    [[MockUser sharedUserObject] addPrize:_gift mall:_mall controller:self.navigationController];
     [controller initWithGift:_gift mall:_mall];
-    [self popOrPush:@"ScanQRViewController" controller:controller];
+    [self popOrPush:@"QRConfirmViewController" controller:controller];
+    
+    NSMutableArray *navigationArray = [[NSMutableArray alloc] init];
+    for (UIViewController* tem in self.navigationController.viewControllers) {
+        if ([tem isKindOfClass:[GiftDetailPageViewController class]]) {
+            continue;
+        }
+        [navigationArray addObject:tem];
+    }
+    self.navigationController.viewControllers = navigationArray;
 }
 
 - (IBAction)giftBtnClick {

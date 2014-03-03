@@ -9,7 +9,6 @@
 #import "QRConfirmViewController.h"
 #import "MyAccountHomePageViewController.h"
 #import "HomePageViewController.h"
-#import "ScanQRViewController.h"
 
 @interface QRConfirmViewController ()
 
@@ -36,8 +35,11 @@
     giftNameLabel.text = [_gift giftName];
     giftImage.image = [UIImage imageNamed:[_gift giftImage]];
     brandImage.image = [UIImage imageNamed:[_gift brandLogo]];
-    descriptionLabel.text = [_gift giftDetail];
-    sizeLabel.text = [_gift giftSize];
+    sizeText.text = [_gift giftSize];
+    
+    CGRect currentFrame = scrollView.frame;
+    CGSize newFrame = CGSizeMake(currentFrame.size.width, 650);
+    [scrollView setContentSize:newFrame];
 }
 
 - (void)didReceiveMemoryWarning
@@ -57,12 +59,6 @@
 
 - (IBAction)shoppingMallBtnClick {
     [self buttonClickToClass:@"HomePageViewController" iPhone5Nib:@"HomePageViewController5" nib:@"HomePageViewController"];
-}
-
-
-- (IBAction)scanBtnClick {
-    [self buttonClickToClass:@"QRCodeViewController" iPhone5Nib:@"QRCodeViewController5" nib:@"QRCodeViewController"];
-        return;
 }
 
 - (IBAction)giftBtnClick {

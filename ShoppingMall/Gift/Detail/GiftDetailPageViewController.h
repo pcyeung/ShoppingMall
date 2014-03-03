@@ -22,8 +22,8 @@
     IBOutlet UILabel *giftNameLabel;
     IBOutlet UIImageView *giftImage;
     IBOutlet UIImageView *brandImage;
-    IBOutlet UILabel *descriptionLabel;
-    IBOutlet UILabel *sizeLabel;
+    
+    IBOutlet UITextView *sizeText;
 }
 - (IBAction)myAccountBtnClick;
 - (IBAction)backBtnClick;

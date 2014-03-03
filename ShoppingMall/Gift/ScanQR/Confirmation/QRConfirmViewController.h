@@ -16,19 +16,18 @@
     IBOutlet UIButton *backBtn;
     IBOutlet UIButton *shoppingMallListBtn;
     IBOutlet UIButton *giftBtn;
-    IBOutlet UIButton *scanBtn;
     
     IBOutlet UILabel *mallLabel;
     IBOutlet UILabel *giftNameLabel;
     IBOutlet UIImageView *giftImage;
     IBOutlet UIImageView *brandImage;
-    IBOutlet UILabel *descriptionLabel;
-    IBOutlet UILabel *sizeLabel;
+    
+    IBOutlet UITextView *sizeText;
+    IBOutlet UIScrollView *scrollView;
 }
 - (IBAction)myAccountBtnClick;
 - (IBAction)backBtnClick;
 - (IBAction)shoppingMallBtnClick;
-- (IBAction)scanBtnClick;
 - (IBAction)giftBtnClick;
 
 @property(strong, nonatomic) MockMall *mall;

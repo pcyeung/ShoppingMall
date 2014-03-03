@@ -155,7 +155,6 @@
 		23DD8C3A1895EE77005F7A48 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23DD8C391895EE77005F7A48 /* CoreVideo.framework */; };
 		23DD8C3C1895EE8A005F7A48 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 23DD8C3B1895EE8A005F7A48 /* libiconv.dylib */; };
 		23DD8C401896076D005F7A48 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23DD8C3F1896076D005F7A48 /* QuartzCore.framework */; };
-		7014FA8018B9F1C6005CD562 /* QRCodeViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7014FA7F18B9F1C6005CD562 /* QRCodeViewController5.xib */; };
 		7014FA8618B9FCBA005CD562 /* ad01.png in Resources */ = {isa = PBXBuildFile; fileRef = 7014FA8218B9FCBA005CD562 /* ad01.png */; };
 		7014FA8718B9FCBA005CD562 /* ad02.png in Resources */ = {isa = PBXBuildFile; fileRef = 7014FA8318B9FCBA005CD562 /* ad02.png */; };
 		7014FA8818B9FCBA005CD562 /* ad03.png in Resources */ = {isa = PBXBuildFile; fileRef = 7014FA8418B9FCBA005CD562 /* ad03.png */; };
@@ -187,9 +186,6 @@
 		70807E1E18AE857C00984161 /* GiftListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807E1C18AE857C00984161 /* GiftListCell.xib */; };
 		70807E2418AE85B700984161 /* GiftDetailPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70807E2118AE85B700984161 /* GiftDetailPageViewController.m */; };
 		70807E2518AE85B700984161 /* GiftDetailPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807E2218AE85B700984161 /* GiftDetailPageViewController.xib */; };
-		70807E3418AF16B800984161 /* ScanQRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70807E3118AF16B800984161 /* ScanQRViewController.m */; };
-		70807E3518AF16B800984161 /* ScanQRViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807E3218AF16B800984161 /* ScanQRViewController.xib */; };
-		70807E3618AF16B800984161 /* ScanQRViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807E3318AF16B800984161 /* ScanQRViewController5.xib */; };
 		70807E3B18AF172300984161 /* RedeemedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70807E3918AF172300984161 /* RedeemedViewController.m */; };
 		70807E3C18AF172300984161 /* RedeemedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807E3A18AF172300984161 /* RedeemedViewController.xib */; };
 		70807E4118AF192900984161 /* RedeemedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 70807E3E18AF192900984161 /* RedeemedCell.m */; };
@@ -201,8 +197,6 @@
 		70807EE918B23D6E00984161 /* zbar-help.html in Resources */ = {isa = PBXBuildFile; fileRef = 70807EE418B23D6E00984161 /* zbar-help.html */; };
 		70807EEA18B23D6E00984161 /* zbar-helpicons.png in Resources */ = {isa = PBXBuildFile; fileRef = 70807EE518B23D6E00984161 /* zbar-helpicons.png */; };
 		70807EEB18B23D6E00984161 /* zbar-samples.png in Resources */ = {isa = PBXBuildFile; fileRef = 70807EE618B23D6E00984161 /* zbar-samples.png */; };
-		70807EF218B23FC800984161 /* QRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70807EEF18B23FC800984161 /* QRCodeViewController.m */; };
-		70807EF318B23FC800984161 /* QRCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807EF018B23FC800984161 /* QRCodeViewController.xib */; };
 		70807F2118B39F1300984161 /* ShoppingMallIndexDetailViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807F2018B39F1300984161 /* ShoppingMallIndexDetailViewController5.xib */; };
 		70807F2418B4D5EF00984161 /* MockGift.m in Sources */ = {isa = PBXBuildFile; fileRef = 70807F2318B4D5EF00984161 /* MockGift.m */; };
 		70807F2618B4F70000984161 /* GiftDetailPageViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70807F2518B4F70000984161 /* GiftDetailPageViewController5.xib */; };
@@ -414,7 +408,6 @@
 		23DD8C391895EE77005F7A48 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		23DD8C3B1895EE8A005F7A48 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 		23DD8C3F1896076D005F7A48 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		7014FA7F18B9F1C6005CD562 /* QRCodeViewController5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QRCodeViewController5.xib; sourceTree = "<group>"; };
 		7014FA8218B9FCBA005CD562 /* ad01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ad01.png; sourceTree = "<group>"; };
 		7014FA8318B9FCBA005CD562 /* ad02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ad02.png; sourceTree = "<group>"; };
 		7014FA8418B9FCBA005CD562 /* ad03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ad03.png; sourceTree = "<group>"; };
@@ -454,10 +447,6 @@
 		70807E2018AE85B700984161 /* GiftDetailPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiftDetailPageViewController.h; sourceTree = "<group>"; };
 		70807E2118AE85B700984161 /* GiftDetailPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiftDetailPageViewController.m; sourceTree = "<group>"; };
 		70807E2218AE85B700984161 /* GiftDetailPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GiftDetailPageViewController.xib; sourceTree = "<group>"; };
-		70807E3018AF16B800984161 /* ScanQRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanQRViewController.h; sourceTree = "<group>"; };
-		70807E3118AF16B800984161 /* ScanQRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanQRViewController.m; sourceTree = "<group>"; };
-		70807E3218AF16B800984161 /* ScanQRViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScanQRViewController.xib; sourceTree = "<group>"; };
-		70807E3318AF16B800984161 /* ScanQRViewController5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScanQRViewController5.xib; sourceTree = "<group>"; };
 		70807E3818AF172300984161 /* RedeemedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RedeemedViewController.h; path = MyAccount/RedeemedPage/RedeemedViewController.h; sourceTree = "<group>"; };
 		70807E3918AF172300984161 /* RedeemedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RedeemedViewController.m; path = MyAccount/RedeemedPage/RedeemedViewController.m; sourceTree = "<group>"; };
 		70807E3A18AF172300984161 /* RedeemedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RedeemedViewController.xib; path = MyAccount/RedeemedPage/RedeemedViewController.xib; sourceTree = "<group>"; };
@@ -492,9 +481,6 @@
 		70807EE418B23D6E00984161 /* zbar-help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "zbar-help.html"; sourceTree = "<group>"; };
 		70807EE518B23D6E00984161 /* zbar-helpicons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-helpicons.png"; sourceTree = "<group>"; };
 		70807EE618B23D6E00984161 /* zbar-samples.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-samples.png"; sourceTree = "<group>"; };
-		70807EEE18B23FC800984161 /* QRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeViewController.h; sourceTree = "<group>"; };
-		70807EEF18B23FC800984161 /* QRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeViewController.m; sourceTree = "<group>"; };
-		70807EF018B23FC800984161 /* QRCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QRCodeViewController.xib; sourceTree = "<group>"; };
 		70807F2018B39F1300984161 /* ShoppingMallIndexDetailViewController5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ShoppingMallIndexDetailViewController5.xib; path = MallPage/MallDetail/ShoppingMallIndexDetailViewController5.xib; sourceTree = "<group>"; };
 		70807F2218B4D5EF00984161 /* MockGift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockGift.h; sourceTree = "<group>"; };
 		70807F2318B4D5EF00984161 /* MockGift.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockGift.m; sourceTree = "<group>"; };
@@ -1055,11 +1041,6 @@
 			isa = PBXGroup;
 			children = (
 				709F243318B6626D000C4292 /* Confirm */,
-				70807EED18B23FC800984161 /* Receipt */,
-				70807E3018AF16B800984161 /* ScanQRViewController.h */,
-				70807E3118AF16B800984161 /* ScanQRViewController.m */,
-				70807E3218AF16B800984161 /* ScanQRViewController.xib */,
-				70807E3318AF16B800984161 /* ScanQRViewController5.xib */,
 			);
 			name = ScanQR;
 			path = Gift/ScanQR;
@@ -1150,17 +1131,6 @@
 				70807EE618B23D6E00984161 /* zbar-samples.png */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		70807EED18B23FC800984161 /* Receipt */ = {
-			isa = PBXGroup;
-			children = (
-				70807EEE18B23FC800984161 /* QRCodeViewController.h */,
-				70807EEF18B23FC800984161 /* QRCodeViewController.m */,
-				70807EF018B23FC800984161 /* QRCodeViewController.xib */,
-				7014FA7F18B9F1C6005CD562 /* QRCodeViewController5.xib */,
-			);
-			path = Receipt;
 			sourceTree = "<group>";
 		};
 		709F243318B6626D000C4292 /* Confirm */ = {
@@ -1293,7 +1263,6 @@
 				23D612F9189365F100C60E3E /* InfoPlist.strings in Resources */,
 				0959580B18A0BEFB009C54A2 /* mapView.png in Resources */,
 				23D6156F1893A36F00C60E3E /* h13_bg.png in Resources */,
-				70807EF318B23FC800984161 /* QRCodeViewController.xib in Resources */,
 				70807E0A18ABBF9600984161 /* InfoSettingViewController5.xib in Resources */,
 				23D615681893A36F00C60E3E /* h08_map.png in Resources */,
 				7014FA8618B9FCBA005CD562 /* ad01.png in Resources */,
@@ -1325,7 +1294,6 @@
 				23D6155D1893A36F00C60E3E /* check_in.png in Resources */,
 				236AB63D1894D63900770E81 /* bg.png in Resources */,
 				2348437F189648AE00F752C3 /* MallGiftListPageViewController.xib in Resources */,
-				70807E3618AF16B800984161 /* ScanQRViewController5.xib in Resources */,
 				236AB6401894D63900770E81 /* line.png in Resources */,
 				23D613671893680700C60E3E /* blueArrow.png in Resources */,
 				23D615801893A36F00C60E3E /* pic2.png in Resources */,
@@ -1334,7 +1302,6 @@
 				23D6158E1893A36F00C60E3E /* side_bar.png in Resources */,
 				23D615941893A36F00C60E3E /* top_right_btn.png in Resources */,
 				70807E0218ABB8BC00984161 /* personal_settings.png in Resources */,
-				70807E3518AF16B800984161 /* ScanQRViewController.xib in Resources */,
 				23D615611893A36F00C60E3E /* gift.png in Resources */,
 				70807E3C18AF172300984161 /* RedeemedViewController.xib in Resources */,
 				70807EEA18B23D6E00984161 /* zbar-helpicons.png in Resources */,
@@ -1355,7 +1322,6 @@
 				236AB6431894D63900770E81 /* renren.png in Resources */,
 				23D6157B1893A36F00C60E3E /* map_line.png in Resources */,
 				23D615911893A36F00C60E3E /* top_confir.png in Resources */,
-				7014FA8018B9F1C6005CD562 /* QRCodeViewController5.xib in Resources */,
 				23D6157F1893A36F00C60E3E /* pic1.png in Resources */,
 				23D6156D1893A36F00C60E3E /* h12_line.png in Resources */,
 				09A26BC718AC891D0010191A /* nexusae0_btn_myl_normal.png in Resources */,
@@ -1441,7 +1407,6 @@
 				709F244318B90470000C4292 /* ShopPromoViewController.m in Sources */,
 				23D6137E1893680700C60E3E /* UIImage+WebP.m in Sources */,
 				236AB6271894C5FE00770E81 /* HomePageListCell.m in Sources */,
-				70807EF218B23FC800984161 /* QRCodeViewController.m in Sources */,
 				23D613781893680700C60E3E /* SDWebImageDownloaderOperation.m in Sources */,
 				23D6138618936AD500C60E3E /* LoginListViewController.m in Sources */,
 				236AB5C81894AA3100770E81 /* FriendsListCell.m in Sources */,
@@ -1458,7 +1423,6 @@
 				23D613741893680700C60E3E /* SDImageCache.m in Sources */,
 				706C70B1189D49EF00B2C38C /* CheckInPageView.m in Sources */,
 				23D6137B1893680700C60E3E /* UIButton+WebCache.m in Sources */,
-				70807E3418AF16B800984161 /* ScanQRViewController.m in Sources */,
 				706C70CB18A0D31600B2C38C /* TimelineListCell.m in Sources */,
 				709F243518B66299000C4292 /* QRConfirmViewController.m in Sources */,
 				23D613631893680700C60E3E /* Reachability.m in Sources */,
