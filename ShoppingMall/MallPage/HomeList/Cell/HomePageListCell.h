@@ -15,6 +15,7 @@
     
     IBOutlet UILabel *points;
     IBOutlet UILabel *distance;
+    IBOutlet UIImageView *MallImg;
 }
 
 - (void) initWithMall:(MockMall*)mall;

@@ -66,6 +66,7 @@
                 </subviews>
             </tableViewCellContentView>
             <connections>
+                <outlet property="MallImg" destination="f1E-rM-TQq" id="jUN-Fw-Kl8"/>
                 <outlet property="address" destination="N4w-JW-hOB" id="L6o-pt-1Ap"/>
                 <outlet property="distance" destination="7vd-Lp-EIx" id="BxI-fX-wyd"/>
                 <outlet property="name" destination="VKX-KT-M8t" id="Hlg-1W-qYM"/>

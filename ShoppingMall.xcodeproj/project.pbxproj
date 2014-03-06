@@ -216,6 +216,8 @@
 		709F244618B90A7B000C4292 /* hm_shop.png in Resources */ = {isa = PBXBuildFile; fileRef = 709F244518B90A7B000C4292 /* hm_shop.png */; };
 		709F244818B90B68000C4292 /* ShopPromoViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 709F244718B90B68000C4292 /* ShopPromoViewController5.xib */; };
 		709F244A18B91140000C4292 /* GiftViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 709F244918B91140000C4292 /* GiftViewController5.xib */; };
+		B8868F0618C8FF6400C601CC /* ecmall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B8868F0418C8FF6400C601CC /* ecmall.jpg */; };
+		B8868F0718C8FF6400C601CC /* sogo.png in Resources */ = {isa = PBXBuildFile; fileRef = B8868F0518C8FF6400C601CC /* sogo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -509,6 +511,8 @@
 		709F244518B90A7B000C4292 /* hm_shop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hm_shop.png; sourceTree = "<group>"; };
 		709F244718B90B68000C4292 /* ShopPromoViewController5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ShopPromoViewController5.xib; path = Shop/ShopPromoViewController5.xib; sourceTree = "<group>"; };
 		709F244918B91140000C4292 /* GiftViewController5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GiftViewController5.xib; path = Gift/GiftViewController5.xib; sourceTree = "<group>"; };
+		B8868F0418C8FF6400C601CC /* ecmall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ecmall.jpg; sourceTree = "<group>"; };
+		B8868F0518C8FF6400C601CC /* sogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sogo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -858,6 +862,8 @@
 		23D615181893A36F00C60E3E /* images */ = {
 			isa = PBXGroup;
 			children = (
+				B8868F0418C8FF6400C601CC /* ecmall.jpg */,
+				B8868F0518C8FF6400C601CC /* sogo.png */,
 				09FD3B0018C8E9C9002DE72A /* mall2.jpg */,
 				09FD3AF618C8E9BD002DE72A /* logo6.jpg */,
 				09FD3AF718C8E9BD002DE72A /* logo7.jpg */,
@@ -1307,6 +1313,7 @@
 				23D615741893A36F00C60E3E /* line2.png in Resources */,
 				09FD3AFE18C8E9BD002DE72A /* logo9.jpeg in Resources */,
 				236AB5C418949F8300770E81 /* FriendsListPageViewController5.xib in Resources */,
+				B8868F0718C8FF6400C601CC /* sogo.png in Resources */,
 				236AB6451894D63900770E81 /* top_banner.png in Resources */,
 				23D615781893A36F00C60E3E /* logo4.png in Resources */,
 				7014FA8B18BA0171005CD562 /* CheckInPageView.xib in Resources */,
@@ -1358,6 +1365,7 @@
 				70807E1E18AE857C00984161 /* GiftListCell.xib in Resources */,
 				23D615931893A36F00C60E3E /* top_left_btn.png in Resources */,
 				236AB6471894D63900770E81 /* weibo.png in Resources */,
+				B8868F0618C8FF6400C601CC /* ecmall.jpg in Resources */,
 				236AB63E1894D63900770E81 /* bottom.png in Resources */,
 				7014FA8918B9FCBA005CD562 /* ad04.png in Resources */,
 				236AB6441894D63900770E81 /* search_bg.png in Resources */,

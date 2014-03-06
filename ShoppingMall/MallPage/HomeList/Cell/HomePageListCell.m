@@ -28,6 +28,17 @@
 
 - (void)initWithMall:(MockMall *)mall {
     name.text = [mall mallName];
+    // Change the logo if the mall is sogo
+    if ([name.text isEqualToString:@"庄胜崇光"])
+    {
+        UIImage *sogoImg = [UIImage imageNamed:@"sogo.png"];
+        [MallImg setImage:sogoImg];
+    }
+    if ([name.text isEqualToString:@"欧美汇"])
+    {
+        UIImage *ecMallImg = [UIImage imageNamed:@"ecmall.jpg"];
+        [MallImg setImage:ecMallImg];
+    }
     address.text = [mall mallAddress];
     points.text = [NSString stringWithFormat:@"%d分", [mall getBonusPoints]];
     distance.text = [mall distance];
