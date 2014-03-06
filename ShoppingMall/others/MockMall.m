@@ -43,7 +43,8 @@
         [dic setObject:@"EC Mall" forKey:@"en-name"];
         [dic setObject:@"海淀区中关村丹棱街甲1号" forKey:@"address"];
         [dic setObject:@"http://www.ecmall.com.cn/plus/list.php?tid=4" forKey:@"url"];
-        [dic setObject:@802396 forKey:@"beacon-id"];
+        //[dic setObject:@802396 forKey:@"beacon-id"];
+        [dic setObject:@802397 forKey:@"beacon-id"];
         [dic setObject:@"" forKey:@"ads-string"];
         [dic setObject:@"100m" forKey:@"distance"];
         [dic setObject:@39.978987 forKey:@"latitude"];
@@ -56,7 +57,7 @@
         [dic setObject:@"Indigo" forKey:@"en-name"];
         [dic setObject:@"朝阳区酒仙桥路18号" forKey:@"address"];
         [dic setObject:@"http://www.indigobeijing.com/zh-CN/index.aspx" forKey:@"url"];
-        [dic setObject:@802397 forKey:@"beacon-id"];
+        [dic setObject:@802396 forKey:@"beacon-id"];
         [dic setObject:@"赠送烤鸡腿" forKey:@"ads-string"];
         [dic setObject:@"1km" forKey:@"distance"];
         [dic setObject:@39.969878 forKey:@"latitude"];
