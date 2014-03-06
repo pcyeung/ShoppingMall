@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D1BF9742-7D8C-479A-A300-845094FB5BC1</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ShoppingMall</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>A3C61D4F-23CF-4D86-834E-E23B1DE27D0E</key>
+		<string>https://github.com/kmn1024/ShoppingMall.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ShoppingMall.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>A3C61D4F-23CF-4D86-834E-E23B1DE27D0E</key>
+		<string>../../ShoppingMall</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/kmn1024/ShoppingMall.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>A3C61D4F-23CF-4D86-834E-E23B1DE27D0E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A3C61D4F-23CF-4D86-834E-E23B1DE27D0E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ShoppingMall</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A3C61D4F-23CF-4D86-834E-E23B1DE27D0E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ShoppingMall</string>
+		</dict>
+	</array>
+</dict>
+</plist>
