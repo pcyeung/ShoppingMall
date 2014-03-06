@@ -46,6 +46,7 @@
         HomePageView=[[HomePageViewController alloc]initWithNibName:@"HomePageViewController" bundle:nil];
     }
     [[Sonic sharedInstance] startListening];
+    [[MockUser sharedUserObject] setLoggedIn:YES];
     [self.navigationController pushViewController:HomePageView animated:YES];
 }
 
@@ -57,6 +58,7 @@
         HomePageView=[[HomePageViewController alloc]initWithNibName:@"HomePageViewController" bundle:nil];
     }
     [[Sonic sharedInstance] startListening];
+    [[MockUser sharedUserObject] setLoggedIn:YES];
     [self.navigationController pushViewController:HomePageView animated:YES];
 }
 
@@ -68,6 +70,7 @@
         HomePageView=[[HomePageViewController alloc]initWithNibName:@"HomePageViewController" bundle:nil];
     }
     [[Sonic sharedInstance] startListening];
+    [[MockUser sharedUserObject] setLoggedIn:YES];
     [self.navigationController pushViewController:HomePageView animated:YES];
 }
 @end

@@ -23,6 +23,8 @@
     IBOutlet UIImageView *brandImage;
     
     IBOutlet UITextView *sizeText;
+    
+    IBOutlet UIImageView *qrImage;
     IBOutlet UIScrollView *scrollView;
 }
 - (IBAction)myAccountBtnClick;

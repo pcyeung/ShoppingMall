@@ -38,7 +38,7 @@
     sizeText.text = [_gift giftSize];
     
     CGRect currentFrame = scrollView.frame;
-    CGSize newFrame = CGSizeMake(currentFrame.size.width, 650);
+    CGSize newFrame = CGSizeMake(currentFrame.size.width, qrImage.frame.origin.y + qrImage.frame.size.height + 20);
     [scrollView setContentSize:newFrame];
 }
 

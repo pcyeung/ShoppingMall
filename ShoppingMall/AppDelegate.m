@@ -26,7 +26,6 @@ static NSString * const kSonicNotifyGUID = @"M2I0MWEwMmEtYzE3OS00YTYwLTk0YTEtZWU
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [[Sonic sharedInstance] initializeWithApplicationGUID:kSonicNotifyGUID andDelegate:self];
- //   [[Sonic sharedInstance] startListening];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
@@ -68,6 +67,10 @@ static NSString * const kSonicNotifyGUID = @"M2I0MWEwMmEtYzE3OS00YTYwLTk0YTEtZWU
  *
  */
 - (BOOL)sonic:(Sonic *)sonic didHearCode:(SonicCodeHeard *)code {
+    if (![[MockUser sharedUserObject] getLoggedIn]) {
+        return NO;
+    }
+    
     CheckInPageView *checkInPageView;
     if (iPhone5) {
         checkInPageView=[[CheckInPageView alloc]initWithFrame:[[UIScreen mainScreen] bounds] sonicCode:code nibName:@"CheckInPageView5" controller:_Controller];
@@ -76,8 +79,9 @@ static NSString * const kSonicNotifyGUID = @"M2I0MWEwMmEtYzE3OS00YTYwLTk0YTEtZWU
     }
     if (checkInPageView != NULL) {
         [checkInPageView show];
+        return YES;
     }
-    return YES;
+    return NO;
 }
 
 -(void) fakeHearCode {

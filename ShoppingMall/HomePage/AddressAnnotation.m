@@ -2,21 +2,19 @@
 
 @implementation AddressAnnotation
 @synthesize coordinate;
+@synthesize mall;
 
 - (NSString *)subtitle{
-	return subtitle;
+	return [mall getMallAddress];
 }
 
 - (NSString *)title{
-	return title;
+	return [mall getMallName];
 }
 
--(id)initWithCoordinate:(CLLocationCoordinate2D)c
-                  title:(NSString*)t
-               SubTitle:(NSString*)s {
+-(id)initWithCoordinate:(CLLocationCoordinate2D)c mall:(MockMall *)m {
 	coordinate=c;
-    title = t;
-    subtitle = s;
+    mall = m;
 	return self;
 }
 

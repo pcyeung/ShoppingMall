@@ -69,6 +69,7 @@
     self = [super init];
     if (self) {
         accountPoints = 0;
+        loggedIn = NO;
         _userName = @"Jason Chau";
         _visitHistory = [[NSMutableArray alloc] init];
         _visitedMalls = [[NSMutableDictionary alloc] init];
@@ -83,6 +84,14 @@
 
 -(void)setAccountPoints:(int)points {
     accountPoints = points;
+}
+
+-(BOOL)getLoggedIn {
+    return loggedIn;
+}
+
+-(void)setLoggedIn:(BOOL)li {
+    loggedIn = li;
 }
 
 -(void)addVisit:(MockMall*)mall controller:(UINavigationController*)controller {

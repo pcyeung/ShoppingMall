@@ -8,29 +8,24 @@
 
 #import <Foundation/Foundation.h>
 #import <MapKit/MapKit.h>
+#import "MockMall.h"
 
 
 @interface AddressAnnotation : NSObject<MKAnnotation> {
 	CLLocationCoordinate2D coordinate;
-    NSString *subtitle;
-    NSString *title;
 }
 
 @property (nonatomic,readonly) CLLocationCoordinate2D coordinate;
-@property (nonatomic,readwrite) NSString *subtitle;
-@property (nonatomic,readwrite) NSString *title;
+@property (strong, nonatomic) MockMall *mall;
 
 
 - (NSString *)subtitle;
-
 
 - (NSString *)title;
 
 -(id)initWithCoordinate:(CLLocationCoordinate2D)c;
 
 
--(id)initWithCoordinate:(CLLocationCoordinate2D)c
-                  title:(NSString*)t
-               SubTitle:(NSString*)s;
+-(id)initWithCoordinate:(CLLocationCoordinate2D)c mall:(MockMall*)m;
 
 @end

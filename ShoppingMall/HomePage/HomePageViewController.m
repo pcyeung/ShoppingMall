@@ -66,29 +66,32 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    mapView.showsUserLocation = YES;
+  //  mapView.mapType = MKMapTypeHybrid;
     mapView.delegate = self;
-    // Do any additional setup after loading the view from its nib.
-    MKCoordinateRegion region;
-    MKCoordinateSpan span;
-    MKUserLocation *UserLocation = mapView.userLocation;
-    span.latitudeDelta = 0.005;
-    span.longitudeDelta = 0.005;
-    CLLocationCoordinate2D location;
-    location.latitude = UserLocation.coordinate.latitude;
-    location.longitude = UserLocation.coordinate.longitude;
-    region.span = span;
-    region.center = location;
-    [mapView setRegion:region animated:YES];
     
     NSArray* malls = [MockMall getAllMallData];
     for (MockMall* mall in malls) {
         CLLocationCoordinate2D coordinate = [mall getCoordinates];
-        NSString *title = [mall getMallName];
-        NSString *subtitle = [mall getMallAddress];
-        AddressAnnotation *addAnnotation = [[AddressAnnotation alloc] initWithCoordinate:coordinate title:title SubTitle:subtitle];
+        AddressAnnotation *addAnnotation = [[AddressAnnotation alloc] initWithCoordinate:coordinate mall:mall];
         [mapView addAnnotation:addAnnotation];
     }
+}
 
+- (void)mapView:(MKMapView *)aMapView didUpdateUserLocation:(MKUserLocation *)aUserLocation {
+
+    // Do any additional setup after loading the view from its nib.
+    MKCoordinateRegion region;
+    MKCoordinateSpan span;
+    span.latitudeDelta = 0.005;
+    span.longitudeDelta = 0.005;
+    CLLocationCoordinate2D location;
+    location.latitude = aUserLocation.coordinate.latitude;
+    location.longitude = aUserLocation.coordinate.longitude;
+    region.span = span;
+    region.center = location;
+    [aMapView setRegion:region animated:YES];
 }
 
 
@@ -99,9 +102,9 @@
   
 }
 
-- (MKAnnotationView *) mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>) annotation
+- (MKAnnotationView *) mapView:(MKMapView *)aMapView viewForAnnotation:(id <MKAnnotation>) annotation
 {
-    if (annotation == mapView.userLocation)
+    if (annotation == aMapView.userLocation)
     {
         return nil;
     }
@@ -116,8 +119,10 @@
 }
 
 - (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control{
-    
-    [self buttonClickToClass:@"ShoppingMallIndexDetailViewController" iPhone5Nib:@"ShoppingMallIndexDetailViewController5" nib:@"ShoppingMallIndexDetailViewController"];
+    ShoppingMallIndexDetailViewController* controller = (ShoppingMallIndexDetailViewController*)[self buttonClickGetClass:@"ShoppingMallIndexDetailViewController" iPhone5Nib:@"ShoppingMallIndexDetailViewController5" nib:@"ShoppingMallIndexDetailViewController"];
+    id<MKAnnotation> annotation = [view annotation];
+    [controller initWithMall:[(AddressAnnotation*)annotation mall]];
+    [self popOrPush:@"ShoppingMallIndexDetailViewController" controller:controller];
     
 }
 

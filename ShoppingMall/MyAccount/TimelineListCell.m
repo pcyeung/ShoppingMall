@@ -23,7 +23,7 @@
         NSString* dateString = [NSDateFormatter localizedStringFromDate:[visitData visitTime]
                                        dateStyle:NSDateFormatterShortStyle
                                        timeStyle:NSDateFormatterShortStyle];
-        [checkInLabel setText:[NSString stringWithFormat:@"Checked-in: %@", dateString]];
+        [checkInLabel setText:[NSString stringWithFormat:@"签到时间: %@", dateString]];
     }
     return self;
 }

@@ -34,6 +34,7 @@
 // MockUser
 @interface MockUser : NSObject {
     int accountPoints;
+    bool loggedIn;
 }
 
 @property(strong, nonatomic) NSString *userName;
@@ -43,8 +44,13 @@
 @property(strong, nonatomic) NSMutableArray *prizeHistory;
 
 + (id)sharedUserObject;
+
 -(int)getAccountPoints;
 -(void)setAccountPoints:(int)points;
+
+-(BOOL)getLoggedIn;
+-(void)setLoggedIn:(BOOL)li;
+    
 -(void)addVisit:(MockMall*)mall controller:(UINavigationController*)controller;
 -(bool)hasVisited:(MockMall*)mall;
 

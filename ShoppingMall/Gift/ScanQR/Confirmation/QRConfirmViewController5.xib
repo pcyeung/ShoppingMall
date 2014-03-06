@@ -14,6 +14,7 @@
                 <outlet property="giftImage" destination="hNa-kU-aN8" id="sXo-3r-BaQ"/>
                 <outlet property="giftNameLabel" destination="DIs-Fg-GGP" id="oTd-GU-0JG"/>
                 <outlet property="mallLabel" destination="G4N-Pg-j2t" id="sP8-f8-TAO"/>
+                <outlet property="qrImage" destination="gtO-4b-AI2" id="jNb-tD-GBG"/>
                 <outlet property="scrollView" destination="Jgb-Fw-Gzk" id="cga-fF-vGA"/>
                 <outlet property="shoppingMallListBtn" destination="gcK-NX-HDE" id="D1j-IF-AHg"/>
                 <outlet property="sizeText" destination="W19-1S-bU2" id="6sV-mA-mSp"/>
