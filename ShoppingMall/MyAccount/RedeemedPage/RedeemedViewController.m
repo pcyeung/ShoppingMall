@@ -61,9 +61,9 @@
 
     NSString* redeemed;
     if ([prize getIsRedeemed]) {
-        redeemed = @"已兑换";
+        redeemed = @"已领取";
     } else {
-        redeemed = @"未兑换";
+        redeemed = @"未领取";
     }
     
     NSArray *nib=[[NSBundle mainBundle]loadNibNamed:@"RedeemedCell" owner:self options:Nil];
