@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		092EC66118CE2D4B00C83E92 /* ad01_bak.png in Resources */ = {isa = PBXBuildFile; fileRef = 092EC65D18CE2D4B00C83E92 /* ad01_bak.png */; };
+		092EC66218CE2D4B00C83E92 /* ad02_bak.png in Resources */ = {isa = PBXBuildFile; fileRef = 092EC65E18CE2D4B00C83E92 /* ad02_bak.png */; };
+		092EC66318CE2D4B00C83E92 /* ad03_bak.png in Resources */ = {isa = PBXBuildFile; fileRef = 092EC65F18CE2D4B00C83E92 /* ad03_bak.png */; };
+		092EC66418CE2D4B00C83E92 /* ad04_bak.png in Resources */ = {isa = PBXBuildFile; fileRef = 092EC66018CE2D4B00C83E92 /* ad04_bak.png */; };
 		0959580418A09FDD009C54A2 /* GiftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0959580218A09FDD009C54A2 /* GiftViewController.m */; };
 		0959580518A09FDD009C54A2 /* GiftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0959580318A09FDD009C54A2 /* GiftViewController.xib */; };
 		0959580B18A0BEFB009C54A2 /* mapView.png in Resources */ = {isa = PBXBuildFile; fileRef = 0959580A18A0BEFB009C54A2 /* mapView.png */; };
@@ -233,6 +237,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		092EC65D18CE2D4B00C83E92 /* ad01_bak.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ad01_bak.png; sourceTree = "<group>"; };
+		092EC65E18CE2D4B00C83E92 /* ad02_bak.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ad02_bak.png; sourceTree = "<group>"; };
+		092EC65F18CE2D4B00C83E92 /* ad03_bak.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ad03_bak.png; sourceTree = "<group>"; };
+		092EC66018CE2D4B00C83E92 /* ad04_bak.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ad04_bak.png; sourceTree = "<group>"; };
 		0959580118A09FDD009C54A2 /* GiftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GiftViewController.h; path = Gift/GiftViewController.h; sourceTree = "<group>"; };
 		0959580218A09FDD009C54A2 /* GiftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GiftViewController.m; path = Gift/GiftViewController.m; sourceTree = "<group>"; };
 		0959580318A09FDD009C54A2 /* GiftViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GiftViewController.xib; path = Gift/GiftViewController.xib; sourceTree = "<group>"; };
@@ -986,6 +994,10 @@
 		7014FA8118B9FCBA005CD562 /* ads */ = {
 			isa = PBXGroup;
 			children = (
+				092EC65D18CE2D4B00C83E92 /* ad01_bak.png */,
+				092EC65E18CE2D4B00C83E92 /* ad02_bak.png */,
+				092EC65F18CE2D4B00C83E92 /* ad03_bak.png */,
+				092EC66018CE2D4B00C83E92 /* ad04_bak.png */,
 				7014FA8218B9FCBA005CD562 /* ad01.png */,
 				7014FA8318B9FCBA005CD562 /* ad02.png */,
 				7014FA8418B9FCBA005CD562 /* ad03.png */,
@@ -1285,7 +1297,9 @@
 				23D6158D1893A36F00C60E3E /* share_btn.png in Resources */,
 				23D613681893680700C60E3E /* blueArrow@2x.png in Resources */,
 				23D6155E1893A36F00C60E3E /* check_in2.png in Resources */,
+				092EC66118CE2D4B00C83E92 /* ad01_bak.png in Resources */,
 				709F244618B90A7B000C4292 /* hm_shop.png in Resources */,
+				092EC66318CE2D4B00C83E92 /* ad03_bak.png in Resources */,
 				236AB5C118949F7000770E81 /* FriendsListPageViewController.xib in Resources */,
 				23D6136B1893680700C60E3E /* IconRefreshArrow.png in Resources */,
 				23D6158A1893A36F00C60E3E /* scan_bg.png in Resources */,
@@ -1328,6 +1342,7 @@
 				23D6155F1893A36F00C60E3E /* content_bg1.png in Resources */,
 				23D6155D1893A36F00C60E3E /* check_in.png in Resources */,
 				236AB63D1894D63900770E81 /* bg.png in Resources */,
+				092EC66418CE2D4B00C83E92 /* ad04_bak.png in Resources */,
 				2348437F189648AE00F752C3 /* MallGiftListPageViewController.xib in Resources */,
 				236AB6401894D63900770E81 /* line.png in Resources */,
 				23D613671893680700C60E3E /* blueArrow.png in Resources */,
@@ -1382,6 +1397,7 @@
 				7014FA8818B9FCBA005CD562 /* ad03.png in Resources */,
 				70807DFB18AA693800984161 /* redeem_icon.png in Resources */,
 				23D6159C1893A6AC00C60E3E /* HomePageViewController.xib in Resources */,
+				092EC66218CE2D4B00C83E92 /* ad02_bak.png in Resources */,
 				09FD3B0118C8E9C9002DE72A /* mall2.jpg in Resources */,
 				23D6156C1893A36F00C60E3E /* h12_bg1.png in Resources */,
 				70807EE918B23D6E00984161 /* zbar-help.html in Resources */,
