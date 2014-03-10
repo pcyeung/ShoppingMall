@@ -79,17 +79,18 @@
         [allMalls addObject:[[MockMall alloc]initWithData:dic]];
         
         [dic removeAllObjects];
-        [dic setObject:@"西单大悦城" forKey:@"name"];
-        [dic setObject:@"Joy City Xidan" forKey:@"en-name"];
-        [dic setObject:@"西单北大街甲131号大悦城" forKey:@"address"];
-        [dic setObject:@"http://www.xidanjoycity.com/about/index.html" forKey:@"url"];
+        [dic setObject:@"远洋未来广场" forKey:@"name"];
+        [dic setObject:@"We Life Plaza" forKey:@"en-name"];
+        [dic setObject:@"朝阳区北四环东路73号" forKey:@"address"];
+        [dic setObject:@"http://weibo.com/welifebj" forKey:@"url"];
         [dic setObject:@802399 forKey:@"beacon-id"];
         [dic setObject:@"赠送烤鸡腿" forKey:@"ads-string"];
-        [dic setObject:@"500m" forKey:@"distance"];
-        [dic setObject:@39.910846 forKey:@"latitude"];
-        [dic setObject:@116.373271 forKey:@"longitude"];
+        [dic setObject:@"10km" forKey:@"distance"];
+        [dic setObject:@39.98881 forKey:@"latitude"];
+        [dic setObject:@116.426947 forKey:@"longitude"];
         [dic setObject:@10 forKey:@"bonus-points"];
         [allMalls addObject:[[MockMall alloc]initWithData:dic]];
+
         
         [dic removeAllObjects];
         [dic setObject:@"芳草地" forKey:@"name"];
@@ -157,18 +158,19 @@
         [allMalls addObject:[[MockMall alloc]initWithData:dic]];
         
         [dic removeAllObjects];
-        [dic setObject:@"远洋未来广场" forKey:@"name"];
-        [dic setObject:@"We Life Plaza" forKey:@"en-name"];
-        [dic setObject:@"朝阳区北四环东路73号" forKey:@"address"];
-        [dic setObject:@"http://weibo.com/welifebj" forKey:@"url"];
+        [dic setObject:@"西单大悦城" forKey:@"name"];
+        [dic setObject:@"Joy City Xidan" forKey:@"en-name"];
+        [dic setObject:@"西单北大街甲131号大悦城" forKey:@"address"];
+        [dic setObject:@"http://www.xidanjoycity.com/about/index.html" forKey:@"url"];
         [dic setObject:@802399 forKey:@"beacon-id"];
         [dic setObject:@"赠送烤鸡腿" forKey:@"ads-string"];
-        [dic setObject:@"10km" forKey:@"distance"];
-        [dic setObject:@39.98881 forKey:@"latitude"];
-        [dic setObject:@116.426947 forKey:@"longitude"];
+        [dic setObject:@"500m" forKey:@"distance"];
+        [dic setObject:@39.910846 forKey:@"latitude"];
+        [dic setObject:@116.373271 forKey:@"longitude"];
         [dic setObject:@10 forKey:@"bonus-points"];
         [allMalls addObject:[[MockMall alloc]initWithData:dic]];
-    }
+        
+            }
     return allMalls;
 }
 
