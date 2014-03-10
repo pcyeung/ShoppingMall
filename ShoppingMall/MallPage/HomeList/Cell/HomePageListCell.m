@@ -39,6 +39,16 @@
         UIImage *ecMallImg = [UIImage imageNamed:@"ecmall.jpg"];
         [MallImg setImage:ecMallImg];
     }
+    if ([name.text isEqualToString:@"北京APM"])
+    {
+        UIImage *ecMallImg = [UIImage imageNamed:@"apm.jpg"];
+        [MallImg setImage:ecMallImg];
+    }
+    if ([name.text isEqualToString:@"远洋未来广场"])
+    {
+        UIImage *ecMallImg = [UIImage imageNamed:@"future.jpg"];
+        [MallImg setImage:ecMallImg];
+    }
     address.text = [mall mallAddress];
     points.text = [NSString stringWithFormat:@"%d分", [mall getBonusPoints]];
     distance.text = [mall distance];
