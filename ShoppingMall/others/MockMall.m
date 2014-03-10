@@ -158,7 +158,7 @@
         
         [dic removeAllObjects];
         [dic setObject:@"远洋未来广场" forKey:@"name"];
-        [dic setObject:@"We Life" forKey:@"en-name"];
+        [dic setObject:@"We Life Plaza" forKey:@"en-name"];
         [dic setObject:@"朝阳区北四环东路73号" forKey:@"address"];
         [dic setObject:@"http://weibo.com/welifebj" forKey:@"url"];
         [dic setObject:@802399 forKey:@"beacon-id"];
