@@ -70,7 +70,7 @@
         [dic setObject:@"Sogo" forKey:@"en-name"];
         [dic setObject:@"西城区宣武门外大街8号" forKey:@"address"];
         [dic setObject:@"http://sogo.junefield.com/brand.php" forKey:@"url"];
-        [dic setObject:@802398 forKey:@"beacon-id"];
+        [dic setObject:@802390 forKey:@"beacon-id"]; //82398 before
         [dic setObject:@"" forKey:@"ads-string"];
         [dic setObject:@"100m" forKey:@"distance"];
         [dic setObject:@39.897252 forKey:@"latitude"];
@@ -109,7 +109,7 @@
         [dic setObject:@"Beijing APM" forKey:@"en-name"];
         [dic setObject:@"王府井大街138号" forKey:@"address"];
         [dic setObject:@"http://www.beijingapm.cn/templates/T_search/index.aspx?nodeid=9" forKey:@"url"];
-        [dic setObject:@2 forKey:@"beacon-id"];
+        [dic setObject:@82398 forKey:@"beacon-id"];
         [dic setObject:@"赠送烤鸡腿" forKey:@"ads-string"];
         [dic setObject:@"10km" forKey:@"distance"];
         [dic setObject:@39.913244 forKey:@"latitude"];
@@ -153,6 +153,19 @@
         [dic setObject:@"10km" forKey:@"distance"];
         [dic setObject:@22.278151 forKey:@"latitude"];
         [dic setObject:@114.181706 forKey:@"longitude"];
+        [dic setObject:@10 forKey:@"bonus-points"];
+        [allMalls addObject:[[MockMall alloc]initWithData:dic]];
+        
+        [dic removeAllObjects];
+        [dic setObject:@"远洋未来广场" forKey:@"name"];
+        [dic setObject:@"We Life" forKey:@"en-name"];
+        [dic setObject:@"朝阳区北四环东路73号" forKey:@"address"];
+        [dic setObject:@"http://weibo.com/welifebj" forKey:@"url"];
+        [dic setObject:@802399 forKey:@"beacon-id"];
+        [dic setObject:@"赠送烤鸡腿" forKey:@"ads-string"];
+        [dic setObject:@"10km" forKey:@"distance"];
+        [dic setObject:@39.98881 forKey:@"latitude"];
+        [dic setObject:@116.426947 forKey:@"longitude"];
         [dic setObject:@10 forKey:@"bonus-points"];
         [allMalls addObject:[[MockMall alloc]initWithData:dic]];
     }
