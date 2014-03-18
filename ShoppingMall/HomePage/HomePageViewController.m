@@ -14,6 +14,12 @@
 #import "MockMall.h"
 #import "ShoppingMallIndexDetailViewController.h"
 
+#import "CheckInPageView.h"
+#import <Sonic/Sonic.h>
+#import "TCNavigationController.h"
+
+
+
 
 
 @interface HomePageViewController ()
@@ -76,6 +82,17 @@
         CLLocationCoordinate2D coordinate = [mall getCoordinates];
         AddressAnnotation *addAnnotation = [[AddressAnnotation alloc] initWithCoordinate:coordinate mall:mall];
         [mapView addAnnotation:addAnnotation];
+        
+        TCNavigationController *Controller;
+        SonicCodeHeard *code;
+        code.beaconCode = 802397;
+        
+        
+        CheckInPageView *checkInPageView;
+        checkInPageView=[[CheckInPageView alloc]initWithFrame:[[UIScreen mainScreen] bounds] sonicCode:code nibName:@"CheckInPageView5" controller:Controller];
+        [checkInPageView show];
+
+
     }
 }
 
