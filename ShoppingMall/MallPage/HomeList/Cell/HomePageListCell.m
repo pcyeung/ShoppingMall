@@ -59,6 +59,34 @@
         UIImage *ecMallImg = [UIImage imageNamed:@"village.jpg"];
         [MallImg setImage:ecMallImg];
     }
+    if ([name.text isEqualToString:@"太古理"])
+    {
+        UIImage *ecMallImg = [UIImage imageNamed:@"village.jpg"];
+        [MallImg setImage:ecMallImg];
+    }
+    if ([name.text isEqualToString:@"东方银座"])
+    {
+        UIImage *ecMallImg = [UIImage imageNamed:@"ginza.jpg"];
+        [MallImg setImage:ecMallImg];
+    }
+    if ([name.text isEqualToString:@"世贸天阶"])
+    {
+        UIImage *ecMallImg = [UIImage imageNamed:@"place.jpg"];
+        [MallImg setImage:ecMallImg];
+    }
+    if ([name.text isEqualToString:@"颐堤港"])
+    {
+        UIImage *ecMallImg = [UIImage imageNamed:@"indigo.jpg"];
+        [MallImg setImage:ecMallImg];
+    }
+    if ([name.text isEqualToString:@"太古里"])
+    {
+        UIImage *ecMallImg = [UIImage imageNamed:@"taikooli.jpg"];
+        [MallImg setImage:ecMallImg];
+    }
+    
+    
+    
 
     address.text = [mall mallAddress];
     points.text = [NSString stringWithFormat:@"%d分", [mall getBonusPoints]];
