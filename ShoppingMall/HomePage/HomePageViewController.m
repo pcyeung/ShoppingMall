@@ -83,14 +83,14 @@
         AddressAnnotation *addAnnotation = [[AddressAnnotation alloc] initWithCoordinate:coordinate mall:mall];
         [mapView addAnnotation:addAnnotation];
         
-        TCNavigationController *Controller;
-        SonicCodeHeard *code;
-        code.beaconCode = 802397;
-        
-        
-        CheckInPageView *checkInPageView;
-        checkInPageView=[[CheckInPageView alloc]initWithFrame:[[UIScreen mainScreen] bounds] sonicCode:code nibName:@"CheckInPageView5" controller:Controller];
-        [checkInPageView show];
+//        TCNavigationController *Controller;
+//        SonicCodeHeard *code;
+//        code.beaconCode = 802397;
+//        
+//        
+//        CheckInPageView *checkInPageView;
+//        checkInPageView=[[CheckInPageView alloc]initWithFrame:[[UIScreen mainScreen] bounds] sonicCode:code nibName:@"CheckInPageView5" controller:Controller];
+//        [checkInPageView show];
 
 
     }
