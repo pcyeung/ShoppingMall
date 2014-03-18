@@ -49,6 +49,17 @@
         UIImage *ecMallImg = [UIImage imageNamed:@"future.jpg"];
         [MallImg setImage:ecMallImg];
     }
+    if ([name.text isEqualToString:@"蓝色港湾"])
+    {
+        UIImage *ecMallImg = [UIImage imageNamed:@"solana.jpg"];
+        [MallImg setImage:ecMallImg];
+    }
+    if ([name.text isEqualToString:@"太古理"])
+    {
+        UIImage *ecMallImg = [UIImage imageNamed:@"village.jpg"];
+        [MallImg setImage:ecMallImg];
+    }
+
     address.text = [mall mallAddress];
     points.text = [NSString stringWithFormat:@"%d分", [mall getBonusPoints]];
     distance.text = [mall distance];
