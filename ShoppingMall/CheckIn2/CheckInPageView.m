@@ -10,6 +10,7 @@
 #import "CheckInPageView.h"
 #import "MockShop.h"
 #import "ShopPromoViewController.h"
+#import "ShoppingMallIndexDetailViewController.h"
 
 #import <Sonic/SonicAudioHeardCode.h>
 #import <Sonic/SonicBluetoothCodeHeard.h>
@@ -102,6 +103,10 @@
 }
 
 - (void) showAnimated:(BOOL)animated {
+    ShoppingMallIndexDetailViewController* mallDetailController = (ShoppingMallIndexDetailViewController*)[BaseViewController buttonClickGetClass:@"ShoppingMallIndexDetailViewController" iPhone5Nib:@"ShoppingMallIndexDetailViewController5" nib:@"ShoppingMallIndexDetailViewController"navController:_controller];
+    [mallDetailController initWithMall:_mall];
+    [BaseViewController popOrPush:@"ShoppingMallIndexDetailViewController" controller:mallDetailController navController:_controller animated:NO];
+    
     [self disableButton:adButton1];
     [self disableButton:adButton2];
     [self disableButton:adButton3];

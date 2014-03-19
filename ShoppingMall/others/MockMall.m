@@ -39,20 +39,6 @@
         allMalls = [[NSMutableArray alloc]init];
         
         NSMutableDictionary *dic=[[NSMutableDictionary alloc]init];
-        [dic setObject:@"欧美汇" forKey:@"name"];
-        [dic setObject:@"EC Mall" forKey:@"en-name"];
-        [dic setObject:@"海淀区中关村丹棱街甲1号" forKey:@"address"];
-        [dic setObject:@"http://www.ecmall.com.cn/plus/list.php?tid=4" forKey:@"url"];
-        //[dic setObject:@802396 forKey:@"beacon-id"];
-        [dic setObject:@0 forKey:@"beacon-id"];
-        [dic setObject:@"" forKey:@"ads-string"];
-        [dic setObject:@"100m" forKey:@"distance"];
-        [dic setObject:@39.978987 forKey:@"latitude"];
-        [dic setObject:@116.314895 forKey:@"longitude"];
-        [dic setObject:@10 forKey:@"bonus-points"];
-        [allMalls addObject:[[MockMall alloc]initWithData:dic]];
-
-        [dic removeAllObjects];
         [dic setObject:@"北京APM" forKey:@"name"];
         [dic setObject:@"Beijing APM" forKey:@"en-name"];
         [dic setObject:@"王府井大街138号" forKey:@"address"];
@@ -75,6 +61,33 @@
         [dic setObject:@"1km" forKey:@"distance"];
         [dic setObject:@39.949469 forKey:@"latitude"];
         [dic setObject:@116.475391 forKey:@"longitude"];
+        [dic setObject:@10 forKey:@"bonus-points"];
+        [allMalls addObject:[[MockMall alloc]initWithData:dic]];
+        
+        [dic removeAllObjects];
+        [dic setObject:@"颐堤港" forKey:@"name"];
+        [dic setObject:@"Indigo" forKey:@"en-name"];
+        [dic setObject:@"朝阳区酒仙桥路18号" forKey:@"address"];
+        [dic setObject:@"http://www.indigobeijing.com/zh-CN/index.aspx" forKey:@"url"];
+        [dic setObject:@802399 forKey:@"beacon-id"];
+        [dic setObject:@"赠送烤鸡腿" forKey:@"ads-string"];
+        [dic setObject:@"1km" forKey:@"distance"];
+        [dic setObject:@39.969878 forKey:@"latitude"];
+        [dic setObject:@116.491492 forKey:@"longitude"];
+        [dic setObject:@10 forKey:@"bonus-points"];
+        [allMalls addObject:[[MockMall alloc]initWithData:dic]];
+        
+        [dic removeAllObjects];
+        [dic setObject:@"欧美汇" forKey:@"name"];
+        [dic setObject:@"EC Mall" forKey:@"en-name"];
+        [dic setObject:@"海淀区中关村丹棱街甲1号" forKey:@"address"];
+        [dic setObject:@"http://www.ecmall.com.cn/plus/list.php?tid=4" forKey:@"url"];
+        //[dic setObject:@802396 forKey:@"beacon-id"];
+        [dic setObject:@0 forKey:@"beacon-id"];
+        [dic setObject:@"" forKey:@"ads-string"];
+        [dic setObject:@"100m" forKey:@"distance"];
+        [dic setObject:@39.978987 forKey:@"latitude"];
+        [dic setObject:@116.314895 forKey:@"longitude"];
         [dic setObject:@10 forKey:@"bonus-points"];
         [allMalls addObject:[[MockMall alloc]initWithData:dic]];
         
@@ -104,18 +117,6 @@
         [dic setObject:@10 forKey:@"bonus-points"];
         [allMalls addObject:[[MockMall alloc]initWithData:dic]];
         
-        [dic removeAllObjects];
-        [dic setObject:@"颐堤港" forKey:@"name"];
-        [dic setObject:@"Indigo" forKey:@"en-name"];
-        [dic setObject:@"朝阳区酒仙桥路18号" forKey:@"address"];
-        [dic setObject:@"http://www.indigobeijing.com/zh-CN/index.aspx" forKey:@"url"];
-        [dic setObject:@802399 forKey:@"beacon-id"];
-        [dic setObject:@"赠送烤鸡腿" forKey:@"ads-string"];
-        [dic setObject:@"1km" forKey:@"distance"];
-        [dic setObject:@39.969878 forKey:@"latitude"];
-        [dic setObject:@116.491492 forKey:@"longitude"];
-        [dic setObject:@10 forKey:@"bonus-points"];
-        [allMalls addObject:[[MockMall alloc]initWithData:dic]];
         
         [dic removeAllObjects];
         [dic setObject:@"太古里" forKey:@"name"];

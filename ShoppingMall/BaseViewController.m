@@ -48,7 +48,11 @@
 }
 
 + (void)popOrPush:(NSString*)aClass controller:(UIViewController*)controller navController:(UINavigationController*)navController {
-    [navController pushViewController:controller animated:YES];
+    [BaseViewController popOrPush:aClass controller:controller navController:navController animated:YES];
+}
+
++ (void)popOrPush:(NSString*)aClass controller:(UIViewController*)controller navController:(UINavigationController*)navController animated:(BOOL)animated {
+    [navController pushViewController:controller animated:animated];
 }
 
 - (UIViewController*)buttonClickGetClass:(NSString*)aClass iPhone5Nib:(NSString*)nib5 nib:(NSString*)nib {
