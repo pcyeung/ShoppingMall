@@ -230,6 +230,7 @@
 		B8868F0718C8FF6400C601CC /* sogo.png in Resources */ = {isa = PBXBuildFile; fileRef = B8868F0518C8FF6400C601CC /* sogo.png */; };
 		B8868F0A18CE211800C601CC /* apm.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B8868F0818CE211800C601CC /* apm.jpg */; };
 		B8868F0B18CE211800C601CC /* future.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B8868F0918CE211800C601CC /* future.jpg */; };
+		FAB3A4AB18E20109001F2AE7 /* hm_shop2.png in Resources */ = {isa = PBXBuildFile; fileRef = FAB3A4AA18E20109001F2AE7 /* hm_shop2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -537,6 +538,7 @@
 		B8868F0518C8FF6400C601CC /* sogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sogo.png; sourceTree = "<group>"; };
 		B8868F0818CE211800C601CC /* apm.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = apm.jpg; sourceTree = "<group>"; };
 		B8868F0918CE211800C601CC /* future.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = future.jpg; sourceTree = "<group>"; };
+		FAB3A4AA18E20109001F2AE7 /* hm_shop2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hm_shop2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -886,6 +888,7 @@
 		23D615181893A36F00C60E3E /* images */ = {
 			isa = PBXGroup;
 			children = (
+				FAB3A4AA18E20109001F2AE7 /* hm_shop2.png */,
 				0985D91318D8B175009D448D /* taikooli.jpg */,
 				0985D91118D8B114009D448D /* indigo.jpg */,
 				0985D90F18D8B005009D448D /* place.jpg */,
@@ -1380,6 +1383,7 @@
 				23D613661893680700C60E3E /* blackArrow@2x.png in Resources */,
 				2348433D1896166E00F752C3 /* line@2x.png in Resources */,
 				23D6136C1893680700C60E3E /* whiteArrow.png in Resources */,
+				FAB3A4AB18E20109001F2AE7 /* hm_shop2.png in Resources */,
 				23D615891893A36F00C60E3E /* scan.png in Resources */,
 				709F244A18B91140000C4292 /* GiftViewController5.xib in Resources */,
 				236AB6291894C61000770E81 /* HomePageListCell.xib in Resources */,
