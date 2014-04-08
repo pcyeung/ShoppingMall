@@ -1701,7 +1701,7 @@
 					"$(SRCROOT)/ZBarSDK/",
 				);
 				OTHER_LDFLAGS = "-all_load";
-				PRODUCT_NAME = "$(TARGET_NAME)9";
+				PRODUCT_NAME = "$(TARGET_NAME)11";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
