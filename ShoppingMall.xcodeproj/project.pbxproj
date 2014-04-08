@@ -184,6 +184,8 @@
 		702E1409189A2DCE00B59475 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 702E1408189A2DCE00B59475 /* libsqlite3.dylib */; };
 		702E140B189A2DDB00B59475 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 702E140A189A2DDB00B59475 /* libstdc++.dylib */; };
 		702E140F189AD5C600B59475 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 702E140E189AD5C600B59475 /* Accelerate.framework */; };
+		705F91DC18F4297D000AEC32 /* kerry_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 705F91DB18F4297D000AEC32 /* kerry_logo.png */; };
+		705F91DE18F42989000AEC32 /* gemdale.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 705F91DD18F42989000AEC32 /* gemdale.jpg */; };
 		706C70AE189D498C00B2C38C /* CheckInPageView5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 706C70AD189D498C00B2C38C /* CheckInPageView5.xib */; };
 		706C70B1189D49EF00B2C38C /* CheckInPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 706C70B0189D49EF00B2C38C /* CheckInPageView.m */; };
 		706C70B6189E41F400B2C38C /* MockUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 706C70B5189E41F400B2C38C /* MockUser.m */; };
@@ -226,7 +228,6 @@
 		709F244818B90B68000C4292 /* ShopPromoViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 709F244718B90B68000C4292 /* ShopPromoViewController5.xib */; };
 		709F244A18B91140000C4292 /* GiftViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 709F244918B91140000C4292 /* GiftViewController5.xib */; };
 		B86FD1EE18D8A86C00DC2911 /* solana.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B86FD1EC18D8A86C00DC2911 /* solana.jpg */; };
-		B86FD1EF18D8A86C00DC2911 /* village.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B86FD1ED18D8A86C00DC2911 /* village.jpg */; };
 		B8868F0618C8FF6400C601CC /* ecmall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B8868F0418C8FF6400C601CC /* ecmall.jpg */; };
 		B8868F0718C8FF6400C601CC /* sogo.png in Resources */ = {isa = PBXBuildFile; fileRef = B8868F0518C8FF6400C601CC /* sogo.png */; };
 		B8868F0A18CE211800C601CC /* apm.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B8868F0818CE211800C601CC /* apm.jpg */; };
@@ -459,6 +460,8 @@
 		702E1408189A2DCE00B59475 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		702E140A189A2DDB00B59475 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		702E140E189AD5C600B59475 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		705F91DB18F4297D000AEC32 /* kerry_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kerry_logo.png; sourceTree = "<group>"; };
+		705F91DD18F42989000AEC32 /* gemdale.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gemdale.jpg; sourceTree = "<group>"; };
 		706C70AD189D498C00B2C38C /* CheckInPageView5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CheckInPageView5.xib; sourceTree = "<group>"; };
 		706C70AF189D49EF00B2C38C /* CheckInPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckInPageView.h; sourceTree = "<group>"; };
 		706C70B0189D49EF00B2C38C /* CheckInPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckInPageView.m; sourceTree = "<group>"; };
@@ -535,7 +538,6 @@
 		709F244718B90B68000C4292 /* ShopPromoViewController5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ShopPromoViewController5.xib; path = Shop/ShopPromoViewController5.xib; sourceTree = "<group>"; };
 		709F244918B91140000C4292 /* GiftViewController5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GiftViewController5.xib; path = Gift/GiftViewController5.xib; sourceTree = "<group>"; };
 		B86FD1EC18D8A86C00DC2911 /* solana.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = solana.jpg; sourceTree = "<group>"; };
-		B86FD1ED18D8A86C00DC2911 /* village.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = village.jpg; sourceTree = "<group>"; };
 		B8868F0418C8FF6400C601CC /* ecmall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ecmall.jpg; sourceTree = "<group>"; };
 		B8868F0518C8FF6400C601CC /* sogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sogo.png; sourceTree = "<group>"; };
 		B8868F0818CE211800C601CC /* apm.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = apm.jpg; sourceTree = "<group>"; };
@@ -890,6 +892,8 @@
 		23D615181893A36F00C60E3E /* images */ = {
 			isa = PBXGroup;
 			children = (
+				705F91DD18F42989000AEC32 /* gemdale.jpg */,
+				705F91DB18F4297D000AEC32 /* kerry_logo.png */,
 				09C5531718F2FA5900A44DC3 /* hm_shop3.png */,
 				FAB3A4AA18E20109001F2AE7 /* hm_shop2.png */,
 				0985D91318D8B175009D448D /* taikooli.jpg */,
@@ -897,7 +901,6 @@
 				0985D90F18D8B005009D448D /* place.jpg */,
 				0985D90D18D8AF3D009D448D /* ginza.jpg */,
 				B86FD1EC18D8A86C00DC2911 /* solana.jpg */,
-				B86FD1ED18D8A86C00DC2911 /* village.jpg */,
 				B8868F0418C8FF6400C601CC /* ecmall.jpg */,
 				B8868F0518C8FF6400C601CC /* sogo.png */,
 				09FD3B0018C8E9C9002DE72A /* mall2.jpg */,
@@ -1319,7 +1322,7 @@
 				709F243718B662C0000C4292 /* QRConfirmViewController5.xib in Resources */,
 				23D615A41893B84000C60E3E /* MyAccountHomePageViewController.xib in Resources */,
 				0985D91418D8B175009D448D /* taikooli.jpg in Resources */,
-				B86FD1EF18D8A86C00DC2911 /* village.jpg in Resources */,
+				705F91DC18F4297D000AEC32 /* kerry_logo.png in Resources */,
 				23D615631893A36F00C60E3E /* h03_top_bg.png in Resources */,
 				23D6158D1893A36F00C60E3E /* share_btn.png in Resources */,
 				23D613681893680700C60E3E /* blueArrow@2x.png in Resources */,
@@ -1371,6 +1374,7 @@
 				236AB63D1894D63900770E81 /* bg.png in Resources */,
 				092EC66418CE2D4B00C83E92 /* ad04_bak.png in Resources */,
 				2348437F189648AE00F752C3 /* MallGiftListPageViewController.xib in Resources */,
+				705F91DE18F42989000AEC32 /* gemdale.jpg in Resources */,
 				236AB6401894D63900770E81 /* line.png in Resources */,
 				23D613671893680700C60E3E /* blueArrow.png in Resources */,
 				23D615801893A36F00C60E3E /* pic2.png in Resources */,

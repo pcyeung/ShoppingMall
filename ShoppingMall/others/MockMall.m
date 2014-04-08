@@ -17,6 +17,7 @@
 @synthesize mallAddress = _mallAddress;
 @synthesize adsText = _adsText;
 @synthesize distance = _distance;
+@synthesize icon = _icon;
 
 - (id)initWithData:(NSDictionary*)dataDict {
     self = [super init];
@@ -27,6 +28,7 @@
         bonusPoints = [(NSNumber*)[dataDict objectForKey:@"bonus-points"] intValue];
         beaconId = [(NSNumber*)[dataDict objectForKey:@"beacon-id"] intValue];
         _distance = [dataDict objectForKey:@"distance"];
+        _icon = [dataDict objectForKey:@"icon"];
         coordinates.latitude = [(NSNumber*)[dataDict objectForKey:@"latitude"] doubleValue];
         coordinates.longitude = [(NSNumber*)[dataDict objectForKey:@"longitude"] doubleValue];
     }
@@ -39,6 +41,48 @@
         allMalls = [[NSMutableArray alloc]init];
         
         NSMutableDictionary *dic=[[NSMutableDictionary alloc]init];
+        [dic setObject:@"Indigo 颐堤港" forKey:@"name"];
+        [dic setObject:@"Indigo" forKey:@"en-name"];
+        [dic setObject:@"朝阳区酒仙桥路18号" forKey:@"address"];
+        [dic setObject:@"http://www.indigobeijing.com/zh-CN/index.aspx" forKey:@"url"];
+        [dic setObject:@802397 forKey:@"beacon-id"];
+        [dic setObject:@"赠送烤鸡腿" forKey:@"ads-string"];
+        [dic setObject:@"1km" forKey:@"distance"];
+        [dic setObject:@39.969878 forKey:@"latitude"];
+        [dic setObject:@116.491492 forKey:@"longitude"];
+        [dic setObject:@10 forKey:@"bonus-points"];
+        [dic setObject:@"indigo.jpg" forKey:@"icon"];
+        [allMalls addObject:[[MockMall alloc]initWithData:dic]];
+        
+        [dic removeAllObjects];
+        [dic setObject:@"金地中心" forKey:@"name"];
+        [dic setObject:@"Gemdale Plaza" forKey:@"en-name"];
+        [dic setObject:@"朝阳区建国路91号" forKey:@"address"];
+        [dic setObject:@"www.gemdale-plaza.com/‎" forKey:@"url"];
+        [dic setObject:@802398 forKey:@"beacon-id"];
+        [dic setObject:@"" forKey:@"ads-string"];
+        [dic setObject:@"100m" forKey:@"distance"];
+        [dic setObject:@39.908682 forKey:@"latitude"];
+        [dic setObject:@116.472019 forKey:@"longitude"];
+        [dic setObject:@10 forKey:@"bonus-points"];
+        [dic setObject:@"gemdale.jpg" forKey:@"icon"];
+        [allMalls addObject:[[MockMall alloc]initWithData:dic]];
+        
+        [dic removeAllObjects];
+        [dic setObject:@"嘉里中心" forKey:@"name"];
+        [dic setObject:@"Kerry Centre" forKey:@"en-name"];
+        [dic setObject:@"顺义区光华街1号" forKey:@"address"];
+        [dic setObject:@"www.beijingkerrycentre.com/‎‎" forKey:@"url"];
+        [dic setObject:@802399 forKey:@"beacon-id"];
+        [dic setObject:@"" forKey:@"ads-string"];
+        [dic setObject:@"100m" forKey:@"distance"];
+        [dic setObject:@40.220191 forKey:@"latitude"];
+        [dic setObject:@116.812055 forKey:@"longitude"];
+        [dic setObject:@10 forKey:@"bonus-points"];
+        [dic setObject:@"kerry_logo.png" forKey:@"icon"];
+        [allMalls addObject:[[MockMall alloc]initWithData:dic]];
+
+        [dic removeAllObjects];
         [dic setObject:@"北京APM" forKey:@"name"];
         [dic setObject:@"Beijing APM" forKey:@"en-name"];
         [dic setObject:@"王府井大街138号" forKey:@"address"];
@@ -49,6 +93,7 @@
         [dic setObject:@39.913244 forKey:@"latitude"];
         [dic setObject:@116.411841 forKey:@"longitude"];
         [dic setObject:@10 forKey:@"bonus-points"];
+        [dic setObject:@"apm.jpg" forKey:@"icon"];
         [allMalls addObject:[[MockMall alloc]initWithData:dic]];
         
         [dic removeAllObjects];
@@ -62,58 +107,7 @@
         [dic setObject:@39.949469 forKey:@"latitude"];
         [dic setObject:@116.475391 forKey:@"longitude"];
         [dic setObject:@10 forKey:@"bonus-points"];
-        [allMalls addObject:[[MockMall alloc]initWithData:dic]];
-        
-        [dic removeAllObjects];//1
-        [dic setObject:@"颐堤港" forKey:@"name"];
-        [dic setObject:@"Indigo" forKey:@"en-name"];
-        [dic setObject:@"朝阳区酒仙桥路18号" forKey:@"address"];
-        [dic setObject:@"http://www.indigobeijing.com/zh-CN/index.aspx" forKey:@"url"];
-        [dic setObject:@802397 forKey:@"beacon-id"];
-        [dic setObject:@"赠送烤鸡腿" forKey:@"ads-string"];
-        [dic setObject:@"1km" forKey:@"distance"];
-        [dic setObject:@39.969878 forKey:@"latitude"];
-        [dic setObject:@116.491492 forKey:@"longitude"];
-        [dic setObject:@10 forKey:@"bonus-points"];
-        [allMalls addObject:[[MockMall alloc]initWithData:dic]];
-        
-        [dic removeAllObjects];//1
-        [dic setObject:@"颐堤港" forKey:@"name"];
-        [dic setObject:@"Indigo" forKey:@"en-name"];
-        [dic setObject:@"朝阳区酒仙桥路18号" forKey:@"address"];
-        [dic setObject:@"http://www.indigobeijing.com/zh-CN/index.aspx" forKey:@"url"];
-        [dic setObject:@802398 forKey:@"beacon-id"];
-        [dic setObject:@"赠送烤鸡腿" forKey:@"ads-string"];
-        [dic setObject:@"1km" forKey:@"distance"];
-        [dic setObject:@39.969878 forKey:@"latitude"];
-        [dic setObject:@116.491492 forKey:@"longitude"];
-        [dic setObject:@10 forKey:@"bonus-points"];
-        [allMalls addObject:[[MockMall alloc]initWithData:dic]];
-        
-        [dic removeAllObjects];
-        [dic setObject:@"金地中心" forKey:@"name"];
-        [dic setObject:@"Gmdale Plaza" forKey:@"en-name"];
-        [dic setObject:@"朝阳区建国路91号" forKey:@"address"];
-        [dic setObject:@"www.gemdale-plaza.com/‎" forKey:@"url"];
-        [dic setObject:@802399 forKey:@"beacon-id"];
-        [dic setObject:@"" forKey:@"ads-string"];
-        [dic setObject:@"100m" forKey:@"distance"];
-        [dic setObject:@39.908682 forKey:@"latitude"];
-        [dic setObject:@116.472019 forKey:@"longitude"];
-        [dic setObject:@10 forKey:@"bonus-points"];
-        [allMalls addObject:[[MockMall alloc]initWithData:dic]];
-        
-        [dic removeAllObjects];
-        [dic setObject:@"嘉里中心" forKey:@"name"];
-        [dic setObject:@"Kerry Centre" forKey:@"en-name"];
-        [dic setObject:@"顺义区光华街1号" forKey:@"address"];
-        [dic setObject:@"www.beijingkerrycentre.com/‎‎" forKey:@"url"];
-        [dic setObject:@13 forKey:@"beacon-id"];
-        [dic setObject:@"" forKey:@"ads-string"];
-        [dic setObject:@"100m" forKey:@"distance"];
-        [dic setObject:@40.220191 forKey:@"latitude"];
-        [dic setObject:@116.812055 forKey:@"longitude"];
-        [dic setObject:@10 forKey:@"bonus-points"];
+        [dic setObject:@"pic3.png" forKey:@"icon"];
         [allMalls addObject:[[MockMall alloc]initWithData:dic]];
         
         [dic removeAllObjects];
@@ -127,6 +121,7 @@
         [dic setObject:@22.278151 forKey:@"latitude"];
         [dic setObject:@114.181706 forKey:@"longitude"];
         [dic setObject:@10 forKey:@"bonus-points"];
+        [dic setObject:@"ginza.jpg" forKey:@"icon"];
         [allMalls addObject:[[MockMall alloc]initWithData:dic]];
         
         [dic removeAllObjects];
@@ -140,6 +135,7 @@
         [dic setObject:@22.278151 forKey:@"latitude"];
         [dic setObject:@114.181706 forKey:@"longitude"];
         [dic setObject:@10 forKey:@"bonus-points"];
+        [dic setObject:@"place.jpg" forKey:@"icon"];
         [allMalls addObject:[[MockMall alloc]initWithData:dic]];
         
         
@@ -154,6 +150,7 @@
         [dic setObject:@39.934634 forKey:@"latitude"];
         [dic setObject:@116.455078 forKey:@"longitude"];
         [dic setObject:@10 forKey:@"bonus-points"];
+        [dic setObject:@"taikooli.jpg" forKey:@"icon"];
         [allMalls addObject:[[MockMall alloc]initWithData:dic]];//
         
         [dic removeAllObjects];
@@ -167,6 +164,7 @@
         [dic setObject:@39.897252 forKey:@"latitude"];
         [dic setObject:@116.375663 forKey:@"longitude"];
         [dic setObject:@10 forKey:@"bonus-points"];
+        [dic setObject:@"sogo.png" forKey:@"icon"];
         [allMalls addObject:[[MockMall alloc]initWithData:dic]];
         
         [dic removeAllObjects];
@@ -180,8 +178,8 @@
         [dic setObject:@39.98881 forKey:@"latitude"];
         [dic setObject:@116.426947 forKey:@"longitude"];
         [dic setObject:@10 forKey:@"bonus-points"];
+        [dic setObject:@"future.jpg" forKey:@"icon"];
         [allMalls addObject:[[MockMall alloc]initWithData:dic]];
-
         
         [dic removeAllObjects];
         [dic setObject:@"芳草地" forKey:@"name"];
@@ -194,6 +192,7 @@
         [dic setObject:@39.919483 forKey:@"latitude"];
         [dic setObject:@116.448866 forKey:@"longitude"];
         [dic setObject:@10 forKey:@"bonus-points"];
+        [dic setObject:@"pic3.png" forKey:@"icon"];
         [allMalls addObject:[[MockMall alloc]initWithData:dic]];
         
         [dic removeAllObjects];
@@ -207,6 +206,7 @@
         [dic setObject:@39.916242 forKey:@"latitude"];
         [dic setObject:@116.411745 forKey:@"longitude"];
         [dic setObject:@10 forKey:@"bonus-points"];
+        [dic setObject:@"pic3.png" forKey:@"icon"];
         [allMalls addObject:[[MockMall alloc]initWithData:dic]];
         
         [dic removeAllObjects];
@@ -220,9 +220,9 @@
         [dic setObject:@39.910846 forKey:@"latitude"];
         [dic setObject:@116.373271 forKey:@"longitude"];
         [dic setObject:@10 forKey:@"bonus-points"];
+        [dic setObject:@"pic3.png" forKey:@"icon"];
         [allMalls addObject:[[MockMall alloc]initWithData:dic]];
-        
-            }
+    }
     return allMalls;
 }
 
