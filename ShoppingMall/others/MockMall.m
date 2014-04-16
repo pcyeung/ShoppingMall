@@ -41,11 +41,26 @@
         allMalls = [[NSMutableArray alloc]init];
         
         NSMutableDictionary *dic=[[NSMutableDictionary alloc]init];
+        
+        [dic setObject:@"英特宜家" forKey:@"name"];
+        [dic setObject:@"IICG Beijing" forKey:@"en-name"];
+        [dic setObject:@"大兴区西红门商业综合区" forKey:@"address"];
+        [dic setObject:@"https://www.iicg.cn/en-gb/shopping-centres/shopping-centre-beijing" forKey:@"url"];
+        [dic setObject:@802397 forKey:@"beacon-id"];
+        [dic setObject:@"赠送烤鸡腿" forKey:@"ads-string"];
+        [dic setObject:@"1km" forKey:@"distance"];
+        [dic setObject:@39.788723 forKey:@"latitude"];
+        [dic setObject:@116.318301 forKey:@"longitude"];
+        [dic setObject:@10 forKey:@"bonus-points"];
+        [dic setObject:@"BJ.gif" forKey:@"icon"];
+        [allMalls addObject:[[MockMall alloc]initWithData:dic]];
+        
+        
         [dic setObject:@"Indigo 颐堤港" forKey:@"name"];
         [dic setObject:@"Indigo" forKey:@"en-name"];
         [dic setObject:@"朝阳区酒仙桥路18号" forKey:@"address"];
         [dic setObject:@"http://www.indigobeijing.com/zh-CN/index.aspx" forKey:@"url"];
-        [dic setObject:@802397 forKey:@"beacon-id"];
+        [dic setObject:@12 forKey:@"beacon-id"];
         [dic setObject:@"赠送烤鸡腿" forKey:@"ads-string"];
         [dic setObject:@"1km" forKey:@"distance"];
         [dic setObject:@39.969878 forKey:@"latitude"];
