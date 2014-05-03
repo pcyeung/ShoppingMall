@@ -156,6 +156,42 @@
             <NodeRef refid="4"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicBluetoothCodeHeard/setSecurityBeacon:</TokenIdentifier>
+			<Abstract type="html">Boolean true if code heard using security beacon</Abstract>
+			<DeclaredIn>SonicBluetoothCodeHeard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL securityBeacon</Declaration>
+			
+			
+			<Anchor>//api/name/securityBeacon</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SonicBluetoothCodeHeard/securityBeacon</TokenIdentifier>
+			<Abstract type="html">Boolean true if code heard using security beacon</Abstract>
+			<DeclaredIn>SonicBluetoothCodeHeard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL securityBeacon</Declaration>
+			
+			
+			<Anchor>//api/name/securityBeacon</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SonicBluetoothCodeHeard/securityBeacon</TokenIdentifier>
+			<Abstract type="html">Boolean true if code heard using security beacon</Abstract>
+			<DeclaredIn>SonicBluetoothCodeHeard.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL securityBeacon</Declaration>
+			
+			
+			<Anchor>//api/name/securityBeacon</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
         
 	</File>
 </Tokens>

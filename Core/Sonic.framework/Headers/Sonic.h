@@ -254,7 +254,7 @@ typedef enum {
 
 
 /**
-* Start audio sampling
+* Start Listening, this is for both Bluetooth and Audio. If you are interested in one or the other this can be configured via the CMS.
 *
 * @return whether or not listening began
 */
@@ -262,7 +262,7 @@ typedef enum {
 
 
 /**
-* Stop audio sampling
+* Stop Listening, this is for both Bluetooth and Audio. If you are interested in one or the other this can be configured via the CMS.
 */
 - (void) stopListening;
 
@@ -281,6 +281,20 @@ typedef enum {
  * @param forceBackgroundOff whether or not to fully disable background
  */
 - (void) forceBackgroundOff: (BOOL) forceBackgroundOff;
+
+/**
+ * This will overide the CMS value and prevent audio usage going from foreground to background.
+ *
+ * @param forceBackgroundAudioOff whether or not to fully disable background
+ */
+- (void) forceBackgroundAudioOff: (BOOL) forceBackgroundAudioOff;
+
+/**
+ * This will overide the CMS value and prevent audio usage in the background due to location updates
+ *
+ * @param forceLocationAudioOff whether or not to fully disable background
+ */
+- (void) forceLocationAudioOff: (BOOL) forceLocationAudioOff;
 
 /**
  * Reset all content, activations, cached content, etc
@@ -323,6 +337,7 @@ typedef enum {
  * @param code
  */
 - (void) getActivationWithCodeHeard:(SonicCodeHeard *) code;
+- (void) getActivationWithCodeHeard:(SonicCodeHeard *) code tags:(NSDictionary *) tags;
 
 /**
 * Retrieve an activation by GUID

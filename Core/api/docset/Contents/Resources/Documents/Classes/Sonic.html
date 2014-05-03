@@ -69,11 +69,17 @@
 	
 	<option value="//api/name/engagedContent:">&nbsp;&nbsp;&nbsp;&nbsp;- engagedContent:</option>
 	
+	<option value="//api/name/forceBackgroundAudioOff:">&nbsp;&nbsp;&nbsp;&nbsp;- forceBackgroundAudioOff:</option>
+	
 	<option value="//api/name/forceBackgroundOff:">&nbsp;&nbsp;&nbsp;&nbsp;- forceBackgroundOff:</option>
+	
+	<option value="//api/name/forceLocationAudioOff:">&nbsp;&nbsp;&nbsp;&nbsp;- forceLocationAudioOff:</option>
 	
 	<option value="//api/name/forceLocationOff:">&nbsp;&nbsp;&nbsp;&nbsp;- forceLocationOff:</option>
 	
 	<option value="//api/name/getActivationWithCodeHeard:">&nbsp;&nbsp;&nbsp;&nbsp;- getActivationWithCodeHeard:</option>
+	
+	<option value="//api/name/getActivationWithCodeHeard:tags:">&nbsp;&nbsp;&nbsp;&nbsp;- getActivationWithCodeHeard:tags:</option>
 	
 	<option value="//api/name/initializeWithApplicationGUID:andDelegate:">&nbsp;&nbsp;&nbsp;&nbsp;- initializeWithApplicationGUID:andDelegate:</option>
 	
@@ -149,11 +155,17 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/engagedContent:">engagedContent:</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/forceBackgroundAudioOff:">forceBackgroundAudioOff:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/forceBackgroundOff:">forceBackgroundOff:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/forceLocationAudioOff:">forceLocationAudioOff:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/forceLocationOff:">forceLocationOff:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getActivationWithCodeHeard:">getActivationWithCodeHeard:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getActivationWithCodeHeard:tags:">getActivationWithCodeHeard:tags:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initializeWithApplicationGUID:andDelegate:">initializeWithApplicationGUID:andDelegate:</a></span></li>
 	
@@ -279,6 +291,18 @@
 	
 </li><li>
 	<span class="tooltip">
+		<code><a href="#//api/name/forceBackgroundAudioOff:">&ndash;&nbsp;forceBackgroundAudioOff:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/forceLocationAudioOff:">&ndash;&nbsp;forceLocationAudioOff:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
 		<code><a href="#//api/name/reset">&ndash;&nbsp;reset</a></code>
 	</span>
 	
@@ -318,6 +342,12 @@
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getActivationWithCodeHeard:">&ndash;&nbsp;getActivationWithCodeHeard:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getActivationWithCodeHeard:tags:">&ndash;&nbsp;getActivationWithCodeHeard:tags:</a></code>
 	</span>
 	
 	
@@ -800,6 +830,52 @@
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/forceBackgroundAudioOff:" title="forceBackgroundAudioOff:"></a>
+	<h3 class="subsubtitle method-title">forceBackgroundAudioOff:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This will overide the CMS value and prevent audio usage going from foreground to background.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)forceBackgroundAudioOff:(BOOL)<em>forceBackgroundAudioOff</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>forceBackgroundAudioOff</em></dt>
+			<dd><p>whether or not to fully disable background</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Sonic.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/forceBackgroundOff:" title="forceBackgroundOff:"></a>
 	<h3 class="subsubtitle method-title">forceBackgroundOff:</h3>
 	
@@ -821,6 +897,52 @@ for users. This will shut off all decoding by Sonic Notify, both audio and bluet
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>forceBackgroundOff</em></dt>
+			<dd><p>whether or not to fully disable background</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Sonic.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/forceLocationAudioOff:" title="forceLocationAudioOff:"></a>
+	<h3 class="subsubtitle method-title">forceLocationAudioOff:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This will overide the CMS value and prevent audio usage in the background due to location updates</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)forceLocationAudioOff:(BOOL)<em>forceLocationAudioOff</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>forceLocationAudioOff</em></dt>
 			<dd><p>whether or not to fully disable background</p></dd>
 		</dl>
 		
@@ -932,6 +1054,17 @@ for users</p>
 	</div>				
 	
 	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getActivationWithCodeHeard:tags:" title="getActivationWithCodeHeard:tags:"></a>
+	<h3 class="subsubtitle method-title">getActivationWithCodeHeard:tags:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)getActivationWithCodeHeard:(SonicCodeHeard *)<em>code</em> tags:(NSDictionary *)<em>tags</em></code></div>
+
+    
 </div>
 						
 						<div class="section-method">
@@ -1075,7 +1208,7 @@ required</p>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Start audio sampling</p>
+		<p>Start Listening, this is for both Bluetooth and Audio. If you are interested in one or the other this can be configured via the CMS.</p>
 	</div>		
 	
     
@@ -1152,7 +1285,7 @@ required</p>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Stop audio sampling</p>
+		<p>Stop Listening, this is for both Bluetooth and Audio. If you are interested in one or the other this can be configured via the CMS.</p>
 	</div>		
 	
     
@@ -1196,7 +1329,7 @@ required</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2014 Sonic Notify. All rights reserved. (Last updated: 2014-01-13)</span><br />
+						<p><span class="copyright">&copy; 2014 Sonic Notify. All rights reserved. (Last updated: 2014-04-22)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
 						

@@ -15,6 +15,7 @@
     CLProximity _proximity;
     CLLocationAccuracy _accuracy;
     BOOL _fromiBeacon;
+    BOOL _securityBeacon;
 }
 
 /**
@@ -37,6 +38,9 @@
  */
 @property (nonatomic, assign) BOOL fromiBeacon;
 
-
+/**
+ * Boolean true if code heard using security beacon
+ */
+@property (nonatomic, assign) BOOL securityBeacon;
 
 @end

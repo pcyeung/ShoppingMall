@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 Sonic Notify, Inc. All rights reserved.
 //
 
+#import "Sonic.h"
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
-#import "Sonic.h"
 
 @class SonicActivation;
 

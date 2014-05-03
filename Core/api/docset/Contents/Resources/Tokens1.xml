@@ -82,7 +82,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/Sonic/startListening</TokenIdentifier>
-			<Abstract type="html">Start audio sampling</Abstract>
+			<Abstract type="html">Start Listening, this is for both Bluetooth and Audio. If you are interested in one or the other this can be configured via the CMS.</Abstract>
 			<DeclaredIn>Sonic.h</DeclaredIn>
 			
 			<Declaration>- (BOOL)startListening</Declaration>
@@ -94,7 +94,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/Sonic/stopListening</TokenIdentifier>
-			<Abstract type="html">Stop audio sampling</Abstract>
+			<Abstract type="html">Stop Listening, this is for both Bluetooth and Audio. If you are interested in one or the other this can be configured via the CMS.</Abstract>
 			<DeclaredIn>Sonic.h</DeclaredIn>
 			
 			<Declaration>- (void)stopListening</Declaration>
@@ -137,6 +137,40 @@ for users. This will shut off all decoding by Sonic Notify, both audio and bluet
 			</Parameters>
 			
 			<Anchor>//api/name/forceBackgroundOff:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Sonic/forceBackgroundAudioOff:</TokenIdentifier>
+			<Abstract type="html">This will overide the CMS value and prevent audio usage going from foreground to background.</Abstract>
+			<DeclaredIn>Sonic.h</DeclaredIn>
+			
+			<Declaration>- (void)forceBackgroundAudioOff:(BOOL)forceBackgroundAudioOff</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>forceBackgroundAudioOff</Name>
+					<Abstract type="html">whether or not to fully disable background</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/forceBackgroundAudioOff:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Sonic/forceLocationAudioOff:</TokenIdentifier>
+			<Abstract type="html">This will overide the CMS value and prevent audio usage in the background due to location updates</Abstract>
+			<DeclaredIn>Sonic.h</DeclaredIn>
+			
+			<Declaration>- (void)forceLocationAudioOff:(BOOL)forceLocationAudioOff</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>forceLocationAudioOff</Name>
+					<Abstract type="html">whether or not to fully disable background</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/forceLocationAudioOff:</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
@@ -225,6 +259,18 @@ required</Abstract>
 			
 			
 			<Anchor>//api/name/getActivationWithCodeHeard:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Sonic/getActivationWithCodeHeard:tags:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Sonic.h</DeclaredIn>
+			
+			<Declaration>- (void)getActivationWithCodeHeard:(SonicCodeHeard *)code tags:(NSDictionary *)tags</Declaration>
+			
+			
+			<Anchor>//api/name/getActivationWithCodeHeard:tags:</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		

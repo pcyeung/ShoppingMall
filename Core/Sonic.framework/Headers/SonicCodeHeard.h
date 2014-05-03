@@ -9,10 +9,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface SonicCodeHeard : NSObject {
+@interface SonicCodeHeard : NSObject <NSCopying>{
     long _beaconCode;
     long _timeCodeHeard;
     NSArray * _codesHeard;
+    NSDate * _timeCodeWasHeard;
 }
 
 /**
@@ -27,6 +28,8 @@
  * Array of codes heard
  */
 @property (nonatomic, retain) NSArray * codesHeard;
+
+
 
 
 
